@@ -6,7 +6,7 @@ import { summary as infancySummary, affinity as infancyAffinity, curve as infanc
 import type { Bet, BetBook, FlyState, Pass } from '../brain/fly'
 import type { UpcomingMatch } from '../odds/upcoming'
 
-export const REPO_URL = 'https://github.com/jrod-md/MetroFly'
+export const REPO_URL = 'https://github.com/jrod-md/la-mosca'
 export const BETS_HISTORY_URL = `${REPO_URL}/commits/main/data/fly/bets.json`
 
 export const flyState = (stateFile as unknown as { state: FlyState }).state

@@ -6,7 +6,7 @@ El cerebro es real: 296 neuronas del cuerpo pedunculado (el centro de aprendizaj
 
 Cada mañana la mosca revisa los partidos, cobra o pierde lo que apostó, aprende de eso y decide sus próximas jugadas. Cada apuesta queda en el historial público de este repo **antes** del partido, así que nadie puede cambiarla después.
 
-**Demo:** https://metrofly.pages.dev
+**Demo:** https://la-mosca.pages.dev
 
 ## Cómo decide
 
