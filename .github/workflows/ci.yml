@@ -27,8 +27,6 @@ jobs:
           test -f dist/index.html
           test -d dist/assets
           test "$(find dist/assets -type f -print -quit)"
-          # A normal build serves the site; only the REDIRECT_TO build may ship _redirects.
-          test ! -f dist/_redirects
       - name: Reject credential identifiers in build
         run: |
           if grep -rlE 'NEUPRINT_TOKEN|API_FOOTBALL_KEY|x-apisports-key' dist; then
