@@ -1,0 +1,326 @@
+{
+ "source": "API-Football v3",
+ "season": 2024,
+ "fetchedAt": "2026-10-07T14:02:06.872Z",
+ "matches": [
+  {
+   "id": "af:1146305",
+   "sources": {
+    "apiFootball": 1146305,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Copa America",
+   "season": "2024",
+   "round": "Group Stage - 1",
+   "kickoff": "2024-06-24T01:00:00.000Z",
+   "home": {
+    "name": "Uruguay",
+    "sourceId": "af:7",
+    "badge": "https://media.api-sports.io/football/teams/7.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "Hard Rock Stadium"
+  },
+  {
+   "id": "af:1146310",
+   "sources": {
+    "apiFootball": 1146310,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Copa America",
+   "season": "2024",
+   "round": "Group Stage - 2",
+   "kickoff": "2024-06-28T22:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "USA",
+    "sourceId": "af:2384",
+    "badge": "https://media.api-sports.io/football/teams/2384.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Mercedes-Benz Stadium"
+  },
+  {
+   "id": "af:1146316",
+   "sources": {
+    "apiFootball": 1146316,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Copa America",
+   "season": "2024",
+   "round": "Group Stage - 3",
+   "kickoff": "2024-07-02T01:00:00.000Z",
+   "home": {
+    "name": "Bolivia",
+    "sourceId": "af:2381",
+    "badge": "https://media.api-sports.io/football/teams/2381.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 3
+   },
+   "venue": "Inter&Co Stadium"
+  },
+  {
+   "id": "af:1193372",
+   "sources": {
+    "apiFootball": 1193372,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2024",
+   "round": "Friendlies 1",
+   "kickoff": "2024-06-16T22:30:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Paraguay",
+    "sourceId": "af:2380",
+    "badge": "https://media.api-sports.io/football/teams/2380.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1215629",
+   "sources": {
+    "apiFootball": 1215629,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2024",
+   "round": "Friendlies 1",
+   "kickoff": "2024-10-13T01:00:00.000Z",
+   "home": {
+    "name": "USA",
+    "sourceId": "af:2384",
+    "badge": "https://media.api-sports.io/football/teams/2384.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Q2 Stadium"
+  },
+  {
+   "id": "af:1222459",
+   "sources": {
+    "apiFootball": 1222459,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Copa America",
+   "season": "2024",
+   "round": "Quarter-finals",
+   "kickoff": "2024-07-06T22:00:00.000Z",
+   "home": {
+    "name": "Colombia",
+    "sourceId": "af:8",
+    "badge": "https://media.api-sports.io/football/teams/8.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 5,
+    "away": 0
+   },
+   "venue": "State Farm Stadium"
+  },
+  {
+   "id": "af:1294672",
+   "sources": {
+    "apiFootball": 1294672,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2024",
+   "round": "Friendlies 1",
+   "kickoff": "2024-10-15T23:30:00.000Z",
+   "home": {
+    "name": "Canada",
+    "sourceId": "af:5529",
+    "badge": "https://media.api-sports.io/football/teams/5529.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "BMO Field"
+  },
+  {
+   "id": "af:1312102",
+   "sources": {
+    "apiFootball": 1312102,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2024",
+   "round": "Quarter-finals",
+   "kickoff": "2024-11-15T02:00:00.000Z",
+   "home": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Nacional de Costa Rica"
+  },
+  {
+   "id": "af:1312103",
+   "sources": {
+    "apiFootball": 1312103,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2024",
+   "round": "Quarter-finals",
+   "kickoff": "2024-11-19T02:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1316375",
+   "sources": {
+    "apiFootball": 1316375,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2024",
+   "round": "Semi-finals",
+   "kickoff": "2025-03-20T23:00:00.000Z",
+   "home": {
+    "name": "USA",
+    "sourceId": "af:2384",
+    "badge": "https://media.api-sports.io/football/teams/2384.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "SoFi Stadium"
+  },
+  {
+   "id": "af:1364767",
+   "sources": {
+    "apiFootball": 1364767,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2024",
+   "round": "Final",
+   "kickoff": "2025-03-24T01:30:00.000Z",
+   "home": {
+    "name": "Mexico",
+    "sourceId": "af:16",
+    "badge": "https://media.api-sports.io/football/teams/16.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "SoFi Stadium"
+  }
+ ]
+}

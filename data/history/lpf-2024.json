@@ -1,0 +1,5981 @@
+{
+ "source": "API-Football v3",
+ "season": 2024,
+ "fetchedAt": "2026-10-07T14:02:06.668Z",
+ "matches": [
+  {
+   "id": "af:1160650",
+   "sources": {
+    "apiFootball": 1160650,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 1",
+   "kickoff": "2024-01-20T01:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1160651",
+   "sources": {
+    "apiFootball": 1160651,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 1",
+   "kickoff": "2024-01-20T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160652",
+   "sources": {
+    "apiFootball": 1160652,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 1",
+   "kickoff": "2024-01-20T23:15:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160653",
+   "sources": {
+    "apiFootball": 1160653,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 1",
+   "kickoff": "2024-01-21T01:30:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160654",
+   "sources": {
+    "apiFootball": 1160654,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 1",
+   "kickoff": "2024-01-21T21:00:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160655",
+   "sources": {
+    "apiFootball": 1160655,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 1",
+   "kickoff": "2024-01-21T23:15:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160656",
+   "sources": {
+    "apiFootball": 1160656,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 2",
+   "kickoff": "2024-01-27T01:00:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160657",
+   "sources": {
+    "apiFootball": 1160657,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 2",
+   "kickoff": "2024-01-27T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160658",
+   "sources": {
+    "apiFootball": 1160658,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 2",
+   "kickoff": "2024-01-27T23:15:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160659",
+   "sources": {
+    "apiFootball": 1160659,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 2",
+   "kickoff": "2024-01-28T01:30:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160660",
+   "sources": {
+    "apiFootball": 1160660,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 2",
+   "kickoff": "2024-01-28T21:00:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160661",
+   "sources": {
+    "apiFootball": 1160661,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 2",
+   "kickoff": "2024-01-28T23:15:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160717",
+   "sources": {
+    "apiFootball": 1160717,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 3",
+   "kickoff": "2024-02-03T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160664",
+   "sources": {
+    "apiFootball": 1160664,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 3",
+   "kickoff": "2024-02-03T23:15:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160665",
+   "sources": {
+    "apiFootball": 1160665,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 3",
+   "kickoff": "2024-02-04T01:30:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 3
+   },
+   "venue": "Estadio Los Milagros"
+  },
+  {
+   "id": "af:1160666",
+   "sources": {
+    "apiFootball": 1160666,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 3",
+   "kickoff": "2024-02-04T21:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160667",
+   "sources": {
+    "apiFootball": 1160667,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 3",
+   "kickoff": "2024-02-04T23:15:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160662",
+   "sources": {
+    "apiFootball": 1160662,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 3",
+   "kickoff": "2024-02-05T01:30:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160668",
+   "sources": {
+    "apiFootball": 1160668,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 4",
+   "kickoff": "2024-02-06T23:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Los Milagros"
+  },
+  {
+   "id": "af:1160670",
+   "sources": {
+    "apiFootball": 1160670,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 4",
+   "kickoff": "2024-02-07T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160671",
+   "sources": {
+    "apiFootball": 1160671,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 4",
+   "kickoff": "2024-02-07T23:15:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 3
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160672",
+   "sources": {
+    "apiFootball": 1160672,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 4",
+   "kickoff": "2024-02-08T01:30:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160673",
+   "sources": {
+    "apiFootball": 1160673,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 4",
+   "kickoff": "2024-02-08T23:15:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1160669",
+   "sources": {
+    "apiFootball": 1160669,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 4",
+   "kickoff": "2024-02-09T01:30:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160674",
+   "sources": {
+    "apiFootball": 1160674,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 5",
+   "kickoff": "2024-02-17T01:00:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160675",
+   "sources": {
+    "apiFootball": 1160675,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 5",
+   "kickoff": "2024-02-17T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160676",
+   "sources": {
+    "apiFootball": 1160676,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 5",
+   "kickoff": "2024-02-17T23:15:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160677",
+   "sources": {
+    "apiFootball": 1160677,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 5",
+   "kickoff": "2024-02-18T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160678",
+   "sources": {
+    "apiFootball": 1160678,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 5",
+   "kickoff": "2024-02-18T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160679",
+   "sources": {
+    "apiFootball": 1160679,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 5",
+   "kickoff": "2024-02-18T23:15:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160680",
+   "sources": {
+    "apiFootball": 1160680,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 6",
+   "kickoff": "2024-02-24T01:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Los Milagros"
+  },
+  {
+   "id": "af:1160681",
+   "sources": {
+    "apiFootball": 1160681,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 6",
+   "kickoff": "2024-02-24T21:00:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160682",
+   "sources": {
+    "apiFootball": 1160682,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 6",
+   "kickoff": "2024-02-24T23:15:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160683",
+   "sources": {
+    "apiFootball": 1160683,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 6",
+   "kickoff": "2024-02-25T01:30:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 3
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1160684",
+   "sources": {
+    "apiFootball": 1160684,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 6",
+   "kickoff": "2024-02-25T21:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160687",
+   "sources": {
+    "apiFootball": 1160687,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 7",
+   "kickoff": "2024-03-02T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160688",
+   "sources": {
+    "apiFootball": 1160688,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 7",
+   "kickoff": "2024-03-02T23:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160689",
+   "sources": {
+    "apiFootball": 1160689,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 7",
+   "kickoff": "2024-03-03T01:30:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160690",
+   "sources": {
+    "apiFootball": 1160690,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 7",
+   "kickoff": "2024-03-03T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160686",
+   "sources": {
+    "apiFootball": 1160686,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 7",
+   "kickoff": "2024-03-03T23:15:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 3
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160691",
+   "sources": {
+    "apiFootball": 1160691,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 7",
+   "kickoff": "2024-03-05T01:00:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160692",
+   "sources": {
+    "apiFootball": 1160692,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 8",
+   "kickoff": "2024-03-09T01:00:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160693",
+   "sources": {
+    "apiFootball": 1160693,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 8",
+   "kickoff": "2024-03-09T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Complejo Futbolístico Virgilio Tejeira Andrión"
+  },
+  {
+   "id": "af:1160694",
+   "sources": {
+    "apiFootball": 1160694,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 8",
+   "kickoff": "2024-03-09T23:15:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 5,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160695",
+   "sources": {
+    "apiFootball": 1160695,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 8",
+   "kickoff": "2024-03-10T01:30:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1160696",
+   "sources": {
+    "apiFootball": 1160696,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 8",
+   "kickoff": "2024-03-10T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160697",
+   "sources": {
+    "apiFootball": 1160697,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 8",
+   "kickoff": "2024-03-10T23:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160685",
+   "sources": {
+    "apiFootball": 1160685,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 6",
+   "kickoff": "2024-03-13T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160698",
+   "sources": {
+    "apiFootball": 1160698,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 9",
+   "kickoff": "2024-03-16T01:00:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160699",
+   "sources": {
+    "apiFootball": 1160699,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 9",
+   "kickoff": "2024-03-16T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160700",
+   "sources": {
+    "apiFootball": 1160700,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 9",
+   "kickoff": "2024-03-16T23:15:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160703",
+   "sources": {
+    "apiFootball": 1160703,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 9",
+   "kickoff": "2024-03-17T01:30:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160702",
+   "sources": {
+    "apiFootball": 1160702,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 9",
+   "kickoff": "2024-03-17T21:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160701",
+   "sources": {
+    "apiFootball": 1160701,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 9",
+   "kickoff": "2024-03-17T23:15:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160704",
+   "sources": {
+    "apiFootball": 1160704,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 10",
+   "kickoff": "2024-03-23T01:00:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160705",
+   "sources": {
+    "apiFootball": 1160705,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 10",
+   "kickoff": "2024-03-23T21:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160706",
+   "sources": {
+    "apiFootball": 1160706,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 10",
+   "kickoff": "2024-03-23T23:15:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160707",
+   "sources": {
+    "apiFootball": 1160707,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 10",
+   "kickoff": "2024-03-24T01:30:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160708",
+   "sources": {
+    "apiFootball": 1160708,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 10",
+   "kickoff": "2024-03-24T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160709",
+   "sources": {
+    "apiFootball": 1160709,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 10",
+   "kickoff": "2024-03-24T23:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160710",
+   "sources": {
+    "apiFootball": 1160710,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 11",
+   "kickoff": "2024-04-06T01:00:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 4
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160711",
+   "sources": {
+    "apiFootball": 1160711,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 11",
+   "kickoff": "2024-04-06T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 3
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160712",
+   "sources": {
+    "apiFootball": 1160712,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 11",
+   "kickoff": "2024-04-06T23:15:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 4
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1160713",
+   "sources": {
+    "apiFootball": 1160713,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 11",
+   "kickoff": "2024-04-07T01:30:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160714",
+   "sources": {
+    "apiFootball": 1160714,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 11",
+   "kickoff": "2024-04-07T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160715",
+   "sources": {
+    "apiFootball": 1160715,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 11",
+   "kickoff": "2024-04-07T23:15:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160716",
+   "sources": {
+    "apiFootball": 1160716,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 12",
+   "kickoff": "2024-04-13T01:00:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160720",
+   "sources": {
+    "apiFootball": 1160720,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 12",
+   "kickoff": "2024-04-13T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 2
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160718",
+   "sources": {
+    "apiFootball": 1160718,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 12",
+   "kickoff": "2024-04-13T23:15:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160719",
+   "sources": {
+    "apiFootball": 1160719,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 12",
+   "kickoff": "2024-04-14T01:30:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160663",
+   "sources": {
+    "apiFootball": 1160663,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 12",
+   "kickoff": "2024-04-14T21:00:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160721",
+   "sources": {
+    "apiFootball": 1160721,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 12",
+   "kickoff": "2024-04-14T23:15:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1160725",
+   "sources": {
+    "apiFootball": 1160725,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 13",
+   "kickoff": "2024-04-16T21:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160723",
+   "sources": {
+    "apiFootball": 1160723,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 13",
+   "kickoff": "2024-04-16T23:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160724",
+   "sources": {
+    "apiFootball": 1160724,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 13",
+   "kickoff": "2024-04-17T01:30:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1160722",
+   "sources": {
+    "apiFootball": 1160722,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 13",
+   "kickoff": "2024-04-17T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160726",
+   "sources": {
+    "apiFootball": 1160726,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 13",
+   "kickoff": "2024-04-17T23:15:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160727",
+   "sources": {
+    "apiFootball": 1160727,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 13",
+   "kickoff": "2024-04-18T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160732",
+   "sources": {
+    "apiFootball": 1160732,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 14",
+   "kickoff": "2024-04-20T21:00:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160729",
+   "sources": {
+    "apiFootball": 1160729,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 14",
+   "kickoff": "2024-04-20T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160731",
+   "sources": {
+    "apiFootball": 1160731,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 14",
+   "kickoff": "2024-04-20T23:15:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1160730",
+   "sources": {
+    "apiFootball": 1160730,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 14",
+   "kickoff": "2024-04-21T01:30:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 3
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1160728",
+   "sources": {
+    "apiFootball": 1160728,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 14",
+   "kickoff": "2024-04-21T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160733",
+   "sources": {
+    "apiFootball": 1160733,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 14",
+   "kickoff": "2024-04-21T23:15:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160736",
+   "sources": {
+    "apiFootball": 1160736,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 15",
+   "kickoff": "2024-04-27T21:00:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160738",
+   "sources": {
+    "apiFootball": 1160738,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 15",
+   "kickoff": "2024-04-27T21:00:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160739",
+   "sources": {
+    "apiFootball": 1160739,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 15",
+   "kickoff": "2024-04-27T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 3
+   },
+   "venue": "Complejo Futbolístico Virgilio Tejeira Andrión"
+  },
+  {
+   "id": "af:1160737",
+   "sources": {
+    "apiFootball": 1160737,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 15",
+   "kickoff": "2024-04-27T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160735",
+   "sources": {
+    "apiFootball": 1160735,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 15",
+   "kickoff": "2024-04-28T01:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160734",
+   "sources": {
+    "apiFootball": 1160734,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 15",
+   "kickoff": "2024-04-28T01:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1160742",
+   "sources": {
+    "apiFootball": 1160742,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 16",
+   "kickoff": "2024-05-02T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1160740",
+   "sources": {
+    "apiFootball": 1160740,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 16",
+   "kickoff": "2024-05-02T21:00:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1160741",
+   "sources": {
+    "apiFootball": 1160741,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 16",
+   "kickoff": "2024-05-02T21:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160743",
+   "sources": {
+    "apiFootball": 1160743,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 16",
+   "kickoff": "2024-05-03T01:00:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1160744",
+   "sources": {
+    "apiFootball": 1160744,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 16",
+   "kickoff": "2024-05-03T01:00:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1160745",
+   "sources": {
+    "apiFootball": 1160745,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - 16",
+   "kickoff": "2024-05-03T01:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1198663",
+   "sources": {
+    "apiFootball": 1198663,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - Play-offs",
+   "kickoff": "2024-05-11T20:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1198664",
+   "sources": {
+    "apiFootball": 1198664,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - Play-offs",
+   "kickoff": "2024-05-12T22:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1199973",
+   "sources": {
+    "apiFootball": 1199973,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - Semi-finals",
+   "kickoff": "2024-05-18T21:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1200238",
+   "sources": {
+    "apiFootball": 1200238,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - Semi-finals",
+   "kickoff": "2024-05-19T01:00:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1199974",
+   "sources": {
+    "apiFootball": 1199974,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - Semi-finals",
+   "kickoff": "2024-05-25T01:30:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1200239",
+   "sources": {
+    "apiFootball": 1200239,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - Semi-finals",
+   "kickoff": "2024-05-26T01:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1201680",
+   "sources": {
+    "apiFootball": 1201680,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Apertura - Final",
+   "kickoff": "2024-06-02T00:15:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1234461",
+   "sources": {
+    "apiFootball": 1234461,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 1",
+   "kickoff": "2024-07-20T01:30:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1234462",
+   "sources": {
+    "apiFootball": 1234462,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 1",
+   "kickoff": "2024-07-20T23:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1234463",
+   "sources": {
+    "apiFootball": 1234463,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 1",
+   "kickoff": "2024-07-21T01:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1234464",
+   "sources": {
+    "apiFootball": 1234464,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 1",
+   "kickoff": "2024-07-21T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1234465",
+   "sources": {
+    "apiFootball": 1234465,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 1",
+   "kickoff": "2024-07-21T23:15:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 3
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1234466",
+   "sources": {
+    "apiFootball": 1234466,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 1",
+   "kickoff": "2024-07-23T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1260790",
+   "sources": {
+    "apiFootball": 1260790,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 2",
+   "kickoff": "2024-07-27T01:30:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1260791",
+   "sources": {
+    "apiFootball": 1260791,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 2",
+   "kickoff": "2024-07-27T23:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1260792",
+   "sources": {
+    "apiFootball": 1260792,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 2",
+   "kickoff": "2024-07-28T01:15:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1260793",
+   "sources": {
+    "apiFootball": 1260793,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 2",
+   "kickoff": "2024-07-28T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1260794",
+   "sources": {
+    "apiFootball": 1260794,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 2",
+   "kickoff": "2024-07-28T23:15:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1260795",
+   "sources": {
+    "apiFootball": 1260795,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 2",
+   "kickoff": "2024-07-30T01:30:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1273667",
+   "sources": {
+    "apiFootball": 1273667,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 3",
+   "kickoff": "2024-08-03T01:30:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1273668",
+   "sources": {
+    "apiFootball": 1273668,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 3",
+   "kickoff": "2024-08-03T23:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 2
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1273669",
+   "sources": {
+    "apiFootball": 1273669,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 3",
+   "kickoff": "2024-08-04T01:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1273670",
+   "sources": {
+    "apiFootball": 1273670,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 3",
+   "kickoff": "2024-08-04T21:00:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1273671",
+   "sources": {
+    "apiFootball": 1273671,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 3",
+   "kickoff": "2024-08-04T23:15:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1273672",
+   "sources": {
+    "apiFootball": 1273672,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 3",
+   "kickoff": "2024-08-06T01:30:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1282214",
+   "sources": {
+    "apiFootball": 1282214,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 4",
+   "kickoff": "2024-08-10T01:30:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1282215",
+   "sources": {
+    "apiFootball": 1282215,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 4",
+   "kickoff": "2024-08-10T23:00:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1282216",
+   "sources": {
+    "apiFootball": 1282216,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 4",
+   "kickoff": "2024-08-11T01:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1282217",
+   "sources": {
+    "apiFootball": 1282217,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 4",
+   "kickoff": "2024-08-11T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 3
+   },
+   "venue": "Estadio de Parita"
+  },
+  {
+   "id": "af:1282218",
+   "sources": {
+    "apiFootball": 1282218,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 4",
+   "kickoff": "2024-08-11T23:15:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1282219",
+   "sources": {
+    "apiFootball": 1282219,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 4",
+   "kickoff": "2024-08-13T01:30:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1286902",
+   "sources": {
+    "apiFootball": 1286902,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 5",
+   "kickoff": "2024-08-17T01:30:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1286903",
+   "sources": {
+    "apiFootball": 1286903,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 5",
+   "kickoff": "2024-08-17T23:00:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1286904",
+   "sources": {
+    "apiFootball": 1286904,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 5",
+   "kickoff": "2024-08-18T01:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1286905",
+   "sources": {
+    "apiFootball": 1286905,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 5",
+   "kickoff": "2024-08-18T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1286906",
+   "sources": {
+    "apiFootball": 1286906,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 5",
+   "kickoff": "2024-08-18T23:15:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1286907",
+   "sources": {
+    "apiFootball": 1286907,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 5",
+   "kickoff": "2024-08-20T01:30:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1294443",
+   "sources": {
+    "apiFootball": 1294443,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 6",
+   "kickoff": "2024-08-24T01:30:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1294444",
+   "sources": {
+    "apiFootball": 1294444,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 6",
+   "kickoff": "2024-08-24T23:00:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1294445",
+   "sources": {
+    "apiFootball": 1294445,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 6",
+   "kickoff": "2024-08-25T01:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1294446",
+   "sources": {
+    "apiFootball": 1294446,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 6",
+   "kickoff": "2024-08-25T21:00:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1294447",
+   "sources": {
+    "apiFootball": 1294447,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 6",
+   "kickoff": "2024-08-25T23:15:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1294448",
+   "sources": {
+    "apiFootball": 1294448,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 6",
+   "kickoff": "2024-08-27T01:30:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1297858",
+   "sources": {
+    "apiFootball": 1297858,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 7",
+   "kickoff": "2024-08-31T01:30:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1297859",
+   "sources": {
+    "apiFootball": 1297859,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 7",
+   "kickoff": "2024-08-31T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio de Parita"
+  },
+  {
+   "id": "af:1297860",
+   "sources": {
+    "apiFootball": 1297860,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 7",
+   "kickoff": "2024-09-01T01:15:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 1
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1297861",
+   "sources": {
+    "apiFootball": 1297861,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 7",
+   "kickoff": "2024-09-01T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1297862",
+   "sources": {
+    "apiFootball": 1297862,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 7",
+   "kickoff": "2024-09-01T23:15:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1297863",
+   "sources": {
+    "apiFootball": 1297863,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 7",
+   "kickoff": "2024-09-03T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1300719",
+   "sources": {
+    "apiFootball": 1300719,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 8",
+   "kickoff": "2024-09-07T01:30:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1300720",
+   "sources": {
+    "apiFootball": 1300720,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 8",
+   "kickoff": "2024-09-07T23:00:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1300721",
+   "sources": {
+    "apiFootball": 1300721,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 8",
+   "kickoff": "2024-09-08T01:15:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1300722",
+   "sources": {
+    "apiFootball": 1300722,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 8",
+   "kickoff": "2024-09-08T21:00:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1300723",
+   "sources": {
+    "apiFootball": 1300723,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 8",
+   "kickoff": "2024-09-08T23:15:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1300724",
+   "sources": {
+    "apiFootball": 1300724,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 8",
+   "kickoff": "2024-09-10T01:30:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1304371",
+   "sources": {
+    "apiFootball": 1304371,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 9",
+   "kickoff": "2024-09-14T01:30:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1304372",
+   "sources": {
+    "apiFootball": 1304372,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 9",
+   "kickoff": "2024-09-14T23:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1304373",
+   "sources": {
+    "apiFootball": 1304373,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 9",
+   "kickoff": "2024-09-15T01:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1304374",
+   "sources": {
+    "apiFootball": 1304374,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 9",
+   "kickoff": "2024-09-15T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1304375",
+   "sources": {
+    "apiFootball": 1304375,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 9",
+   "kickoff": "2024-09-15T23:15:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1304376",
+   "sources": {
+    "apiFootball": 1304376,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 9",
+   "kickoff": "2024-09-17T01:30:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 4
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1307067",
+   "sources": {
+    "apiFootball": 1307067,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 10",
+   "kickoff": "2024-09-21T01:30:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1307068",
+   "sources": {
+    "apiFootball": 1307068,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 10",
+   "kickoff": "2024-09-21T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1307069",
+   "sources": {
+    "apiFootball": 1307069,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 10",
+   "kickoff": "2024-09-21T23:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1307070",
+   "sources": {
+    "apiFootball": 1307070,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 10",
+   "kickoff": "2024-09-22T01:15:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1307071",
+   "sources": {
+    "apiFootball": 1307071,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 10",
+   "kickoff": "2024-09-23T00:00:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1307072",
+   "sources": {
+    "apiFootball": 1307072,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 10",
+   "kickoff": "2024-09-24T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1308660",
+   "sources": {
+    "apiFootball": 1308660,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 11",
+   "kickoff": "2024-09-28T01:30:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1308661",
+   "sources": {
+    "apiFootball": 1308661,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 11",
+   "kickoff": "2024-09-28T23:00:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1308662",
+   "sources": {
+    "apiFootball": 1308662,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 11",
+   "kickoff": "2024-09-29T01:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1308663",
+   "sources": {
+    "apiFootball": 1308663,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 11",
+   "kickoff": "2024-09-29T21:00:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1308664",
+   "sources": {
+    "apiFootball": 1308664,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 11",
+   "kickoff": "2024-09-29T23:15:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1308665",
+   "sources": {
+    "apiFootball": 1308665,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 11",
+   "kickoff": "2024-10-01T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1310407",
+   "sources": {
+    "apiFootball": 1310407,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 12",
+   "kickoff": "2024-10-05T01:30:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1310408",
+   "sources": {
+    "apiFootball": 1310408,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 12",
+   "kickoff": "2024-10-05T23:00:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1310409",
+   "sources": {
+    "apiFootball": 1310409,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 12",
+   "kickoff": "2024-10-06T01:15:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1310410",
+   "sources": {
+    "apiFootball": 1310410,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 12",
+   "kickoff": "2024-10-06T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio de Parita"
+  },
+  {
+   "id": "af:1310411",
+   "sources": {
+    "apiFootball": 1310411,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 12",
+   "kickoff": "2024-10-06T23:15:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1310412",
+   "sources": {
+    "apiFootball": 1310412,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 12",
+   "kickoff": "2024-10-08T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1311320",
+   "sources": {
+    "apiFootball": 1311320,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 13",
+   "kickoff": "2024-10-12T01:30:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1311321",
+   "sources": {
+    "apiFootball": 1311321,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 13",
+   "kickoff": "2024-10-12T23:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1311322",
+   "sources": {
+    "apiFootball": 1311322,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 13",
+   "kickoff": "2024-10-13T01:15:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1311323",
+   "sources": {
+    "apiFootball": 1311323,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 13",
+   "kickoff": "2024-10-13T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio de Parita"
+  },
+  {
+   "id": "af:1311324",
+   "sources": {
+    "apiFootball": 1311324,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 13",
+   "kickoff": "2024-10-13T23:15:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1311325",
+   "sources": {
+    "apiFootball": 1311325,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 13",
+   "kickoff": "2024-10-15T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 4
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1311968",
+   "sources": {
+    "apiFootball": 1311968,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 14",
+   "kickoff": "2024-10-19T01:30:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1311969",
+   "sources": {
+    "apiFootball": 1311969,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 14",
+   "kickoff": "2024-10-19T23:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1311970",
+   "sources": {
+    "apiFootball": 1311970,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 14",
+   "kickoff": "2024-10-20T01:15:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1311971",
+   "sources": {
+    "apiFootball": 1311971,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 14",
+   "kickoff": "2024-10-20T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio de Parita"
+  },
+  {
+   "id": "af:1311972",
+   "sources": {
+    "apiFootball": 1311972,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 14",
+   "kickoff": "2024-10-20T23:15:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1311973",
+   "sources": {
+    "apiFootball": 1311973,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 14",
+   "kickoff": "2024-10-22T01:30:00.000Z",
+   "home": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1312884",
+   "sources": {
+    "apiFootball": 1312884,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 15",
+   "kickoff": "2024-10-26T21:00:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1312885",
+   "sources": {
+    "apiFootball": 1312885,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 15",
+   "kickoff": "2024-10-26T21:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 0
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1312886",
+   "sources": {
+    "apiFootball": 1312886,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 15",
+   "kickoff": "2024-10-26T21:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Prof. Javier Cruz"
+  },
+  {
+   "id": "af:1312888",
+   "sources": {
+    "apiFootball": 1312888,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 15",
+   "kickoff": "2024-10-27T01:30:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1312887",
+   "sources": {
+    "apiFootball": 1312887,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 15",
+   "kickoff": "2024-10-27T01:30:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1312889",
+   "sources": {
+    "apiFootball": 1312889,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 15",
+   "kickoff": "2024-10-27T01:30:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1312893",
+   "sources": {
+    "apiFootball": 1312893,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 16",
+   "kickoff": "2024-11-01T21:00:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "af:2887",
+    "badge": "https://media.api-sports.io/football/teams/2887.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "af:20788",
+    "badge": "https://media.api-sports.io/football/teams/20788.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1312895",
+   "sources": {
+    "apiFootball": 1312895,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 16",
+   "kickoff": "2024-11-01T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "af:15619",
+    "badge": "https://media.api-sports.io/football/teams/15619.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio de Parita"
+  },
+  {
+   "id": "af:1312894",
+   "sources": {
+    "apiFootball": 1312894,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 16",
+   "kickoff": "2024-11-01T21:00:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1312892",
+   "sources": {
+    "apiFootball": 1312892,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 16",
+   "kickoff": "2024-11-02T01:30:00.000Z",
+   "home": {
+    "name": "Alianza FC",
+    "sourceId": "af:2881",
+    "badge": "https://media.api-sports.io/football/teams/2881.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1312891",
+   "sources": {
+    "apiFootball": 1312891,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 16",
+   "kickoff": "2024-11-02T01:30:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1312890",
+   "sources": {
+    "apiFootball": 1312890,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - 16",
+   "kickoff": "2024-11-02T01:30:00.000Z",
+   "home": {
+    "name": "Costa del Este",
+    "sourceId": "af:2886",
+    "badge": "https://media.api-sports.io/football/teams/2886.png"
+   },
+   "away": {
+    "name": "Tauro FC",
+    "sourceId": "af:2885",
+    "badge": "https://media.api-sports.io/football/teams/2885.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1314553",
+   "sources": {
+    "apiFootball": 1314553,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - Play-offs",
+   "kickoff": "2024-11-09T01:30:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "af:2889",
+    "badge": "https://media.api-sports.io/football/teams/2889.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 3
+   },
+   "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1314554",
+   "sources": {
+    "apiFootball": 1314554,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - Play-offs",
+   "kickoff": "2024-11-09T23:00:00.000Z",
+   "home": {
+    "name": "Deportivo Universitario",
+    "sourceId": "af:2888",
+    "badge": "https://media.api-sports.io/football/teams/2888.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1315306",
+   "sources": {
+    "apiFootball": 1315306,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - Semi-finals",
+   "kickoff": "2024-11-17T01:00:00.000Z",
+   "home": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1315308",
+   "sources": {
+    "apiFootball": 1315308,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - Semi-finals",
+   "kickoff": "2024-11-17T21:00:00.000Z",
+   "home": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Cancha de fútbol de Atalaya"
+  },
+  {
+   "id": "af:1315309",
+   "sources": {
+    "apiFootball": 1315309,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - Semi-finals",
+   "kickoff": "2024-11-23T22:00:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Veraguas",
+    "sourceId": "af:15620",
+    "badge": "https://media.api-sports.io/football/teams/15620.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Agustín Muquita Sánchez"
+  },
+  {
+   "id": "af:1315307",
+   "sources": {
+    "apiFootball": 1315307,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - Semi-finals",
+   "kickoff": "2024-11-24T01:00:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "away": {
+    "name": "CD Arabe Unido",
+    "sourceId": "af:2882",
+    "badge": "https://media.api-sports.io/football/teams/2882.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1316608",
+   "sources": {
+    "apiFootball": 1316608,
+    "theSportsDb": null
+   },
+   "competition": "lpf",
+   "league": "Liga Panameña de Fútbol",
+   "season": "2024",
+   "round": "Clausura - Final",
+   "kickoff": "2024-11-30T23:15:00.000Z",
+   "home": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "af:2890",
+    "badge": "https://media.api-sports.io/football/teams/2890.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "af:2883",
+    "badge": "https://media.api-sports.io/football/teams/2883.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  }
+ ]
+}

@@ -1,0 +1,529 @@
+{
+ "source": "API-Football v3",
+ "season": 2023,
+ "fetchedAt": "2026-10-07T14:02:06.438Z",
+ "matches": [
+  {
+   "id": "af:1012321",
+   "sources": {
+    "apiFootball": 1012321,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2023",
+   "round": "Friendlies 1",
+   "kickoff": "2023-03-13T00:00:00.000Z",
+   "home": {
+    "name": "Guatemala",
+    "sourceId": "af:5161",
+    "badge": "https://media.api-sports.io/football/teams/5161.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "PayPal Park"
+  },
+  {
+   "id": "af:1012323",
+   "sources": {
+    "apiFootball": 1012323,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2023",
+   "round": "Friendlies 1",
+   "kickoff": "2023-03-23T23:30:00.000Z",
+   "home": {
+    "name": "Argentina",
+    "sourceId": "af:26",
+    "badge": "https://media.api-sports.io/football/teams/26.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Mâs Monumental"
+  },
+  {
+   "id": "af:1023105",
+   "sources": {
+    "apiFootball": 1023105,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Gold Cup",
+   "season": "2023",
+   "round": "Group Stage - 1",
+   "kickoff": "2023-06-27T00:30:00.000Z",
+   "home": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "DRV PNK Stadium"
+  },
+  {
+   "id": "af:1023116",
+   "sources": {
+    "apiFootball": 1023116,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Gold Cup",
+   "season": "2023",
+   "round": "Group Stage - 3",
+   "kickoff": "2023-07-05T00:30:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "El Salvador",
+    "sourceId": "af:5159",
+    "badge": "https://media.api-sports.io/football/teams/5159.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Shell Energy Stadium"
+  },
+  {
+   "id": "af:1028632",
+   "sources": {
+    "apiFootball": 1028632,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2023",
+   "round": "Friendlies 1",
+   "kickoff": "2023-06-11T00:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Nicaragua",
+    "sourceId": "af:5164",
+    "badge": "https://media.api-sports.io/football/teams/5164.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1036609",
+   "sources": {
+    "apiFootball": 1036609,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Gold Cup",
+   "season": "2023",
+   "round": "Group Stage - 2",
+   "kickoff": "2023-06-30T22:30:00.000Z",
+   "home": {
+    "name": "Martinique",
+    "sourceId": "af:8117",
+    "badge": "https://media.api-sports.io/football/teams/8117.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Red Bull Arena"
+  },
+  {
+   "id": "af:1051773",
+   "sources": {
+    "apiFootball": 1051773,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Gold Cup",
+   "season": "2023",
+   "round": "Quarter-finals",
+   "kickoff": "2023-07-08T23:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Qatar",
+    "sourceId": "af:1569",
+    "badge": "https://media.api-sports.io/football/teams/1569.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 0
+   },
+   "venue": "AT&T Stadium"
+  },
+  {
+   "id": "af:1060779",
+   "sources": {
+    "apiFootball": 1060779,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2023",
+   "round": "League A - 1",
+   "kickoff": "2023-09-08T00:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Martinique",
+    "sourceId": "af:8117",
+    "badge": "https://media.api-sports.io/football/teams/8117.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 0
+   },
+   "venue": "Estadio Universitario F.C."
+  },
+  {
+   "id": "af:1060785",
+   "sources": {
+    "apiFootball": 1060785,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2023",
+   "round": "League A - 2",
+   "kickoff": "2023-09-11T00:06:00.000Z",
+   "home": {
+    "name": "Guatemala",
+    "sourceId": "af:5161",
+    "badge": "https://media.api-sports.io/football/teams/5161.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Nacional Mateo Flores"
+  },
+  {
+   "id": "af:1060794",
+   "sources": {
+    "apiFootball": 1060794,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2023",
+   "round": "League A - 3",
+   "kickoff": "2023-10-13T21:00:00.000Z",
+   "home": {
+    "name": "Curaçao",
+    "sourceId": "af:5530",
+    "badge": "https://media.api-sports.io/football/teams/5530.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Stadion Ergilio Hato"
+  },
+  {
+   "id": "af:1060800",
+   "sources": {
+    "apiFootball": 1060800,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2023",
+   "round": "League A - 4",
+   "kickoff": "2023-10-18T01:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Guatemala",
+    "sourceId": "af:5161",
+    "badge": "https://media.api-sports.io/football/teams/5161.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1060869",
+   "sources": {
+    "apiFootball": 1060869,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Gold Cup",
+   "season": "2023",
+   "round": "Semi-finals",
+   "kickoff": "2023-07-12T23:30:00.000Z",
+   "home": {
+    "name": "USA",
+    "sourceId": "af:2384",
+    "badge": "https://media.api-sports.io/football/teams/2384.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "PEN",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Snapdragon Stadium"
+  },
+  {
+   "id": "af:1065809",
+   "sources": {
+    "apiFootball": 1065809,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Gold Cup",
+   "season": "2023",
+   "round": "Final",
+   "kickoff": "2023-07-16T23:30:00.000Z",
+   "home": {
+    "name": "Mexico",
+    "sourceId": "af:16",
+    "badge": "https://media.api-sports.io/football/teams/16.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "SoFi Stadium"
+  },
+  {
+   "id": "af:1104374",
+   "sources": {
+    "apiFootball": 1104374,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2023",
+   "round": "Friendlies 1",
+   "kickoff": "2023-08-27T20:00:00.000Z",
+   "home": {
+    "name": "Bolivia",
+    "sourceId": "af:2381",
+    "badge": "https://media.api-sports.io/football/teams/2381.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Félix Capriles"
+  },
+  {
+   "id": "af:1139201",
+   "sources": {
+    "apiFootball": 1139201,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2023",
+   "round": "Quarter-finals",
+   "kickoff": "2023-11-17T03:00:00.000Z",
+   "home": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 3
+   },
+   "venue": "Estadio Ricardo Saprissa Aymá"
+  },
+  {
+   "id": "af:1139202",
+   "sources": {
+    "apiFootball": 1139202,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2023",
+   "round": "Quarter-finals",
+   "kickoff": "2023-11-21T02:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:1143861",
+   "sources": {
+    "apiFootball": 1143861,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2023",
+   "round": "Semi-finals",
+   "kickoff": "2024-03-22T02:15:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Mexico",
+    "sourceId": "af:16",
+    "badge": "https://media.api-sports.io/football/teams/16.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 3
+   },
+   "venue": "AT&T Stadium"
+  },
+  {
+   "id": "af:1187488",
+   "sources": {
+    "apiFootball": 1187488,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2023",
+   "round": "3rd Place Final",
+   "kickoff": "2024-03-24T22:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Jamaica",
+    "sourceId": "af:2385",
+    "badge": "https://media.api-sports.io/football/teams/2385.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "AT&T Stadium"
+  }
+ ]
+}

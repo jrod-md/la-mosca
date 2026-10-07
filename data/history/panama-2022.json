@@ -1,0 +1,1016 @@
+{
+ "source": "API-Football v3",
+ "season": 2022,
+ "fetchedAt": "2026-10-07T14:02:06.024Z",
+ "matches": [
+  {
+   "id": "af:592675",
+   "sources": {
+    "apiFootball": 592675,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "1st Round - 1",
+   "kickoff": "2021-03-26T00:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Barbados",
+    "sourceId": "af:5527",
+    "badge": "https://media.api-sports.io/football/teams/5527.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Olímpico Félix Sánchez"
+  },
+  {
+   "id": "af:592687",
+   "sources": {
+    "apiFootball": 592687,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "1st Round - 2",
+   "kickoff": "2021-03-28T20:00:00.000Z",
+   "home": {
+    "name": "Dominica",
+    "sourceId": "af:5531",
+    "badge": "https://media.api-sports.io/football/teams/5531.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 2
+   },
+   "venue": "Estadio Olímpico Félix Sánchez"
+  },
+  {
+   "id": "af:592711",
+   "sources": {
+    "apiFootball": 592711,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "1st Round - 4",
+   "kickoff": "2021-06-06T00:00:00.000Z",
+   "home": {
+    "name": "Anguilla",
+    "sourceId": "af:8150",
+    "badge": "https://media.api-sports.io/football/teams/8150.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 13
+   },
+   "venue": "Estadio Nacional Rod Carew"
+  },
+  {
+   "id": "af:592717",
+   "sources": {
+    "apiFootball": 592717,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "1st Round - 5",
+   "kickoff": "2021-06-09T01:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Dominican Republic",
+    "sourceId": "af:5532",
+    "badge": "https://media.api-sports.io/football/teams/5532.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 0
+   },
+   "venue": "Estadio Nacional Rod Carew"
+  },
+  {
+   "id": "af:706967",
+   "sources": {
+    "apiFootball": 706967,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "2nd Round",
+   "kickoff": "2021-06-12T23:05:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Curaçao",
+    "sourceId": "af:5530",
+    "badge": "https://media.api-sports.io/football/teams/5530.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Nacional Rod Carew"
+  },
+  {
+   "id": "af:706968",
+   "sources": {
+    "apiFootball": 706968,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "2nd Round",
+   "kickoff": "2021-06-16T00:00:00.000Z",
+   "home": {
+    "name": "Curaçao",
+    "sourceId": "af:5530",
+    "badge": "https://media.api-sports.io/football/teams/5530.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Stadion Ergilio Hato"
+  },
+  {
+   "id": "af:708811",
+   "sources": {
+    "apiFootball": 708811,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 1",
+   "kickoff": "2021-09-03T01:05:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:708816",
+   "sources": {
+    "apiFootball": 708816,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 2",
+   "kickoff": "2021-09-05T22:00:00.000Z",
+   "home": {
+    "name": "Jamaica",
+    "sourceId": "af:2385",
+    "badge": "https://media.api-sports.io/football/teams/2385.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 3
+   },
+   "venue": "Independence Park"
+  },
+  {
+   "id": "af:708819",
+   "sources": {
+    "apiFootball": 708819,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 3",
+   "kickoff": "2021-09-09T00:05:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Mexico",
+    "sourceId": "af:16",
+    "badge": "https://media.api-sports.io/football/teams/16.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:708823",
+   "sources": {
+    "apiFootball": 708823,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 4",
+   "kickoff": "2021-10-08T02:05:00.000Z",
+   "home": {
+    "name": "El Salvador",
+    "sourceId": "af:5159",
+    "badge": "https://media.api-sports.io/football/teams/5159.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Cuscatlán"
+  },
+  {
+   "id": "af:708828",
+   "sources": {
+    "apiFootball": 708828,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 5",
+   "kickoff": "2021-10-10T22:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "USA",
+    "sourceId": "af:2384",
+    "badge": "https://media.api-sports.io/football/teams/2384.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:708829",
+   "sources": {
+    "apiFootball": 708829,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 6",
+   "kickoff": "2021-10-13T23:30:00.000Z",
+   "home": {
+    "name": "Canada",
+    "sourceId": "af:5529",
+    "badge": "https://media.api-sports.io/football/teams/5529.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 4,
+    "away": 1
+   },
+   "venue": "BMO Field"
+  },
+  {
+   "id": "af:708834",
+   "sources": {
+    "apiFootball": 708834,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 7",
+   "kickoff": "2021-11-13T01:05:00.000Z",
+   "home": {
+    "name": "Honduras",
+    "sourceId": "af:4672",
+    "badge": "https://media.api-sports.io/football/teams/4672.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 3
+   },
+   "venue": "Estadio Olímpico Metropolitano"
+  },
+  {
+   "id": "af:708839",
+   "sources": {
+    "apiFootball": 708839,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 8",
+   "kickoff": "2021-11-17T01:05:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "El Salvador",
+    "sourceId": "af:5159",
+    "badge": "https://media.api-sports.io/football/teams/5159.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:708843",
+   "sources": {
+    "apiFootball": 708843,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 9",
+   "kickoff": "2022-01-28T02:05:00.000Z",
+   "home": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Nacional de Costa Rica"
+  },
+  {
+   "id": "af:708848",
+   "sources": {
+    "apiFootball": 708848,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 10",
+   "kickoff": "2022-01-29T23:05:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Jamaica",
+    "sourceId": "af:2385",
+    "badge": "https://media.api-sports.io/football/teams/2385.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:708851",
+   "sources": {
+    "apiFootball": 708851,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 11",
+   "kickoff": "2022-02-03T03:00:00.000Z",
+   "home": {
+    "name": "Mexico",
+    "sourceId": "af:16",
+    "badge": "https://media.api-sports.io/football/teams/16.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Azteca"
+  },
+  {
+   "id": "af:708854",
+   "sources": {
+    "apiFootball": 708854,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 12",
+   "kickoff": "2022-03-25T01:05:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Honduras",
+    "sourceId": "af:4672",
+    "badge": "https://media.api-sports.io/football/teams/4672.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:708860",
+   "sources": {
+    "apiFootball": 708860,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 13",
+   "kickoff": "2022-03-27T23:00:00.000Z",
+   "home": {
+    "name": "USA",
+    "sourceId": "af:2384",
+    "badge": "https://media.api-sports.io/football/teams/2384.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 5,
+    "away": 1
+   },
+   "venue": "Exploria Stadium"
+  },
+  {
+   "id": "af:708861",
+   "sources": {
+    "apiFootball": 708861,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "World Cup - Qualification CONCACAF",
+   "season": "2022",
+   "round": "Final Round - 14",
+   "kickoff": "2022-03-31T01:05:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Canada",
+    "sourceId": "af:5529",
+    "badge": "https://media.api-sports.io/football/teams/5529.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:821417",
+   "sources": {
+    "apiFootball": 821417,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-01-16T21:00:00.000Z",
+   "home": {
+    "name": "Peru",
+    "sourceId": "af:30",
+    "badge": "https://media.api-sports.io/football/teams/30.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Estadio Nacional de Lima"
+  },
+  {
+   "id": "af:856800",
+   "sources": {
+    "apiFootball": 856800,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2022",
+   "round": "League A - 1",
+   "kickoff": "2022-06-02T23:30:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:856808",
+   "sources": {
+    "apiFootball": 856808,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2022",
+   "round": "League A - 4",
+   "kickoff": "2022-06-12T22:00:00.000Z",
+   "home": {
+    "name": "Martinique",
+    "sourceId": "af:8117",
+    "badge": "https://media.api-sports.io/football/teams/8117.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "Stade Municipal Pierre-Aliker"
+  },
+  {
+   "id": "af:856812",
+   "sources": {
+    "apiFootball": 856812,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2022",
+   "round": "League A - 3",
+   "kickoff": "2022-06-10T00:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Martinique",
+    "sourceId": "af:8117",
+    "badge": "https://media.api-sports.io/football/teams/8117.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 5,
+    "away": 0
+   },
+   "venue": "Estadio Rommel Fernández Gutiérrez"
+  },
+  {
+   "id": "af:856822",
+   "sources": {
+    "apiFootball": 856822,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2022",
+   "round": "League A - 6",
+   "kickoff": "2023-03-29T02:00:00.000Z",
+   "home": {
+    "name": "Costa Rica",
+    "sourceId": "af:29",
+    "badge": "https://media.api-sports.io/football/teams/29.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Estadio Nacional de Costa Rica"
+  },
+  {
+   "id": "af:857607",
+   "sources": {
+    "apiFootball": 857607,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-05-01T20:30:00.000Z",
+   "home": {
+    "name": "El Salvador",
+    "sourceId": "af:5159",
+    "badge": "https://media.api-sports.io/football/teams/5159.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "void",
+   "rawStatus": "CANC",
+   "score": null,
+   "venue": "WakeMed Soccer Park"
+  },
+  {
+   "id": "af:864292",
+   "sources": {
+    "apiFootball": 864292,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-06-05T23:00:00.000Z",
+   "home": {
+    "name": "Canada",
+    "sourceId": "af:5529",
+    "badge": "https://media.api-sports.io/football/teams/5529.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "void",
+   "rawStatus": "CANC",
+   "score": null,
+   "venue": "BC Place Stadium"
+  },
+  {
+   "id": "af:865799",
+   "sources": {
+    "apiFootball": 865799,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-06-11T20:00:00.000Z",
+   "home": {
+    "name": "Uruguay",
+    "sourceId": "af:7",
+    "badge": "https://media.api-sports.io/football/teams/7.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 5,
+    "away": 0
+   },
+   "venue": "Estadio Centenario"
+  },
+  {
+   "id": "af:942160",
+   "sources": {
+    "apiFootball": 942160,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-11-10T12:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Saudi Arabia",
+    "sourceId": "af:23",
+    "badge": "https://media.api-sports.io/football/teams/23.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Sheikh Zayed Cricket Stadium"
+  },
+  {
+   "id": "af:945813",
+   "sources": {
+    "apiFootball": 945813,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-09-27T15:30:00.000Z",
+   "home": {
+    "name": "Bahrain",
+    "sourceId": "af:1547",
+    "badge": "https://media.api-sports.io/football/teams/1547.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Stād al-Bahrayn al-Watanī"
+  },
+  {
+   "id": "af:965548",
+   "sources": {
+    "apiFootball": 965548,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-11-18T10:00:00.000Z",
+   "home": {
+    "name": "Cameroon",
+    "sourceId": "af:1530",
+    "badge": "https://media.api-sports.io/football/teams/1530.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Mohammed Bin Zayed Stadium"
+  },
+  {
+   "id": "af:966908",
+   "sources": {
+    "apiFootball": 966908,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-11-05T17:30:00.000Z",
+   "home": {
+    "name": "Qatar",
+    "sourceId": "af:1569",
+    "badge": "https://media.api-sports.io/football/teams/1569.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Marbella Football Center - Sur 1"
+  },
+  {
+   "id": "af:973239",
+   "sources": {
+    "apiFootball": 973239,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Friendlies",
+   "season": "2022",
+   "round": "Friendlies 1",
+   "kickoff": "2022-11-15T17:00:00.000Z",
+   "home": {
+    "name": "Venezuela",
+    "sourceId": "af:2379",
+    "badge": "https://media.api-sports.io/football/teams/2379.png"
+   },
+   "away": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 2
+   },
+   "venue": "Al-Hamriya Sports Club Stadium"
+  },
+  {
+   "id": "af:1019252",
+   "sources": {
+    "apiFootball": 1019252,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2022",
+   "round": "Semi-finals",
+   "kickoff": "2023-06-15T23:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Canada",
+    "sourceId": "af:5529",
+    "badge": "https://media.api-sports.io/football/teams/5529.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 2
+   },
+   "venue": "Allegiant Stadium"
+  },
+  {
+   "id": "af:1035659",
+   "sources": {
+    "apiFootball": 1035659,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "CONCACAF Nations League",
+   "season": "2022",
+   "round": "3rd Place Final",
+   "kickoff": "2023-06-18T22:00:00.000Z",
+   "home": {
+    "name": "Panama",
+    "sourceId": "af:11",
+    "badge": "https://media.api-sports.io/football/teams/11.png"
+   },
+   "away": {
+    "name": "Mexico",
+    "sourceId": "af:16",
+    "badge": "https://media.api-sports.io/football/teams/16.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Allegiant Stadium"
+  }
+ ]
+}

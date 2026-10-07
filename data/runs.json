@@ -1,0 +1,20 @@
+{
+ "runs": [
+  {
+   "at": "2026-10-07T14:01:28.006Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-10-04",
+    "to": "2026-10-14"
+   },
+   "fetched": 11,
+   "added": 0,
+   "updated": 0,
+   "newlyFinished": [],
+   "unsettled": [
+    "af:1632353"
+   ]
+  }
+ ]
+}

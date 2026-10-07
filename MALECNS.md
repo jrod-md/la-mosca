@@ -71,6 +71,19 @@ npm run dev
 
 Para reemplazar una extracción previa hace falta `--overwrite`. Una consulta fallida no reemplaza el archivo existente. El JSON solo se escribe después de verificarlo y serializarlo sin NaN; el reemplazo se realiza desde un archivo temporal hermano. Es necesario reconstruir la app desplegada para incorporar un nuevo JSON.
 
+## Circuito del mushroom body (aprendizaje)
+
+`scripts/extract_mushroom_body.py` exporta `src/data/generated/malecns_mushroom_body.json`: PN (entrada), KC (codificación dispersa), MBON (salida) y DAN de recompensa/castigo. Los roles salen solo de tipos exactos pasados por CLI; la división recompensa (PAM) / castigo (PPL1) es una decisión del proyecto basada en literatura, no una anotación del dataset.
+
+```powershell
+.\.venv\Scripts\python.exe scripts/extract_mushroom_body.py --inspect > mb_inspect.json
+.\.venv\Scripts\python.exe scripts/extract_mushroom_body.py --side "LADO_VERIFICADO" `
+  --pn-type "TIPO_PN" --kc-type "TIPO_KC" --mbon-type "TIPO_MBON" `
+  --dan-reward-type "TIPO_PAM" --dan-punishment-type "TIPO_PPL1"
+```
+
+Cada `--*-type` se repite. Las KC se eligen por mayor entrada total desde las PN seleccionadas, alternando tipos. Se conservan todas las aristas inducidas al umbral (`--min-weight`, 3 por defecto); si exceden 12.000 o faltan etapas (PN→KC, KC→MBON, DAN→KC|MBON), el extractor falla en vez de recortar.
+
 ## Metodología exacta del extractor
 
 1. Verificar acceso a `male-cns:v1.0`; descubrir claves de `Neuron` disponibles.
