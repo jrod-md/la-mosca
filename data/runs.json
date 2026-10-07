@@ -47,6 +47,24 @@
    "unsettled": [
     "af:1632353"
    ]
+  },
+  {
+   "at": "2026-10-07T17:36:34.716Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-10-04",
+    "to": "2026-10-14"
+   },
+   "fetched": 15,
+   "added": 5,
+   "updated": 0,
+   "newlyFinished": [
+    "elo:2026-09-25:IN-PA",
+    "elo:2026-10-01:NZ-PA",
+    "elo:2026-10-05:EC-PA"
+   ],
+   "unsettled": []
   }
  ]
 }

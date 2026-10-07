@@ -2,8 +2,10 @@
 import stateFile from '../../data/fly/state.json'
 import betsFile from '../../data/fly/bets.json'
 import upcomingFile from '../../data/fly/upcoming.json'
-import { summary as infancySummary, affinity as infancyAffinity, curve as infancyCurve, bankruptAt as infancyBankruptAt, matches as infancyMatches, from as infancyFrom, to as infancyTo } from '../../data/fly/infancy.json'
+import tastesFile from '../../data/fly/tastes.json'
+import { summary as infancySummary, curve as infancyCurve, bankruptAt as infancyBankruptAt, matches as infancyMatches, from as infancyFrom, to as infancyTo } from '../../data/fly/infancy.json'
 import type { Bet, BetBook, FlyState, Pass } from '../brain/fly'
+import type { TasteLog } from '../brain/tastes'
 import type { UpcomingMatch } from '../odds/upcoming'
 
 export const REPO_URL = 'https://github.com/jrod-md/la-mosca'
@@ -15,6 +17,7 @@ const book = betsFile as unknown as BetBook
 export const liveBets: Bet[] = book.bets.filter(bet => bet.phase === 'live')
 export const passes: Pass[] = book.passes ?? []
 export const upcoming = (upcomingFile as unknown as { matches: UpcomingMatch[] }).matches
+export const tastes = tastesFile as unknown as TasteLog
 export const upcomingGeneratedAt = (upcomingFile as { generatedAt: string }).generatedAt
 
 export const infancy = {
@@ -24,7 +27,6 @@ export const infancy = {
   to: infancyTo,
   curve: infancyCurve as [string, number][],
   bankruptAt: infancyBankruptAt as number[],
-  affinity: infancyAffinity as { team: string; innate: number; learned: number }[],
 }
 
 // The full infancy bet list is large; it loads only when someone asks to see it.

@@ -36,13 +36,13 @@ export const useStory = (brain: Brain | null): Story => {
       case 'settled': {
         const bet = featured.bet
         const match = featured.kind === 'open' ? featured.match : null
-        return { ...base, fixture: { id: bet.matchId, home: bet.home, away: bet.away }, homeName: teamName(bet.home), awayName: teamName(bet.away), kickoff: bet.kickoff,
-          venue: match?.venue ?? null, competition: match?.competition ?? 'lpf', odds: match?.odds ?? null, options: bet.options, selection: bet.selection, bet }
+        return { ...base, fixture: { id: bet.matchId, home: bet.home, away: bet.away }, homeName: bet.homeName ?? teamName(bet.home), awayName: bet.awayName ?? teamName(bet.away), kickoff: bet.kickoff,
+          venue: match?.venue ?? null, competition: match?.competition ?? (bet.matchId.startsWith('elo:') ? 'panama' : 'lpf'), odds: match?.odds ?? null, options: bet.options, selection: bet.selection, bet }
       }
       case 'passed': {
         const { pass, match } = featured
-        return { ...base, fixture: { id: pass.matchId, home: pass.home, away: pass.away }, homeName: teamName(pass.home), awayName: teamName(pass.away), kickoff: pass.kickoff,
-          venue: match?.venue ?? null, competition: match?.competition ?? 'lpf', odds: match?.odds ?? null, options: pass.options }
+        return { ...base, fixture: { id: pass.matchId, home: pass.home, away: pass.away }, homeName: pass.homeName ?? teamName(pass.home), awayName: pass.awayName ?? teamName(pass.away), kickoff: pass.kickoff,
+          venue: match?.venue ?? null, competition: match?.competition ?? (pass.matchId.startsWith('elo:') ? 'panama' : 'lpf'), odds: match?.odds ?? null, options: pass.options }
       }
       case 'thinking': {
         const { match } = featured

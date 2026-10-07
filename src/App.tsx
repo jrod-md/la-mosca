@@ -1,7 +1,7 @@
 import { lazy, Suspense, useMemo } from 'react'
 import { FLY_PARAMS } from './brain/fly'
 import { flyState, mareaRoja, REPO_URL, stateUpdatedAt } from './site/data'
-import { day, kickoff, money, percent } from './site/format'
+import { day, matchTime, money, percent } from './site/format'
 import { LanguageProvider, useLanguage, useT } from './site/i18n'
 import BrainPanel from './site/BrainPanel'
 import { Infancy, Ledger, Tastes } from './site/Record'
@@ -27,7 +27,7 @@ function Page() {
         : t('brainLoading')
     return {
       header: red || story.competition === 'panama' ? t('seleHeader') : 'LPF',
-      when: story.kickoff ? kickoff(story.kickoff, language) : '',
+      when: story.kickoff && story.fixture ? matchTime(story.kickoff, story.fixture.id, language) : '',
       home: story.homeName || t('brand'),
       away: story.awayName || '',
       odds,

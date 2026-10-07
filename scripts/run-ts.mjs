@@ -11,7 +11,8 @@ if (!entry) {
 }
 mkdirSync('node_modules/.tmp', { recursive: true })
 const outfile = `node_modules/.tmp/${basename(entry, '.ts')}.cjs`
-await build({ entryPoints: [entry], bundle: true, platform: 'node', format: 'cjs', outfile, logLevel: 'warning' })
+// Native addons (the share card renderer) load from node_modules at runtime instead of being bundled.
+await build({ entryPoints: [entry], bundle: true, platform: 'node', format: 'cjs', outfile, logLevel: 'warning', external: ['@resvg/resvg-js'] })
 const result = spawnSync(process.execPath, [outfile, ...args], { stdio: 'inherit' })
 if (result.error) throw result.error
 process.exitCode = result.status ?? 1

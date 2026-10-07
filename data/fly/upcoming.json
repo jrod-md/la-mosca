@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T15:49:36.002Z",
+ "generatedAt": "2026-10-07T17:39:34.777Z",
  "matches": [
   {
    "id": "af:1583783",
@@ -7,6 +7,7 @@
    "league": "Panama Liga Panamena de Futbol",
    "round": "12",
    "kickoff": "2026-10-10T01:30:00.000Z",
+   "kickoffTimeKnown": true,
    "venue": "Estadio Agustín Sánchez",
    "home": {
     "key": "san-francisco",
@@ -81,6 +82,7 @@
    "league": "Panama Liga Panamena de Futbol",
    "round": "12",
    "kickoff": "2026-10-10T23:15:00.000Z",
+   "kickoffTimeKnown": true,
    "venue": "Estadio Agustín Sánchez",
    "home": {
     "key": "independiente",
@@ -155,6 +157,7 @@
    "league": "Panama Liga Panamena de Futbol",
    "round": "12",
    "kickoff": "2026-10-11T01:30:00.000Z",
+   "kickoffTimeKnown": true,
    "venue": "COS Sports Plaza",
    "home": {
     "key": "plaza-amador",
@@ -229,6 +232,7 @@
    "league": "Panama Liga Panamena de Futbol",
    "round": "12",
    "kickoff": "2026-10-11T21:00:00.000Z",
+   "kickoffTimeKnown": true,
    "venue": "Estadio Virgilio Tejeira",
    "home": {
     "key": "union-cocle",
@@ -303,6 +307,7 @@
    "league": "Panama Liga Panamena de Futbol",
    "round": "12",
    "kickoff": "2026-10-11T23:15:00.000Z",
+   "kickoffTimeKnown": true,
    "venue": "Estadio Futuras Promesas",
    "home": {
     "key": "umecit",
@@ -377,6 +382,7 @@
    "league": "Panama Liga Panamena de Futbol",
    "round": "12",
    "kickoff": "2026-10-13T01:30:00.000Z",
+   "kickoffTimeKnown": true,
    "venue": "Estadio Los Andes",
    "home": {
     "key": "sporting-sm",
@@ -443,6 +449,156 @@
     "away": 0.308,
     "over25": 0.418,
     "btts": 0.486
+   }
+  },
+  {
+   "id": "elo:2026-11-13:CW-PA",
+   "competition": "panama",
+   "league": "Liga de Naciones Concacaf",
+   "round": null,
+   "kickoff": "2026-11-13T12:00:00.000Z",
+   "kickoffTimeKnown": false,
+   "venue": "Curazao",
+   "home": {
+    "key": "nt:CW",
+    "name": "Curazao",
+    "badge": null
+   },
+   "away": {
+    "key": "nt:PA",
+    "name": "Panamá",
+    "badge": null
+   },
+   "odds": {
+    "result": {
+     "home": 3.29,
+     "draw": 3.18,
+     "away": 2.26
+    },
+    "total25": {
+     "over": 2.46,
+     "under": 1.53
+    },
+    "btts": {
+     "yes": 2.1,
+     "no": 1.71
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.34
+     },
+     {
+      "score": "0-1",
+      "odds": 6.72
+     },
+     {
+      "score": "0-0",
+      "odds": 7.66
+     },
+     {
+      "score": "1-0",
+      "odds": 8.6
+     },
+     {
+      "score": "0-2",
+      "odds": 10.41
+     },
+     {
+      "score": "1-2",
+      "odds": 10.61
+     },
+     {
+      "score": "2-1",
+      "odds": 13.44
+     },
+     {
+      "score": "2-0",
+      "odds": 16.69
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.286,
+    "draw": 0.297,
+    "away": 0.417,
+    "over25": 0.383,
+    "btts": 0.449
+   }
+  },
+  {
+   "id": "elo:2026-11-16:PA-CW",
+   "competition": "panama",
+   "league": "Liga de Naciones Concacaf",
+   "round": null,
+   "kickoff": "2026-11-16T12:00:00.000Z",
+   "kickoffTimeKnown": false,
+   "venue": "Panamá",
+   "home": {
+    "key": "nt:PA",
+    "name": "Panamá",
+    "badge": null
+   },
+   "away": {
+    "key": "nt:CW",
+    "name": "Curazao",
+    "badge": null
+   },
+   "odds": {
+    "result": {
+     "home": 1.47,
+     "draw": 4.12,
+     "away": 7.3
+    },
+    "total25": {
+     "over": 2.09,
+     "under": 1.72
+    },
+    "btts": {
+     "yes": 2.28,
+     "no": 1.61
+    },
+    "correctScore": [
+     {
+      "score": "1-0",
+      "odds": 5.91
+     },
+     {
+      "score": "2-0",
+      "odds": 6.37
+     },
+     {
+      "score": "1-1",
+      "odds": 8.22
+     },
+     {
+      "score": "2-1",
+      "odds": 9.45
+     },
+     {
+      "score": "0-0",
+      "odds": 9.92
+     },
+     {
+      "score": "3-0",
+      "odds": 10.57
+     },
+     {
+      "score": "3-1",
+      "odds": 15.68
+     },
+     {
+      "score": "0-1",
+      "odds": 16.58
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.642,
+    "draw": 0.229,
+    "away": 0.129,
+    "over25": 0.451,
+    "btts": 0.414
    }
   }
  ]

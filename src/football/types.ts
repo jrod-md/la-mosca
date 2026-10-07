@@ -25,6 +25,9 @@ export interface Match {
   rawStatus: string | null
   score: { home: number; away: number } | null
   venue: string | null
+  // National team matches (eloratings): only the date is known, and the country where it is played.
+  kickoffTimeKnown?: boolean
+  venueCountry?: string | null
 }
 
 export interface MatchLedger {

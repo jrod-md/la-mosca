@@ -1,4 +1,4 @@
-import { teamKey } from '../football/teams'
+import { displayName, teamKey } from '../football/teams'
 import type { Match } from '../football/types'
 import type { MatchOdds } from '../odds/odds'
 import { perceive, type MbCircuit } from './circuit'
@@ -50,6 +50,9 @@ export interface Bet {
   kickoff: string
   home: string
   away: string
+  // Display names; league bets can fall back to teamName(), national teams cannot.
+  homeName?: string
+  awayName?: string
   market: '1x2'
   options: OptionView[]
   selection: Selection
@@ -67,7 +70,7 @@ export interface Bet {
 }
 
 // A recorded decision not to bet; kept public so the fly cannot reconsider later.
-export interface Pass { matchId: string; decidedAt: string; kickoff: string; home: string; away: string; options: OptionView[] }
+export interface Pass { matchId: string; decidedAt: string; kickoff: string; home: string; away: string; homeName?: string; awayName?: string; options: OptionView[] }
 
 export interface BetBook { bets: Bet[]; passes?: Pass[] }
 
@@ -140,6 +143,7 @@ export class Fly {
     this.state.bankroll = round2(this.state.bankroll - stake)
     return {
       id: `bet:${match.id}`, matchId: match.id, phase, placedAt, kickoff: match.kickoff, home: teamKey(match.home), away: teamKey(match.away),
+      homeName: displayName(match.home), awayName: displayName(match.away),
       market: '1x2', options: decision.options, selection: choice.selection, odds: choice.odds, stake, boldness: round2(boldness), dared: decision.dared,
       tilted: this.state.tilted, activeKcs: decision.activeKcs.map(kc => this.circuit.kc[kc].id), status: 'open', payout: 0,
       bankrollAfter: this.state.bankroll, result: null, bankrupt: false,

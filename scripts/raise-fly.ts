@@ -4,6 +4,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import { buildCircuit } from '../src/brain/circuit'
 import { Fly, FLY_PARAMS, fixtureOf, type Bet } from '../src/brain/fly'
+import { recordSnapshot, snapshot, type TasteLog } from '../src/brain/tastes'
 import { mergeMatches } from '../src/football/ledger'
 import { LPF_TEAMS, teamName } from '../src/football/teams'
 import type { Match, MatchLedger } from '../src/football/types'
@@ -31,6 +32,7 @@ const ledger = existsSync('data/matches.json') ? read<MatchLedger>('data/matches
 const matches = mergeMatches(history, ledger).matches.filter(match => match.status === 'finished')
 
 const fly = Fly.newborn(circuit)
+const innateTastes = snapshot(fly)
 const innate = LPF_TEAMS.map(team => ({ team: team.id, affinity: fly.teamAffinity(team.id) }))
 const book = new EloBook(params.elo)
 const bets: Bet[] = []
@@ -67,6 +69,8 @@ write('data/fly/infancy.json', {
 write('data/fly/infancy-bets.json', { bets })
 write('data/fly/state.json', { updatedAt: now, phase: 'ready-for-live', lastInfancyMatch: matches.at(-1)?.id, state: fly.state })
 write('data/fly/bets.json', { bets: [], passes: [] })
+// Taste log: innate preferences plus a first snapshot at the end of childhood.
+write('data/fly/tastes.json', recordSnapshot({ innate: innateTastes, history: [] }, now.slice(0, 10), snapshot(fly)) satisfies TasteLog)
 
 console.log(`Infancy: ${matches.length} matches (${matches[0]?.kickoff.slice(0, 10)} to ${matches.at(-1)?.kickoff.slice(0, 10)}), ${bets.length} bets, ${skipped} avoided.`)
 console.log(`Hit rate ${pct(won.length, bets.length)} | staked B/.${staked.toFixed(2)} returned B/.${returned.toFixed(2)} | ROI ${pct(returned - staked, staked)}`)

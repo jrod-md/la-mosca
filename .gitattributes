@@ -1,0 +1,3 @@
+# Font licenses are kept verbatim (they contain trailing spaces); fonts are binary.
+scripts/fonts/*.txt -whitespace
+*.ttf binary

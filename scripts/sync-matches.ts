@@ -1,7 +1,9 @@
-// Daily sync: LPF fixtures/results and Panama national team from TheSportsDB (free, no key).
+// Daily sync: LPF fixtures/results from TheSportsDB (free, no key); Panama's national team
+// fixtures, results and every team's rating from eloratings.net (written to data/international/).
 // Backfill: --from YYYY-MM-DD --to YYYY-MM-DD walks every day in the range, checkpointing as it goes.
 // data/matches.json only receives fully fetched days; data/runs.json records every run.
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
+import { createEloratingsClient } from '../src/football/eloratings'
 import { createTheSportsDbClient } from '../src/football/theSportsDb'
 import { mergeMatches, utcDay } from '../src/football/ledger'
 import { appendRun, type RunEntry, type RunLog } from '../src/football/runLog'
@@ -9,14 +11,20 @@ import type { JsonFetch, Match, MatchLedger } from '../src/football/types'
 
 const OUTPUT = 'data/matches.json'
 const RUNS = 'data/runs.json'
+const RATINGS = 'data/international/ratings.json'
 const DAYS_BACK = 3
 const DAYS_AHEAD = 7
 const CHECKPOINT_DAYS = 30
 const pause = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
 const readJson = <T>(file: string, fallback: T): T => existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : fallback
+const fetchText = async (url: string) => {
+  const response = await fetch(url, { headers: { 'user-agent': 'la-mosca (github.com/jrod-md/la-mosca)' } })
+  if (!response.ok) throw new Error(`eloratings ${url.split('/').pop()} failed with HTTP ${response.status}`)
+  return response.text()
+}
 const writeJson = (file: string, value: unknown) => {
-  mkdirSync('data', { recursive: true })
+  mkdirSync(file.slice(0, file.lastIndexOf('/')), { recursive: true })
   writeFileSync(`${file}.tmp`, JSON.stringify(value, null, 1) + '\n')
   renameSync(`${file}.tmp`, file)
 }
@@ -50,7 +58,11 @@ const sync = async (now: Date, from: string, to: string, backfill: boolean): Pro
       console.log(`  checkpoint ${utcDay(start, offset)}: ${matches.length} matches in ledger`)
     }
   }
-  const panama = await client.panamaRecent()
+  const elo = createEloratingsClient(fetchText)
+  const [names, ratings] = await Promise.all([elo.names(), elo.ratings()])
+  if (Object.keys(ratings).length < 150) throw new Error('eloratings World.tsv looks incomplete')
+  writeJson(RATINGS, { fetchedAt: now.toISOString(), source: 'World Football Elo Ratings (eloratings.net)', ratings })
+  const panama = await elo.panamaMatches(names, utcDay(now, -45))
   pending.push(...panama)
   fetched += panama.length
   for (const match of pending) if (match.status === 'unknown') unsettled.set(match.id, match)

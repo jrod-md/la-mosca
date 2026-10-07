@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node tests/run.mjs",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/run-ts.mjs scripts/og-image.ts",
     "preview": "vite preview",
     "typecheck": "tsc -b --pretty false",
     "sync:matches": "node scripts/run-ts.mjs scripts/sync-matches.ts",
@@ -17,7 +17,8 @@
     "calibrate:odds": "node scripts/run-ts.mjs scripts/calibrate-odds.ts",
     "fly:raise": "node scripts/run-ts.mjs scripts/raise-fly.ts",
     "fly:daily": "node scripts/run-ts.mjs scripts/fly-daily.ts",
-    "fly:upcoming": "node scripts/run-ts.mjs scripts/fly-daily.ts --upcoming-only"
+    "fly:upcoming": "node scripts/run-ts.mjs scripts/fly-daily.ts --upcoming-only",
+    "calibrate:international": "node scripts/run-ts.mjs scripts/calibrate-international.ts"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -25,6 +26,7 @@
     "three": "^0.186.1"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "@types/three": "^0.186.0",

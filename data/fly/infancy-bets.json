@@ -8,6 +8,8 @@
    "kickoff": "2022-02-05T01:00:00.000Z",
    "home": "tauro",
    "away": "sporting-sm",
+   "homeName": "Tauro FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -67,6 +69,8 @@
    "kickoff": "2022-02-05T21:00:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -126,6 +130,8 @@
    "kickoff": "2022-02-05T23:00:00.000Z",
    "home": "plaza-amador",
    "away": "potros-del-este",
+   "homeName": "Plaza Amador",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -185,6 +191,8 @@
    "kickoff": "2022-02-06T01:00:00.000Z",
    "home": "san-francisco",
    "away": "veraguas",
+   "homeName": "San Francisco FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -244,6 +252,8 @@
    "kickoff": "2022-02-06T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -303,6 +313,8 @@
    "kickoff": "2022-02-06T23:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "independiente",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -362,6 +374,8 @@
    "kickoff": "2022-02-12T01:00:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -421,6 +435,8 @@
    "kickoff": "2022-02-12T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "arabe-unido",
+   "homeName": "Potros del Este",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -480,6 +496,8 @@
    "kickoff": "2022-02-12T23:00:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -539,6 +557,8 @@
    "kickoff": "2022-02-13T01:00:00.000Z",
    "home": "tauro",
    "away": "alianza",
+   "homeName": "Tauro FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -598,6 +618,8 @@
    "kickoff": "2022-02-13T21:00:00.000Z",
    "home": "universitario",
    "away": "atletico-chiriqui",
+   "homeName": "Universitario",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -657,6 +679,8 @@
    "kickoff": "2022-02-13T23:00:00.000Z",
    "home": "herrera",
    "away": "veraguas",
+   "homeName": "Herrera FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -716,6 +740,8 @@
    "kickoff": "2022-02-19T01:00:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -775,6 +801,8 @@
    "kickoff": "2022-02-19T21:00:00.000Z",
    "home": "universitario",
    "away": "veraguas",
+   "homeName": "Universitario",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -834,6 +862,8 @@
    "kickoff": "2022-02-19T23:00:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -893,6 +923,8 @@
    "kickoff": "2022-02-20T01:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "san-francisco",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -952,6 +984,8 @@
    "kickoff": "2022-02-20T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -1011,6 +1045,8 @@
    "kickoff": "2022-02-20T23:00:00.000Z",
    "home": "alianza",
    "away": "potros-del-este",
+   "homeName": "Alianza FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -1070,6 +1106,8 @@
    "kickoff": "2022-02-26T01:00:00.000Z",
    "home": "san-francisco",
    "away": "universitario",
+   "homeName": "San Francisco FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -1129,6 +1167,8 @@
    "kickoff": "2022-02-26T23:00:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -1188,6 +1228,8 @@
    "kickoff": "2022-02-27T01:00:00.000Z",
    "home": "veraguas",
    "away": "independiente",
+   "homeName": "Veraguas United",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -1247,6 +1289,8 @@
    "kickoff": "2022-02-27T21:00:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -1306,6 +1350,8 @@
    "kickoff": "2022-02-27T23:00:00.000Z",
    "home": "herrera",
    "away": "atletico-chiriqui",
+   "homeName": "Herrera FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -1365,6 +1411,8 @@
    "kickoff": "2022-03-05T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "potros-del-este",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -1424,6 +1472,8 @@
    "kickoff": "2022-03-05T01:00:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -1483,6 +1533,8 @@
    "kickoff": "2022-03-05T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -1542,6 +1594,8 @@
    "kickoff": "2022-03-05T21:00:00.000Z",
    "home": "plaza-amador",
    "away": "alianza",
+   "homeName": "Plaza Amador",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -1601,6 +1655,8 @@
    "kickoff": "2022-03-05T23:00:00.000Z",
    "home": "veraguas",
    "away": "atletico-chiriqui",
+   "homeName": "Veraguas United",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -1660,6 +1716,8 @@
    "kickoff": "2022-03-06T01:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -1719,6 +1777,8 @@
    "kickoff": "2022-03-08T21:00:00.000Z",
    "home": "universitario",
    "away": "sporting-sm",
+   "homeName": "Universitario",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -1778,6 +1838,8 @@
    "kickoff": "2022-03-09T01:00:00.000Z",
    "home": "san-francisco",
    "away": "arabe-unido",
+   "homeName": "San Francisco FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -1837,6 +1899,8 @@
    "kickoff": "2022-03-09T01:00:00.000Z",
    "home": "herrera",
    "away": "tauro",
+   "homeName": "Herrera FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -1896,6 +1960,8 @@
    "kickoff": "2022-03-10T01:00:00.000Z",
    "home": "independiente",
    "away": "potros-del-este",
+   "homeName": "Independiente",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -1955,6 +2021,8 @@
    "kickoff": "2022-03-10T01:00:00.000Z",
    "home": "alianza",
    "away": "veraguas",
+   "homeName": "Alianza FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -2014,6 +2082,8 @@
    "kickoff": "2022-03-10T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "atletico-chiriqui",
+   "homeName": "Plaza Amador",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -2073,6 +2143,8 @@
    "kickoff": "2022-03-12T23:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "tauro",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -2132,6 +2204,8 @@
    "kickoff": "2022-03-13T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "herrera",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -2191,6 +2265,8 @@
    "kickoff": "2022-03-13T21:00:00.000Z",
    "home": "independiente",
    "away": "arabe-unido",
+   "homeName": "Independiente",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -2250,6 +2326,8 @@
    "kickoff": "2022-03-13T23:00:00.000Z",
    "home": "alianza",
    "away": "san-francisco",
+   "homeName": "Alianza FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -2309,6 +2387,8 @@
    "kickoff": "2022-03-13T23:00:00.000Z",
    "home": "veraguas",
    "away": "plaza-amador",
+   "homeName": "Veraguas United",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -2368,6 +2448,8 @@
    "kickoff": "2022-03-19T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "independiente",
+   "homeName": "Plaza Amador",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -2427,6 +2509,8 @@
    "kickoff": "2022-03-19T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "atletico-chiriqui",
+   "homeName": "Potros del Este",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -2486,6 +2570,8 @@
    "kickoff": "2022-03-19T23:00:00.000Z",
    "home": "veraguas",
    "away": "sporting-sm",
+   "homeName": "Veraguas United",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -2545,6 +2631,8 @@
    "kickoff": "2022-03-20T01:00:00.000Z",
    "home": "herrera",
    "away": "alianza",
+   "homeName": "Herrera FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -2604,6 +2692,8 @@
    "kickoff": "2022-03-20T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "universitario",
+   "homeName": "Árabe Unido",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -2663,6 +2753,8 @@
    "kickoff": "2022-03-26T01:00:00.000Z",
    "home": "san-francisco",
    "away": "sporting-sm",
+   "homeName": "San Francisco FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -2722,6 +2814,8 @@
    "kickoff": "2022-03-26T01:00:00.000Z",
    "home": "alianza",
    "away": "universitario",
+   "homeName": "Alianza FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -2781,6 +2875,8 @@
    "kickoff": "2022-03-26T01:00:00.000Z",
    "home": "veraguas",
    "away": "potros-del-este",
+   "homeName": "Veraguas United",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -2840,6 +2936,8 @@
    "kickoff": "2022-03-26T21:00:00.000Z",
    "home": "tauro",
    "away": "independiente",
+   "homeName": "Tauro FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -2899,6 +2997,8 @@
    "kickoff": "2022-03-26T22:00:00.000Z",
    "home": "plaza-amador",
    "away": "herrera",
+   "homeName": "Plaza Amador",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -2958,6 +3058,8 @@
    "kickoff": "2022-03-27T01:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "arabe-unido",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -3017,6 +3119,8 @@
    "kickoff": "2022-04-02T01:00:00.000Z",
    "home": "san-francisco",
    "away": "plaza-amador",
+   "homeName": "San Francisco FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -3076,6 +3180,8 @@
    "kickoff": "2022-04-02T01:00:00.000Z",
    "home": "herrera",
    "away": "potros-del-este",
+   "homeName": "Herrera FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -3135,6 +3241,8 @@
    "kickoff": "2022-04-02T23:00:00.000Z",
    "home": "independiente",
    "away": "alianza",
+   "homeName": "Independiente",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -3194,6 +3302,8 @@
    "kickoff": "2022-04-03T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "veraguas",
+   "homeName": "Árabe Unido",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -3253,6 +3363,8 @@
    "kickoff": "2022-04-03T23:00:00.000Z",
    "home": "sporting-sm",
    "away": "atletico-chiriqui",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -3312,6 +3424,8 @@
    "kickoff": "2022-04-09T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "independiente",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -3371,6 +3485,8 @@
    "kickoff": "2022-04-09T01:00:00.000Z",
    "home": "tauro",
    "away": "veraguas",
+   "homeName": "Tauro FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -3430,6 +3546,8 @@
    "kickoff": "2022-04-10T01:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "alianza",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -3489,6 +3607,8 @@
    "kickoff": "2022-04-10T21:00:00.000Z",
    "home": "universitario",
    "away": "plaza-amador",
+   "homeName": "Universitario",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -3548,6 +3668,8 @@
    "kickoff": "2022-04-10T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "herrera",
+   "homeName": "Árabe Unido",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -3607,6 +3729,8 @@
    "kickoff": "2022-04-23T01:00:00.000Z",
    "home": "veraguas",
    "away": "herrera",
+   "homeName": "Veraguas United",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -3666,6 +3790,8 @@
    "kickoff": "2022-04-23T01:00:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -3725,6 +3851,8 @@
    "kickoff": "2022-04-23T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -3784,6 +3912,8 @@
    "kickoff": "2022-04-23T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "potros-del-este",
+   "homeName": "Árabe Unido",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -3843,6 +3973,8 @@
    "kickoff": "2022-04-24T01:00:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -3902,6 +4034,8 @@
    "kickoff": "2022-04-26T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "alianza",
+   "homeName": "Potros del Este",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -3961,6 +4095,8 @@
    "kickoff": "2022-04-26T23:00:00.000Z",
    "home": "san-francisco",
    "away": "atletico-chiriqui",
+   "homeName": "San Francisco FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -4020,6 +4156,8 @@
    "kickoff": "2022-04-27T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -4079,6 +4217,8 @@
    "kickoff": "2022-04-28T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "tauro",
+   "homeName": "Plaza Amador",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -4138,6 +4278,8 @@
    "kickoff": "2022-04-28T01:00:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -4197,6 +4339,8 @@
    "kickoff": "2022-04-28T01:00:00.000Z",
    "home": "veraguas",
    "away": "universitario",
+   "homeName": "Veraguas United",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -4256,6 +4400,8 @@
    "kickoff": "2022-04-30T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -4315,6 +4461,8 @@
    "kickoff": "2022-04-30T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -4374,6 +4522,8 @@
    "kickoff": "2022-05-01T01:10:00.000Z",
    "home": "independiente",
    "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -4433,6 +4583,8 @@
    "kickoff": "2022-05-01T23:05:00.000Z",
    "home": "atletico-chiriqui",
    "away": "herrera",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -4492,6 +4644,8 @@
    "kickoff": "2022-05-03T23:00:00.000Z",
    "home": "alianza",
    "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -4551,6 +4705,8 @@
    "kickoff": "2022-05-04T01:05:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -4610,6 +4766,8 @@
    "kickoff": "2022-05-04T23:00:00.000Z",
    "home": "potros-del-este",
    "away": "plaza-amador",
+   "homeName": "Potros del Este",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -4669,6 +4827,8 @@
    "kickoff": "2022-05-04T23:00:00.000Z",
    "home": "veraguas",
    "away": "san-francisco",
+   "homeName": "Veraguas United",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -4728,6 +4888,8 @@
    "kickoff": "2022-05-05T01:00:00.000Z",
    "home": "independiente",
    "away": "atletico-chiriqui",
+   "homeName": "Independiente",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -4787,6 +4949,8 @@
    "kickoff": "2022-05-05T01:05:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -4846,6 +5010,8 @@
    "kickoff": "2022-05-07T20:00:00.000Z",
    "home": "potros-del-este",
    "away": "sporting-sm",
+   "homeName": "Potros del Este",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -4905,6 +5071,8 @@
    "kickoff": "2022-05-07T20:00:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -4964,6 +5132,8 @@
    "kickoff": "2022-05-07T23:00:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -5023,6 +5193,8 @@
    "kickoff": "2022-05-07T23:00:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -5082,6 +5254,8 @@
    "kickoff": "2022-05-07T23:00:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -5141,6 +5315,8 @@
    "kickoff": "2022-05-11T01:00:00.000Z",
    "home": "alianza",
    "away": "herrera",
+   "homeName": "Alianza FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -5200,6 +5376,8 @@
    "kickoff": "2022-05-12T01:10:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -5259,6 +5437,8 @@
    "kickoff": "2022-05-15T01:00:00.000Z",
    "home": "alianza",
    "away": "atletico-chiriqui",
+   "homeName": "Alianza FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -5318,6 +5498,8 @@
    "kickoff": "2022-05-15T23:30:00.000Z",
    "home": "tauro",
    "away": "sporting-sm",
+   "homeName": "Tauro FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -5377,6 +5559,8 @@
    "kickoff": "2022-05-22T01:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "alianza",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -5436,6 +5620,8 @@
    "kickoff": "2022-05-22T23:00:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -5495,6 +5681,8 @@
    "kickoff": "2022-05-29T00:00:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -5554,6 +5742,8 @@
    "kickoff": "2022-07-23T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -5613,6 +5803,8 @@
    "kickoff": "2022-07-23T23:15:00.000Z",
    "home": "independiente",
    "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -5672,6 +5864,8 @@
    "kickoff": "2022-07-24T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -5731,6 +5925,8 @@
    "kickoff": "2022-07-30T01:00:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -5790,6 +5986,8 @@
    "kickoff": "2022-07-30T21:00:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -5849,6 +6047,8 @@
    "kickoff": "2022-07-30T23:15:00.000Z",
    "home": "veraguas",
    "away": "herrera",
+   "homeName": "Veraguas United",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -5908,6 +6108,8 @@
    "kickoff": "2022-07-31T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -5967,6 +6169,8 @@
    "kickoff": "2022-07-31T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "potros-del-este",
+   "homeName": "Árabe Unido",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -6026,6 +6230,8 @@
    "kickoff": "2022-08-06T01:00:00.000Z",
    "home": "san-francisco",
    "away": "atletico-chiriqui",
+   "homeName": "San Francisco FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -6085,6 +6291,8 @@
    "kickoff": "2022-08-06T21:00:00.000Z",
    "home": "veraguas",
    "away": "universitario",
+   "homeName": "Veraguas United",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -6144,6 +6352,8 @@
    "kickoff": "2022-08-06T23:15:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -6203,6 +6413,8 @@
    "kickoff": "2022-08-07T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "alianza",
+   "homeName": "Potros del Este",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -6262,6 +6474,8 @@
    "kickoff": "2022-08-07T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -6321,6 +6535,8 @@
    "kickoff": "2022-08-09T21:00:00.000Z",
    "home": "veraguas",
    "away": "san-francisco",
+   "homeName": "Veraguas United",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -6380,6 +6596,8 @@
    "kickoff": "2022-08-09T23:15:00.000Z",
    "home": "independiente",
    "away": "atletico-chiriqui",
+   "homeName": "Independiente",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -6439,6 +6657,8 @@
    "kickoff": "2022-08-10T01:30:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -6498,6 +6718,8 @@
    "kickoff": "2022-08-10T21:00:00.000Z",
    "home": "alianza",
    "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -6557,6 +6779,8 @@
    "kickoff": "2022-08-10T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -6616,6 +6840,8 @@
    "kickoff": "2022-08-11T01:30:00.000Z",
    "home": "potros-del-este",
    "away": "plaza-amador",
+   "homeName": "Potros del Este",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -6675,6 +6901,8 @@
    "kickoff": "2022-08-13T01:00:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -6734,6 +6962,8 @@
    "kickoff": "2022-08-13T21:00:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -6793,6 +7023,8 @@
    "kickoff": "2022-08-13T23:15:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -6852,6 +7084,8 @@
    "kickoff": "2022-08-14T01:30:00.000Z",
    "home": "potros-del-este",
    "away": "sporting-sm",
+   "homeName": "Potros del Este",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -6911,6 +7145,8 @@
    "kickoff": "2022-08-17T21:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -6970,6 +7206,8 @@
    "kickoff": "2022-08-18T01:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "herrera",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -7029,6 +7267,8 @@
    "kickoff": "2022-08-20T01:00:00.000Z",
    "home": "potros-del-este",
    "away": "independiente",
+   "homeName": "Potros del Este",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -7088,6 +7328,8 @@
    "kickoff": "2022-08-20T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "san-francisco",
+   "homeName": "Árabe Unido",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -7147,6 +7389,8 @@
    "kickoff": "2022-08-20T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "universitario",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -7206,6 +7450,8 @@
    "kickoff": "2022-08-21T01:30:00.000Z",
    "home": "tauro",
    "away": "herrera",
+   "homeName": "Tauro FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -7265,6 +7511,8 @@
    "kickoff": "2022-08-21T21:00:00.000Z",
    "home": "veraguas",
    "away": "alianza",
+   "homeName": "Veraguas United",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -7324,6 +7572,8 @@
    "kickoff": "2022-08-21T23:30:00.000Z",
    "home": "atletico-chiriqui",
    "away": "plaza-amador",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -7383,6 +7633,8 @@
    "kickoff": "2022-08-27T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "independiente",
+   "homeName": "Árabe Unido",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -7442,6 +7694,8 @@
    "kickoff": "2022-08-28T01:30:00.000Z",
    "home": "herrera",
    "away": "sporting-sm",
+   "homeName": "Herrera FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -7501,6 +7755,8 @@
    "kickoff": "2022-08-28T21:00:00.000Z",
    "home": "tauro",
    "away": "atletico-chiriqui",
+   "homeName": "Tauro FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -7560,6 +7816,8 @@
    "kickoff": "2022-08-28T23:15:00.000Z",
    "home": "san-francisco",
    "away": "alianza",
+   "homeName": "San Francisco FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -7619,6 +7877,8 @@
    "kickoff": "2022-09-03T01:00:00.000Z",
    "home": "san-francisco",
    "away": "tauro",
+   "homeName": "San Francisco FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -7678,6 +7938,8 @@
    "kickoff": "2022-09-03T21:00:00.000Z",
    "home": "sporting-sm",
    "away": "veraguas",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -7737,6 +7999,8 @@
    "kickoff": "2022-09-03T23:15:00.000Z",
    "home": "atletico-chiriqui",
    "away": "potros-del-este",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -7796,6 +8060,8 @@
    "kickoff": "2022-09-04T01:30:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -7855,6 +8121,8 @@
    "kickoff": "2022-09-04T21:00:00.000Z",
    "home": "alianza",
    "away": "herrera",
+   "homeName": "Alianza FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -7914,6 +8182,8 @@
    "kickoff": "2022-09-04T23:15:00.000Z",
    "home": "universitario",
    "away": "arabe-unido",
+   "homeName": "Universitario",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -7973,6 +8243,8 @@
    "kickoff": "2022-09-10T01:00:00.000Z",
    "home": "herrera",
    "away": "plaza-amador",
+   "homeName": "Herrera FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -8032,6 +8304,8 @@
    "kickoff": "2022-09-10T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "atletico-chiriqui",
+   "homeName": "Árabe Unido",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -8091,6 +8365,8 @@
    "kickoff": "2022-09-10T23:15:00.000Z",
    "home": "universitario",
    "away": "alianza",
+   "homeName": "Universitario",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -8150,6 +8426,8 @@
    "kickoff": "2022-09-11T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "san-francisco",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -8209,6 +8487,8 @@
    "kickoff": "2022-09-12T01:30:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -8268,6 +8548,8 @@
    "kickoff": "2022-09-17T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "herrera",
+   "homeName": "Potros del Este",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -8327,6 +8609,8 @@
    "kickoff": "2022-09-17T23:15:00.000Z",
    "home": "atletico-chiriqui",
    "away": "sporting-sm",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -8386,6 +8670,8 @@
    "kickoff": "2022-09-18T01:30:00.000Z",
    "home": "alianza",
    "away": "independiente",
+   "homeName": "Alianza FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -8445,6 +8731,8 @@
    "kickoff": "2022-09-18T23:15:00.000Z",
    "home": "veraguas",
    "away": "arabe-unido",
+   "homeName": "Veraguas United",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -8504,6 +8792,8 @@
    "kickoff": "2022-09-24T01:00:00.000Z",
    "home": "san-francisco",
    "away": "potros-del-este",
+   "homeName": "San Francisco FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -8563,6 +8853,8 @@
    "kickoff": "2022-09-24T21:00:00.000Z",
    "home": "independiente",
    "away": "sporting-sm",
+   "homeName": "Independiente",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -8622,6 +8914,8 @@
    "kickoff": "2022-09-24T23:15:00.000Z",
    "home": "alianza",
    "away": "atletico-chiriqui",
+   "homeName": "Alianza FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -8681,6 +8975,8 @@
    "kickoff": "2022-09-25T01:30:00.000Z",
    "home": "herrera",
    "away": "arabe-unido",
+   "homeName": "Herrera FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -8740,6 +9036,8 @@
    "kickoff": "2022-09-25T23:15:00.000Z",
    "home": "veraguas",
    "away": "tauro",
+   "homeName": "Veraguas United",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -8799,6 +9097,8 @@
    "kickoff": "2022-09-27T21:00:00.000Z",
    "home": "herrera",
    "away": "atletico-chiriqui",
+   "homeName": "Herrera FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -8858,6 +9158,8 @@
    "kickoff": "2022-09-27T23:15:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -8917,6 +9219,8 @@
    "kickoff": "2022-09-28T21:00:00.000Z",
    "home": "veraguas",
    "away": "independiente",
+   "homeName": "Veraguas United",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -8976,6 +9280,8 @@
    "kickoff": "2022-09-29T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -9035,6 +9341,8 @@
    "kickoff": "2022-10-01T01:00:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -9094,6 +9402,8 @@
    "kickoff": "2022-10-01T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -9153,6 +9463,8 @@
    "kickoff": "2022-10-02T01:30:00.000Z",
    "home": "potros-del-este",
    "away": "arabe-unido",
+   "homeName": "Potros del Este",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -9212,6 +9524,8 @@
    "kickoff": "2022-10-02T21:00:00.000Z",
    "home": "tauro",
    "away": "alianza",
+   "homeName": "Tauro FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -9271,6 +9585,8 @@
    "kickoff": "2022-10-02T23:15:00.000Z",
    "home": "universitario",
    "away": "atletico-chiriqui",
+   "homeName": "Universitario",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -9330,6 +9646,8 @@
    "kickoff": "2022-10-03T01:30:00.000Z",
    "home": "herrera",
    "away": "veraguas",
+   "homeName": "Herrera FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -9389,6 +9707,8 @@
    "kickoff": "2022-10-08T01:00:00.000Z",
    "home": "alianza",
    "away": "potros-del-este",
+   "homeName": "Alianza FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -9448,6 +9768,8 @@
    "kickoff": "2022-10-08T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -9507,6 +9829,8 @@
    "kickoff": "2022-10-08T23:15:00.000Z",
    "home": "atletico-chiriqui",
    "away": "san-francisco",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -9566,6 +9890,8 @@
    "kickoff": "2022-10-09T01:30:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -9625,6 +9951,8 @@
    "kickoff": "2022-10-09T21:00:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -9684,6 +10012,8 @@
    "kickoff": "2022-10-09T23:15:00.000Z",
    "home": "universitario",
    "away": "veraguas",
+   "homeName": "Universitario",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -9743,6 +10073,8 @@
    "kickoff": "2022-10-16T01:30:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -9802,6 +10134,8 @@
    "kickoff": "2022-10-16T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -9861,6 +10195,8 @@
    "kickoff": "2022-10-16T23:10:00.000Z",
    "home": "atletico-chiriqui",
    "away": "independiente",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -9920,6 +10256,8 @@
    "kickoff": "2022-10-16T23:15:00.000Z",
    "home": "tauro",
    "away": "sporting-sm",
+   "homeName": "Tauro FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -9979,6 +10317,8 @@
    "kickoff": "2022-10-22T21:00:00.000Z",
    "home": "sporting-sm",
    "away": "potros-del-este",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -10038,6 +10378,8 @@
    "kickoff": "2022-10-22T21:00:00.000Z",
    "home": "plaza-amador",
    "away": "alianza",
+   "homeName": "Plaza Amador",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -10097,6 +10439,8 @@
    "kickoff": "2022-10-22T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -10156,6 +10500,8 @@
    "kickoff": "2022-10-23T00:00:00.000Z",
    "home": "veraguas",
    "away": "atletico-chiriqui",
+   "homeName": "Veraguas United",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -10215,6 +10561,8 @@
    "kickoff": "2022-10-23T00:00:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -10274,6 +10622,8 @@
    "kickoff": "2022-10-23T00:00:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -10333,6 +10683,8 @@
    "kickoff": "2022-10-26T18:00:00.000Z",
    "home": "sporting-sm",
    "away": "san-francisco",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -10392,6 +10744,8 @@
    "kickoff": "2022-10-27T18:00:00.000Z",
    "home": "universitario",
    "away": "plaza-amador",
+   "homeName": "Universitario",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -10451,6 +10805,8 @@
    "kickoff": "2022-10-30T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "independiente",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -10510,6 +10866,8 @@
    "kickoff": "2022-10-30T23:00:00.000Z",
    "home": "universitario",
    "away": "arabe-unido",
+   "homeName": "Universitario",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -10569,6 +10927,8 @@
    "kickoff": "2022-11-06T00:00:00.000Z",
    "home": "independiente",
    "away": "sporting-sm",
+   "homeName": "Independiente",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -10628,6 +10988,8 @@
    "kickoff": "2022-11-06T20:00:00.000Z",
    "home": "arabe-unido",
    "away": "universitario",
+   "homeName": "Árabe Unido",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -10687,6 +11049,8 @@
    "kickoff": "2022-11-13T00:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -10746,6 +11110,8 @@
    "kickoff": "2023-01-14T01:00:00.000Z",
    "home": "independiente",
    "away": "umecit",
+   "homeName": "Independiente",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -10805,6 +11171,8 @@
    "kickoff": "2023-01-14T23:15:00.000Z",
    "home": "herrera",
    "away": "atletico-chiriqui",
+   "homeName": "Herrera FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -10864,6 +11232,8 @@
    "kickoff": "2023-01-15T01:30:00.000Z",
    "home": "tauro",
    "away": "alianza",
+   "homeName": "Tauro FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -10923,6 +11293,8 @@
    "kickoff": "2023-01-15T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -10982,6 +11354,8 @@
    "kickoff": "2023-01-15T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "potros-del-este",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -11041,6 +11415,8 @@
    "kickoff": "2023-01-21T01:00:00.000Z",
    "home": "potros-del-este",
    "away": "plaza-amador",
+   "homeName": "Potros del Este",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -11100,6 +11476,8 @@
    "kickoff": "2023-01-21T23:15:00.000Z",
    "home": "alianza",
    "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -11159,6 +11537,8 @@
    "kickoff": "2023-01-22T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -11218,6 +11598,8 @@
    "kickoff": "2023-01-22T21:00:00.000Z",
    "home": "universitario",
    "away": "atletico-chiriqui",
+   "homeName": "Universitario",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -11277,6 +11659,8 @@
    "kickoff": "2023-01-22T23:15:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -11336,6 +11720,8 @@
    "kickoff": "2023-01-28T01:00:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -11395,6 +11781,8 @@
    "kickoff": "2023-01-28T21:00:00.000Z",
    "home": "plaza-amador",
    "away": "alianza",
+   "homeName": "Plaza Amador",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -11454,6 +11842,8 @@
    "kickoff": "2023-01-28T23:15:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -11513,6 +11903,8 @@
    "kickoff": "2023-01-29T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -11572,6 +11964,8 @@
    "kickoff": "2023-01-29T23:15:00.000Z",
    "home": "atletico-chiriqui",
    "away": "umecit",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -11631,6 +12025,8 @@
    "kickoff": "2023-02-04T01:00:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -11690,6 +12086,8 @@
    "kickoff": "2023-02-04T21:00:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -11749,6 +12147,8 @@
    "kickoff": "2023-02-05T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "tauro",
+   "homeName": "Plaza Amador",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -11808,6 +12208,8 @@
    "kickoff": "2023-02-05T21:00:00.000Z",
    "home": "independiente",
    "away": "atletico-chiriqui",
+   "homeName": "Independiente",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -11867,6 +12269,8 @@
    "kickoff": "2023-02-05T23:15:00.000Z",
    "home": "potros-del-este",
    "away": "arabe-unido",
+   "homeName": "Potros del Este",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -11926,6 +12330,8 @@
    "kickoff": "2023-02-11T01:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "san-francisco",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -11985,6 +12391,8 @@
    "kickoff": "2023-02-11T21:00:00.000Z",
    "home": "alianza",
    "away": "potros-del-este",
+   "homeName": "Alianza FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -12044,6 +12452,8 @@
    "kickoff": "2023-02-11T23:15:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -12103,6 +12513,8 @@
    "kickoff": "2023-02-12T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -12162,6 +12574,8 @@
    "kickoff": "2023-02-12T21:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -12221,6 +12635,8 @@
    "kickoff": "2023-02-12T23:15:00.000Z",
    "home": "herrera",
    "away": "umecit",
+   "homeName": "Herrera FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -12280,6 +12696,8 @@
    "kickoff": "2023-02-14T21:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "sporting-sm",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -12339,6 +12757,8 @@
    "kickoff": "2023-02-15T21:00:00.000Z",
    "home": "umecit",
    "away": "alianza",
+   "homeName": "UMECIT",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -12398,6 +12818,8 @@
    "kickoff": "2023-02-15T23:15:00.000Z",
    "home": "herrera",
    "away": "tauro",
+   "homeName": "Herrera FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -12457,6 +12879,8 @@
    "kickoff": "2023-02-16T01:30:00.000Z",
    "home": "independiente",
    "away": "arabe-unido",
+   "homeName": "Independiente",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -12516,6 +12940,8 @@
    "kickoff": "2023-02-25T01:00:00.000Z",
    "home": "san-francisco",
    "away": "sporting-sm",
+   "homeName": "San Francisco FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -12575,6 +13001,8 @@
    "kickoff": "2023-02-25T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "herrera",
+   "homeName": "Árabe Unido",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -12634,6 +13062,8 @@
    "kickoff": "2023-02-26T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "independiente",
+   "homeName": "Potros del Este",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -12693,6 +13123,8 @@
    "kickoff": "2023-02-26T23:15:00.000Z",
    "home": "alianza",
    "away": "atletico-chiriqui",
+   "homeName": "Alianza FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -12752,6 +13184,8 @@
    "kickoff": "2023-03-04T01:00:00.000Z",
    "home": "san-francisco",
    "away": "plaza-amador",
+   "homeName": "San Francisco FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -12811,6 +13245,8 @@
    "kickoff": "2023-03-04T23:15:00.000Z",
    "home": "umecit",
    "away": "arabe-unido",
+   "homeName": "UMECIT",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -12870,6 +13306,8 @@
    "kickoff": "2023-03-05T01:30:00.000Z",
    "home": "herrera",
    "away": "alianza",
+   "homeName": "Herrera FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -12929,6 +13367,8 @@
    "kickoff": "2023-03-05T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "independiente",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -12988,6 +13428,8 @@
    "kickoff": "2023-03-11T01:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "arabe-unido",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -13047,6 +13489,8 @@
    "kickoff": "2023-03-11T21:00:00.000Z",
    "home": "alianza",
    "away": "independiente",
+   "homeName": "Alianza FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -13106,6 +13550,8 @@
    "kickoff": "2023-03-11T23:15:00.000Z",
    "home": "universitario",
    "away": "sporting-sm",
+   "homeName": "Universitario",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -13165,6 +13611,8 @@
    "kickoff": "2023-03-12T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "herrera",
+   "homeName": "Plaza Amador",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -13224,6 +13672,8 @@
    "kickoff": "2023-03-12T20:00:00.000Z",
    "home": "umecit",
    "away": "potros-del-este",
+   "homeName": "UMECIT",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -13283,6 +13733,8 @@
    "kickoff": "2023-03-18T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "umecit",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -13342,6 +13794,8 @@
    "kickoff": "2023-03-18T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "universitario",
+   "homeName": "Árabe Unido",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -13401,6 +13855,8 @@
    "kickoff": "2023-03-18T23:15:00.000Z",
    "home": "herrera",
    "away": "potros-del-este",
+   "homeName": "Herrera FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -13460,6 +13916,8 @@
    "kickoff": "2023-03-19T01:30:00.000Z",
    "home": "atletico-chiriqui",
    "away": "plaza-amador",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -13519,6 +13977,8 @@
    "kickoff": "2023-03-19T23:15:00.000Z",
    "home": "alianza",
    "away": "san-francisco",
+   "homeName": "Alianza FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -13578,6 +14038,8 @@
    "kickoff": "2023-03-21T01:00:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -13637,6 +14099,8 @@
    "kickoff": "2023-03-25T01:00:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -13696,6 +14160,8 @@
    "kickoff": "2023-03-25T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "san-francisco",
+   "homeName": "Árabe Unido",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -13755,6 +14221,8 @@
    "kickoff": "2023-03-26T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "atletico-chiriqui",
+   "homeName": "Potros del Este",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -13814,6 +14282,8 @@
    "kickoff": "2023-03-26T22:10:00.000Z",
    "home": "universitario",
    "away": "alianza",
+   "homeName": "Universitario",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -13873,6 +14343,8 @@
    "kickoff": "2023-03-26T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "herrera",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -13932,6 +14404,8 @@
    "kickoff": "2023-04-01T01:00:00.000Z",
    "home": "san-francisco",
    "away": "universitario",
+   "homeName": "San Francisco FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -13991,6 +14465,8 @@
    "kickoff": "2023-04-01T21:00:00.000Z",
    "home": "umecit",
    "away": "independiente",
+   "homeName": "UMECIT",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -14050,6 +14526,8 @@
    "kickoff": "2023-04-01T23:15:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -14109,6 +14587,8 @@
    "kickoff": "2023-04-02T01:30:00.000Z",
    "home": "atletico-chiriqui",
    "away": "herrera",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -14168,6 +14648,8 @@
    "kickoff": "2023-04-02T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "sporting-sm",
+   "homeName": "Potros del Este",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -14227,6 +14709,8 @@
    "kickoff": "2023-04-02T23:15:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -14286,6 +14770,8 @@
    "kickoff": "2023-04-04T21:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "universitario",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -14345,6 +14831,8 @@
    "kickoff": "2023-04-04T23:15:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -14404,6 +14892,8 @@
    "kickoff": "2023-04-05T01:30:00.000Z",
    "home": "san-francisco",
    "away": "umecit",
+   "homeName": "San Francisco FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -14463,6 +14953,8 @@
    "kickoff": "2023-04-05T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -14522,6 +15014,8 @@
    "kickoff": "2023-04-15T01:00:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -14581,6 +15075,8 @@
    "kickoff": "2023-04-15T21:00:00.000Z",
    "home": "umecit",
    "away": "atletico-chiriqui",
+   "homeName": "UMECIT",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -14640,6 +15136,8 @@
    "kickoff": "2023-04-15T23:15:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -14699,6 +15197,8 @@
    "kickoff": "2023-04-16T01:30:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -14758,6 +15258,8 @@
    "kickoff": "2023-04-16T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -14817,6 +15319,8 @@
    "kickoff": "2023-04-22T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "potros-del-este",
+   "homeName": "Árabe Unido",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -14876,6 +15380,8 @@
    "kickoff": "2023-04-22T21:00:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -14935,6 +15441,8 @@
    "kickoff": "2023-04-22T21:00:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -14994,6 +15502,8 @@
    "kickoff": "2023-04-23T00:00:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -15053,6 +15563,8 @@
    "kickoff": "2023-04-23T00:00:00.000Z",
    "home": "umecit",
    "away": "universitario",
+   "homeName": "UMECIT",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -15112,6 +15624,8 @@
    "kickoff": "2023-04-23T00:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "independiente",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -15171,6 +15685,8 @@
    "kickoff": "2023-04-29T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "alianza",
+   "homeName": "Potros del Este",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -15230,6 +15746,8 @@
    "kickoff": "2023-04-29T21:00:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -15289,6 +15807,8 @@
    "kickoff": "2023-04-29T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -15348,6 +15868,8 @@
    "kickoff": "2023-04-30T00:00:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -15407,6 +15929,8 @@
    "kickoff": "2023-04-30T00:00:00.000Z",
    "home": "san-francisco",
    "away": "atletico-chiriqui",
+   "homeName": "San Francisco FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -15466,6 +15990,8 @@
    "kickoff": "2023-04-30T00:00:00.000Z",
    "home": "umecit",
    "away": "herrera",
+   "homeName": "UMECIT",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -15525,6 +16051,8 @@
    "kickoff": "2023-05-07T23:15:00.000Z",
    "home": "herrera",
    "away": "tauro",
+   "homeName": "Herrera FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -15584,6 +16112,8 @@
    "kickoff": "2023-05-13T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -15643,6 +16173,8 @@
    "kickoff": "2023-05-14T23:15:00.000Z",
    "home": "tauro",
    "away": "sporting-sm",
+   "homeName": "Tauro FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -15702,6 +16234,8 @@
    "kickoff": "2023-05-20T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -15761,6 +16295,8 @@
    "kickoff": "2023-05-21T00:00:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -15820,6 +16356,8 @@
    "kickoff": "2023-05-28T00:00:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -15879,6 +16417,8 @@
    "kickoff": "2023-07-22T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -15938,6 +16478,8 @@
    "kickoff": "2023-07-22T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "plaza-amador",
+   "homeName": "Potros del Este",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -15997,6 +16539,8 @@
    "kickoff": "2023-07-22T23:15:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -16056,6 +16600,8 @@
    "kickoff": "2023-07-23T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -16115,6 +16661,8 @@
    "kickoff": "2023-07-29T01:00:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -16174,6 +16722,8 @@
    "kickoff": "2023-07-29T21:00:00.000Z",
    "home": "plaza-amador",
    "away": "alianza",
+   "homeName": "Plaza Amador",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -16233,6 +16783,8 @@
    "kickoff": "2023-07-29T23:15:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -16292,6 +16844,8 @@
    "kickoff": "2023-07-30T21:00:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -16351,6 +16905,8 @@
    "kickoff": "2023-07-30T23:15:00.000Z",
    "home": "atletico-chiriqui",
    "away": "umecit",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -16410,6 +16966,8 @@
    "kickoff": "2023-08-05T21:00:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -16469,6 +17027,8 @@
    "kickoff": "2023-08-05T23:15:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -16528,6 +17088,8 @@
    "kickoff": "2023-08-06T01:30:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -16587,6 +17149,8 @@
    "kickoff": "2023-08-06T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "arabe-unido",
+   "homeName": "Potros del Este",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -16646,6 +17210,8 @@
    "kickoff": "2023-08-06T23:10:00.000Z",
    "home": "independiente",
    "away": "atletico-chiriqui",
+   "homeName": "Independiente",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -16705,6 +17271,8 @@
    "kickoff": "2023-08-12T01:00:00.000Z",
    "home": "alianza",
    "away": "potros-del-este",
+   "homeName": "Alianza FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -16764,6 +17332,8 @@
    "kickoff": "2023-08-12T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -16823,6 +17393,8 @@
    "kickoff": "2023-08-12T23:15:00.000Z",
    "home": "umecit",
    "away": "herrera",
+   "homeName": "UMECIT",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -16882,6 +17454,8 @@
    "kickoff": "2023-08-13T01:30:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -16941,6 +17515,8 @@
    "kickoff": "2023-08-13T21:00:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -17000,6 +17576,8 @@
    "kickoff": "2023-08-19T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -17059,6 +17637,8 @@
    "kickoff": "2023-08-19T23:15:00.000Z",
    "home": "atletico-chiriqui",
    "away": "herrera",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -17118,6 +17698,8 @@
    "kickoff": "2023-08-20T01:30:00.000Z",
    "home": "independiente",
    "away": "umecit",
+   "homeName": "Independiente",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -17177,6 +17759,8 @@
    "kickoff": "2023-08-20T21:00:00.000Z",
    "home": "tauro",
    "away": "alianza",
+   "homeName": "Tauro FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -17236,6 +17820,8 @@
    "kickoff": "2023-08-20T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "potros-del-este",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -17295,6 +17881,8 @@
    "kickoff": "2023-08-26T01:00:00.000Z",
    "home": "independiente",
    "away": "potros-del-este",
+   "homeName": "Independiente",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -17354,6 +17942,8 @@
    "kickoff": "2023-08-26T21:00:00.000Z",
    "home": "tauro",
    "away": "universitario",
+   "homeName": "Tauro FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -17413,6 +18003,8 @@
    "kickoff": "2023-08-26T23:15:00.000Z",
    "home": "herrera",
    "away": "arabe-unido",
+   "homeName": "Herrera FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -17472,6 +18064,8 @@
    "kickoff": "2023-08-27T01:30:00.000Z",
    "home": "atletico-chiriqui",
    "away": "alianza",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -17531,6 +18125,8 @@
    "kickoff": "2023-08-27T22:15:00.000Z",
    "home": "umecit",
    "away": "plaza-amador",
+   "homeName": "UMECIT",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -17590,6 +18186,8 @@
    "kickoff": "2023-08-28T00:30:00.000Z",
    "home": "sporting-sm",
    "away": "san-francisco",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -17649,6 +18247,8 @@
    "kickoff": "2023-09-02T01:00:00.000Z",
    "home": "tauro",
    "away": "independiente",
+   "homeName": "Tauro FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -17708,6 +18308,8 @@
    "kickoff": "2023-09-02T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "herrera",
+   "homeName": "Potros del Este",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -17767,6 +18369,8 @@
    "kickoff": "2023-09-02T23:15:00.000Z",
    "home": "san-francisco",
    "away": "alianza",
+   "homeName": "San Francisco FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -17826,6 +18430,8 @@
    "kickoff": "2023-09-03T01:30:00.000Z",
    "home": "universitario",
    "away": "arabe-unido",
+   "homeName": "Universitario",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -17885,6 +18491,8 @@
    "kickoff": "2023-09-03T23:15:00.000Z",
    "home": "umecit",
    "away": "sporting-sm",
+   "homeName": "UMECIT",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -17944,6 +18552,8 @@
    "kickoff": "2023-09-09T01:00:00.000Z",
    "home": "arabe-unido",
    "away": "umecit",
+   "homeName": "Árabe Unido",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -18003,6 +18613,8 @@
    "kickoff": "2023-09-09T21:00:00.000Z",
    "home": "alianza",
    "away": "herrera",
+   "homeName": "Alianza FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -18062,6 +18674,8 @@
    "kickoff": "2023-09-10T01:30:00.000Z",
    "home": "independiente",
    "away": "sporting-sm",
+   "homeName": "Independiente",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -18121,6 +18735,8 @@
    "kickoff": "2023-09-16T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "atletico-chiriqui",
+   "homeName": "Árabe Unido",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -18180,6 +18796,8 @@
    "kickoff": "2023-09-16T23:15:00.000Z",
    "home": "independiente",
    "away": "alianza",
+   "homeName": "Independiente",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -18239,6 +18857,8 @@
    "kickoff": "2023-09-17T01:30:00.000Z",
    "home": "herrera",
    "away": "plaza-amador",
+   "homeName": "Herrera FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -18298,6 +18918,8 @@
    "kickoff": "2023-09-17T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "umecit",
+   "homeName": "Potros del Este",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -18357,6 +18979,8 @@
    "kickoff": "2023-09-17T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "universitario",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -18416,6 +19040,8 @@
    "kickoff": "2023-09-23T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "independiente",
+   "homeName": "Plaza Amador",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -18475,6 +19101,8 @@
    "kickoff": "2023-09-23T21:00:00.000Z",
    "home": "alianza",
    "away": "universitario",
+   "homeName": "Alianza FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -18534,6 +19162,8 @@
    "kickoff": "2023-09-23T23:15:00.000Z",
    "home": "san-francisco",
    "away": "arabe-unido",
+   "homeName": "San Francisco FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -18593,6 +19223,8 @@
    "kickoff": "2023-09-24T01:30:00.000Z",
    "home": "umecit",
    "away": "tauro",
+   "homeName": "UMECIT",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -18652,6 +19284,8 @@
    "kickoff": "2023-09-24T21:00:00.000Z",
    "home": "atletico-chiriqui",
    "away": "potros-del-este",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -18711,6 +19345,8 @@
    "kickoff": "2023-09-24T23:15:00.000Z",
    "home": "herrera",
    "away": "sporting-sm",
+   "homeName": "Herrera FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -18770,6 +19406,8 @@
    "kickoff": "2023-09-30T01:00:00.000Z",
    "home": "arabe-unido",
    "away": "independiente",
+   "homeName": "Árabe Unido",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -18829,6 +19467,8 @@
    "kickoff": "2023-09-30T21:00:00.000Z",
    "home": "tauro",
    "away": "herrera",
+   "homeName": "Tauro FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -18888,6 +19528,8 @@
    "kickoff": "2023-09-30T23:15:00.000Z",
    "home": "alianza",
    "away": "umecit",
+   "homeName": "Alianza FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -18947,6 +19589,8 @@
    "kickoff": "2023-10-01T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "atletico-chiriqui",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -19006,6 +19650,8 @@
    "kickoff": "2023-10-01T23:15:00.000Z",
    "home": "universitario",
    "away": "plaza-amador",
+   "homeName": "Universitario",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -19065,6 +19711,8 @@
    "kickoff": "2023-10-07T01:00:00.000Z",
    "home": "san-francisco",
    "away": "umecit",
+   "homeName": "San Francisco FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -19124,6 +19772,8 @@
    "kickoff": "2023-10-07T23:15:00.000Z",
    "home": "atletico-chiriqui",
    "away": "universitario",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -19183,6 +19833,8 @@
    "kickoff": "2023-10-08T01:30:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -19242,6 +19894,8 @@
    "kickoff": "2023-10-08T21:00:00.000Z",
    "home": "alianza",
    "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -19301,6 +19955,8 @@
    "kickoff": "2023-10-14T01:00:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -19360,6 +20016,8 @@
    "kickoff": "2023-10-14T21:00:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -19419,6 +20077,8 @@
    "kickoff": "2023-10-15T01:30:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -19478,6 +20138,8 @@
    "kickoff": "2023-10-15T23:15:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -19537,6 +20199,8 @@
    "kickoff": "2023-10-17T01:30:00.000Z",
    "home": "atletico-chiriqui",
    "away": "independiente",
+   "homeName": "Atlético Chiriquí",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -19596,6 +20260,8 @@
    "kickoff": "2023-10-18T23:15:00.000Z",
    "home": "arabe-unido",
    "away": "potros-del-este",
+   "homeName": "Árabe Unido",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -19655,6 +20321,8 @@
    "kickoff": "2023-10-18T23:15:00.000Z",
    "home": "universitario",
    "away": "umecit",
+   "homeName": "Universitario",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -19714,6 +20382,8 @@
    "kickoff": "2023-10-19T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "tauro",
+   "homeName": "Plaza Amador",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -19773,6 +20443,8 @@
    "kickoff": "2023-10-19T23:00:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -19832,6 +20504,8 @@
    "kickoff": "2023-10-20T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -19891,6 +20565,8 @@
    "kickoff": "2023-10-21T21:00:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -19950,6 +20626,8 @@
    "kickoff": "2023-10-22T01:15:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -20009,6 +20687,8 @@
    "kickoff": "2023-10-22T01:15:00.000Z",
    "home": "herrera",
    "away": "umecit",
+   "homeName": "Herrera FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -20068,6 +20748,8 @@
    "kickoff": "2023-10-22T21:00:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -20127,6 +20809,8 @@
    "kickoff": "2023-10-22T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "alianza",
+   "homeName": "Potros del Este",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -20186,6 +20870,8 @@
    "kickoff": "2023-10-28T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -20245,6 +20931,8 @@
    "kickoff": "2023-10-28T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "sporting-sm",
+   "homeName": "Potros del Este",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -20304,6 +20992,8 @@
    "kickoff": "2023-10-28T21:00:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -20363,6 +21053,8 @@
    "kickoff": "2023-10-29T21:00:00.000Z",
    "home": "herrera",
    "away": "atletico-chiriqui",
+   "homeName": "Herrera FC",
+   "awayName": "Atlético Chiriquí",
    "market": "1x2",
    "options": [
     {
@@ -20422,6 +21114,8 @@
    "kickoff": "2023-11-01T22:00:00.000Z",
    "home": "san-francisco",
    "away": "universitario",
+   "homeName": "San Francisco FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -20481,6 +21175,8 @@
    "kickoff": "2023-11-08T01:00:00.000Z",
    "home": "umecit",
    "away": "independiente",
+   "homeName": "UMECIT",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -20540,6 +21236,8 @@
    "kickoff": "2023-11-22T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "herrera",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -20599,6 +21297,8 @@
    "kickoff": "2023-11-23T01:30:00.000Z",
    "home": "san-francisco",
    "away": "alianza",
+   "homeName": "San Francisco FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -20658,6 +21358,8 @@
    "kickoff": "2023-11-25T23:00:00.000Z",
    "home": "sporting-sm",
    "away": "independiente",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -20717,6 +21419,8 @@
    "kickoff": "2023-11-26T21:00:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -20776,6 +21480,8 @@
    "kickoff": "2023-12-02T23:00:00.000Z",
    "home": "independiente",
    "away": "sporting-sm",
+   "homeName": "Independiente",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -20835,6 +21541,8 @@
    "kickoff": "2023-12-09T23:00:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -20894,6 +21602,8 @@
    "kickoff": "2024-01-20T01:00:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -20953,6 +21663,8 @@
    "kickoff": "2024-01-20T21:00:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -21012,6 +21724,8 @@
    "kickoff": "2024-01-20T23:15:00.000Z",
    "home": "san-francisco",
    "away": "umecit",
+   "homeName": "San Francisco FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -21071,6 +21785,8 @@
    "kickoff": "2024-01-21T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -21130,6 +21846,8 @@
    "kickoff": "2024-01-21T23:15:00.000Z",
    "home": "veraguas",
    "away": "herrera",
+   "homeName": "Veraguas United",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -21189,6 +21907,8 @@
    "kickoff": "2024-01-27T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "alianza",
+   "homeName": "Potros del Este",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -21248,6 +21968,8 @@
    "kickoff": "2024-01-27T23:15:00.000Z",
    "home": "umecit",
    "away": "herrera",
+   "homeName": "UMECIT",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -21307,6 +22029,8 @@
    "kickoff": "2024-01-28T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -21366,6 +22090,8 @@
    "kickoff": "2024-01-28T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -21425,6 +22151,8 @@
    "kickoff": "2024-01-28T23:15:00.000Z",
    "home": "veraguas",
    "away": "independiente",
+   "homeName": "Veraguas United",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -21484,6 +22212,8 @@
    "kickoff": "2024-02-03T21:00:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -21543,6 +22273,8 @@
    "kickoff": "2024-02-03T23:15:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -21602,6 +22334,8 @@
    "kickoff": "2024-02-04T01:30:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -21661,6 +22395,8 @@
    "kickoff": "2024-02-04T23:15:00.000Z",
    "home": "umecit",
    "away": "veraguas",
+   "homeName": "UMECIT",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -21720,6 +22456,8 @@
    "kickoff": "2024-02-05T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "potros-del-este",
+   "homeName": "Árabe Unido",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -21779,6 +22517,8 @@
    "kickoff": "2024-02-06T23:00:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -21838,6 +22578,8 @@
    "kickoff": "2024-02-07T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -21897,6 +22639,8 @@
    "kickoff": "2024-02-08T01:30:00.000Z",
    "home": "san-francisco",
    "away": "veraguas",
+   "homeName": "San Francisco FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -21956,6 +22700,8 @@
    "kickoff": "2024-02-08T23:15:00.000Z",
    "home": "universitario",
    "away": "umecit",
+   "homeName": "Universitario",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -22015,6 +22761,8 @@
    "kickoff": "2024-02-09T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -22074,6 +22822,8 @@
    "kickoff": "2024-02-17T01:00:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -22133,6 +22883,8 @@
    "kickoff": "2024-02-17T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "sporting-sm",
+   "homeName": "Potros del Este",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -22192,6 +22944,8 @@
    "kickoff": "2024-02-17T23:15:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -22251,6 +23005,8 @@
    "kickoff": "2024-02-18T01:30:00.000Z",
    "home": "independiente",
    "away": "umecit",
+   "homeName": "Independiente",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -22310,6 +23066,8 @@
    "kickoff": "2024-02-18T21:00:00.000Z",
    "home": "alianza",
    "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -22369,6 +23127,8 @@
    "kickoff": "2024-02-18T23:15:00.000Z",
    "home": "veraguas",
    "away": "universitario",
+   "homeName": "Veraguas United",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -22428,6 +23188,8 @@
    "kickoff": "2024-02-24T01:00:00.000Z",
    "home": "herrera",
    "away": "alianza",
+   "homeName": "Herrera FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -22487,6 +23249,8 @@
    "kickoff": "2024-02-24T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "san-francisco",
+   "homeName": "Árabe Unido",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -22546,6 +23310,8 @@
    "kickoff": "2024-02-24T23:15:00.000Z",
    "home": "umecit",
    "away": "sporting-sm",
+   "homeName": "UMECIT",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -22605,6 +23371,8 @@
    "kickoff": "2024-03-02T21:00:00.000Z",
    "home": "alianza",
    "away": "universitario",
+   "homeName": "Alianza FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -22664,6 +23432,8 @@
    "kickoff": "2024-03-02T23:15:00.000Z",
    "home": "plaza-amador",
    "away": "herrera",
+   "homeName": "Plaza Amador",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -22723,6 +23493,8 @@
    "kickoff": "2024-03-03T01:30:00.000Z",
    "home": "veraguas",
    "away": "arabe-unido",
+   "homeName": "Veraguas United",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -22782,6 +23554,8 @@
    "kickoff": "2024-03-03T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "umecit",
+   "homeName": "Potros del Este",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -22841,6 +23615,8 @@
    "kickoff": "2024-03-05T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "independiente",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -22900,6 +23676,8 @@
    "kickoff": "2024-03-09T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "san-francisco",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -22959,6 +23737,8 @@
    "kickoff": "2024-03-09T21:00:00.000Z",
    "home": "herrera",
    "away": "potros-del-este",
+   "homeName": "Herrera FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -23018,6 +23798,8 @@
    "kickoff": "2024-03-09T23:15:00.000Z",
    "home": "independiente",
    "away": "alianza",
+   "homeName": "Independiente",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -23077,6 +23859,8 @@
    "kickoff": "2024-03-10T21:00:00.000Z",
    "home": "umecit",
    "away": "arabe-unido",
+   "homeName": "UMECIT",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -23136,6 +23920,8 @@
    "kickoff": "2024-03-13T01:30:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -23195,6 +23981,8 @@
    "kickoff": "2024-03-16T01:00:00.000Z",
    "home": "san-francisco",
    "away": "plaza-amador",
+   "homeName": "San Francisco FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -23254,6 +24042,8 @@
    "kickoff": "2024-03-16T21:00:00.000Z",
    "home": "alianza",
    "away": "umecit",
+   "homeName": "Alianza FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -23313,6 +24103,8 @@
    "kickoff": "2024-03-16T23:15:00.000Z",
    "home": "independiente",
    "away": "potros-del-este",
+   "homeName": "Independiente",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -23372,6 +24164,8 @@
    "kickoff": "2024-03-17T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "universitario",
+   "homeName": "Árabe Unido",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -23431,6 +24225,8 @@
    "kickoff": "2024-03-17T21:00:00.000Z",
    "home": "tauro",
    "away": "herrera",
+   "homeName": "Tauro FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -23490,6 +24286,8 @@
    "kickoff": "2024-03-17T23:15:00.000Z",
    "home": "veraguas",
    "away": "sporting-sm",
+   "homeName": "Veraguas United",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -23549,6 +24347,8 @@
    "kickoff": "2024-03-23T01:00:00.000Z",
    "home": "san-francisco",
    "away": "alianza",
+   "homeName": "San Francisco FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -23608,6 +24408,8 @@
    "kickoff": "2024-03-23T21:00:00.000Z",
    "home": "tauro",
    "away": "independiente",
+   "homeName": "Tauro FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -23667,6 +24469,8 @@
    "kickoff": "2024-03-23T23:15:00.000Z",
    "home": "herrera",
    "away": "arabe-unido",
+   "homeName": "Herrera FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -23726,6 +24530,8 @@
    "kickoff": "2024-03-24T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "universitario",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -23785,6 +24591,8 @@
    "kickoff": "2024-03-24T23:15:00.000Z",
    "home": "plaza-amador",
    "away": "umecit",
+   "homeName": "Plaza Amador",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -23844,6 +24652,8 @@
    "kickoff": "2024-04-06T01:00:00.000Z",
    "home": "arabe-unido",
    "away": "independiente",
+   "homeName": "Árabe Unido",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -23903,6 +24713,8 @@
    "kickoff": "2024-04-06T23:15:00.000Z",
    "home": "universitario",
    "away": "plaza-amador",
+   "homeName": "Universitario",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -23962,6 +24774,8 @@
    "kickoff": "2024-04-07T01:30:00.000Z",
    "home": "umecit",
    "away": "tauro",
+   "homeName": "UMECIT",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -24021,6 +24835,8 @@
    "kickoff": "2024-04-07T21:00:00.000Z",
    "home": "alianza",
    "away": "veraguas",
+   "homeName": "Alianza FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -24080,6 +24896,8 @@
    "kickoff": "2024-04-07T23:15:00.000Z",
    "home": "herrera",
    "away": "sporting-sm",
+   "homeName": "Herrera FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -24139,6 +24957,8 @@
    "kickoff": "2024-04-13T01:00:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -24198,6 +25018,8 @@
    "kickoff": "2024-04-13T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "arabe-unido",
+   "homeName": "Potros del Este",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -24257,6 +25079,8 @@
    "kickoff": "2024-04-13T23:15:00.000Z",
    "home": "veraguas",
    "away": "umecit",
+   "homeName": "Veraguas United",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -24316,6 +25140,8 @@
    "kickoff": "2024-04-14T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -24375,6 +25201,8 @@
    "kickoff": "2024-04-14T21:00:00.000Z",
    "home": "plaza-amador",
    "away": "alianza",
+   "homeName": "Plaza Amador",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -24434,6 +25262,8 @@
    "kickoff": "2024-04-14T23:15:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -24493,6 +25323,8 @@
    "kickoff": "2024-04-16T21:00:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -24552,6 +25384,8 @@
    "kickoff": "2024-04-17T01:30:00.000Z",
    "home": "universitario",
    "away": "san-francisco",
+   "homeName": "Universitario",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -24611,6 +25445,8 @@
    "kickoff": "2024-04-17T21:00:00.000Z",
    "home": "alianza",
    "away": "potros-del-este",
+   "homeName": "Alianza FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -24670,6 +25506,8 @@
    "kickoff": "2024-04-17T23:15:00.000Z",
    "home": "herrera",
    "away": "umecit",
+   "homeName": "Herrera FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -24729,6 +25567,8 @@
    "kickoff": "2024-04-18T01:30:00.000Z",
    "home": "independiente",
    "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -24788,6 +25628,8 @@
    "kickoff": "2024-04-20T21:00:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -24847,6 +25689,8 @@
    "kickoff": "2024-04-20T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -24906,6 +25750,8 @@
    "kickoff": "2024-04-20T23:15:00.000Z",
    "home": "universitario",
    "away": "veraguas",
+   "homeName": "Universitario",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -24965,6 +25811,8 @@
    "kickoff": "2024-04-21T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "tauro",
+   "homeName": "Plaza Amador",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -25024,6 +25872,8 @@
    "kickoff": "2024-04-21T21:00:00.000Z",
    "home": "umecit",
    "away": "independiente",
+   "homeName": "UMECIT",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -25083,6 +25933,8 @@
    "kickoff": "2024-04-21T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "potros-del-este",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -25142,6 +25994,8 @@
    "kickoff": "2024-04-27T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -25201,6 +26055,8 @@
    "kickoff": "2024-04-27T21:00:00.000Z",
    "home": "umecit",
    "away": "san-francisco",
+   "homeName": "UMECIT",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -25260,6 +26116,8 @@
    "kickoff": "2024-04-27T21:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -25319,6 +26177,8 @@
    "kickoff": "2024-04-27T21:00:00.000Z",
    "home": "herrera",
    "away": "veraguas",
+   "homeName": "Herrera FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -25378,6 +26238,8 @@
    "kickoff": "2024-04-28T01:00:00.000Z",
    "home": "potros-del-este",
    "away": "plaza-amador",
+   "homeName": "Potros del Este",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -25437,6 +26299,8 @@
    "kickoff": "2024-05-02T21:00:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -25496,6 +26360,8 @@
    "kickoff": "2024-05-02T21:00:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -25555,6 +26421,8 @@
    "kickoff": "2024-05-03T01:00:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -25614,6 +26482,8 @@
    "kickoff": "2024-05-03T01:00:00.000Z",
    "home": "veraguas",
    "away": "san-francisco",
+   "homeName": "Veraguas United",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -25673,6 +26543,8 @@
    "kickoff": "2024-05-11T20:00:00.000Z",
    "home": "tauro",
    "away": "independiente",
+   "homeName": "Tauro FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -25732,6 +26604,8 @@
    "kickoff": "2024-05-12T22:00:00.000Z",
    "home": "herrera",
    "away": "plaza-amador",
+   "homeName": "Herrera FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -25791,6 +26665,8 @@
    "kickoff": "2024-05-19T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "potros-del-este",
+   "homeName": "Plaza Amador",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -25850,6 +26726,8 @@
    "kickoff": "2024-05-26T01:00:00.000Z",
    "home": "potros-del-este",
    "away": "plaza-amador",
+   "homeName": "Potros del Este",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -25909,6 +26787,8 @@
    "kickoff": "2024-07-20T23:00:00.000Z",
    "home": "universitario",
    "away": "veraguas",
+   "homeName": "Universitario",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -25968,6 +26848,8 @@
    "kickoff": "2024-07-21T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -26027,6 +26909,8 @@
    "kickoff": "2024-07-21T21:00:00.000Z",
    "home": "umecit",
    "away": "san-francisco",
+   "homeName": "UMECIT",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -26086,6 +26970,8 @@
    "kickoff": "2024-07-21T23:15:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -26145,6 +27031,8 @@
    "kickoff": "2024-07-23T01:30:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -26204,6 +27092,8 @@
    "kickoff": "2024-07-27T01:30:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -26263,6 +27153,8 @@
    "kickoff": "2024-07-27T23:00:00.000Z",
    "home": "umecit",
    "away": "universitario",
+   "homeName": "UMECIT",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -26322,6 +27214,8 @@
    "kickoff": "2024-07-28T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -26381,6 +27275,8 @@
    "kickoff": "2024-07-28T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "sporting-sm",
+   "homeName": "Potros del Este",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -26440,6 +27336,8 @@
    "kickoff": "2024-07-28T23:15:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -26499,6 +27397,8 @@
    "kickoff": "2024-07-30T01:30:00.000Z",
    "home": "veraguas",
    "away": "herrera",
+   "homeName": "Veraguas United",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -26558,6 +27458,8 @@
    "kickoff": "2024-08-03T01:30:00.000Z",
    "home": "san-francisco",
    "away": "veraguas",
+   "homeName": "San Francisco FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -26617,6 +27519,8 @@
    "kickoff": "2024-08-03T23:00:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -26676,6 +27580,8 @@
    "kickoff": "2024-08-04T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "tauro",
+   "homeName": "Plaza Amador",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -26735,6 +27641,8 @@
    "kickoff": "2024-08-04T21:00:00.000Z",
    "home": "alianza",
    "away": "potros-del-este",
+   "homeName": "Alianza FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -26794,6 +27702,8 @@
    "kickoff": "2024-08-04T23:15:00.000Z",
    "home": "umecit",
    "away": "independiente",
+   "homeName": "UMECIT",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -26853,6 +27763,8 @@
    "kickoff": "2024-08-06T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -26912,6 +27824,8 @@
    "kickoff": "2024-08-10T23:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -26971,6 +27885,8 @@
    "kickoff": "2024-08-11T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -27030,6 +27946,8 @@
    "kickoff": "2024-08-11T21:00:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -27089,6 +28007,8 @@
    "kickoff": "2024-08-11T23:15:00.000Z",
    "home": "potros-del-este",
    "away": "arabe-unido",
+   "homeName": "Potros del Este",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -27148,6 +28068,8 @@
    "kickoff": "2024-08-13T01:30:00.000Z",
    "home": "veraguas",
    "away": "umecit",
+   "homeName": "Veraguas United",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -27207,6 +28129,8 @@
    "kickoff": "2024-08-17T01:30:00.000Z",
    "home": "alianza",
    "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -27266,6 +28190,8 @@
    "kickoff": "2024-08-17T23:00:00.000Z",
    "home": "veraguas",
    "away": "independiente",
+   "homeName": "Veraguas United",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -27325,6 +28251,8 @@
    "kickoff": "2024-08-18T21:00:00.000Z",
    "home": "umecit",
    "away": "herrera",
+   "homeName": "UMECIT",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -27384,6 +28312,8 @@
    "kickoff": "2024-08-18T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -27443,6 +28373,8 @@
    "kickoff": "2024-08-24T01:30:00.000Z",
    "home": "alianza",
    "away": "herrera",
+   "homeName": "Alianza FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -27502,6 +28434,8 @@
    "kickoff": "2024-08-24T23:00:00.000Z",
    "home": "sporting-sm",
    "away": "umecit",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -27561,6 +28495,8 @@
    "kickoff": "2024-08-25T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "independiente",
+   "homeName": "Plaza Amador",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -27620,6 +28556,8 @@
    "kickoff": "2024-08-25T21:00:00.000Z",
    "home": "san-francisco",
    "away": "arabe-unido",
+   "homeName": "San Francisco FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -27679,6 +28617,8 @@
    "kickoff": "2024-08-25T23:15:00.000Z",
    "home": "veraguas",
    "away": "tauro",
+   "homeName": "Veraguas United",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -27738,6 +28678,8 @@
    "kickoff": "2024-08-31T01:30:00.000Z",
    "home": "universitario",
    "away": "alianza",
+   "homeName": "Universitario",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -27797,6 +28739,8 @@
    "kickoff": "2024-08-31T21:00:00.000Z",
    "home": "herrera",
    "away": "plaza-amador",
+   "homeName": "Herrera FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -27856,6 +28800,8 @@
    "kickoff": "2024-09-01T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "veraguas",
+   "homeName": "Árabe Unido",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -27915,6 +28861,8 @@
    "kickoff": "2024-09-03T01:30:00.000Z",
    "home": "independiente",
    "away": "sporting-sm",
+   "homeName": "Independiente",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -27974,6 +28922,8 @@
    "kickoff": "2024-09-07T01:30:00.000Z",
    "home": "san-francisco",
    "away": "sporting-sm",
+   "homeName": "San Francisco FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -28033,6 +28983,8 @@
    "kickoff": "2024-09-07T23:00:00.000Z",
    "home": "veraguas",
    "away": "plaza-amador",
+   "homeName": "Veraguas United",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -28092,6 +29044,8 @@
    "kickoff": "2024-09-08T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "umecit",
+   "homeName": "Árabe Unido",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -28151,6 +29105,8 @@
    "kickoff": "2024-09-08T21:00:00.000Z",
    "home": "potros-del-este",
    "away": "herrera",
+   "homeName": "Potros del Este",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -28210,6 +29166,8 @@
    "kickoff": "2024-09-08T23:15:00.000Z",
    "home": "alianza",
    "away": "independiente",
+   "homeName": "Alianza FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -28269,6 +29227,8 @@
    "kickoff": "2024-09-10T01:30:00.000Z",
    "home": "tauro",
    "away": "universitario",
+   "homeName": "Tauro FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -28328,6 +29288,8 @@
    "kickoff": "2024-09-14T01:30:00.000Z",
    "home": "herrera",
    "away": "tauro",
+   "homeName": "Herrera FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -28387,6 +29349,8 @@
    "kickoff": "2024-09-14T23:00:00.000Z",
    "home": "universitario",
    "away": "arabe-unido",
+   "homeName": "Universitario",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -28446,6 +29410,8 @@
    "kickoff": "2024-09-15T21:00:00.000Z",
    "home": "umecit",
    "away": "alianza",
+   "homeName": "UMECIT",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -28505,6 +29471,8 @@
    "kickoff": "2024-09-15T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "veraguas",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -28564,6 +29532,8 @@
    "kickoff": "2024-09-17T01:30:00.000Z",
    "home": "potros-del-este",
    "away": "independiente",
+   "homeName": "Potros del Este",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -28623,6 +29593,8 @@
    "kickoff": "2024-09-21T01:30:00.000Z",
    "home": "alianza",
    "away": "san-francisco",
+   "homeName": "Alianza FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -28682,6 +29654,8 @@
    "kickoff": "2024-09-21T21:00:00.000Z",
    "home": "umecit",
    "away": "plaza-amador",
+   "homeName": "UMECIT",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -28741,6 +29715,8 @@
    "kickoff": "2024-09-21T23:00:00.000Z",
    "home": "universitario",
    "away": "sporting-sm",
+   "homeName": "Universitario",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -28800,6 +29776,8 @@
    "kickoff": "2024-09-22T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "herrera",
+   "homeName": "Árabe Unido",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -28859,6 +29837,8 @@
    "kickoff": "2024-09-23T00:00:00.000Z",
    "home": "veraguas",
    "away": "potros-del-este",
+   "homeName": "Veraguas United",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -28918,6 +29898,8 @@
    "kickoff": "2024-09-24T01:30:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -28977,6 +29959,8 @@
    "kickoff": "2024-09-28T23:00:00.000Z",
    "home": "veraguas",
    "away": "alianza",
+   "homeName": "Veraguas United",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -29036,6 +30020,8 @@
    "kickoff": "2024-09-29T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "universitario",
+   "homeName": "Plaza Amador",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -29095,6 +30081,8 @@
    "kickoff": "2024-09-29T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "herrera",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -29154,6 +30142,8 @@
    "kickoff": "2024-10-01T01:30:00.000Z",
    "home": "independiente",
    "away": "arabe-unido",
+   "homeName": "Independiente",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -29213,6 +30203,8 @@
    "kickoff": "2024-10-05T01:30:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -29272,6 +30264,8 @@
    "kickoff": "2024-10-05T23:00:00.000Z",
    "home": "veraguas",
    "away": "san-francisco",
+   "homeName": "Veraguas United",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -29331,6 +30325,8 @@
    "kickoff": "2024-10-06T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -29390,6 +30386,8 @@
    "kickoff": "2024-10-06T21:00:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -29449,6 +30447,8 @@
    "kickoff": "2024-10-06T23:15:00.000Z",
    "home": "potros-del-este",
    "away": "alianza",
+   "homeName": "Potros del Este",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -29508,6 +30508,8 @@
    "kickoff": "2024-10-08T01:30:00.000Z",
    "home": "independiente",
    "away": "umecit",
+   "homeName": "Independiente",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -29567,6 +30569,8 @@
    "kickoff": "2024-10-12T23:00:00.000Z",
    "home": "universitario",
    "away": "san-francisco",
+   "homeName": "Universitario",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -29626,6 +30630,8 @@
    "kickoff": "2024-10-13T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -29685,6 +30691,8 @@
    "kickoff": "2024-10-13T21:00:00.000Z",
    "home": "herrera",
    "away": "umecit",
+   "homeName": "Herrera FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -29744,6 +30752,8 @@
    "kickoff": "2024-10-13T23:15:00.000Z",
    "home": "potros-del-este",
    "away": "plaza-amador",
+   "homeName": "Potros del Este",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -29803,6 +30813,8 @@
    "kickoff": "2024-10-15T01:30:00.000Z",
    "home": "independiente",
    "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -29862,6 +30874,8 @@
    "kickoff": "2024-10-19T01:30:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -29921,6 +30935,8 @@
    "kickoff": "2024-10-19T23:00:00.000Z",
    "home": "universitario",
    "away": "umecit",
+   "homeName": "Universitario",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -29980,6 +30996,8 @@
    "kickoff": "2024-10-20T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "alianza",
+   "homeName": "Plaza Amador",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -30039,6 +31057,8 @@
    "kickoff": "2024-10-20T21:00:00.000Z",
    "home": "herrera",
    "away": "veraguas",
+   "homeName": "Herrera FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -30098,6 +31118,8 @@
    "kickoff": "2024-10-20T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "potros-del-este",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -30157,6 +31179,8 @@
    "kickoff": "2024-10-22T01:30:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -30216,6 +31240,8 @@
    "kickoff": "2024-10-26T21:00:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -30275,6 +31301,8 @@
    "kickoff": "2024-10-26T21:00:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -30334,6 +31362,8 @@
    "kickoff": "2024-10-26T21:00:00.000Z",
    "home": "umecit",
    "away": "veraguas",
+   "homeName": "UMECIT",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -30393,6 +31423,8 @@
    "kickoff": "2024-10-27T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "potros-del-este",
+   "homeName": "Árabe Unido",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -30452,6 +31484,8 @@
    "kickoff": "2024-10-27T01:30:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -30511,6 +31545,8 @@
    "kickoff": "2024-10-27T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -30570,6 +31606,8 @@
    "kickoff": "2024-11-01T21:00:00.000Z",
    "home": "san-francisco",
    "away": "umecit",
+   "homeName": "San Francisco FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -30629,6 +31667,8 @@
    "kickoff": "2024-11-01T21:00:00.000Z",
    "home": "veraguas",
    "away": "universitario",
+   "homeName": "Veraguas United",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -30688,6 +31728,8 @@
    "kickoff": "2024-11-01T21:00:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -30747,6 +31789,8 @@
    "kickoff": "2024-11-02T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -30806,6 +31850,8 @@
    "kickoff": "2024-11-02T01:30:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -30865,6 +31911,8 @@
    "kickoff": "2024-11-09T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "veraguas",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -30924,6 +31972,8 @@
    "kickoff": "2024-11-09T23:00:00.000Z",
    "home": "universitario",
    "away": "arabe-unido",
+   "homeName": "Universitario",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -30983,6 +32033,8 @@
    "kickoff": "2024-11-17T01:00:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -31042,6 +32094,8 @@
    "kickoff": "2024-11-17T21:00:00.000Z",
    "home": "veraguas",
    "away": "independiente",
+   "homeName": "Veraguas United",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -31101,6 +32155,8 @@
    "kickoff": "2024-11-23T22:00:00.000Z",
    "home": "independiente",
    "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -31160,6 +32216,8 @@
    "kickoff": "2024-11-24T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -31219,6 +32277,8 @@
    "kickoff": "2024-11-30T23:15:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -31278,6 +32338,8 @@
    "kickoff": "2025-01-18T01:30:00.000Z",
    "home": "independiente",
    "away": "umecit",
+   "homeName": "Independiente",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -31337,6 +32399,8 @@
    "kickoff": "2025-01-19T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -31396,6 +32460,8 @@
    "kickoff": "2025-01-19T23:15:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -31455,6 +32521,8 @@
    "kickoff": "2025-01-21T01:30:00.000Z",
    "home": "veraguas",
    "away": "herrera",
+   "homeName": "Veraguas United",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -31514,6 +32582,8 @@
    "kickoff": "2025-01-25T21:00:00.000Z",
    "home": "sporting-sm",
    "away": "potros-del-este",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -31573,6 +32643,8 @@
    "kickoff": "2025-01-25T23:15:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -31632,6 +32704,8 @@
    "kickoff": "2025-01-26T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -31691,6 +32765,8 @@
    "kickoff": "2025-01-26T21:00:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -31750,6 +32826,8 @@
    "kickoff": "2025-01-26T23:15:00.000Z",
    "home": "umecit",
    "away": "veraguas",
+   "homeName": "UMECIT",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -31809,6 +32887,8 @@
    "kickoff": "2025-02-01T01:30:00.000Z",
    "home": "potros-del-este",
    "away": "plaza-amador",
+   "homeName": "Potros del Este",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -31868,6 +32948,8 @@
    "kickoff": "2025-02-01T23:00:00.000Z",
    "home": "universitario",
    "away": "veraguas",
+   "homeName": "Universitario",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -31927,6 +33009,8 @@
    "kickoff": "2025-02-02T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -31986,6 +33070,8 @@
    "kickoff": "2025-02-02T21:00:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -32045,6 +33131,8 @@
    "kickoff": "2025-02-04T01:30:00.000Z",
    "home": "san-francisco",
    "away": "umecit",
+   "homeName": "San Francisco FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -32104,6 +33192,8 @@
    "kickoff": "2025-02-08T01:30:00.000Z",
    "home": "universitario",
    "away": "umecit",
+   "homeName": "Universitario",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -32163,6 +33253,8 @@
    "kickoff": "2025-02-08T21:00:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -32222,6 +33314,8 @@
    "kickoff": "2025-02-09T01:45:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -32281,6 +33375,8 @@
    "kickoff": "2025-02-09T21:00:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -32340,6 +33436,8 @@
    "kickoff": "2025-02-09T23:15:00.000Z",
    "home": "potros-del-este",
    "away": "alianza",
+   "homeName": "Potros del Este",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -32399,6 +33497,8 @@
    "kickoff": "2025-02-11T01:30:00.000Z",
    "home": "veraguas",
    "away": "independiente",
+   "homeName": "Veraguas United",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -32458,6 +33558,8 @@
    "kickoff": "2025-02-15T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -32517,6 +33619,8 @@
    "kickoff": "2025-02-15T21:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -32576,6 +33680,8 @@
    "kickoff": "2025-02-16T01:15:00.000Z",
    "home": "potros-del-este",
    "away": "arabe-unido",
+   "homeName": "Potros del Este",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -32635,6 +33741,8 @@
    "kickoff": "2025-02-16T21:00:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -32694,6 +33802,8 @@
    "kickoff": "2025-02-16T23:15:00.000Z",
    "home": "umecit",
    "away": "herrera",
+   "homeName": "UMECIT",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -32753,6 +33863,8 @@
    "kickoff": "2025-02-18T01:30:00.000Z",
    "home": "veraguas",
    "away": "san-francisco",
+   "homeName": "Veraguas United",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -32812,6 +33924,8 @@
    "kickoff": "2025-02-21T01:00:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -32871,6 +33985,8 @@
    "kickoff": "2025-02-22T23:00:00.000Z",
    "home": "universitario",
    "away": "arabe-unido",
+   "homeName": "Universitario",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -32930,6 +34046,8 @@
    "kickoff": "2025-02-23T21:00:00.000Z",
    "home": "sporting-sm",
    "away": "herrera",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -32989,6 +34107,8 @@
    "kickoff": "2025-02-23T23:15:00.000Z",
    "home": "potros-del-este",
    "away": "independiente",
+   "homeName": "Potros del Este",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -33048,6 +34168,8 @@
    "kickoff": "2025-02-25T01:30:00.000Z",
    "home": "alianza",
    "away": "umecit",
+   "homeName": "Alianza FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -33107,6 +34229,8 @@
    "kickoff": "2025-02-26T21:00:00.000Z",
    "home": "san-francisco",
    "away": "plaza-amador",
+   "homeName": "San Francisco FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -33166,6 +34290,8 @@
    "kickoff": "2025-02-27T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "veraguas",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -33225,6 +34351,8 @@
    "kickoff": "2025-02-27T23:15:00.000Z",
    "home": "alianza",
    "away": "independiente",
+   "homeName": "Alianza FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -33284,6 +34412,8 @@
    "kickoff": "2025-02-28T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "herrera",
+   "homeName": "Árabe Unido",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -33343,6 +34473,8 @@
    "kickoff": "2025-03-08T01:30:00.000Z",
    "home": "veraguas",
    "away": "alianza",
+   "homeName": "Veraguas United",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -33402,6 +34534,8 @@
    "kickoff": "2025-03-08T23:00:00.000Z",
    "home": "tauro",
    "away": "herrera",
+   "homeName": "Tauro FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -33461,6 +34595,8 @@
    "kickoff": "2025-03-09T21:00:00.000Z",
    "home": "independiente",
    "away": "sporting-sm",
+   "homeName": "Independiente",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -33520,6 +34656,8 @@
    "kickoff": "2025-03-09T23:15:00.000Z",
    "home": "umecit",
    "away": "arabe-unido",
+   "homeName": "UMECIT",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -33579,6 +34717,8 @@
    "kickoff": "2025-03-15T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "san-francisco",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -33638,6 +34778,8 @@
    "kickoff": "2025-03-15T23:00:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -33697,6 +34839,8 @@
    "kickoff": "2025-03-16T21:00:00.000Z",
    "home": "herrera",
    "away": "potros-del-este",
+   "homeName": "Herrera FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -33756,6 +34900,8 @@
    "kickoff": "2025-03-16T23:15:00.000Z",
    "home": "veraguas",
    "away": "arabe-unido",
+   "homeName": "Veraguas United",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -33815,6 +34961,8 @@
    "kickoff": "2025-03-18T01:30:00.000Z",
    "home": "alianza",
    "away": "universitario",
+   "homeName": "Alianza FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -33874,6 +35022,8 @@
    "kickoff": "2025-03-22T01:30:00.000Z",
    "home": "veraguas",
    "away": "potros-del-este",
+   "homeName": "Veraguas United",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -33933,6 +35083,8 @@
    "kickoff": "2025-03-22T23:00:00.000Z",
    "home": "universitario",
    "away": "sporting-sm",
+   "homeName": "Universitario",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -33992,6 +35144,8 @@
    "kickoff": "2025-03-23T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "san-francisco",
+   "homeName": "Árabe Unido",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -34051,6 +35205,8 @@
    "kickoff": "2025-03-23T21:00:00.000Z",
    "home": "herrera",
    "away": "alianza",
+   "homeName": "Herrera FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -34110,6 +35266,8 @@
    "kickoff": "2025-03-23T23:15:00.000Z",
    "home": "tauro",
    "away": "umecit",
+   "homeName": "Tauro FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -34169,6 +35327,8 @@
    "kickoff": "2025-03-25T01:30:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -34228,6 +35388,8 @@
    "kickoff": "2025-03-29T01:30:00.000Z",
    "home": "san-francisco",
    "away": "alianza",
+   "homeName": "San Francisco FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -34287,6 +35449,8 @@
    "kickoff": "2025-03-29T23:00:00.000Z",
    "home": "veraguas",
    "away": "tauro",
+   "homeName": "Veraguas United",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -34346,6 +35510,8 @@
    "kickoff": "2025-03-30T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "independiente",
+   "homeName": "Árabe Unido",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -34405,6 +35571,8 @@
    "kickoff": "2025-03-30T21:00:00.000Z",
    "home": "herrera",
    "away": "plaza-amador",
+   "homeName": "Herrera FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -34464,6 +35632,8 @@
    "kickoff": "2025-03-30T23:15:00.000Z",
    "home": "umecit",
    "away": "sporting-sm",
+   "homeName": "UMECIT",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -34523,6 +35693,8 @@
    "kickoff": "2025-04-01T01:30:00.000Z",
    "home": "potros-del-este",
    "away": "universitario",
+   "homeName": "Potros del Este",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -34582,6 +35754,8 @@
    "kickoff": "2025-04-05T01:30:00.000Z",
    "home": "san-francisco",
    "away": "veraguas",
+   "homeName": "San Francisco FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -34641,6 +35815,8 @@
    "kickoff": "2025-04-05T23:00:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -34700,6 +35876,8 @@
    "kickoff": "2025-04-06T21:00:00.000Z",
    "home": "herrera",
    "away": "umecit",
+   "homeName": "Herrera FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -34759,6 +35937,8 @@
    "kickoff": "2025-04-08T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "potros-del-este",
+   "homeName": "Árabe Unido",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -34818,6 +35998,8 @@
    "kickoff": "2025-04-12T01:30:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -34877,6 +36059,8 @@
    "kickoff": "2025-04-12T23:00:00.000Z",
    "home": "independiente",
    "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -34936,6 +36120,8 @@
    "kickoff": "2025-04-13T21:00:00.000Z",
    "home": "alianza",
    "away": "potros-del-este",
+   "homeName": "Alianza FC",
+   "awayName": "Potros del Este",
    "market": "1x2",
    "options": [
     {
@@ -34995,6 +36181,8 @@
    "kickoff": "2025-04-13T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -35054,6 +36242,8 @@
    "kickoff": "2025-04-15T01:30:00.000Z",
    "home": "umecit",
    "away": "universitario",
+   "homeName": "UMECIT",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -35113,6 +36303,8 @@
    "kickoff": "2025-04-26T01:30:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -35172,6 +36364,8 @@
    "kickoff": "2025-04-26T23:00:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -35231,6 +36425,8 @@
    "kickoff": "2025-04-27T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -35290,6 +36486,8 @@
    "kickoff": "2025-04-27T21:00:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -35349,6 +36547,8 @@
    "kickoff": "2025-04-27T23:15:00.000Z",
    "home": "veraguas",
    "away": "umecit",
+   "homeName": "Veraguas United",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -35408,6 +36608,8 @@
    "kickoff": "2025-04-29T01:30:00.000Z",
    "home": "potros-del-este",
    "away": "sporting-sm",
+   "homeName": "Potros del Este",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -35467,6 +36669,8 @@
    "kickoff": "2025-05-03T21:00:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -35526,6 +36730,8 @@
    "kickoff": "2025-05-03T21:00:00.000Z",
    "home": "umecit",
    "away": "san-francisco",
+   "homeName": "UMECIT",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -35585,6 +36791,8 @@
    "kickoff": "2025-05-03T21:00:00.000Z",
    "home": "veraguas",
    "away": "universitario",
+   "homeName": "Veraguas United",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -35644,6 +36852,8 @@
    "kickoff": "2025-05-04T01:00:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -35703,6 +36913,8 @@
    "kickoff": "2025-05-04T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -35762,6 +36974,8 @@
    "kickoff": "2025-05-10T21:00:00.000Z",
    "home": "herrera",
    "away": "veraguas",
+   "homeName": "Herrera FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -35821,6 +37035,8 @@
    "kickoff": "2025-05-10T21:00:00.000Z",
    "home": "san-francisco",
    "away": "universitario",
+   "homeName": "San Francisco FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -35880,6 +37096,8 @@
    "kickoff": "2025-05-10T21:00:00.000Z",
    "home": "umecit",
    "away": "independiente",
+   "homeName": "UMECIT",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -35939,6 +37157,8 @@
    "kickoff": "2025-05-11T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -35998,6 +37218,8 @@
    "kickoff": "2025-05-11T01:00:00.000Z",
    "home": "alianza",
    "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -36057,6 +37279,8 @@
    "kickoff": "2025-05-14T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "san-francisco",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -36116,6 +37340,8 @@
    "kickoff": "2025-05-15T01:00:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -36175,6 +37401,8 @@
    "kickoff": "2025-05-17T23:00:00.000Z",
    "home": "san-francisco",
    "away": "universitario",
+   "homeName": "San Francisco FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -36234,6 +37462,8 @@
    "kickoff": "2025-05-18T23:00:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -36293,6 +37523,8 @@
    "kickoff": "2025-07-19T01:30:00.000Z",
    "home": "veraguas",
    "away": "herrera",
+   "homeName": "Veraguas United",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -36352,6 +37584,8 @@
    "kickoff": "2025-07-19T23:00:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -36411,6 +37645,8 @@
    "kickoff": "2025-07-20T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -36470,6 +37706,8 @@
    "kickoff": "2025-07-22T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "umecit",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -36529,6 +37767,8 @@
    "kickoff": "2025-07-26T01:30:00.000Z",
    "home": "san-francisco",
    "away": "universitario",
+   "homeName": "San Francisco FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -36588,6 +37828,8 @@
    "kickoff": "2025-07-26T23:00:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -36647,6 +37889,8 @@
    "kickoff": "2025-07-27T23:15:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -36706,6 +37950,8 @@
    "kickoff": "2025-07-29T01:30:00.000Z",
    "home": "umecit",
    "away": "arabe-unido",
+   "homeName": "UMECIT",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -36765,6 +38011,8 @@
    "kickoff": "2025-08-02T01:30:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -36824,6 +38072,8 @@
    "kickoff": "2025-08-03T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -36883,6 +38133,8 @@
    "kickoff": "2025-08-03T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -36942,6 +38194,8 @@
    "kickoff": "2025-08-05T01:30:00.000Z",
    "home": "umecit",
    "away": "plaza-amador",
+   "homeName": "UMECIT",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -37001,6 +38255,8 @@
    "kickoff": "2025-08-09T01:30:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -37060,6 +38316,8 @@
    "kickoff": "2025-08-10T01:15:00.000Z",
    "home": "tauro",
    "away": "umecit",
+   "homeName": "Tauro FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -37119,6 +38377,8 @@
    "kickoff": "2025-08-10T21:00:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -37178,6 +38438,8 @@
    "kickoff": "2025-08-10T23:15:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -37237,6 +38499,8 @@
    "kickoff": "2025-08-16T01:30:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -37296,6 +38560,8 @@
    "kickoff": "2025-08-16T23:00:00.000Z",
    "home": "veraguas",
    "away": "san-francisco",
+   "homeName": "Veraguas United",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -37355,6 +38621,8 @@
    "kickoff": "2025-08-17T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -37414,6 +38682,8 @@
    "kickoff": "2025-08-17T21:00:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -37473,6 +38743,8 @@
    "kickoff": "2025-08-19T01:30:00.000Z",
    "home": "alianza",
    "away": "umecit",
+   "homeName": "Alianza FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -37532,6 +38804,8 @@
    "kickoff": "2025-08-30T01:30:00.000Z",
    "home": "tauro",
    "away": "universitario",
+   "homeName": "Tauro FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -37591,6 +38865,8 @@
    "kickoff": "2025-08-30T23:00:00.000Z",
    "home": "independiente",
    "away": "alianza",
+   "homeName": "Independiente",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -37650,6 +38926,8 @@
    "kickoff": "2025-08-31T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "san-francisco",
+   "homeName": "Plaza Amador",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -37709,6 +38987,8 @@
    "kickoff": "2025-08-31T21:00:00.000Z",
    "home": "herrera",
    "away": "arabe-unido",
+   "homeName": "Herrera FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -37768,6 +39048,8 @@
    "kickoff": "2025-09-02T01:30:00.000Z",
    "home": "veraguas",
    "away": "sporting-sm",
+   "homeName": "Veraguas United",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -37827,6 +39109,8 @@
    "kickoff": "2025-09-06T01:30:00.000Z",
    "home": "universitario",
    "away": "plaza-amador",
+   "homeName": "Universitario",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -37886,6 +39170,8 @@
    "kickoff": "2025-09-06T21:00:00.000Z",
    "home": "alianza",
    "away": "veraguas",
+   "homeName": "Alianza FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -37945,6 +39231,8 @@
    "kickoff": "2025-09-06T23:15:00.000Z",
    "home": "san-francisco",
    "away": "umecit",
+   "homeName": "San Francisco FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -38004,6 +39292,8 @@
    "kickoff": "2025-09-07T21:00:00.000Z",
    "home": "herrera",
    "away": "tauro",
+   "homeName": "Herrera FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -38063,6 +39353,8 @@
    "kickoff": "2025-09-07T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "independiente",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -38122,6 +39414,8 @@
    "kickoff": "2025-09-13T01:30:00.000Z",
    "home": "tauro",
    "away": "veraguas",
+   "homeName": "Tauro FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -38181,6 +39475,8 @@
    "kickoff": "2025-09-13T23:00:00.000Z",
    "home": "universitario",
    "away": "umecit",
+   "homeName": "Universitario",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -38240,6 +39536,8 @@
    "kickoff": "2025-09-14T01:15:00.000Z",
    "home": "plaza-amador",
    "away": "herrera",
+   "homeName": "Plaza Amador",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -38299,6 +39597,8 @@
    "kickoff": "2025-09-14T21:00:00.000Z",
    "home": "independiente",
    "away": "arabe-unido",
+   "homeName": "Independiente",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -38358,6 +39658,8 @@
    "kickoff": "2025-09-16T01:30:00.000Z",
    "home": "alianza",
    "away": "san-francisco",
+   "homeName": "Alianza FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -38417,6 +39719,8 @@
    "kickoff": "2025-09-20T01:30:00.000Z",
    "home": "san-francisco",
    "away": "sporting-sm",
+   "homeName": "San Francisco FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -38476,6 +39780,8 @@
    "kickoff": "2025-09-20T23:15:00.000Z",
    "home": "universitario",
    "away": "alianza",
+   "homeName": "Universitario",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -38535,6 +39841,8 @@
    "kickoff": "2025-09-21T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "veraguas",
+   "homeName": "Árabe Unido",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -38594,6 +39902,8 @@
    "kickoff": "2025-09-21T23:15:00.000Z",
    "home": "tauro",
    "away": "independiente",
+   "homeName": "Tauro FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -38653,6 +39963,8 @@
    "kickoff": "2025-09-23T01:30:00.000Z",
    "home": "umecit",
    "away": "herrera",
+   "homeName": "UMECIT",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -38712,6 +40024,8 @@
    "kickoff": "2025-09-27T01:30:00.000Z",
    "home": "san-francisco",
    "away": "arabe-unido",
+   "homeName": "San Francisco FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -38771,6 +40085,8 @@
    "kickoff": "2025-09-27T20:30:00.000Z",
    "home": "alianza",
    "away": "herrera",
+   "homeName": "Alianza FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -38830,6 +40146,8 @@
    "kickoff": "2025-09-28T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "independiente",
+   "homeName": "Plaza Amador",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -38889,6 +40207,8 @@
    "kickoff": "2025-09-28T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "universitario",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -38948,6 +40268,8 @@
    "kickoff": "2025-09-30T01:30:00.000Z",
    "home": "umecit",
    "away": "veraguas",
+   "homeName": "UMECIT",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -39007,6 +40329,8 @@
    "kickoff": "2025-10-04T23:00:00.000Z",
    "home": "independiente",
    "away": "umecit",
+   "homeName": "Independiente",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -39066,6 +40390,8 @@
    "kickoff": "2025-10-05T01:15:00.000Z",
    "home": "arabe-unido",
    "away": "universitario",
+   "homeName": "Árabe Unido",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -39125,6 +40451,8 @@
    "kickoff": "2025-10-05T21:00:00.000Z",
    "home": "herrera",
    "away": "sporting-sm",
+   "homeName": "Herrera FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -39184,6 +40512,8 @@
    "kickoff": "2025-10-05T23:15:00.000Z",
    "home": "veraguas",
    "away": "plaza-amador",
+   "homeName": "Veraguas United",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -39243,6 +40573,8 @@
    "kickoff": "2025-10-11T21:00:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -39302,6 +40634,8 @@
    "kickoff": "2025-10-11T23:15:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -39361,6 +40695,8 @@
    "kickoff": "2025-10-12T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -39420,6 +40756,8 @@
    "kickoff": "2025-10-12T21:00:00.000Z",
    "home": "herrera",
    "away": "veraguas",
+   "homeName": "Herrera FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -39479,6 +40817,8 @@
    "kickoff": "2025-10-14T01:30:00.000Z",
    "home": "umecit",
    "away": "sporting-sm",
+   "homeName": "UMECIT",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -39538,6 +40878,8 @@
    "kickoff": "2025-10-18T01:30:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -39597,6 +40939,8 @@
    "kickoff": "2025-10-18T21:00:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -39656,6 +41000,8 @@
    "kickoff": "2025-10-19T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "umecit",
+   "homeName": "Árabe Unido",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -39715,6 +41061,8 @@
    "kickoff": "2025-10-19T20:30:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -39774,6 +41122,8 @@
    "kickoff": "2025-10-25T01:30:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -39833,6 +41183,8 @@
    "kickoff": "2025-10-25T23:00:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -39892,6 +41244,8 @@
    "kickoff": "2025-10-26T23:15:00.000Z",
    "home": "independiente",
    "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -39951,6 +41305,8 @@
    "kickoff": "2025-10-31T21:00:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -40010,6 +41366,8 @@
    "kickoff": "2025-10-31T21:00:00.000Z",
    "home": "veraguas",
    "away": "universitario",
+   "homeName": "Veraguas United",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -40069,6 +41427,8 @@
    "kickoff": "2025-11-02T01:00:00.000Z",
    "home": "alianza",
    "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -40128,6 +41488,8 @@
    "kickoff": "2025-11-02T01:00:00.000Z",
    "home": "tauro",
    "away": "sporting-sm",
+   "homeName": "Tauro FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -40187,6 +41549,8 @@
    "kickoff": "2025-11-08T01:00:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -40246,6 +41610,8 @@
    "kickoff": "2025-11-08T01:00:00.000Z",
    "home": "san-francisco",
    "away": "veraguas",
+   "homeName": "San Francisco FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -40305,6 +41671,8 @@
    "kickoff": "2025-11-09T01:00:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -40364,6 +41732,8 @@
    "kickoff": "2025-11-09T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -40423,6 +41793,8 @@
    "kickoff": "2025-11-09T01:00:00.000Z",
    "home": "umecit",
    "away": "alianza",
+   "homeName": "UMECIT",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -40482,6 +41854,8 @@
    "kickoff": "2025-11-12T01:00:00.000Z",
    "home": "independiente",
    "away": "sporting-sm",
+   "homeName": "Independiente",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -40541,6 +41915,8 @@
    "kickoff": "2025-11-13T01:00:00.000Z",
    "home": "alianza",
    "away": "universitario",
+   "homeName": "Alianza FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -40600,6 +41976,8 @@
    "kickoff": "2025-11-16T01:00:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -40659,6 +42037,8 @@
    "kickoff": "2025-11-16T23:15:00.000Z",
    "home": "alianza",
    "away": "san-francisco",
+   "homeName": "Alianza FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -40718,6 +42098,8 @@
    "kickoff": "2025-11-22T01:30:00.000Z",
    "home": "san-francisco",
    "away": "alianza",
+   "homeName": "San Francisco FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -40777,6 +42159,8 @@
    "kickoff": "2025-11-23T01:00:00.000Z",
    "home": "plaza-amador",
    "away": "independiente",
+   "homeName": "Plaza Amador",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -40836,6 +42220,8 @@
    "kickoff": "2026-01-17T01:30:00.000Z",
    "home": "veraguas",
    "away": "universitario",
+   "homeName": "Veraguas United",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -40895,6 +42281,8 @@
    "kickoff": "2026-01-17T21:00:00.000Z",
    "home": "herrera",
    "away": "independiente",
+   "homeName": "Herrera FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -40954,6 +42342,8 @@
    "kickoff": "2026-01-18T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -41013,6 +42403,8 @@
    "kickoff": "2026-01-19T00:15:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -41072,6 +42464,8 @@
    "kickoff": "2026-01-20T01:30:00.000Z",
    "home": "umecit",
    "away": "arabe-unido",
+   "homeName": "UMECIT",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -41131,6 +42525,8 @@
    "kickoff": "2026-01-24T01:30:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -41190,6 +42586,8 @@
    "kickoff": "2026-01-24T23:15:00.000Z",
    "home": "universitario",
    "away": "independiente",
+   "homeName": "Universitario",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -41249,6 +42647,8 @@
    "kickoff": "2026-01-25T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -41308,6 +42708,8 @@
    "kickoff": "2026-01-25T21:00:00.000Z",
    "home": "union-cocle",
    "away": "veraguas",
+   "homeName": "Unión Coclé",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -41367,6 +42769,8 @@
    "kickoff": "2026-01-25T23:15:00.000Z",
    "home": "tauro",
    "away": "sporting-sm",
+   "homeName": "Tauro FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -41426,6 +42830,8 @@
    "kickoff": "2026-01-27T01:30:00.000Z",
    "home": "umecit",
    "away": "plaza-amador",
+   "homeName": "UMECIT",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -41485,6 +42891,8 @@
    "kickoff": "2026-01-31T01:30:00.000Z",
    "home": "alianza",
    "away": "umecit",
+   "homeName": "Alianza FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -41544,6 +42952,8 @@
    "kickoff": "2026-01-31T23:15:00.000Z",
    "home": "independiente",
    "away": "union-cocle",
+   "homeName": "Independiente",
+   "awayName": "Unión Coclé",
    "market": "1x2",
    "options": [
     {
@@ -41603,6 +43013,8 @@
    "kickoff": "2026-02-01T21:00:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -41662,6 +43074,8 @@
    "kickoff": "2026-02-01T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "arabe-unido",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -41721,6 +43135,8 @@
    "kickoff": "2026-02-03T01:30:00.000Z",
    "home": "veraguas",
    "away": "san-francisco",
+   "homeName": "Veraguas United",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -41780,6 +43196,8 @@
    "kickoff": "2026-02-07T01:30:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -41839,6 +43257,8 @@
    "kickoff": "2026-02-07T21:00:00.000Z",
    "home": "umecit",
    "away": "sporting-sm",
+   "homeName": "UMECIT",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -41898,6 +43318,8 @@
    "kickoff": "2026-02-07T23:15:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -41957,6 +43379,8 @@
    "kickoff": "2026-02-08T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "tauro",
+   "homeName": "Árabe Unido",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -42016,6 +43440,8 @@
    "kickoff": "2026-02-08T23:15:00.000Z",
    "home": "veraguas",
    "away": "herrera",
+   "homeName": "Veraguas United",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -42075,6 +43501,8 @@
    "kickoff": "2026-02-11T21:00:00.000Z",
    "home": "tauro",
    "away": "umecit",
+   "homeName": "Tauro FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -42134,6 +43562,8 @@
    "kickoff": "2026-02-12T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -42193,6 +43623,8 @@
    "kickoff": "2026-02-12T21:00:00.000Z",
    "home": "herrera",
    "away": "union-cocle",
+   "homeName": "Herrera FC",
+   "awayName": "Unión Coclé",
    "market": "1x2",
    "options": [
     {
@@ -42252,6 +43684,8 @@
    "kickoff": "2026-02-12T23:15:00.000Z",
    "home": "independiente",
    "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -42311,6 +43745,8 @@
    "kickoff": "2026-02-13T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -42370,6 +43806,8 @@
    "kickoff": "2026-02-21T01:30:00.000Z",
    "home": "san-francisco",
    "away": "umecit",
+   "homeName": "San Francisco FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -42429,6 +43867,8 @@
    "kickoff": "2026-02-22T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "herrera",
+   "homeName": "Plaza Amador",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -42488,6 +43928,8 @@
    "kickoff": "2026-02-22T21:00:00.000Z",
    "home": "union-cocle",
    "away": "arabe-unido",
+   "homeName": "Unión Coclé",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -42547,6 +43989,8 @@
    "kickoff": "2026-02-22T23:15:00.000Z",
    "home": "alianza",
    "away": "veraguas",
+   "homeName": "Alianza FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -42606,6 +44050,8 @@
    "kickoff": "2026-02-24T01:30:00.000Z",
    "home": "independiente",
    "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -42665,6 +44111,8 @@
    "kickoff": "2026-03-01T01:30:00.000Z",
    "home": "veraguas",
    "away": "plaza-amador",
+   "homeName": "Veraguas United",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -42724,6 +44172,8 @@
    "kickoff": "2026-03-01T21:00:00.000Z",
    "home": "herrera",
    "away": "arabe-unido",
+   "homeName": "Herrera FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -42783,6 +44233,8 @@
    "kickoff": "2026-03-01T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "independiente",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -42842,6 +44294,8 @@
    "kickoff": "2026-03-03T01:30:00.000Z",
    "home": "alianza",
    "away": "san-francisco",
+   "homeName": "Alianza FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -42901,6 +44355,8 @@
    "kickoff": "2026-03-05T01:00:00.000Z",
    "home": "universitario",
    "away": "sporting-sm",
+   "homeName": "Universitario",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -42960,6 +44416,8 @@
    "kickoff": "2026-03-07T01:30:00.000Z",
    "home": "tauro",
    "away": "herrera",
+   "homeName": "Tauro FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -43019,6 +44477,8 @@
    "kickoff": "2026-03-07T23:15:00.000Z",
    "home": "universitario",
    "away": "alianza",
+   "homeName": "Universitario",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -43078,6 +44538,8 @@
    "kickoff": "2026-03-08T21:00:00.000Z",
    "home": "union-cocle",
    "away": "sporting-sm",
+   "homeName": "Unión Coclé",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -43137,6 +44599,8 @@
    "kickoff": "2026-03-08T23:15:00.000Z",
    "home": "independiente",
    "away": "umecit",
+   "homeName": "Independiente",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -43196,6 +44660,8 @@
    "kickoff": "2026-03-10T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "veraguas",
+   "homeName": "Árabe Unido",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -43255,6 +44721,8 @@
    "kickoff": "2026-03-14T01:30:00.000Z",
    "home": "san-francisco",
    "away": "arabe-unido",
+   "homeName": "San Francisco FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -43314,6 +44782,8 @@
    "kickoff": "2026-03-14T23:15:00.000Z",
    "home": "veraguas",
    "away": "tauro",
+   "homeName": "Veraguas United",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -43373,6 +44843,8 @@
    "kickoff": "2026-03-15T01:30:00.000Z",
    "home": "universitario",
    "away": "plaza-amador",
+   "homeName": "Universitario",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -43432,6 +44904,8 @@
    "kickoff": "2026-03-15T21:00:00.000Z",
    "home": "herrera",
    "away": "sporting-sm",
+   "homeName": "Herrera FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -43491,6 +44965,8 @@
    "kickoff": "2026-03-15T23:15:00.000Z",
    "home": "alianza",
    "away": "independiente",
+   "homeName": "Alianza FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -43550,6 +45026,8 @@
    "kickoff": "2026-03-21T01:30:00.000Z",
    "home": "san-francisco",
    "away": "tauro",
+   "homeName": "San Francisco FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -43609,6 +45087,8 @@
    "kickoff": "2026-03-21T23:15:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -43668,6 +45148,8 @@
    "kickoff": "2026-03-22T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "universitario",
+   "homeName": "Árabe Unido",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -43727,6 +45209,8 @@
    "kickoff": "2026-03-22T21:00:00.000Z",
    "home": "union-cocle",
    "away": "alianza",
+   "homeName": "Unión Coclé",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -43786,6 +45270,8 @@
    "kickoff": "2026-03-22T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "veraguas",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -43845,6 +45331,8 @@
    "kickoff": "2026-03-24T01:30:00.000Z",
    "home": "umecit",
    "away": "herrera",
+   "homeName": "UMECIT",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -43904,6 +45392,8 @@
    "kickoff": "2026-03-28T23:15:00.000Z",
    "home": "veraguas",
    "away": "umecit",
+   "homeName": "Veraguas United",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -43963,6 +45453,8 @@
    "kickoff": "2026-03-29T21:00:00.000Z",
    "home": "herrera",
    "away": "alianza",
+   "homeName": "Herrera FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -44022,6 +45514,8 @@
    "kickoff": "2026-03-29T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "san-francisco",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -44081,6 +45575,8 @@
    "kickoff": "2026-03-31T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "independiente",
+   "homeName": "Árabe Unido",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -44140,6 +45636,8 @@
    "kickoff": "2026-04-04T21:00:00.000Z",
    "home": "san-francisco",
    "away": "veraguas",
+   "homeName": "San Francisco FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -44199,6 +45697,8 @@
    "kickoff": "2026-04-04T23:15:00.000Z",
    "home": "umecit",
    "away": "alianza",
+   "homeName": "UMECIT",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -44258,6 +45758,8 @@
    "kickoff": "2026-04-05T01:30:00.000Z",
    "home": "tauro",
    "away": "plaza-amador",
+   "homeName": "Tauro FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -44317,6 +45819,8 @@
    "kickoff": "2026-04-05T21:00:00.000Z",
    "home": "union-cocle",
    "away": "independiente",
+   "homeName": "Unión Coclé",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -44376,6 +45880,8 @@
    "kickoff": "2026-04-05T23:15:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -44435,6 +45941,8 @@
    "kickoff": "2026-04-07T01:30:00.000Z",
    "home": "universitario",
    "away": "herrera",
+   "homeName": "Universitario",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -44494,6 +46002,8 @@
    "kickoff": "2026-04-11T01:30:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -44553,6 +46063,8 @@
    "kickoff": "2026-04-11T23:15:00.000Z",
    "home": "independiente",
    "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -44612,6 +46124,8 @@
    "kickoff": "2026-04-12T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "alianza",
+   "homeName": "Plaza Amador",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -44671,6 +46185,8 @@
    "kickoff": "2026-04-12T21:00:00.000Z",
    "home": "herrera",
    "away": "veraguas",
+   "homeName": "Herrera FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -44730,6 +46246,8 @@
    "kickoff": "2026-04-14T01:30:00.000Z",
    "home": "sporting-sm",
    "away": "umecit",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -44789,6 +46307,8 @@
    "kickoff": "2026-04-18T21:00:00.000Z",
    "home": "tauro",
    "away": "alianza",
+   "homeName": "Tauro FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -44848,6 +46368,8 @@
    "kickoff": "2026-04-18T23:15:00.000Z",
    "home": "universitario",
    "away": "veraguas",
+   "homeName": "Universitario",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -44907,6 +46429,8 @@
    "kickoff": "2026-04-19T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "umecit",
+   "homeName": "Árabe Unido",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -44966,6 +46490,8 @@
    "kickoff": "2026-04-19T21:00:00.000Z",
    "home": "union-cocle",
    "away": "san-francisco",
+   "homeName": "Unión Coclé",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -45025,6 +46551,8 @@
    "kickoff": "2026-04-19T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -45084,6 +46612,8 @@
    "kickoff": "2026-04-21T01:30:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -45143,6 +46673,8 @@
    "kickoff": "2026-04-26T21:00:00.000Z",
    "home": "herrera",
    "away": "san-francisco",
+   "homeName": "Herrera FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -45202,6 +46734,8 @@
    "kickoff": "2026-04-26T21:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -45261,6 +46795,8 @@
    "kickoff": "2026-04-26T21:00:00.000Z",
    "home": "veraguas",
    "away": "union-cocle",
+   "homeName": "Veraguas United",
+   "awayName": "Unión Coclé",
    "market": "1x2",
    "options": [
     {
@@ -45320,6 +46856,8 @@
    "kickoff": "2026-05-02T21:00:00.000Z",
    "home": "union-cocle",
    "away": "herrera",
+   "homeName": "Unión Coclé",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -45379,6 +46917,8 @@
    "kickoff": "2026-05-02T21:00:00.000Z",
    "home": "veraguas",
    "away": "independiente",
+   "homeName": "Veraguas United",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -45438,6 +46978,8 @@
    "kickoff": "2026-05-03T01:30:00.000Z",
    "home": "alianza",
    "away": "sporting-sm",
+   "homeName": "Alianza FC",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -45497,6 +47039,8 @@
    "kickoff": "2026-05-03T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -45556,6 +47100,8 @@
    "kickoff": "2026-05-06T01:00:00.000Z",
    "home": "alianza",
    "away": "independiente",
+   "homeName": "Alianza FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -45615,6 +47161,8 @@
    "kickoff": "2026-05-10T01:30:00.000Z",
    "home": "alianza",
    "away": "veraguas",
+   "homeName": "Alianza FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -45674,6 +47222,8 @@
    "kickoff": "2026-05-10T21:00:00.000Z",
    "home": "umecit",
    "away": "plaza-amador",
+   "homeName": "UMECIT",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -45733,6 +47283,8 @@
    "kickoff": "2026-05-17T01:30:00.000Z",
    "home": "veraguas",
    "away": "alianza",
+   "homeName": "Veraguas United",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -45792,6 +47344,8 @@
    "kickoff": "2026-07-25T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "plaza-amador",
+   "homeName": "Árabe Unido",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -45851,6 +47405,8 @@
    "kickoff": "2026-07-25T23:15:00.000Z",
    "home": "alianza",
    "away": "umecit",
+   "homeName": "Alianza FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -45910,6 +47466,8 @@
    "kickoff": "2026-07-26T01:30:00.000Z",
    "home": "universitario",
    "away": "san-francisco",
+   "homeName": "Universitario",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -45969,6 +47527,8 @@
    "kickoff": "2026-07-26T21:00:00.000Z",
    "home": "herrera",
    "away": "union-cocle",
+   "homeName": "Herrera FC",
+   "awayName": "Unión Coclé",
    "market": "1x2",
    "options": [
     {
@@ -46028,6 +47588,8 @@
    "kickoff": "2026-07-26T23:15:00.000Z",
    "home": "veraguas",
    "away": "independiente",
+   "homeName": "Veraguas United",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -46087,6 +47649,8 @@
    "kickoff": "2026-08-01T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "alianza",
+   "homeName": "Árabe Unido",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -46146,6 +47710,8 @@
    "kickoff": "2026-08-01T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "plaza-amador",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -46205,6 +47771,8 @@
    "kickoff": "2026-08-02T01:30:00.000Z",
    "home": "tauro",
    "away": "umecit",
+   "homeName": "Tauro FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -46264,6 +47832,8 @@
    "kickoff": "2026-08-02T21:00:00.000Z",
    "home": "union-cocle",
    "away": "san-francisco",
+   "homeName": "Unión Coclé",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -46323,6 +47893,8 @@
    "kickoff": "2026-08-02T23:15:00.000Z",
    "home": "veraguas",
    "away": "universitario",
+   "homeName": "Veraguas United",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -46382,6 +47954,8 @@
    "kickoff": "2026-08-04T01:00:00.000Z",
    "home": "independiente",
    "away": "herrera",
+   "homeName": "Independiente",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -46441,6 +48015,8 @@
    "kickoff": "2026-08-08T01:30:00.000Z",
    "home": "san-francisco",
    "away": "herrera",
+   "homeName": "San Francisco FC",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -46500,6 +48076,8 @@
    "kickoff": "2026-08-09T01:30:00.000Z",
    "home": "umecit",
    "away": "arabe-unido",
+   "homeName": "UMECIT",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -46559,6 +48137,8 @@
    "kickoff": "2026-08-09T21:00:00.000Z",
    "home": "union-cocle",
    "away": "veraguas",
+   "homeName": "Unión Coclé",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -46618,6 +48198,8 @@
    "kickoff": "2026-08-09T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "alianza",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -46677,6 +48259,8 @@
    "kickoff": "2026-08-11T01:00:00.000Z",
    "home": "independiente",
    "away": "universitario",
+   "homeName": "Independiente",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -46736,6 +48320,8 @@
    "kickoff": "2026-08-15T01:30:00.000Z",
    "home": "san-francisco",
    "away": "independiente",
+   "homeName": "San Francisco FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -46795,6 +48381,8 @@
    "kickoff": "2026-08-16T21:00:00.000Z",
    "home": "herrera",
    "away": "veraguas",
+   "homeName": "Herrera FC",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -46854,6 +48442,8 @@
    "kickoff": "2026-08-16T23:15:00.000Z",
    "home": "alianza",
    "away": "plaza-amador",
+   "homeName": "Alianza FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -46913,6 +48503,8 @@
    "kickoff": "2026-08-18T01:00:00.000Z",
    "home": "tauro",
    "away": "arabe-unido",
+   "homeName": "Tauro FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -46972,6 +48564,8 @@
    "kickoff": "2026-08-22T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "sporting-sm",
+   "homeName": "Árabe Unido",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -47031,6 +48625,8 @@
    "kickoff": "2026-08-22T23:15:00.000Z",
    "home": "independiente",
    "away": "union-cocle",
+   "homeName": "Independiente",
+   "awayName": "Unión Coclé",
    "market": "1x2",
    "options": [
     {
@@ -47090,6 +48686,8 @@
    "kickoff": "2026-08-23T01:30:00.000Z",
    "home": "veraguas",
    "away": "san-francisco",
+   "homeName": "Veraguas United",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -47149,6 +48747,8 @@
    "kickoff": "2026-08-23T21:00:00.000Z",
    "home": "herrera",
    "away": "universitario",
+   "homeName": "Herrera FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -47208,6 +48808,8 @@
    "kickoff": "2026-08-25T01:00:00.000Z",
    "home": "alianza",
    "away": "tauro",
+   "homeName": "Alianza FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -47267,6 +48869,8 @@
    "kickoff": "2026-08-29T01:30:00.000Z",
    "home": "tauro",
    "away": "independiente",
+   "homeName": "Tauro FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -47326,6 +48930,8 @@
    "kickoff": "2026-08-29T23:15:00.000Z",
    "home": "universitario",
    "away": "arabe-unido",
+   "homeName": "Universitario",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -47385,6 +48991,8 @@
    "kickoff": "2026-08-30T01:30:00.000Z",
    "home": "san-francisco",
    "away": "plaza-amador",
+   "homeName": "San Francisco FC",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -47444,6 +49052,8 @@
    "kickoff": "2026-08-30T21:00:00.000Z",
    "home": "union-cocle",
    "away": "alianza",
+   "homeName": "Unión Coclé",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -47503,6 +49113,8 @@
    "kickoff": "2026-08-30T23:15:00.000Z",
    "home": "sporting-sm",
    "away": "herrera",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -47562,6 +49174,8 @@
    "kickoff": "2026-09-01T01:00:00.000Z",
    "home": "umecit",
    "away": "veraguas",
+   "homeName": "UMECIT",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -47621,6 +49235,8 @@
    "kickoff": "2026-09-05T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "veraguas",
+   "homeName": "Árabe Unido",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -47680,6 +49296,8 @@
    "kickoff": "2026-09-05T23:15:00.000Z",
    "home": "universitario",
    "away": "sporting-sm",
+   "homeName": "Universitario",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -47739,6 +49357,8 @@
    "kickoff": "2026-09-06T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "herrera",
+   "homeName": "Plaza Amador",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -47798,6 +49418,8 @@
    "kickoff": "2026-09-06T23:15:00.000Z",
    "home": "alianza",
    "away": "san-francisco",
+   "homeName": "Alianza FC",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -47857,6 +49479,8 @@
    "kickoff": "2026-09-08T01:00:00.000Z",
    "home": "umecit",
    "away": "independiente",
+   "homeName": "UMECIT",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -47916,6 +49540,8 @@
    "kickoff": "2026-09-12T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "union-cocle",
+   "homeName": "Árabe Unido",
+   "awayName": "Unión Coclé",
    "market": "1x2",
    "options": [
     {
@@ -47975,6 +49601,8 @@
    "kickoff": "2026-09-12T23:15:00.000Z",
    "home": "independiente",
    "away": "plaza-amador",
+   "homeName": "Independiente",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -48034,6 +49662,8 @@
    "kickoff": "2026-09-13T21:00:00.000Z",
    "home": "herrera",
    "away": "umecit",
+   "homeName": "Herrera FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -48093,6 +49723,8 @@
    "kickoff": "2026-09-13T23:15:00.000Z",
    "home": "veraguas",
    "away": "alianza",
+   "homeName": "Veraguas United",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -48152,6 +49784,8 @@
    "kickoff": "2026-09-15T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "san-francisco",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "San Francisco FC",
    "market": "1x2",
    "options": [
     {
@@ -48211,6 +49845,8 @@
    "kickoff": "2026-09-19T01:30:00.000Z",
    "home": "san-francisco",
    "away": "arabe-unido",
+   "homeName": "San Francisco FC",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -48270,6 +49906,8 @@
    "kickoff": "2026-09-19T23:15:00.000Z",
    "home": "alianza",
    "away": "universitario",
+   "homeName": "Alianza FC",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -48329,6 +49967,8 @@
    "kickoff": "2026-09-20T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "veraguas",
+   "homeName": "Plaza Amador",
+   "awayName": "Veraguas United",
    "market": "1x2",
    "options": [
     {
@@ -48388,6 +50028,8 @@
    "kickoff": "2026-09-20T21:00:00.000Z",
    "home": "herrera",
    "away": "tauro",
+   "homeName": "Herrera FC",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -48447,6 +50089,8 @@
    "kickoff": "2026-09-20T23:15:00.000Z",
    "home": "independiente",
    "away": "sporting-sm",
+   "homeName": "Independiente",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -48506,6 +50150,8 @@
    "kickoff": "2026-09-26T01:30:00.000Z",
    "home": "arabe-unido",
    "away": "herrera",
+   "homeName": "Árabe Unido",
+   "awayName": "Herrera FC",
    "market": "1x2",
    "options": [
     {
@@ -48565,6 +50211,8 @@
    "kickoff": "2026-09-27T21:00:00.000Z",
    "home": "union-cocle",
    "away": "plaza-amador",
+   "homeName": "Unión Coclé",
+   "awayName": "Plaza Amador",
    "market": "1x2",
    "options": [
     {
@@ -48624,6 +50272,8 @@
    "kickoff": "2026-09-27T23:15:00.000Z",
    "home": "veraguas",
    "away": "sporting-sm",
+   "homeName": "Veraguas United",
+   "awayName": "Sporting San Miguelito",
    "market": "1x2",
    "options": [
     {
@@ -48683,6 +50333,8 @@
    "kickoff": "2026-09-29T01:00:00.000Z",
    "home": "alianza",
    "away": "independiente",
+   "homeName": "Alianza FC",
+   "awayName": "Independiente",
    "market": "1x2",
    "options": [
     {
@@ -48742,6 +50394,8 @@
    "kickoff": "2026-10-03T01:30:00.000Z",
    "home": "san-francisco",
    "away": "umecit",
+   "homeName": "San Francisco FC",
+   "awayName": "UMECIT",
    "market": "1x2",
    "options": [
     {
@@ -48801,6 +50455,8 @@
    "kickoff": "2026-10-03T23:15:00.000Z",
    "home": "veraguas",
    "away": "tauro",
+   "homeName": "Veraguas United",
+   "awayName": "Tauro FC",
    "market": "1x2",
    "options": [
     {
@@ -48860,6 +50516,8 @@
    "kickoff": "2026-10-04T01:30:00.000Z",
    "home": "plaza-amador",
    "away": "universitario",
+   "homeName": "Plaza Amador",
+   "awayName": "Universitario",
    "market": "1x2",
    "options": [
     {
@@ -48919,6 +50577,8 @@
    "kickoff": "2026-10-04T21:00:00.000Z",
    "home": "herrera",
    "away": "alianza",
+   "homeName": "Herrera FC",
+   "awayName": "Alianza FC",
    "market": "1x2",
    "options": [
     {
@@ -48978,6 +50638,8 @@
    "kickoff": "2026-10-04T23:15:00.000Z",
    "home": "independiente",
    "away": "arabe-unido",
+   "homeName": "Independiente",
+   "awayName": "Árabe Unido",
    "market": "1x2",
    "options": [
     {
@@ -49037,6 +50699,8 @@
    "kickoff": "2026-10-06T01:00:00.000Z",
    "home": "sporting-sm",
    "away": "union-cocle",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Unión Coclé",
    "market": "1x2",
    "options": [
     {

@@ -1,5 +1,6 @@
 import type { Match } from '../football/types'
 import { EloBook, type EloParams } from './elo'
+import { coordinateSearch } from './search'
 import { expectedGoals, marketProbabilities, MAX_GOALS, scoreMatrix, type GoalParams, type MarketProbabilities } from './goals'
 
 export interface OddsModelParams {
@@ -86,25 +87,7 @@ const toParams = (vector: number[], template: OddsModelParams): OddsModelParams 
 
 // Deterministic coordinate search on exact-score log loss, which covers every market at once.
 export const fitParams = (matches: readonly Match[], start = DEFAULT_PARAMS, rounds = 12) => {
-  let vector = KEYS.map(([group, key]) => (start[group] as unknown as Record<string, number>)[key])
-  const steps = [...STEPS]
-  const loss = (candidate: number[]) => evaluate(matches, toParams(candidate, start)).scoreLogLoss
-  let best = loss(vector), evaluations = 1
-  for (let round = 0; round < rounds; round++) {
-    for (let i = 0; i < vector.length; i++) {
-      for (const direction of [1, -1]) {
-        let improved = true
-        while (improved) {
-          const candidate = [...vector]
-          candidate[i] = Math.min(BOUNDS[i][1], Math.max(BOUNDS[i][0], candidate[i] + direction * steps[i]))
-          const value = candidate[i] === vector[i] ? Infinity : loss(candidate)
-          evaluations++
-          improved = value < best - 1e-7
-          if (improved) { vector = candidate; best = value }
-        }
-      }
-    }
-    steps.forEach((_, i) => { steps[i] /= 2 })
-  }
-  return { params: toParams(vector, start), scoreLogLoss: best, evaluations }
+  const initial = KEYS.map(([group, key]) => (start[group] as unknown as Record<string, number>)[key])
+  const fit = coordinateSearch(initial, STEPS, BOUNDS, candidate => evaluate(matches, toParams(candidate, start)).scoreLogLoss, rounds)
+  return { params: toParams(fit.vector, start), scoreLogLoss: fit.loss, evaluations: fit.evaluations }
 }

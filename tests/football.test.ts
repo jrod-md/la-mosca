@@ -71,17 +71,14 @@ test('Ledger merge upserts, unions sources and never downgrades a final result',
   assert.equal(utcDay(new Date('2026-10-07T23:59:00Z'), 1), '2026-10-08')
 })
 
-test('TheSportsDB client filters by league and national team', async () => {
+test('TheSportsDB client keeps only LPF events for a day', async () => {
   const urls: string[] = []
   const fetch: JsonFetch = async url => {
     urls.push(url)
-    const events = url.includes('eventsday') ? [tsdb(), tsdb({ idEvent: '901', idAPIfootball: null, idLeague: '9999' })]
-      : [tsdb({ idEvent: '902', idAPIfootball: null, idHomeTeam: '136141' }), tsdb({ idEvent: '903', idAPIfootball: null })]
-    return { ok: true, status: 200, json: async () => url.includes('eventslast') ? { results: events } : { events } }
+    return { ok: true, status: 200, json: async () => ({ events: [tsdb(), tsdb({ idEvent: '901', idAPIfootball: null, idLeague: '9999' })] }) }
   }
   const client = createTheSportsDbClient(fetch)
   assert.deepEqual((await client.lpfDay('2026-10-10')).map(match => match.id), ['af:7000'])
-  assert.deepEqual((await client.panamaRecent()).map(match => match.id), ['tsdb:902', 'tsdb:902'])
   assert.ok(urls[0].endsWith('eventsday.php?d=2026-10-10&l=4819'))
 })
 

@@ -1,0 +1,41 @@
+{
+ "innate": {
+  "alianza": 0.6792,
+  "arabe-unido": 0.6681,
+  "atletico-chiriqui": 0.5521,
+  "potros-del-este": 0.2919,
+  "herrera": 0.5885,
+  "independiente": 0.8312,
+  "plaza-amador": 0.5463,
+  "san-francisco": 0.4245,
+  "sporting-sm": 0.6717,
+  "tauro": 0.0581,
+  "umecit": 0.3714,
+  "union-cocle": 0.1697,
+  "universitario": 0.4253,
+  "veraguas": 0.7726,
+  "nt:PA": 0.2652
+ },
+ "history": [
+  {
+   "date": "2026-10-07",
+   "affinity": {
+    "alianza": 0.5055,
+    "arabe-unido": 0.5316,
+    "atletico-chiriqui": 0.4612,
+    "potros-del-este": 0.2269,
+    "herrera": 0.4326,
+    "independiente": 0.6144,
+    "plaza-amador": 0.4289,
+    "san-francisco": 0.3455,
+    "sporting-sm": 0.4829,
+    "tauro": 0.0568,
+    "umecit": 0.3391,
+    "union-cocle": 0.1613,
+    "universitario": 0.3334,
+    "veraguas": 0.5943,
+    "nt:PA": 0.2539
+   }
+  }
+ ]
+}

@@ -309,3 +309,7 @@ tr[data-status='pass'] td { color: var(--ink-muted); font-style: italic; }
 .infancy__bets thead th { position: sticky; inset-block-start: 0; background: var(--wall); }
 .sections > .infancy, .sections > .tastes { grid-column: 1 / -1; }
 .tastes__list { max-inline-size: 48rem; }
+
+.tastes__weekly { font: 800 clamp(1.25rem, 1rem + 0.8vw, 1.6rem)/1.15 var(--display); text-transform: uppercase; color: var(--amber); max-width: 34ch; }
+.tastes__list li[data-sele='true'] .tastes__name { color: oklch(0.72 0.17 27); }
+.tastes__list li[data-sele='true'] .tastes__learned { background: oklch(0.6 0.19 27); }

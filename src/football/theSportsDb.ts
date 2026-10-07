@@ -3,7 +3,6 @@ import { matchId, toInteger, type Competition, type JsonFetch, type Match, type 
 // Free public key. The free tier truncates list endpoints to ~5 events, so callers query one day at a time.
 const BASE = 'https://www.thesportsdb.com/api/v1/json/3/'
 export const TSDB_LPF_LEAGUE = '4819'
-export const TSDB_PANAMA_TEAM = '136141'
 
 export interface TsdbEvent {
   idEvent: string
@@ -80,21 +79,16 @@ export const normalizeTsdbEvent = (event: TsdbEvent, competition: Competition): 
 }
 
 export const createTheSportsDbClient = (fetch: JsonFetch) => {
-  const get = async (path: string, field: 'events' | 'results'): Promise<TsdbEvent[]> => {
+  const get = async (path: string, field: 'events'): Promise<TsdbEvent[]> => {
     const response = await fetch(`${BASE}${path}`)
     if (!response.ok) throw new Error(`TheSportsDB ${path.split('?')[0]} failed with HTTP ${response.status}`)
     const body = await response.json() as Record<string, unknown>
     const list = body[field]
     return Array.isArray(list) ? list as TsdbEvent[] : []
   }
-  const isPanama = (event: TsdbEvent) => event.idHomeTeam === TSDB_PANAMA_TEAM || event.idAwayTeam === TSDB_PANAMA_TEAM
   return {
     // date: 'YYYY-MM-DD' in UTC, matching TheSportsDB's dateEvent.
     lpfDay: async (date: string) => (await get(`eventsday.php?d=${date}&l=${TSDB_LPF_LEAGUE}`, 'events'))
       .filter(event => event.idLeague === TSDB_LPF_LEAGUE).map(event => normalizeTsdbEvent(event, 'lpf')),
-    panamaRecent: async () => [
-      ...await get(`eventslast.php?id=${TSDB_PANAMA_TEAM}`, 'results'),
-      ...await get(`eventsnext.php?id=${TSDB_PANAMA_TEAM}`, 'events'),
-    ].filter(isPanama).map(event => normalizeTsdbEvent(event, 'panama')),
   }
 }

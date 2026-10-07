@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { Selection } from '../brain/odor'
 import { BETS_HISTORY_URL } from './data'
-import { kickoff, money, odds as formatOdds, percent } from './format'
+import { kickoff, matchTime, money, odds as formatOdds, percent } from './format'
 import { useLanguage, useT, type MessageKey } from './i18n'
 import type { Story } from './story'
 import type { Brain } from './useBrain'
@@ -31,7 +31,7 @@ export default function Slip({ story, brain }: { story: Story; brain: Brain | nu
         <span className="slip__vs">{t('vs')}</span>
         <span>{story.awayName}</span>
       </p>
-      {story.kickoff && <p className="slip__when">{kickoff(story.kickoff, language)}{story.venue ? ` · ${story.venue}` : ''}</p>}
+      {story.kickoff && story.fixture && <p className="slip__when">{matchTime(story.kickoff, story.fixture.id, language)}{story.venue ? ` · ${story.venue}` : ''}</p>}
 
       {featured.kind === 'passed' && <p className="slip__pick">{t('slipPassed')}</p>}
       {story.pending && <p className="slip__pick slip__pick--pending" aria-live="polite">{t('brainLoading')}</p>}

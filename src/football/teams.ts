@@ -31,3 +31,5 @@ const BY_SOURCE = new Map(LPF_TEAMS.flatMap(team => team.sourceIds.map(sourceId 
 export const teamKey = (team: TeamRef): string => BY_SOURCE.get(team.sourceId)?.id ?? team.sourceId
 export const isMappedTeam = (team: TeamRef): boolean => BY_SOURCE.has(team.sourceId)
 export const teamName = (key: string): string => LPF_TEAMS.find(team => team.id === key)?.name ?? key
+// Canonical name for league clubs, the source's name for everyone else (national teams).
+export const displayName = (team: TeamRef): string => BY_SOURCE.get(team.sourceId)?.name ?? team.name

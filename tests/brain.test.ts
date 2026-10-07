@@ -5,6 +5,7 @@ import { buildCircuit, perceive, KC_SPARSITY } from '../src/brain/circuit'
 import { Fly, FLY_PARAMS, fixtureOf } from '../src/brain/fly'
 import { glomeruli, optionOdor, priceBucket } from '../src/brain/odor'
 import { randomFor } from '../src/brain/random'
+import { recordSnapshot, weeklyChange, type TasteLog } from '../src/brain/tastes'
 import type { Match } from '../src/football/types'
 import type { MatchOdds } from '../src/odds/odds'
 
@@ -85,4 +86,17 @@ test('Exhibition picks are a distribution and leave the fly untouched', () => {
   }
   assert.equal(exhibition.score.length, 2)
   assert.equal(JSON.stringify(fly.state), before)
+})
+
+test('Taste log keeps one snapshot per day and reports the week’s biggest moves', () => {
+  let log: TasteLog = { innate: { a: 0.5, b: 0.5 }, history: [] }
+  log = recordSnapshot(log, '2026-10-01', { a: 0.5, b: 0.5 })
+  assert.equal(weeklyChange(log), null)
+  log = recordSnapshot(log, '2026-10-08', { a: 0.4, b: 0.6 })
+  log = recordSnapshot(log, '2026-10-08', { a: 0.45, b: 0.62 })
+  assert.equal(log.history.length, 2)
+  const change = weeklyChange(log)!
+  assert.equal(change.warmed?.team, 'b')
+  assert.equal(change.cooled?.team, 'a')
+  assert.equal(weeklyChange(recordSnapshot(log, '2026-10-15', { a: 0.45, b: 0.62 }))?.warmed, null)
 })

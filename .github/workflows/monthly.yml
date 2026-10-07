@@ -1,0 +1,45 @@
+name: Monthly calibration
+
+# Refits both bookmakers with everything played so far (LPF and the national team), reprices the
+# upcoming matches, and commits the new models. Bets already placed keep the price they got.
+on:
+  schedule:
+    - cron: '0 10 1 * *' # the 1st of each month, 05:00 in Panama (before the daily run)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-fly
+  cancel-in-progress: false
+
+jobs:
+  calibrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run calibrate:odds
+      - run: npm run calibrate:international
+      - run: npm run fly:upcoming
+      - name: Verify site with the new models
+        run: |
+          npm test
+          npm run build
+      - name: Commit models
+        run: |
+          git config user.name 'mosca-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/model data/fly/upcoming.json
+          if git diff --cached --quiet; then
+            echo 'No model changes.'
+            exit 0
+          fi
+          git commit -m "data: monthly calibration $(date -u +%Y-%m)"
+          git pull --rebase origin main
+          git push origin HEAD:main

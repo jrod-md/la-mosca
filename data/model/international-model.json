@@ -1,0 +1,23 @@
+{
+ "fittedAt": "2026-10-07T17:36:01.417Z",
+ "source": "World Football Elo Ratings (eloratings.net), Panama results",
+ "since": "2006-01-01",
+ "trainedOn": 301,
+ "params": {
+  "base": 0.0984375,
+  "slope": 0.7500000000000001,
+  "rho": -0.03875000000000001
+ },
+ "metrics": {
+  "model": {
+   "n": 301,
+   "scoreLogLoss": 2.6934272409003146,
+   "resultLogLoss": 0.9104464712049795
+  },
+  "baseline": {
+   "n": 301,
+   "resultLogLoss": 0.9389620115056251
+  }
+ },
+ "method": "Pre-match Elo gap (+100 home) -> Dixon-Coles Poisson; coordinate search on exact-score log loss"
+}

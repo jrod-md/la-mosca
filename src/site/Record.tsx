@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { FLY_PARAMS, type Bet } from '../brain/fly'
-import { LPF_TEAMS, teamName } from '../football/teams'
-import { infancy, liveBets, loadInfancyBets, nextDailyRun, passes } from './data'
+import { PANAMA_KEY, TASTE_TEAMS, weeklyChange } from '../brain/tastes'
+import { teamName } from '../football/teams'
+import { infancy, liveBets, loadInfancyBets, nextDailyRun, passes, tastes } from './data'
 import { day, money, odds as formatOdds } from './format'
 import { useLanguage, useT } from './i18n'
 import { selectionLabel } from './Slip'
@@ -62,6 +63,9 @@ function Totals({ bets, bankruptcies }: { bets: Bet[]; bankruptcies: number }) {
 
 type Row = { kind: 'bet'; bet: Bet; kickoff: string } | { kind: 'pass'; kickoff: string; home: string; away: string }
 
+const names = (entry: { home: string; away: string; homeName?: string; awayName?: string }) =>
+  [entry.homeName ?? teamName(entry.home), entry.awayName ?? teamName(entry.away)] as const
+
 function BetTable({ rows }: { rows: Row[] }) {
   const t = useT()
   const { language } = useLanguage()
@@ -77,12 +81,12 @@ function BetTable({ rows }: { rows: Row[] }) {
             if (row.kind === 'pass') return (
               <tr key={`pass-${row.kickoff}-${row.home}`} data-status="pass">
                 <td>{day(row.kickoff, language)}</td>
-                <td>{teamName(row.home)} {t('vs')} {teamName(row.away)}</td>
+                <td>{row.home} {t('vs')} {row.away}</td>
                 <td colSpan={6}>{t('passedRow')}</td>
               </tr>
             )
             const { bet } = row
-            const home = teamName(bet.home), away = teamName(bet.away)
+            const [home, away] = names(bet)
             return (
               <tr key={bet.id} data-status={bet.status}>
                 <td>{day(bet.kickoff, language)}</td>
@@ -108,7 +112,7 @@ export function Ledger() {
   const chronological = [...liveBets].sort((a, b) => a.kickoff.localeCompare(b.kickoff))
   const rows: Row[] = [
     ...liveBets.map(bet => ({ kind: 'bet' as const, bet, kickoff: bet.kickoff })),
-    ...passes.map(pass => ({ kind: 'pass' as const, kickoff: pass.kickoff, home: pass.home, away: pass.away })),
+    ...passes.map(pass => { const [home, away] = names(pass); return { kind: 'pass' as const, kickoff: pass.kickoff, home, away } }),
   ].sort((a, b) => b.kickoff.localeCompare(a.kickoff))
   const settled = chronological.filter(bet => bet.status !== 'open')
   return (
@@ -157,21 +161,35 @@ export function Infancy() {
   )
 }
 
+// One sentence on how its tastes moved over the last week; null before there is a week to compare.
+export function useWeeklyLine() {
+  const t = useT()
+  const change = weeklyChange(tastes)
+  if (!change) return null
+  const name = (team: string) => team === PANAMA_KEY ? t('sele') : teamName(team)
+  if (change.warmed && change.cooled) return t('weekBoth', { warmed: name(change.warmed.team), cooled: name(change.cooled.team) })
+  if (change.warmed) return `${t('weekWarmed', { team: name(change.warmed.team) })}.`
+  if (change.cooled) return `${t('weekCooledOnly', { team: name(change.cooled.team) })}.`
+  return t('weekStill')
+}
+
 export function Tastes() {
   const t = useT()
-  const names = new Map(LPF_TEAMS.map(team => [team.id, team.name]))
-  const rows = [...infancy.affinity].sort((a, b) => b.learned - a.learned)
+  const weekly = useWeeklyLine()
+  const latest = tastes.history.at(-1)?.affinity ?? tastes.innate
+  const rows = TASTE_TEAMS.map(team => ({ team, innate: tastes.innate[team] ?? 0, learned: latest[team] ?? 0 })).sort((a, b) => b.learned - a.learned)
   const max = Math.max(...rows.flatMap(row => [row.innate, row.learned]))
   return (
     <section className="tastes" aria-labelledby="tastes-title">
       <div className="section-head">
         <h2 id="tastes-title">{t('tastesTitle')}</h2>
         <p>{t('tastesLead')}</p>
+        {weekly && <p className="tastes__weekly">{weekly}</p>}
       </div>
       <ol className="tastes__list">
         {rows.map(row => (
-          <li key={row.team}>
-            <span className="tastes__name">{names.get(row.team) ?? row.team}</span>
+          <li key={row.team} data-sele={row.team === PANAMA_KEY}>
+            <span className="tastes__name">{row.team === PANAMA_KEY ? t('sele') : teamName(row.team)}</span>
             <span className="tastes__bar" aria-label={`${t('innate')} ${row.innate.toFixed(2)}, ${t('learned')} ${row.learned.toFixed(2)}`}>
               <span className="tastes__learned" style={{ inlineSize: `${(Math.max(0, row.learned) / max) * 100}%` }} />
               <span className="tastes__innate" style={{ insetInlineStart: `${(Math.max(0, row.innate) / max) * 100}%` }} />
