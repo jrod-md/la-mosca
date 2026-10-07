@@ -125,3 +125,69 @@ export const drawPennant = (canvas: HTMLCanvasElement) => {
   star(halfW / 2, halfH / 2, halfH * 0.32, '#005293')
   star(halfW * 1.5, halfH * 1.5, halfH * 0.32, '#d21034')
 }
+
+// Panama City at night from across the bay: dense lit towers, one twisted tower, water reflections.
+export const drawSkyline = (canvas: HTMLCanvasElement, red: boolean) => {
+  const context = canvas.getContext('2d')!
+  const { width, height } = canvas
+  const horizon = height * 0.68
+  const sky = context.createLinearGradient(0, 0, 0, horizon)
+  sky.addColorStop(0, red ? '#1c0507' : '#070b1c')
+  sky.addColorStop(1, red ? '#7a1712' : '#2a2747')
+  context.fillStyle = sky
+  context.fillRect(0, 0, width, horizon)
+
+  // Deterministic layout so the city never reshuffles between renders.
+  let seed = 7
+  const random = () => (seed = (seed * 16807) % 2147483647) / 2147483647
+  for (let i = 0; i < 40; i++) {
+    context.fillStyle = `rgba(255, 255, 255, ${0.3 + random() * 0.5})`
+    context.fillRect(random() * width, random() * horizon * 0.6, 1.5, 1.5)
+  }
+
+  const towers: { x: number; w: number; h: number; twisted?: boolean }[] = []
+  for (let x = -10; x < width; ) {
+    const w = 14 + random() * 26
+    towers.push({ x, w, h: 40 + random() * (random() < 0.3 ? 190 : 110) })
+    x += w + random() * 6
+  }
+  towers.splice(Math.floor(towers.length * 0.62), 0, { x: width * 0.6, w: 26, h: 230, twisted: true })
+  for (const tower of towers) {
+    const top = horizon - tower.h
+    context.fillStyle = red ? '#1b0909' : '#0c1020'
+    context.fillRect(tower.x, top, tower.w, tower.h)
+    if (tower.twisted) {
+      // A twisted tower in the spirit of the F&F Tower: offset floor plates.
+      context.fillStyle = red ? '#2a0e0d' : '#141a33'
+      for (let y = top; y < horizon; y += 9) context.fillRect(tower.x + Math.sin(y / 18) * 5, y, tower.w, 5)
+    }
+    for (let y = top + 6; y < horizon - 4; y += 7) {
+      for (let x = tower.x + 3; x < tower.x + tower.w - 3; x += 5) {
+        if (random() < 0.38) {
+          context.fillStyle = random() < 0.8 ? 'rgba(255, 214, 140, 0.85)' : 'rgba(190, 220, 255, 0.85)'
+          context.fillRect(x, y, 2, 3)
+        }
+      }
+    }
+  }
+
+  // The bay, with the city's lights stretched across the water.
+  context.fillStyle = red ? '#140405' : '#05070f'
+  context.fillRect(0, horizon, width, height - horizon)
+  for (let i = 0; i < 70; i++) {
+    const x = random() * width, y = horizon + 4 + random() * (height - horizon - 8)
+    context.fillStyle = `rgba(255, 210, 140, ${0.15 + random() * 0.35})`
+    context.fillRect(x, y, 6 + random() * 16, 1.5)
+  }
+
+  if (red) {
+    // A few slow-burning fireworks over the bay.
+    for (const [cx, cy, r] of [[width * 0.25, height * 0.2, 34], [width * 0.72, height * 0.14, 28], [width * 0.5, height * 0.3, 22]]) {
+      for (let i = 0; i < 18; i++) {
+        const angle = (i / 18) * Math.PI * 2
+        context.fillStyle = i % 2 ? '#ff6b57' : '#ffe1d6'
+        context.fillRect(cx + Math.cos(angle) * r, cy + Math.sin(angle) * r, 3, 3)
+      }
+    }
+  }
+}

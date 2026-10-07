@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import { animateFly, buildFly } from './fly3d'
-import { drawBroadcast, drawCalendar, drawPennant, type BroadcastInfo } from './screens'
+import { drawBroadcast, drawCalendar, drawPennant, drawSkyline, type BroadcastInfo } from './screens'
 
 export interface CalendarInfo { month: string; days: number; firstWeekday: number; circled: number | null }
 
@@ -37,10 +37,13 @@ export class Room {
   private readonly hemi: THREE.HemisphereLight
   private readonly screen = canvasTexture(640, 480)
   private readonly calendar = canvasTexture(320, 360)
-  private readonly screenMaterial: THREE.MeshStandardMaterial
+  private readonly screenMaterial: THREE.MeshBasicMaterial
+  private readonly skyline = canvasTexture(512, 360)
   private readonly pennant: THREE.Mesh
-  private readonly target = new THREE.Vector3(-0.25, 1.0, -0.75)
+  private readonly target = new THREE.Vector3(-0.6, 1.0, -0.7)
   private pointer = { x: 0, y: 0 }
+  // Narrow screens look further left so the fly by the window stays in frame.
+  private framing = { shift: 0, radius: 4.8 }
   private red = false
   thinking = false
 
@@ -79,17 +82,18 @@ export class Room {
     desk.position.set(-0.2, 0, -1.05)
     this.scene.add(desk)
 
-    // CRT television with the broadcast.
+    // CRT television with the broadcast. The screen is unlit: it emits its own picture and is
+    // never washed out or glared by the room's lights.
     const tv = new THREE.Group()
-    tv.add(box(0.86, 0.68, 0.62, '#d6ccb6', 0.55))
-    this.screenMaterial = new THREE.MeshStandardMaterial({ map: this.screen.texture, emissive: '#ffffff', emissiveMap: this.screen.texture, emissiveIntensity: 0.85, roughness: 0.3 })
-    const glass = new THREE.Mesh(new THREE.PlaneGeometry(0.7, 0.525), this.screenMaterial)
-    glass.position.z = 0.312
+    tv.add(box(1.12, 0.86, 0.7, '#d6ccb6', 0.55))
+    this.screenMaterial = new THREE.MeshBasicMaterial({ map: this.screen.texture, toneMapped: false })
+    const glass = new THREE.Mesh(new THREE.PlaneGeometry(0.92, 0.69), this.screenMaterial)
+    glass.position.z = 0.352
     tv.add(glass)
     const knob = box(0.05, 0.05, 0.03, '#3b342a')
-    knob.position.set(0.37, -0.27, 0.32)
+    knob.position.set(0.5, -0.36, 0.36)
     tv.add(knob)
-    tv.position.set(-0.55, 1.3, -1.2)
+    tv.position.set(-0.6, 1.39, -1.15)
     tv.rotation.y = 0.28
     this.scene.add(tv)
 
@@ -104,11 +108,12 @@ export class Room {
     shade.position.set(-0.08, 0.55, 0.05)
     shade.rotation.z = 0.9
     lampGroup.add(base, arm, shade)
-    lampGroup.position.set(0.6, 0.96, -1.15)
+    lampGroup.position.set(0.82, 0.96, -1.25)
     this.scene.add(lampGroup)
     this.lamp = new THREE.SpotLight(PALETTE.normal.light, 70, 7, 0.95, 0.6, 1.4)
-    this.lamp.position.set(0.5, 1.55, -1.05)
-    this.lamp.target.position.set(-0.2, 0.9, -0.3)
+    // Aimed at the desk's front edge and the fly, away from the TV.
+    this.lamp.position.set(0.74, 1.5, -1.15)
+    this.lamp.target.position.set(-0.6, 0.55, -0.4)
     this.lamp.castShadow = true
     this.lamp.shadow.mapSize.set(1024, 1024)
     this.lamp.shadow.bias = -0.0008
@@ -122,6 +127,26 @@ export class Room {
     tvGlow.position.set(-0.45, 1.3, -0.8)
     this.scene.add(this.hemi, fill, tvGlow)
 
+    // A window onto Panama City at night, on the side wall.
+    const pane = new THREE.Group()
+    const view = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1.05), new THREE.MeshBasicMaterial({ map: this.skyline.texture, toneMapped: false }))
+    pane.add(view)
+    for (const [w, h, x, y] of [[1.62, 0.07, 0, 0.56], [1.62, 0.07, 0, -0.56], [0.07, 1.18, -0.78, 0], [0.07, 1.18, 0.78, 0], [0.04, 1.05, 0, 0]]) {
+      const bar = box(w, h, 0.06, '#d9d1bd', 0.7)
+      bar.position.set(x, y, 0.02)
+      pane.add(bar)
+    }
+    const sill = box(1.75, 0.05, 0.16, '#d9d1bd', 0.7)
+    sill.position.set(0, -0.6, 0.07)
+    pane.add(sill)
+    pane.rotation.y = Math.PI / 2
+    pane.position.set(-2.39, 1.75, -0.35)
+    const moonlight = new THREE.PointLight('#8ea6ff', 3, 4, 1.6)
+    moonlight.position.set(-2.0, 1.75, -0.35)
+    this.scene.add(pane, moonlight)
+    drawSkyline(this.skyline.canvas, false)
+    this.skyline.texture.needsUpdate = true
+
     // Wall calendar and (Marea Roja) pennant.
     const calendar = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.56), new THREE.MeshStandardMaterial({ map: this.calendar.texture, roughness: 0.9 }))
     calendar.position.set(0.75, 2.05, -1.59)
@@ -134,8 +159,10 @@ export class Room {
     this.scene.add(this.pennant)
 
     // Standing in front of the desk, turned toward the TV.
-    this.fly.root.position.set(0.15, 0, -0.05)
-    this.fly.root.rotation.y = 0.45
+    // Beside the desk, in front of the window, turned toward the TV: the camera sees its face
+    // and profile instead of its back.
+    this.fly.root.position.set(-1.35, 0, -0.2)
+    this.fly.root.rotation.y = -0.75
     this.scene.add(this.fly.root)
 
     this.scene.fog = new THREE.Fog(PALETTE.normal.fog, 6, 14)
@@ -161,6 +188,8 @@ export class Room {
     ;(this.scene.fog as THREE.Fog).color.set(palette.fog)
     ;(this.scene.background as THREE.Color).set(palette.fog)
     this.pennant.visible = red
+    drawSkyline(this.skyline.canvas, red)
+    this.skyline.texture.needsUpdate = true
   }
 
   setPointer(x: number, y: number) {
@@ -172,6 +201,7 @@ export class Room {
     this.camera.aspect = width / height
     // Narrow screens pull back so the fly and the TV both stay in frame.
     this.camera.fov = this.camera.aspect < 0.8 ? 52 : this.camera.aspect < 1.2 ? 44 : 36
+    this.framing = this.camera.aspect < 0.8 ? { shift: -0.32, radius: 5.4 } : this.camera.aspect < 1.2 ? { shift: -0.2, radius: 5 } : { shift: 0, radius: 4.8 }
     this.camera.updateProjectionMatrix()
   }
 
@@ -180,11 +210,13 @@ export class Room {
     const drift = still ? 0 : Math.sin(t * 0.12) * 0.12
     // Over the fly's right shoulder, far enough to see the fly whole and read the TV.
     const angle = 0.78 + drift + this.pointer.x * 0.12
-    const radius = 4.8
-    this.camera.position.set(this.target.x + Math.sin(angle) * radius, 2.15 + this.pointer.y * 0.18, this.target.z + Math.cos(angle) * radius)
-    this.camera.lookAt(this.target)
+    const { shift, radius } = this.framing
+    const focus = this.target.clone().setX(this.target.x + shift)
+    this.camera.position.set(focus.x + Math.sin(angle) * radius, 2.15 + this.pointer.y * 0.18, focus.z + Math.cos(angle) * radius)
+    this.camera.lookAt(focus)
     animateFly(this.fly, t, this.thinking)
-    this.screenMaterial.emissiveIntensity = still ? 0.85 : 0.8 + Math.sin(t * 50) * 0.02 + Math.sin(t * 3.1) * 0.03
+    // Faint CRT flicker.
+    this.screenMaterial.color.setScalar(still ? 1 : 0.95 + Math.sin(t * 50) * 0.02 + Math.sin(t * 3.1) * 0.02)
     this.renderer.render(this.scene, this.camera)
   }
 
@@ -198,6 +230,7 @@ export class Room {
     })
     this.screen.texture.dispose()
     this.calendar.texture.dispose()
+    this.skyline.texture.dispose()
     this.renderer.dispose()
   }
 }
