@@ -5,6 +5,12 @@ import { drawBroadcast, drawCalendar, drawPennant, type BroadcastInfo } from './
 
 export interface CalendarInfo { month: string; days: number; firstWeekday: number; circled: number | null }
 
+// Awake: at the desk corner, front legs reaching over it, turned toward the TV (Stonkfly-style).
+const AWAKE = { position: new THREE.Vector3(-1.2, 0, -0.05), turn: -0.75 }
+// Asleep: in bed against the side wall past the window, head to the wall. The camera moves to the
+// foot of the bed, looking at the headboard, like the classic Metamorphosis illustration.
+const ASLEEP = { position: new THREE.Vector3(-1.35, 0, 1.6), turn: Math.PI / 2, camera: new THREE.Vector3(0.75, 2.35, 2.45), target: new THREE.Vector3(-1.6, 0.7, 1.5) }
+
 const PALETTE = {
   normal: { wall: '#3f3b2b', light: '#ffc27a', fog: '#2a271c', hemiSky: '#8c7a55' },
   red: { wall: '#5e1714', light: '#ff7a5c', fog: '#2c0a08', hemiSky: '#a3463a' },
@@ -167,11 +173,6 @@ export class Room {
     this.pennant.visible = false
     this.scene.add(this.pennant)
 
-    // Standing in front of the desk, turned toward the TV.
-    // Beside the desk, in front of the window, turned toward the TV: the camera sees its face
-    // and profile instead of its back.
-    this.fly.root.position.set(-1.75, 0, 0.3)
-    this.fly.root.rotation.y = -0.75
     this.scene.add(this.fly.root)
 
     this.scene.fog = new THREE.Fog(PALETTE.normal.fog, 6, 14)
@@ -225,7 +226,7 @@ export class Room {
     this.camera.aspect = width / height
     // Narrow screens pull back so the fly and the TV both stay in frame.
     this.camera.fov = this.camera.aspect < 0.8 ? 52 : this.camera.aspect < 1.2 ? 44 : 36
-    this.framing = this.camera.aspect < 0.8 ? { shift: -0.5, radius: 5.6 } : this.camera.aspect < 1.2 ? { shift: -0.4, radius: 5.2 } : { shift: -0.3, radius: 5 }
+    this.framing = this.camera.aspect < 0.8 ? { shift: -0.32, radius: 5.4 } : this.camera.aspect < 1.2 ? { shift: -0.2, radius: 5 } : { shift: 0, radius: 4.8 }
     this.camera.updateProjectionMatrix()
   }
 
@@ -233,14 +234,24 @@ export class Room {
     const t = still ? 0 : time
     const drift = still ? 0 : Math.sin(t * 0.12) * 0.12
     // Over the fly's right shoulder, far enough to see the fly whole and read the TV.
-    const angle = 0.78 + drift + this.pointer.x * 0.12
-    const { shift, radius } = this.framing
-    const focus = this.target.clone().setX(this.target.x + shift)
-    this.camera.position.set(focus.x + Math.sin(angle) * radius, 2.15 + this.pointer.y * 0.18, focus.z + Math.cos(angle) * radius)
-    this.camera.lookAt(focus)
+    const asleep = this.mood === 'sleeping'
+    const pose = asleep ? ASLEEP : AWAKE
+    this.fly.root.position.copy(pose.position)
+    this.fly.root.rotation.y = pose.turn
+    if (asleep) {
+      // Narrow screens step back from the foot of the bed.
+      const back = this.camera.aspect < 0.8 ? 1.5 : this.camera.aspect < 1.2 ? 0.7 : 0
+      this.camera.position.copy(ASLEEP.camera).add(new THREE.Vector3(back + drift * 0.6 + this.pointer.x * 0.15, back * 0.4, back * 0.5))
+      this.camera.lookAt(ASLEEP.target)
+    } else {
+      const angle = 0.78 + drift + this.pointer.x * 0.12
+      const { shift, radius } = this.framing
+      const focus = this.target.clone().setX(this.target.x + shift)
+      this.camera.position.set(focus.x + Math.sin(angle) * radius, 2.15 + this.pointer.y * 0.18, focus.z + Math.cos(angle) * radius)
+      this.camera.lookAt(focus)
+    }
     animateFly(this.fly, t, this.mood)
     // Lights out while it sleeps: only the window and the TV's standby glow remain.
-    const asleep = this.mood === 'sleeping'
     this.lamp.intensity = asleep ? 0 : 70
     this.shadeMaterial.emissive.set(asleep ? '#000000' : '#5a3b0a')
     // Faint CRT flicker.
