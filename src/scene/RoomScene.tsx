@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
+import { visitorHour } from '../site/mood'
 import { phaseAt, type DayPhase } from './city'
+import type { FlyMood } from './fly3d'
 import type { CalendarInfo } from './room'
 import type { BroadcastInfo } from './screens'
 
@@ -7,20 +9,14 @@ interface Props {
   broadcast: BroadcastInfo
   calendar: CalendarInfo
   red: boolean
-  thinking: boolean
+  mood: FlyMood
   label: string
-}
-
-// ?hora=8 previews a given hour.
-const visitorHour = () => {
-  const forced = Number(new URLSearchParams(window.location.search).get('hora'))
-  return Number.isInteger(forced) && forced >= 0 && forced < 24 && new URLSearchParams(window.location.search).has('hora') ? forced : new Date().getHours()
 }
 
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
 // Three.js room, loaded lazily so text content renders first. Pauses when hidden or offscreen.
-export default function RoomScene({ broadcast, calendar, red, thinking, label }: Props) {
+export default function RoomScene({ broadcast, calendar, red, mood, label }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const roomRef = useRef<import('./room').Room | null>(null)
   const [ready, setReady] = useState(false)
@@ -94,9 +90,9 @@ export default function RoomScene({ broadcast, calendar, red, thinking, label }:
     room.setTimeOfDay(phase)
     room.setCalendar(calendar)
     room.setBroadcast(broadcast)
-    room.thinking = thinking
+    room.mood = mood
     if (prefersReducedMotion()) room.render(0, true)
-  }, [ready, broadcast, calendar, red, thinking, phase])
+  }, [ready, broadcast, calendar, red, mood, phase])
 
   return (
     <div className="scene" data-ready={ready} data-failed={failed}>

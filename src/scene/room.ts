@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { animateFly, buildFly } from './fly3d'
+import { animateFly, buildFly, type FlyMood } from './fly3d'
 import { buildCity, type DayPhase } from './city'
 import { drawBroadcast, drawCalendar, drawPennant, type BroadcastInfo } from './screens'
 
@@ -36,6 +36,7 @@ export class Room {
   private readonly fly = buildFly()
   private readonly walls: THREE.MeshStandardMaterial
   private readonly lamp: THREE.SpotLight
+  private readonly shadeMaterial: THREE.MeshStandardMaterial
   private readonly hemi: THREE.HemisphereLight
   private readonly screen = canvasTexture(640, 480)
   private readonly calendar = canvasTexture(320, 360)
@@ -49,7 +50,7 @@ export class Room {
   private red = false
   private phase: DayPhase = 'night'
   private readonly windowLight: THREE.PointLight
-  thinking = false
+  mood: FlyMood = 'idle'
 
   constructor(canvas: HTMLCanvasElement) {
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'low-power' })
@@ -115,7 +116,8 @@ export class Room {
     const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.015, 0.55, 8), metal)
     arm.position.set(0, 0.27, 0)
     arm.rotation.z = 0.25
-    const shade = new THREE.Mesh(new THREE.ConeGeometry(0.14, 0.18, 20, 1, true), new THREE.MeshStandardMaterial({ color: '#c9962e', roughness: 0.4, metalness: 0.3, side: THREE.DoubleSide, emissive: '#5a3b0a' }))
+    this.shadeMaterial = new THREE.MeshStandardMaterial({ color: '#c9962e', roughness: 0.4, metalness: 0.3, side: THREE.DoubleSide, emissive: '#5a3b0a' })
+    const shade = new THREE.Mesh(new THREE.ConeGeometry(0.14, 0.18, 20, 1, true), this.shadeMaterial)
     shade.position.set(-0.08, 0.55, 0.05)
     shade.rotation.z = 0.9
     lampGroup.add(base, arm, shade)
@@ -168,7 +170,7 @@ export class Room {
     // Standing in front of the desk, turned toward the TV.
     // Beside the desk, in front of the window, turned toward the TV: the camera sees its face
     // and profile instead of its back.
-    this.fly.root.position.set(-1.35, 0, -0.2)
+    this.fly.root.position.set(-1.75, 0, 0.3)
     this.fly.root.rotation.y = -0.75
     this.scene.add(this.fly.root)
 
@@ -223,7 +225,7 @@ export class Room {
     this.camera.aspect = width / height
     // Narrow screens pull back so the fly and the TV both stay in frame.
     this.camera.fov = this.camera.aspect < 0.8 ? 52 : this.camera.aspect < 1.2 ? 44 : 36
-    this.framing = this.camera.aspect < 0.8 ? { shift: -0.32, radius: 5.4 } : this.camera.aspect < 1.2 ? { shift: -0.2, radius: 5 } : { shift: 0, radius: 4.8 }
+    this.framing = this.camera.aspect < 0.8 ? { shift: -0.5, radius: 5.6 } : this.camera.aspect < 1.2 ? { shift: -0.4, radius: 5.2 } : { shift: -0.3, radius: 5 }
     this.camera.updateProjectionMatrix()
   }
 
@@ -236,9 +238,14 @@ export class Room {
     const focus = this.target.clone().setX(this.target.x + shift)
     this.camera.position.set(focus.x + Math.sin(angle) * radius, 2.15 + this.pointer.y * 0.18, focus.z + Math.cos(angle) * radius)
     this.camera.lookAt(focus)
-    animateFly(this.fly, t, this.thinking)
+    animateFly(this.fly, t, this.mood)
+    // Lights out while it sleeps: only the window and the TV's standby glow remain.
+    const asleep = this.mood === 'sleeping'
+    this.lamp.intensity = asleep ? 0 : 70
+    this.shadeMaterial.emissive.set(asleep ? '#000000' : '#5a3b0a')
     // Faint CRT flicker.
-    this.screenMaterial.color.setScalar(still ? 1 : 0.95 + Math.sin(t * 50) * 0.02 + Math.sin(t * 3.1) * 0.02)
+    const glow = this.mood === 'sleeping' ? 0.45 : 1
+    this.screenMaterial.color.setScalar(glow * (still ? 1 : 0.95 + Math.sin(t * 50) * 0.02 + Math.sin(t * 3.1) * 0.02))
     this.renderer.render(this.scene, this.camera)
   }
 

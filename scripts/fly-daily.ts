@@ -16,7 +16,7 @@ import type { Match, MatchLedger } from '../src/football/types'
 import { predict, type OddsModelParams } from '../src/odds/model'
 import { priceMarkets } from '../src/odds/odds'
 import { priceInternational, ratingGap, type InternationalParams } from '../src/odds/international'
-import { priceUpcoming, ratingsAt, type InternationalPricer } from '../src/odds/upcoming'
+import { priceUpcoming, ratingsAt, recentNational, type InternationalPricer } from '../src/odds/upcoming'
 
 const LOOKAHEAD_HOURS = 72
 const MIN_LEAD_MINUTES = 30
@@ -55,7 +55,7 @@ const decisionDeadline = (match: Match) => match.kickoffTimeKnown === false
 const publishUpcoming = (now: Date) => {
   const { params, all, international } = load()
   const upcoming = priceUpcoming(all, ratingsAt(all, params, now), params, now, international)
-  write('data/fly/upcoming.json', { generatedAt: now.toISOString(), matches: upcoming })
+  write('data/fly/upcoming.json', { generatedAt: now.toISOString(), matches: upcoming, recentNational: recentNational(all, now) })
   console.log(`Published ${upcoming.length} upcoming matches.`)
 }
 

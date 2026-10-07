@@ -6,7 +6,7 @@ import tastesFile from '../../data/fly/tastes.json'
 import { summary as infancySummary, curve as infancyCurve, bankruptAt as infancyBankruptAt, matches as infancyMatches, from as infancyFrom, to as infancyTo } from '../../data/fly/infancy.json'
 import type { Bet, BetBook, FlyState, Pass } from '../brain/fly'
 import type { TasteLog } from '../brain/tastes'
-import type { UpcomingMatch } from '../odds/upcoming'
+import type { RecentNationalMatch, UpcomingMatch } from '../odds/upcoming'
 
 export const REPO_URL = 'https://github.com/jrod-md/la-mosca'
 export const BETS_HISTORY_URL = `${REPO_URL}/commits/main/data/fly/bets.json`
@@ -18,6 +18,7 @@ export const liveBets: Bet[] = book.bets.filter(bet => bet.phase === 'live')
 export const passes: Pass[] = book.passes ?? []
 export const upcoming = (upcomingFile as unknown as { matches: UpcomingMatch[] }).matches
 export const tastes = tastesFile as unknown as TasteLog
+export const recentNational = (upcomingFile as unknown as { recentNational?: RecentNationalMatch[] }).recentNational ?? []
 export const upcomingGeneratedAt = (upcomingFile as { generatedAt: string }).generatedAt
 
 export const infancy = {

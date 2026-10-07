@@ -26,6 +26,16 @@ const team = (ref: Match['home']): UpcomingTeam => ({ key: teamKey(ref), name: d
 
 export type InternationalPricer = (match: Match) => MarketProbabilities | null
 
+export interface RecentNationalMatch { date: string; home: string; away: string; league: string; score: { home: number; away: number } }
+
+// Panama's finished matches in the last `days`, by eloratings code (PA, CW...).
+export const recentNational = (matches: readonly Match[], now: Date, days = 21): RecentNationalMatch[] => {
+  const since = new Date(now.getTime() - days * 86_400_000).toISOString()
+  return matches.filter(match => match.competition === 'panama' && match.status === 'finished' && match.score && match.kickoff >= since)
+    .sort((a, b) => a.kickoff.localeCompare(b.kickoff))
+    .map(match => ({ date: match.kickoff.slice(0, 10), home: match.home.sourceId.replace(/^nt:/, ''), away: match.away.sourceId.replace(/^nt:/, ''), league: match.league, score: match.score! }))
+}
+
 // Ratings from every LPF result that finished before `now`, oldest first.
 export const ratingsAt = (matches: readonly Match[], params: OddsModelParams, now: Date): EloBook => {
   const book = new EloBook(params.elo)

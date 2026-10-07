@@ -3,14 +3,25 @@ import * as THREE from 'three'
 // A stylized, flat-shaded Drosophila built from primitives: no external model or license needed.
 // Human scale on purpose (Stonkfly-style): the fly stands at its desk like any other bettor.
 
+export type FlyMood = 'idle' | 'thinking' | 'sleeping' | 'nervous' | 'celebrating'
+
 export interface FlyRig {
   root: THREE.Group
+  body: THREE.Group
   head: THREE.Group
   abdomen: THREE.Mesh
   wings: THREE.Mesh[]
   frontLegs: THREE.Group[]
+  // Every leg mount with its resting swing, for the night-time wriggle.
+  legs: { mount: THREE.Group; restX: number; side: number }[]
   antennae: THREE.Mesh[]
+  // A small bed, shown only while the fly sleeps.
+  bed: THREE.Group
 }
+
+const BODY_Y = 0.62
+// Mattress top in the fly's local units; on its back, the thorax rests on it.
+const MATTRESS_TOP = 0.36
 
 const facet = (radius: number, detail = 1) => new THREE.IcosahedronGeometry(radius, detail)
 
@@ -178,6 +189,7 @@ export const buildFly = (): FlyRig => {
   }
 
   const frontLegs: THREE.Group[] = []
+  const legs: FlyRig['legs'] = []
   const hips: [number, number, 'front' | 'mid' | 'hind'][] = [[-0.18, 'front' as const], [0, 'mid' as const], [0.16, 'hind' as const]]
     .flatMap(([z, kind]) => [[-1, z as number, kind], [1, z as number, kind]] as [number, number, 'front' | 'mid' | 'hind'][])
   for (const [side, z, kind] of hips) {
@@ -189,25 +201,80 @@ export const buildFly = (): FlyRig => {
     mount.position.set(side * 0.17, -0.14, z)
     mount.rotation.x = kind === 'front' ? 1.1 : kind === 'mid' ? -0.05 : -0.4
     if (kind === 'front') frontLegs.push(mount)
+    legs.push({ mount, restX: mount.rotation.x, side })
     body.add(mount)
   }
 
+  // The bed: a low wooden frame, a mattress, a pillow and a blanket over the far end.
+  const bed = new THREE.Group()
+  const wood = new THREE.MeshStandardMaterial({ color: '#5a3f2b', roughness: 0.75 })
+  const cloth = (color: string) => new THREE.MeshStandardMaterial({ color, roughness: 0.95 })
+  const block = (w: number, h: number, d: number, material: THREE.Material, x: number, y: number, z: number) => {
+    const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material)
+    mesh.position.set(x, y, z)
+    mesh.castShadow = true
+    mesh.receiveShadow = true
+    bed.add(mesh)
+  }
+  block(0.95, 0.14, 1.7, wood, 0, 0.17, 0)
+  for (const [x, z] of [[-0.42, -0.8], [0.42, -0.8], [-0.42, 0.8], [0.42, 0.8]]) block(0.07, 0.24, 0.07, wood, x, 0.12, z)
+  block(0.95, 0.5, 0.08, wood, 0, 0.3, -0.84)
+  block(0.88, 0.12, 1.6, cloth('#d9d4c4'), 0, MATTRESS_TOP - 0.06, 0)
+  block(0.5, 0.1, 0.28, cloth('#efe9da'), 0, MATTRESS_TOP + 0.05, -0.62)
+  block(0.92, 0.08, 0.7, cloth('#6d4f7a'), 0, MATTRESS_TOP + 0.03, 0.46)
+  bed.visible = false
+  root.add(bed)
+
   root.scale.setScalar(1.2)
-  return { root, head, abdomen, wings, frontLegs, antennae }
+  return { root, body, head, abdomen, wings, frontLegs, legs, antennae, bed }
 }
 
 // Idle life: breathing, wing shiver, the unmistakable front-leg rub, an occasional glance.
-export const animateFly = (rig: FlyRig, time: number, thinking: boolean) => {
-  rig.abdomen.scale.x = 0.95 + Math.sin(time * 2.1) * 0.015
-  rig.wings.forEach((wing, i) => { wing.rotation.y = Math.sin(time * 23 + i) * 0.015 })
-  const rub = Math.sin(time * (thinking ? 9 : 6))
-  rig.frontLegs.forEach((mount, i) => {
-    const side = i % 2 === 0 ? -1 : 1
-    mount.rotation.z = side * 0.18 * rub
-    mount.rotation.y = side * 0.12 * rub
+// Moods: asleep on its back like Gregor Samsa, legs waving helplessly; pacing and buzzing before a
+// national team match; hopping with open wings after Panama wins one.
+export const animateFly = (rig: FlyRig, time: number, mood: FlyMood) => {
+  const { body } = rig
+  const sleeping = mood === 'sleeping', nervous = mood === 'nervous', celebrating = mood === 'celebrating'
+  rig.bed.visible = sleeping
+
+  body.rotation.set(0, 0, sleeping ? Math.PI : 0)
+  body.position.set(0, BODY_Y, 0)
+  if (sleeping) body.position.y = MATTRESS_TOP + 0.34
+  if (nervous) {
+    body.position.x = Math.sin(time * 0.9) * 0.22
+    body.position.y += Math.abs(Math.sin(time * 15)) * 0.012
+    body.rotation.y = Math.cos(time * 0.9) * 0.45
+  }
+  if (celebrating) {
+    body.position.y += Math.max(0, Math.sin(time * 5)) * 0.3
+    body.rotation.y = Math.sin(time * 1.3) * 0.7
+  }
+
+  rig.abdomen.scale.x = 0.95 + (sleeping ? Math.sin(time * 0.9) * 0.03 : Math.sin(time * 2.1) * 0.015)
+  rig.wings.forEach((wing, i) => {
+    const side = i === 0 ? -1 : 1
+    const spread = celebrating ? 0.55 + Math.sin(time * 9) * 0.15 : 0
+    wing.parent!.rotation.y = side * (0.14 + spread)
+    wing.rotation.y = sleeping ? 0 : Math.sin(time * (nervous || celebrating ? 60 : 23) + i) * (nervous || celebrating ? 0.09 : 0.015)
   })
-  const glance = Math.max(0, Math.sin(time * 0.35) - 0.8) * 5
-  rig.head.rotation.y = 0.15 + glance * 0.6 + Math.sin(time * 0.7) * 0.05
-  rig.head.rotation.x = Math.sin(time * 0.5) * 0.04
-  rig.antennae.forEach((antenna, i) => { antenna.rotation.z = (i === 0 ? -1 : 1) * 0.25 + Math.sin(time * (thinking ? 14 : 3) + i) * (thinking ? 0.12 : 0.04) })
+
+  rig.legs.forEach(({ mount, restX, side }, i) => {
+    mount.rotation.x = sleeping ? restX + Math.sin(time * 1.6 + i * 1.1) * 0.35 : restX
+    mount.rotation.z = sleeping ? side * Math.sin(time * 1.3 + i) * 0.2 : 0
+    mount.rotation.y = 0
+  })
+  if (!sleeping) {
+    const rub = Math.sin(time * (nervous ? 13 : mood === 'thinking' ? 9 : 6))
+    rig.frontLegs.forEach((mount, i) => {
+      const side = i % 2 === 0 ? -1 : 1
+      mount.rotation.z = side * 0.18 * rub
+      mount.rotation.y = side * 0.12 * rub
+    })
+  }
+
+  const glance = sleeping || nervous ? 0 : Math.max(0, Math.sin(time * 0.35) - 0.8) * 5
+  rig.head.rotation.y = sleeping ? 0 : 0.15 + glance * 0.6 + Math.sin(time * 0.7) * 0.05
+  rig.head.rotation.x = sleeping ? 0.15 : Math.sin(time * 0.5) * 0.04
+  const twitch = nervous ? [16, 0.14] : mood === 'thinking' ? [14, 0.12] : sleeping ? [0.8, 0.05] : [3, 0.04]
+  rig.antennae.forEach((antenna, i) => { antenna.rotation.z = (i === 0 ? -1 : 1) * 0.25 + Math.sin(time * twitch[0] + i) * twitch[1] })
 }

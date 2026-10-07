@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-07T17:39:34.777Z",
+ "generatedAt": "2026-10-07T18:00:52.073Z",
  "matches": [
   {
    "id": "af:1583783",
@@ -599,6 +599,38 @@
     "away": 0.129,
     "over25": 0.451,
     "btts": 0.414
+   }
+  }
+ ],
+ "recentNational": [
+  {
+   "date": "2026-09-25",
+   "home": "IN",
+   "away": "PA",
+   "league": "Amistoso",
+   "score": {
+    "home": 1,
+    "away": 1
+   }
+  },
+  {
+   "date": "2026-10-01",
+   "home": "NZ",
+   "away": "PA",
+   "league": "Torneo amistoso",
+   "score": {
+    "home": 1,
+    "away": 1
+   }
+  },
+  {
+   "date": "2026-10-05",
+   "home": "EC",
+   "away": "PA",
+   "league": "Torneo amistoso",
+   "score": {
+    "home": 1,
+    "away": 1
    }
   }
  ]

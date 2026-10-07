@@ -1,6 +1,7 @@
 import { lazy, Suspense, useMemo } from 'react'
 import { FLY_PARAMS } from './brain/fly'
-import { flyState, mareaRoja, REPO_URL, stateUpdatedAt } from './site/data'
+import { flyState, mareaRoja, recentNational, REPO_URL, stateUpdatedAt, upcoming } from './site/data'
+import { moodAt, visitorHour } from './site/mood'
 import { day, matchTime, money, percent } from './site/format'
 import { LanguageProvider, useLanguage, useT } from './site/i18n'
 import BrainPanel from './site/BrainPanel'
@@ -11,14 +12,19 @@ import { useBrain } from './site/useBrain'
 
 const RoomScene = lazy(() => import('./scene/RoomScene'))
 
+const MOOD_KEYS = { idle: 'moodIdle', thinking: 'moodThinking', sleeping: 'moodSleeping', nervous: 'moodNervous', celebrating: 'moodCelebrating' } as const
+
+
 function Page() {
   const t = useT()
   const { language, setLanguage } = useLanguage()
   const brain = useBrain()
   const story = useStory(brain)
   const red = useMemo(() => mareaRoja(), [])
+  const mood = useMemo(() => moodAt(new Date(), visitorHour(), upcoming, recentNational, story.featured.kind === 'thinking'), [story.featured.kind])
 
   const broadcast = useMemo(() => {
+    if (mood === 'sleeping') return { header: t('offAir'), when: '', home: t('moodSleeping'), away: '', odds: null, pick: null, footer: t('decidesAtSeven'), red }
     const option = story.options?.find(entry => entry.selection === story.selection)
     const odds = story.odds ? [story.odds.result.home, story.odds.result.draw, story.odds.result.away] as [number, number, number]
       : story.options ? story.options.map(entry => entry.odds) as [number, number, number] : null
@@ -35,7 +41,7 @@ function Page() {
       footer,
       red,
     }
-  }, [story, language, red, t])
+  }, [story, language, red, t, mood])
 
   const calendar = useMemo(() => {
     const date = new Date(story.kickoff ?? Date.now())
@@ -68,7 +74,7 @@ function Page() {
       <main className="stage">
         <div className="stage__scene">
           <Suspense fallback={<div className="scene" />}>
-            <RoomScene broadcast={broadcast} calendar={calendar} red={red} thinking={story.featured.kind === 'thinking'} label={t('sceneLabel')} />
+            <RoomScene broadcast={broadcast} calendar={calendar} red={red} mood={mood} label={t('sceneLabel')} />
           </Suspense>
           {red && <p className="marea-banner">{t('seleToday')}</p>}
         </div>
@@ -79,6 +85,7 @@ function Page() {
             <div><dt>{t('bankroll')}</dt><dd className="status-line__money">{money(flyState.bankroll)}</dd></div>
             <div><dt>{t('boldness')}</dt><dd>{percent(flyState.boldness)}</dd></div>
             <div><dt>{t('streak')}</dt><dd>{streak}</dd></div>
+            <div><dt>{t('moodLabel')}</dt><dd>{t(MOOD_KEYS[mood])}</dd></div>
           </dl>
           <p className="fine">{t('bankrollNote', { start: FLY_PARAMS.startingBankroll })}</p>
         </div>

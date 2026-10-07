@@ -18,6 +18,17 @@ Cada mañana la mosca revisa los partidos, cobra o pierde lo que apostó, aprend
 
 Todo el azar sale de semillas derivadas del id del partido: cualquiera puede recalcular cada decisión.
 
+## Su día
+
+La escena sigue la hora de quien la visita y el calendario de la Sele:
+
+- **00:00 a 05:00:** duerme boca arriba en su cama, con las patas al aire (sí, como Gregorio Samsa). Lámpara apagada y tele fuera del aire.
+- **Día de partido oficial de Panamá:** nerviosa, camina de un lado a otro y le zumban las alas.
+- **Hasta dos días después de que Panamá gane un partido oficial:** celebra a saltos. Los amistosos no cuentan.
+- **El resto del tiempo:** tranquila frente a la tele, frotándose las patas.
+
+El cielo, la ciudad y la luz de la ventana también cambian con la hora. Para ver cada estado: `?hora=1`, `?animo=nervous`, `?animo=celebrating`, `?marea=1`.
+
 ## Real frente a modelado
 
 | Real | Modelado por el proyecto |
