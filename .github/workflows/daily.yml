@@ -2,6 +2,7 @@ name: Daily fly
 
 # Syncs fixtures/results, settles the fly's bets and places new ones, then commits data/.
 # The git history of data/ is the public, timestamped proof that each bet predates its match.
+# Commits are made by "mosca-bot", the GitHub Actions identity of this job.
 on:
   schedule:
     - cron: '0 12 * * *' # 07:00 in Panama
@@ -18,22 +19,36 @@ jobs:
   live:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run sync:matches
-      - run: npm run fly:daily
-      - name: Commit data
+      - name: Sync matches
+        id: sync
+        run: npm run sync:matches
+      - name: Fly's day
+        id: fly
+        run: npm run fly:daily
+      # The site is rebuilt from data/ on every push; never publish data that breaks it.
+      - name: Verify site with new data
+        id: verify
         run: |
-          git config user.name 'Jose'
-          git config user.email '134344361+jrod-md@users.noreply.github.com'
+          npm test
+          npm run build
+      # Always record the run, including failures (data/runs.json logs them), unless the
+      # new data would break the site.
+      - name: Commit data
+        if: always() && steps.verify.outcome != 'failure'
+        run: |
+          git config user.name 'mosca-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/
           if git diff --cached --quiet; then
             echo 'No data changes.'
-          else
-            git commit -m "data: daily fly run $(date -u +%Y-%m-%d)"
-            git push
+            exit 0
           fi
+          git commit -m "data: daily fly run $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main
+          git push origin HEAD:main

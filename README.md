@@ -36,8 +36,11 @@ Detalles científicos y de extracción en [`MALECNS.md`](./MALECNS.md).
 ```text
 sync:matches   partidos y resultados (TheSportsDB)
 fly:daily      liquida, aprende, apuesta y publica los próximos partidos cotizados
+verificación   tests y build con los datos nuevos; si algo se rompe, no se publica
 commit         data/ queda en el historial público
 ```
+
+Esos commits diarios los firma **`mosca-bot`**, la identidad de GitHub Actions de este job. Si una corrida falla, el error también queda registrado en `data/runs.json`.
 
 Los datos viven en `data/`:
 

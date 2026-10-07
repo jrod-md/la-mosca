@@ -11,8 +11,8 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
@@ -27,9 +27,11 @@ jobs:
           test -f dist/index.html
           test -d dist/assets
           test "$(find dist/assets -type f -print -quit)"
-      - name: Reject scientific extraction token in build
+          # A normal build serves the site; only the REDIRECT_TO build may ship _redirects.
+          test ! -f dist/_redirects
+      - name: Reject credential identifiers in build
         run: |
-          if rg -l --glob '*' 'NEUPRINT_TOKEN' dist >/dev/null; then
-            echo 'Forbidden token identifier found in build output.' >&2
+          if grep -rlE 'NEUPRINT_TOKEN|API_FOOTBALL_KEY|x-apisports-key' dist; then
+            echo 'Credential identifier found in build output.' >&2
             exit 1
           fi
