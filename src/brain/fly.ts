@@ -2,7 +2,7 @@ import { teamKey } from '../football/teams'
 import type { Match } from '../football/types'
 import type { MatchOdds } from '../odds/odds'
 import { perceive, type MbCircuit } from './circuit'
-import { optionOdor, type Selection } from './odor'
+import { glomeruli, optionOdor, priceBucket, ODOR_SIZE, type Selection } from './odor'
 import { randomFor } from './random'
 
 // Behavioral settings of the simulated fly. Learning follows the mushroom body rule (dopamine
@@ -65,6 +65,18 @@ export interface Bet {
   bankrupt: boolean
 }
 
+// A recorded decision not to bet; kept public so the fly cannot reconsider later.
+export interface Pass { matchId: string; decidedAt: string; kickoff: string; home: string; away: string; options: OptionView[] }
+
+export interface BetBook { bets: Bet[]; passes?: Pass[] }
+
+// What the fly needs to know about a fixture: its id (seeds randomness) and canonical team keys.
+export interface Fixture { id: string; home: string; away: string }
+export const fixtureOf = (match: Match): Fixture => ({ id: match.id, home: teamKey(match.home), away: teamKey(match.away) })
+
+export interface ExhibitionPick { key: string; odds: number; drive: number; probability: number }
+export interface Exhibition { totals: ExhibitionPick[]; btts: ExhibitionPick[]; score: ExhibitionPick[] }
+
 export interface Decision { options: OptionView[]; choice: OptionView | null; dared: boolean; activeKcs: number[] }
 
 const round2 = (value: number) => Math.round(value * 100) / 100
@@ -81,12 +93,12 @@ export class Fly {
     })
   }
 
-  private odor(match: Match, selection: Selection, odds: number) {
-    const team = selection === 'draw' ? null : teamKey(selection === 'home' ? match.home : match.away)
+  odor(match: Fixture, selection: Selection, odds: number): number[] {
+    const team = selection === 'draw' ? null : selection === 'home' ? match.home : match.away
     return optionOdor(selection, team, odds, this.circuit.pn.length)
   }
 
-  decide(match: Match, odds: MatchOdds): Decision {
+  decide(match: Fixture, odds: MatchOdds): Decision {
     const random = randomFor(`decide:${match.id}:${this.state.settled}`)
     const perceptions = (['home', 'draw', 'away'] as const).map(selection => {
       const price = odds.result[selection]
@@ -186,6 +198,28 @@ export class Fly {
       if (state.lossStreak >= FLY_PARAMS.tiltAfterLosses && random() < FLY_PARAMS.tiltChance) state.tilted = true
     }
     state.boldness = Math.round(state.boldness * 1000) / 1000
+  }
+
+  // Exhibition only ("be more specific"): the fly's leaning on secondary markets, each option smelled
+  // like a 1X2 choice. Never staked, never learned from, and it does not touch the fly's state.
+  exhibit(match: Fixture, odds: MatchOdds): Exhibition {
+    const smell = (market: string, options: { key: string; odds: number }[]): ExhibitionPick[] => {
+      const drives = options.map(option => {
+        const odor = [...new Set([...glomeruli(`market:${market}:${option.key}`, ODOR_SIZE.team, this.circuit.pn.length),
+          ...glomeruli(`price:${priceBucket(option.odds)}`, ODOR_SIZE.price, this.circuit.pn.length)])]
+        return perceive(this.circuit, this.state.weights, odor).drive
+      })
+      const top = Math.max(...drives)
+      const exps = drives.map(drive => Math.exp((drive - top) / FLY_PARAMS.temperature))
+      const sum = exps.reduce((a, b) => a + b, 0)
+      return options.map((option, i) => ({ ...option, drive: Math.round(drives[i] * 1000) / 1000, probability: exps[i] / sum }))
+        .sort((a, b) => b.probability - a.probability)
+    }
+    return {
+      totals: smell('total25', [{ key: 'over', odds: odds.total25.over }, { key: 'under', odds: odds.total25.under }]),
+      btts: smell('btts', [{ key: 'yes', odds: odds.btts.yes }, { key: 'no', odds: odds.btts.no }]),
+      score: smell(`score:${match.home}:${match.away}`, odds.correctScore.map(score => ({ key: score.score, odds: score.odds }))),
+    }
   }
 
   // Innate-plus-learned approach drive toward each team's odor, neutral price and role averaged.

@@ -1,4 +1,4 @@
-"""Export official MaleCNS centerline skeletons for the verified MetroFly graph.
+"""Export official MaleCNS centerline skeletons for the verified mushroom body circuit.
 
 The script runs only at development time. It reads NEUPRINT_TOKEN from its process
 environment, never serializes it, and deliberately avoids logging raw HTTP errors.
@@ -13,11 +13,10 @@ from pathlib import Path
 import sys
 from datetime import datetime, timezone
 
-DATASET = 'male-cns:v1.0'
-SERVER = 'https://neuprint.janelia.org'
+from neuprint_common import DATASET, SERVER
 ROOT = Path(__file__).resolve().parents[1]
-GRAPH_PATH = ROOT / 'src/data/generated/malecns_visual_motor.json'
-OUTPUT = ROOT / 'src/data/generated/malecns_skeletons.json'
+GRAPH_PATH = ROOT / 'src/data/generated/malecns_mushroom_body.json'
+OUTPUT = ROOT / 'src/data/generated/malecns_mushroom_body_skeletons.json'
 
 
 def finite_number(value):
@@ -153,7 +152,7 @@ def fetch_all(client, graph, tolerance, max_segment_length):
             simplified = simplify_skeleton(points, tolerance=tolerance, max_segment_length=max_segment_length)
             source_points += len(points)
             neurons.append({'bodyId': body_id, 'type': node.get('type'), 'instance': node.get('instance'),
-                            'role': node['category'], 'activityKey': node['id'],
+                            'role': node.get('role', node.get('category')), 'activityKey': node['id'],
                             'originalPointCount': len(points), 'simplifiedPointCount': len(simplified), 'points': simplified})
         except Exception as error:
             # Continue with available official morphology. Never expose HTTP details.
@@ -177,7 +176,7 @@ def build_export(graph, neurons, failures, source_points, tolerance, max_segment
                            'rdpTolerance': tolerance, 'maxSourceSegmentLength': max_segment_length},
         'retrieval': {'method': 'neuprint-python Client.fetch_skeleton(bodyId, heal=False, format=pandas)',
                       'connectivityArtifact': str(GRAPH_PATH.relative_to(ROOT)).replace('\\', '/')},
-        'limitations': 'Centerlines are real official morphology. Roles and activity are MetroFly visualization choices. Missing skeletons are omitted, never fabricated.'
+        'limitations': 'Centerlines are real official morphology. Roles and activity are project visualization choices. Missing skeletons are omitted, never fabricated.'
     }, 'neurons': neurons, 'failures': failures}
 
 

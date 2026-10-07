@@ -3,7 +3,7 @@
 // Writes data/fly/state.json, data/fly/bets.json and prints a summary.
 import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import { buildCircuit } from '../src/brain/circuit'
-import { Fly, FLY_PARAMS, type Bet } from '../src/brain/fly'
+import { Fly, FLY_PARAMS, fixtureOf, type Bet } from '../src/brain/fly'
 import { mergeMatches } from '../src/football/ledger'
 import { LPF_TEAMS, teamName } from '../src/football/teams'
 import type { Match, MatchLedger } from '../src/football/types'
@@ -37,7 +37,7 @@ const bets: Bet[] = []
 let skipped = 0
 for (const match of matches) {
   const odds = priceMarkets(predict(book.prepare(match), params))
-  const decision = fly.decide(match, odds)
+  const decision = fly.decide(fixtureOf(match), odds)
   const bet = fly.place(match, decision, 'infancy', match.kickoff)
   if (bet) bets.push(fly.settle(bet, match))
   else skipped++
@@ -57,6 +57,8 @@ const now = new Date().toISOString()
 write('data/fly/infancy.json', {
   completedAt: now, matches: matches.length, from: matches[0]?.kickoff, to: matches.at(-1)?.kickoff, avoided: skipped,
   summary: { bets: bets.length, won: won.length, staked: Math.round(staked * 100) / 100, returned: Math.round(returned * 100) / 100, ...infancyResult },
+  // Bankroll after every bet (date, balance), compact enough for the site to chart without the full bet list.
+  curve: bets.map(bet => [bet.kickoff.slice(0, 10), bet.bankrollAfter]),
   affinity: LPF_TEAMS.map(team => ({ team: team.id, innate: innate.find(entry => entry.team === team.id)!.affinity, learned: learned.find(entry => entry.team === team.id)!.affinity })),
   bets,
 })

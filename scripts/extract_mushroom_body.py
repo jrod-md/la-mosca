@@ -12,7 +12,7 @@ from pathlib import Path
 import sys
 from datetime import datetime, timezone
 
-from extract_malecns import ANNOTATIONS, DATASET, SERVER, edge_map, records
+from neuprint_common import ANNOTATIONS, DATASET, SERVER, edge_map, records
 
 OUTPUT = Path(__file__).resolve().parents[1] / 'src/data/generated/malecns_mushroom_body.json'
 class CircuitError(ValueError):
