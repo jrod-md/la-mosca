@@ -3,8 +3,10 @@ import { buildCircuit, type MbCircuit } from '../brain/circuit'
 import { Fly } from '../brain/fly'
 import { flyState } from './data'
 
-export interface SkeletonNeuron { bodyId: number; role: string; points: { x: number; y: number; z: number }[] }
-export interface SkeletonAsset { metadata: { normalization: { center: number[]; scale: number } }; neurons: SkeletonNeuron[] }
+// Compact render points derived from the official MaleCNS skeletons (scripts/compact-skeletons.ts):
+// p is a flat [x, y, z, ...] list in one shared, normalized transform.
+export interface MorphologyNeuron { id: string; role: string; p: number[] }
+export interface MorphologyAsset { neurons: MorphologyNeuron[] }
 
 export interface Brain {
   circuit: MbCircuit
@@ -18,8 +20,8 @@ let brainPromise: Promise<Brain> | null = null
 const loadBrain = () => brainPromise ??= circuitPromise().then(circuit => ({ circuit, fly: () => new Fly(circuit, structuredClone(flyState)) }))
 
 // Missing morphology is fine at build time: the glob simply finds nothing.
-const skeletonModules = import.meta.glob<{ default: SkeletonAsset }>('../data/generated/malecns_mushroom_body_skeletons.json')
-let skeletonPromise: Promise<SkeletonAsset | null> | null = null
+const skeletonModules = import.meta.glob<{ default: MorphologyAsset }>('../data/generated/malecns_mushroom_body_points.json')
+let skeletonPromise: Promise<MorphologyAsset | null> | null = null
 const loadSkeletons = () => skeletonPromise ??= (async () => {
   const loader = Object.values(skeletonModules)[0]
   if (!loader) return null
@@ -37,7 +39,7 @@ export const useBrain = () => {
 }
 
 export const useSkeletons = (enabled: boolean) => {
-  const [state, setState] = useState<{ loading: boolean; asset: SkeletonAsset | null }>({ loading: enabled, asset: null })
+  const [state, setState] = useState<{ loading: boolean; asset: MorphologyAsset | null }>({ loading: enabled, asset: null })
   useEffect(() => {
     if (!enabled) return
     let active = true

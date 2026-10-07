@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import type { MbCircuit } from '../brain/circuit'
 import { randomFor } from '../brain/random'
-import type { SkeletonAsset } from '../site/useBrain'
+import type { MorphologyAsset } from '../site/useBrain'
 
 export type NeuronRole = 'pn' | 'kc' | 'mbon' | 'dan_reward' | 'dan_punishment'
 
@@ -17,7 +17,6 @@ export interface Activity {
 
 interface NeuronCloud { role: NeuronRole; index: number; start: number; count: number }
 
-const MAX_POINTS_PER_NEURON = 48
 const COLORS = {
   idle: new THREE.Color('#55645b'),
   pn: new THREE.Color('#ffc061'),
@@ -63,22 +62,20 @@ export class BrainCloud {
   private activity: Activity | null = null
   private readonly color = new THREE.Color()
 
-  constructor(canvas: HTMLCanvasElement, circuit: MbCircuit, skeletons: SkeletonAsset | null, still: boolean) {
+  constructor(canvas: HTMLCanvasElement, circuit: MbCircuit, morphology: MorphologyAsset | null, still: boolean) {
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'low-power' })
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-    const byId = new Map(skeletons?.neurons.map(neuron => [String(neuron.bodyId), neuron]) ?? [])
-    const norm = skeletons?.metadata.normalization
+    const byId = new Map(morphology?.neurons.map(neuron => [neuron.id, neuron]) ?? [])
     const positions: number[] = []
     const roles: [NeuronRole, { id: string }[]][] = [['pn', circuit.pn], ['kc', circuit.kc], ['mbon', circuit.mbon], ['dan_reward', circuit.danReward], ['dan_punishment', circuit.danPunishment]]
     for (const [role, list] of roles) {
       list.forEach((neuron, index) => {
-        const skeleton = byId.get(neuron.id)
+        const shape = byId.get(neuron.id)
         let points: THREE.Vector3[]
-        if (skeleton && norm) {
-          const stride = Math.max(1, Math.ceil(skeleton.points.length / MAX_POINTS_PER_NEURON))
-          // Same global transform for every neuron; y flipped so dorsal is up on screen.
-          points = skeleton.points.filter((_, i) => i % stride === 0).map(point => new THREE.Vector3(
-            (point.x - norm.center[0]) / norm.scale * 2, -(point.y - norm.center[1]) / norm.scale * 2, (point.z - norm.center[2]) / norm.scale * 2))
+        if (shape) {
+          // Real morphology, already in one shared normalized transform; scaled up for the view.
+          points = []
+          for (let i = 0; i < shape.p.length; i += 3) points.push(new THREE.Vector3(shape.p[i] * 2, shape.p[i + 1] * 2, shape.p[i + 2] * 2))
         } else {
           points = sampleCurve(schematicPath(role, neuron.id), role === 'kc' ? 18 : 28)
         }
