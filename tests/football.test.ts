@@ -37,6 +37,10 @@ test('Only explicit final statuses with both scores are settled', () => {
   assert.equal(ambiguous.score, null)
   assert.equal(normalizeTsdbEvent(tsdb({ strStatus: 'FT', intHomeScore: '3' }), 'lpf').status, 'unknown')
   assert.equal(normalizeTsdbEvent(tsdb({ strPostponed: 'yes' }), 'lpf').status, 'void')
+  assert.equal(normalizeTsdbEvent(tsdb({ strStatus: 'AWD', intHomeScore: '3', intAwayScore: '0' }), 'lpf').status, 'void')
+  // LPF seasons are calendar years even when the source labels a split season.
+  assert.equal(normalizeTsdbEvent(tsdb({ strSeason: '2025-2026', strTimestamp: '2026-01-17T23:00:00' }), 'lpf').season, '2026')
+  assert.equal(normalizeTsdbEvent(tsdb({ strSeason: '2025-2026', strTimestamp: '2026-01-17T23:00:00' }), 'panama').season, '2025-2026')
   assert.throws(() => normalizeTsdbEvent(tsdb({ strTimestamp: null, dateEvent: null }), 'lpf'))
 })
 

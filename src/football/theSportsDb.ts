@@ -30,7 +30,8 @@ export interface TsdbEvent {
 
 const FINISHED = new Set(['FT', 'AET', 'PEN', 'Match Finished'])
 const SCHEDULED = new Set(['NS', 'TBD', 'Not Started'])
-const VOID = new Set(['PST', 'CANC', 'ABD', 'Postponed', 'Cancelled', 'Abandoned'])
+// Awarded/walkover results were not played; like API-Football's AWD/WO they settle as void.
+const VOID = new Set(['PST', 'CANC', 'ABD', 'AWD', 'WO', 'Postponed', 'Cancelled', 'Abandoned'])
 
 export const tsdbStatus = (event: TsdbEvent): MatchStatus => {
   const status = event.strStatus ?? null
@@ -48,7 +49,13 @@ const kickoffOf = (event: TsdbEvent): string => {
   return date.toISOString()
 }
 
+// The LPF runs on calendar years (as API-Football labels it); TheSportsDB sometimes labels the
+// Apertura as a split season ("2025-2026"), so league matches use the kickoff year.
+const seasonOf = (event: TsdbEvent, competition: Competition, kickoff: string): string =>
+  competition === 'lpf' ? kickoff.slice(0, 4) : event.strSeason ?? ''
+
 export const normalizeTsdbEvent = (event: TsdbEvent, competition: Competition): Match => {
+  const kickoff = kickoffOf(event)
   const apiFootball = toInteger(event.idAPIfootball)
   const home = toInteger(event.intHomeScore)
   const away = toInteger(event.intAwayScore)
@@ -60,9 +67,9 @@ export const normalizeTsdbEvent = (event: TsdbEvent, competition: Competition): 
     sources: { apiFootball, theSportsDb: event.idEvent },
     competition,
     league: event.strLeague ?? '',
-    season: event.strSeason ?? '',
+    season: seasonOf(event, competition, kickoff),
     round: event.intRound && event.intRound !== '0' ? event.intRound : null,
-    kickoff: kickoffOf(event),
+    kickoff,
     home: { name: event.strHomeTeam, sourceId: `tsdb:${event.idHomeTeam}`, badge: event.strHomeTeamBadge ?? null },
     away: { name: event.strAwayTeam, sourceId: `tsdb:${event.idAwayTeam}`, badge: event.strAwayTeamBadge ?? null },
     status,

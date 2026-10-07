@@ -19,6 +19,9 @@ class CircuitError(ValueError):
     """Raised for our own validation failures; safe to print (never contains request data)."""
 
 
+SIDE_KEYS = ('side', 'somaSide', 'rootSide')
+# Hemisphere and predicted transmitter (sign of each output) are kept when the dataset has them.
+EXTRA_ANNOTATIONS = ('somaSide', 'rootSide', 'consensusNt', 'predictedNt', 'predictedNtConfidence')
 ROLES = ('pn', 'kc', 'mbon', 'dan_reward', 'dan_punishment')
 ROLE_LIMITS = {'pn': 80, 'kc': 240, 'mbon': 40, 'dan_reward': 40, 'dan_punishment': 24}
 MAX_NODES = 400
@@ -38,12 +41,18 @@ def round_robin(rows, limit):
     return ordered
 
 
+def side_key(keys):
+    """MaleCNS stores the hemisphere as somaSide; other datasets use side."""
+    return next((key for key in SIDE_KEYS if key in keys), None)
+
+
 def side_filter(side, keys, alias='n'):
     if not side:
         return ''
-    if 'side' not in keys:
+    key = side_key(keys)
+    if not key:
         raise CircuitError('No side property; inspect schema or omit --side')
-    return f' AND {alias}.side = {json.dumps(side)}'
+    return f' AND {alias}.`{key}` = {json.dumps(side)}'
 
 
 def resolve(client, types, side, keys):
@@ -51,8 +60,9 @@ def resolve(client, types, side, keys):
         raise CircuitError('No type property; inspect schema before selecting roles')
     rows = records(client, f'MATCH (n:Neuron) WHERE n.type IN {json.dumps(types)}{side_filter(side, keys)} '
                            'RETURN n.bodyId AS bodyId, n.type AS type ORDER BY type, bodyId')
-    if not set(types).issubset({row['type'] for row in rows}):
-        raise CircuitError('An exact role label was not found')
+    missing = sorted(set(types) - {row['type'] for row in rows})
+    if missing:
+        raise CircuitError(f'Exact role labels not found{" on side " + side if side else ""}: {", ".join(missing)}')
     return rows
 
 
@@ -109,7 +119,7 @@ def extract(client, args, keys):
     if len(ids) > MAX_NODES:
         raise CircuitError('Selection exceeds the node cap; lower the per-role limits')
 
-    available = [key for key in ANNOTATIONS if key in keys]
+    available = [key for key in ANNOTATIONS + EXTRA_ANNOTATIONS if key in keys]
     projection = ', '.join(f'{key}: n.`{key}`' for key in available)
     node_query = f'MATCH (n:Neuron) WHERE n.bodyId IN {json.dumps(ids)} RETURN n.bodyId AS bodyId, {{{projection}}} AS annotations ORDER BY bodyId'
     edge_query = (f'MATCH (a:Neuron)-[r:ConnectsTo]->(b:Neuron) WHERE a.bodyId IN {json.dumps(ids)} '
@@ -141,7 +151,8 @@ def extract(client, args, keys):
     for row in node_rows:
         body = int(row['bodyId'])
         annotations = row['annotations']
-        node = {key: annotations.get(key) for key in ('type', 'instance', 'side')}
+        node = {'type': annotations.get('type'), 'instance': annotations.get('instance'),
+                'side': next((annotations.get(key) for key in SIDE_KEYS if annotations.get(key) is not None), None)}
         if any(value is not None and not isinstance(value, str) for value in node.values()):
             raise CircuitError('Unexpected annotation type; inspect schema before adapting')
         node.update(id=str(body), bodyId=body, annotations=annotations, role=roles[body], roleBasis='cli-exact-type')
@@ -155,7 +166,7 @@ def extract(client, args, keys):
         'description': 'Bounded mushroom body circuit: projection neurons, Kenyon cells, output neurons and dopaminergic neurons. Roles assigned by exact type labels chosen by the project.',
         'nodeCount': len(nodes), 'edgeCount': len(edge_list), 'roleCounts': counts,
         'verification': {'bodyIds': True, 'edges': True, 'weights': True},
-        'methodology': {'schemaKeys': sorted(keys), 'annotationFields': available, 'side': side,
+        'methodology': {'schemaKeys': sorted(keys), 'annotationFields': available, 'side': side, 'sideKey': side_key(keys),
             'roleTypes': {'pn': args.pn_type, 'kc': args.kc_type, 'mbon': args.mbon_type,
                           'dan_reward': args.dan_reward_type, 'dan_punishment': args.dan_punishment_type},
             'roleLimits': {'pn': args.max_pn, 'kc': args.max_kc, 'mbon': args.max_mbon,
@@ -175,7 +186,8 @@ INSPECT_PATTERN = "(?i)^(KC|MBON|PAM|PPL1).*|.*PN.*"
 
 
 def inspect(client, keys):
-    side = ', n.side AS side' if 'side' in keys else ''
+    key = side_key(keys)
+    side = f', n.`{key}` AS side' if key else ''
     order = ', side' if side else ''
     types = records(client, f"MATCH (n:Neuron) WHERE n.type =~ '{INSPECT_PATTERN}' "
                             f'RETURN n.type AS type{side}, count(n) AS count ORDER BY type{order} LIMIT 800') if 'type' in keys else []

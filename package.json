@@ -14,7 +14,9 @@
     "typecheck": "tsc -b --pretty false",
     "sync:matches": "node scripts/run-ts.mjs scripts/sync-matches.ts",
     "fetch:history": "node scripts/run-ts.mjs scripts/fetch-history.ts",
-    "calibrate:odds": "node scripts/run-ts.mjs scripts/calibrate-odds.ts"
+    "calibrate:odds": "node scripts/run-ts.mjs scripts/calibrate-odds.ts",
+    "fly:raise": "node scripts/run-ts.mjs scripts/raise-fly.ts",
+    "fly:daily": "node scripts/run-ts.mjs scripts/fly-daily.ts"
   },
   "dependencies": {
     "maplibre-gl": "^6.10.0",

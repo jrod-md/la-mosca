@@ -1,7 +1,7 @@
 // Public, append-only record of every automated job run, successful or not.
 export interface RunEntry {
   at: string
-  job: 'sync-matches'
+  job: 'sync-matches' | 'backfill-matches' | 'fly-daily'
   ok: boolean
   window?: { from: string; to: string }
   fetched?: number
@@ -9,6 +9,9 @@ export interface RunEntry {
   updated?: number
   newlyFinished?: string[]
   unsettled?: string[]
+  settled?: number
+  placed?: number
+  passed?: number
   error?: string
 }
 

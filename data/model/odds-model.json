@@ -1,36 +1,36 @@
 {
- "fittedAt": "2026-10-07T14:05:25.200Z",
- "trainedOn": 622,
+ "fittedAt": "2026-10-07T14:35:00.640Z",
+ "trainedOn": 973,
  "range": {
   "from": "2022-02-05T01:00:00.000Z",
   "to": "2026-10-06T01:00:00.000Z"
  },
  "params": {
   "elo": {
-   "k": 17.7734375,
+   "k": 18.75,
    "homeAdvantage": 0,
-   "seasonRegression": 0.27617187499999996,
+   "seasonRegression": 0.26250000000000007,
    "initial": 1500,
    "newcomer": 1450
   },
   "goals": {
-   "base": 0.03339843750000001,
-   "home": 0.2,
-   "slope": 1.0917968749999998,
-   "rho": -0.07437500000000001
+   "base": 0.06074218750000002,
+   "home": 0.19707031249999998,
+   "slope": 1,
+   "rho": -0.0790625
   }
  },
  "metrics": {
   "model": {
-   "n": 572,
-   "resultLogLoss": 1.0550679659639914,
-   "scoreLogLoss": 2.790910036177179,
-   "brier": 0.6344669895356736
+   "n": 923,
+   "resultLogLoss": 1.0591666539936548,
+   "scoreLogLoss": 2.807520072655126,
+   "brier": 0.6388228365192976
   },
   "baseline": {
-   "n": 572,
-   "resultLogLoss": 1.0920246168792214,
-   "brier": 0.6620387829686385
+   "n": 923,
+   "resultLogLoss": 1.0934882646153186,
+   "brier": 0.6630952837393752
   }
  },
  "method": "Walk-forward Elo + Dixon-Coles Poisson, coordinate search on exact-score log loss"

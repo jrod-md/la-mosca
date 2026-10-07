@@ -80,6 +80,14 @@ class MushroomBodyTests(unittest.TestCase):
         self.assertNotIn(('31', '20'), pairs)
         self.assertIn(('2', '11'), pairs)
 
+    def test_soma_side_schema_filters_on_soma_side(self):
+        client = FakeClient()
+        queries = []
+        original = client.fetch_custom
+        client.fetch_custom = lambda query: queries.append(query) or original(query)
+        extract(client, make_args(), ['bodyId', 'type', 'somaSide'])
+        self.assertTrue(all('n.`somaSide` = "R"' in query for query in queries if 'n.type IN' in query))
+
     def test_rejects_missing_labels_overlap_incomplete_circuit_and_drift(self):
         with self.assertRaises(CircuitError):
             extract(FakeClient(), make_args(mbon_type=['fixMBON', 'notAType']), KEYS)

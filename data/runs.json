@@ -15,6 +15,38 @@
    "unsettled": [
     "af:1632353"
    ]
+  },
+  {
+   "at": "2026-10-07T14:08:53.034Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-10-04",
+    "to": "2026-10-14"
+   },
+   "fetched": 11,
+   "added": 0,
+   "updated": 0,
+   "newlyFinished": [],
+   "unsettled": [
+    "af:1632353"
+   ]
+  },
+  {
+   "at": "2026-10-07T14:09:01.826Z",
+   "job": "backfill-matches",
+   "ok": true,
+   "window": {
+    "from": "2025-01-01",
+    "to": "2026-10-03"
+   },
+   "fetched": 362,
+   "added": 352,
+   "updated": 8,
+   "newlyFinished": [],
+   "unsettled": [
+    "af:1632353"
+   ]
   }
  ]
 }
