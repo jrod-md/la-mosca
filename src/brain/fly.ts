@@ -9,7 +9,8 @@ import { randomFor } from './random'
 // depresses active KC->MBON synapses in its compartment); boldness is a modeled arousal state
 // inspired by octopamine, not derived from the connectome.
 export const FLY_PARAMS = Object.freeze({
-  startingBankroll: 100,
+  // Twenty balboas: a realistic weekend stake in Panama, not a round internet hundred.
+  startingBankroll: 20,
   minStake: 1,
   baseStakeFraction: 0.03,
   maxStakeFraction: 0.12,

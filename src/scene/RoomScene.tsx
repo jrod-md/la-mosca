@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { phaseAt, type DayPhase } from './city'
 import type { CalendarInfo } from './room'
 import type { BroadcastInfo } from './screens'
 
@@ -10,6 +11,12 @@ interface Props {
   label: string
 }
 
+// ?hora=8 previews a given hour.
+const visitorHour = () => {
+  const forced = Number(new URLSearchParams(window.location.search).get('hora'))
+  return Number.isInteger(forced) && forced >= 0 && forced < 24 && new URLSearchParams(window.location.search).has('hora') ? forced : new Date().getHours()
+}
+
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
 // Three.js room, loaded lazily so text content renders first. Pauses when hidden or offscreen.
@@ -18,6 +25,13 @@ export default function RoomScene({ broadcast, calendar, red, thinking, label }:
   const roomRef = useRef<import('./room').Room | null>(null)
   const [ready, setReady] = useState(false)
   const [failed, setFailed] = useState(false)
+  const [phase, setPhase] = useState<DayPhase>(() => phaseAt(visitorHour()))
+
+  // Follow the visitor's clock; re-check every few minutes.
+  useEffect(() => {
+    const timer = window.setInterval(() => setPhase(phaseAt(visitorHour())), 5 * 60_000)
+    return () => window.clearInterval(timer)
+  }, [])
 
   useEffect(() => {
     const canvas = canvasRef.current!
@@ -77,11 +91,12 @@ export default function RoomScene({ broadcast, calendar, red, thinking, label }:
     const room = roomRef.current
     if (!room) return
     room.setRed(red)
+    room.setTimeOfDay(phase)
     room.setCalendar(calendar)
     room.setBroadcast(broadcast)
     room.thinking = thinking
     if (prefersReducedMotion()) room.render(0, true)
-  }, [ready, broadcast, calendar, red, thinking])
+  }, [ready, broadcast, calendar, red, thinking, phase])
 
   return (
     <div className="scene" data-ready={ready} data-failed={failed}>

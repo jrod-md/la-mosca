@@ -2,7 +2,7 @@
 import stateFile from '../../data/fly/state.json'
 import betsFile from '../../data/fly/bets.json'
 import upcomingFile from '../../data/fly/upcoming.json'
-import { summary as infancySummary, affinity as infancyAffinity, curve as infancyCurve, matches as infancyMatches, from as infancyFrom, to as infancyTo } from '../../data/fly/infancy.json'
+import { summary as infancySummary, affinity as infancyAffinity, curve as infancyCurve, bankruptAt as infancyBankruptAt, matches as infancyMatches, from as infancyFrom, to as infancyTo } from '../../data/fly/infancy.json'
 import type { Bet, BetBook, FlyState, Pass } from '../brain/fly'
 import type { UpcomingMatch } from '../odds/upcoming'
 
@@ -23,8 +23,12 @@ export const infancy = {
   from: infancyFrom,
   to: infancyTo,
   curve: infancyCurve as [string, number][],
+  bankruptAt: infancyBankruptAt as number[],
   affinity: infancyAffinity as { team: string; innate: number; learned: number }[],
 }
+
+// The full infancy bet list is large; it loads only when someone asks to see it.
+export const loadInfancyBets = () => import('../../data/fly/infancy-bets.json').then(module => (module.default as unknown as { bets: Bet[] }).bets)
 
 export type Featured =
   | { kind: 'open'; bet: Bet; match: UpcomingMatch | null }

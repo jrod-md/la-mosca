@@ -1,10 +1,10 @@
 {
- "updatedAt": "2026-10-07T14:44:08.445Z",
+ "updatedAt": "2026-10-07T15:50:10.733Z",
  "phase": "ready-for-live",
  "lastInfancyMatch": "af:1583782",
  "state": {
   "circuitSha": "b39942b5a598a988ffddda0a74bbbc9f1c7fae73f9688658c1183f87ca3f6783",
-  "bankroll": 100,
+  "bankroll": 20,
   "bankruptcies": 0,
   "boldness": 0.511,
   "winStreak": 1,

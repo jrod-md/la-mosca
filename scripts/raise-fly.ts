@@ -59,9 +59,12 @@ write('data/fly/infancy.json', {
   summary: { bets: bets.length, won: won.length, staked: Math.round(staked * 100) / 100, returned: Math.round(returned * 100) / 100, ...infancyResult },
   // Bankroll after every bet (date, balance), compact enough for the site to chart without the full bet list.
   curve: bets.map(bet => [bet.kickoff.slice(0, 10), bet.bankrollAfter]),
+  // Indices into curve where the fly went broke and was recapitalized.
+  bankruptAt: bets.flatMap((bet, i) => bet.bankrupt ? [i] : []),
   affinity: LPF_TEAMS.map(team => ({ team: team.id, innate: innate.find(entry => entry.team === team.id)!.affinity, learned: learned.find(entry => entry.team === team.id)!.affinity })),
-  bets,
 })
+// Kept separate so the site loads the full list only on request.
+write('data/fly/infancy-bets.json', { bets })
 write('data/fly/state.json', { updatedAt: now, phase: 'ready-for-live', lastInfancyMatch: matches.at(-1)?.id, state: fly.state })
 write('data/fly/bets.json', { bets: [], passes: [] })
 

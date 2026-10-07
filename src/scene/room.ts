@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import { animateFly, buildFly } from './fly3d'
-import { buildCity } from './city'
+import { buildCity, type DayPhase } from './city'
 import { drawBroadcast, drawCalendar, drawPennant, type BroadcastInfo } from './screens'
 
 export interface CalendarInfo { month: string; days: number; firstWeekday: number; circled: number | null }
@@ -47,6 +47,8 @@ export class Room {
   // Narrow screens look further left so the fly by the window stays in frame.
   private framing = { shift: 0, radius: 4.8 }
   private red = false
+  private phase: DayPhase = 'night'
+  private readonly windowLight: THREE.PointLight
   thinking = false
 
   constructor(canvas: HTMLCanvasElement) {
@@ -148,9 +150,9 @@ export class Room {
     pane.add(sill)
     pane.rotation.y = Math.PI / 2
     pane.position.set(-2.39, 1.75, -0.35)
-    const moonlight = new THREE.PointLight('#8ea6ff', 3, 4, 1.6)
-    moonlight.position.set(-2.0, 1.75, -0.35)
-    this.scene.add(pane, moonlight)
+    this.windowLight = new THREE.PointLight('#8ea6ff', 3, 4, 1.6)
+    this.windowLight.position.set(-2.0, 1.75, -0.35)
+    this.scene.add(pane, this.windowLight)
 
     // Wall calendar and (Marea Roja) pennant.
     const calendar = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.56), new THREE.MeshStandardMaterial({ map: this.calendar.texture, roughness: 0.9 }))
@@ -184,6 +186,22 @@ export class Room {
     this.calendar.texture.needsUpdate = true
   }
 
+  // The visitor's time of day: sky, city lights and the light through the window.
+  setTimeOfDay(phase: DayPhase) {
+    this.phase = phase
+    this.applyLook()
+  }
+
+  private applyLook() {
+    this.city.setLook(this.red, this.phase)
+    const light = { night: ['#8ea6ff', 3], dawn: ['#ffb8a0', 6], day: ['#e8f1ff', 10], dusk: ['#ffa36b', 6] } as const
+    const [color, intensity] = light[this.phase]
+    this.windowLight.color.set(this.red ? '#ff6a55' : color)
+    this.windowLight.intensity = intensity
+    this.windowLight.distance = this.phase === 'day' ? 7 : 4
+    this.hemi.intensity = this.phase === 'day' ? 2.8 : this.phase === 'night' ? 2.2 : 2.4
+  }
+
   setRed(red: boolean) {
     this.red = red
     const palette = red ? PALETTE.red : PALETTE.normal
@@ -193,7 +211,7 @@ export class Room {
     ;(this.scene.fog as THREE.Fog).color.set(palette.fog)
     ;(this.scene.background as THREE.Color).set(palette.fog)
     this.pennant.visible = red
-    this.city.setRed(red)
+    this.applyLook()
   }
 
   setPointer(x: number, y: number) {

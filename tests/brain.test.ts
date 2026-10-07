@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { readFileSync } from 'node:fs'
 import { buildCircuit, perceive, KC_SPARSITY } from '../src/brain/circuit'
-import { Fly, fixtureOf } from '../src/brain/fly'
+import { Fly, FLY_PARAMS, fixtureOf } from '../src/brain/fly'
 import { glomeruli, optionOdor, priceBucket } from '../src/brain/odor'
 import { randomFor } from '../src/brain/random'
 import type { Match } from '../src/football/types'
@@ -52,11 +52,11 @@ test('Bets move the bankroll and dopamine learning changes only active synapses'
   const forced = { ...decision, choice: decision.options[0], activeKcs: decision.activeKcs.length ? decision.activeKcs : [0] }
   const before = [...fly.state.weights]
   const bet = fly.place(match(null), forced, 'live', '2026-10-09T12:00:00.000Z')!
-  assert.equal(fly.state.bankroll, 100 - bet.stake)
+  assert.equal(fly.state.bankroll, Math.round((FLY_PARAMS.startingBankroll - bet.stake) * 100) / 100)
   const settled = fly.settle(bet, match([2, 0]))
   assert.equal(settled.status, 'won')
   assert.equal(settled.payout, Math.round(bet.stake * bet.odds * 100) / 100)
-  assert.equal(fly.state.bankroll, Math.round((100 - bet.stake + settled.payout) * 100) / 100)
+  assert.equal(fly.state.bankroll, Math.round((FLY_PARAMS.startingBankroll - bet.stake + settled.payout) * 100) / 100)
   const activeKcs = new Set(forced.activeKcs)
   const changed = circuit.kcToMbon.map((synapse, i) => ({ synapse, i })).filter(({ i }) => fly.state.weights[i] !== before[i])
   assert.ok(changed.length > 0)
@@ -71,7 +71,7 @@ test('Void matches refund and unsettled matches cannot be settled', () => {
   assert.throws(() => fly.settle(bet, match(null)))
   const voided = fly.settle(bet, { ...match(null), status: 'void' })
   assert.equal(voided.status, 'void')
-  assert.equal(fly.state.bankroll, 100)
+  assert.equal(fly.state.bankroll, FLY_PARAMS.startingBankroll)
   assert.throws(() => new Fly(circuit, { ...fly.state, circuitSha: 'other' }))
 })
 

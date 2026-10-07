@@ -1,4 +1,5 @@
 import { lazy, Suspense, useMemo } from 'react'
+import { FLY_PARAMS } from './brain/fly'
 import { flyState, mareaRoja, REPO_URL, stateUpdatedAt } from './site/data'
 import { day, kickoff, money, percent } from './site/format'
 import { LanguageProvider, useLanguage, useT } from './site/i18n'
@@ -79,7 +80,7 @@ function Page() {
             <div><dt>{t('boldness')}</dt><dd>{percent(flyState.boldness)}</dd></div>
             <div><dt>{t('streak')}</dt><dd>{streak}</dd></div>
           </dl>
-          <p className="fine">{t('bankrollNote')}</p>
+          <p className="fine">{t('bankrollNote', { start: FLY_PARAMS.startingBankroll })}</p>
         </div>
       </main>
 

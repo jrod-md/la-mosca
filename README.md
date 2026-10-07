@@ -1,8 +1,8 @@
 # La Mosca
 
-Le di B/. 100 a un cerebro de mosca para que apueste en el fútbol panameño.
+Le di B/. 20 a un cerebro de mosca para que apueste en el fútbol panameño.
 
-El cerebro es real: 296 neuronas del cuerpo pedunculado (el centro de aprendizaje de la mosca) con sus conexiones y su morfología, tomadas del dataset **MaleCNS v1.0** de HHMI Janelia. Los partidos son reales: la Liga Panameña de Fútbol y la Selección. La plata no: la mosca arranca con B/. 100 ficticios.
+El cerebro es real: 296 neuronas del cuerpo pedunculado (el centro de aprendizaje de la mosca) con sus conexiones y su morfología, tomadas del dataset **MaleCNS v1.0** de HHMI Janelia. Los partidos son reales: la Liga Panameña de Fútbol y la Selección. La plata no: la mosca arranca con B/. 20 ficticios.
 
 Cada mañana la mosca revisa los partidos, cobra o pierde lo que apostó, aprende de eso y decide sus próximas jugadas. Cada apuesta queda en el historial público de este repo **antes** del partido, así que nadie puede cambiarla después.
 
@@ -50,7 +50,8 @@ Los datos viven en `data/`:
 | `fly/state.json` | El cerebro: pesos sinápticos, saldo, audacia, rachas |
 | `fly/bets.json` | Apuestas en vivo y partidos que decidió no apostar |
 | `fly/upcoming.json` | Próximos partidos ya cotizados, para el sitio |
-| `fly/infancy.json` | Su "infancia": 973 partidos vividos antes de debutar |
+| `fly/infancy.json` | Resumen de su "infancia": 973 partidos vividos antes de debutar |
+| `fly/infancy-bets.json` | Las 832 apuestas de esa infancia, una por una |
 
 ## Comandos
 
