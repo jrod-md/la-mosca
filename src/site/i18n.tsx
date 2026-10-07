@@ -1,15 +1,15 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 
 export type Language = 'es' | 'en'
-const STORAGE_KEY = 'drosophila-language'
+const STORAGE_KEY = 'la-mosca-language'
 
 const es = {
-  brand: 'Drosófila FC',
-  tagline: 'Una mosca con cerebro de verdad apuesta plata de mentira en el fútbol panameño.',
+  brand: 'La Mosca',
+  tagline: 'Le di B/. 100 a un cerebro de mosca para que apueste en el fútbol panameño.',
   language: 'Idioma',
   sceneLabel: 'La mosca en su cuarto, frente a la tele con el próximo partido',
-  mareaRoja: 'Marea Roja',
-  mareaRojaNote: 'Juega Panamá. El cuarto se pone rojo.',
+  seleToday: 'Hoy juega la Sele',
+  seleHeader: 'La Sele',
   slipTitle: 'La jugada',
   slipOpen: 'Apuesta abierta',
   slipThinking: 'Lo que está pensando',
@@ -98,12 +98,12 @@ const es = {
 type Dictionary = { [K in keyof typeof es]: string }
 
 const en: Dictionary = {
-  brand: 'Drosophila FC',
-  tagline: 'A fly with a real brain bets fake money on Panamanian football.',
+  brand: 'La Mosca',
+  tagline: 'I gave a fly brain B/. 100 to bet on Panamanian football.',
   language: 'Language',
   sceneLabel: 'The fly in its room, facing the TV showing the next match',
-  mareaRoja: 'Marea Roja',
-  mareaRojaNote: 'Panama is playing. The room turns red.',
+  seleToday: 'Panama plays today',
+  seleHeader: 'Panama',
   slipTitle: 'The pick',
   slipOpen: 'Open bet',
   slipThinking: 'What it is thinking',

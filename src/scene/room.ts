@@ -1,6 +1,7 @@
 import * as THREE from 'three'
 import { animateFly, buildFly } from './fly3d'
-import { drawBroadcast, drawCalendar, drawPennant, drawSkyline, type BroadcastInfo } from './screens'
+import { buildCity } from './city'
+import { drawBroadcast, drawCalendar, drawPennant, type BroadcastInfo } from './screens'
 
 export interface CalendarInfo { month: string; days: number; firstWeekday: number; circled: number | null }
 
@@ -30,7 +31,8 @@ const box = (w: number, h: number, d: number, color: string, roughness = 0.8) =>
 export class Room {
   readonly renderer: THREE.WebGLRenderer
   private readonly scene = new THREE.Scene()
-  private readonly camera = new THREE.PerspectiveCamera(38, 1, 0.1, 40)
+  // Far plane reaches the city and sky outside the window.
+  private readonly camera = new THREE.PerspectiveCamera(38, 1, 0.1, 400)
   private readonly fly = buildFly()
   private readonly walls: THREE.MeshStandardMaterial
   private readonly lamp: THREE.SpotLight
@@ -38,7 +40,7 @@ export class Room {
   private readonly screen = canvasTexture(640, 480)
   private readonly calendar = canvasTexture(320, 360)
   private readonly screenMaterial: THREE.MeshBasicMaterial
-  private readonly skyline = canvasTexture(512, 360)
+  private readonly city = buildCity()
   private readonly pennant: THREE.Mesh
   private readonly target = new THREE.Vector3(-0.6, 1.0, -0.7)
   private pointer = { x: 0, y: 0 }
@@ -57,17 +59,24 @@ export class Room {
     this.renderer.shadowMap.type = THREE.PCFSoftShadowMap
 
     this.walls = new THREE.MeshStandardMaterial({ color: PALETTE.normal.wall, roughness: 0.95 })
-    const back = new THREE.Mesh(new THREE.PlaneGeometry(10, 5), this.walls)
-    back.position.set(0, 2.5, -1.6)
+    // Walls and floor stop at the corner (x = -2.4) so nothing blocks the view out the window.
+    const back = new THREE.Mesh(new THREE.PlaneGeometry(7.4, 5), this.walls)
+    back.position.set(1.3, 2.5, -1.6)
     back.receiveShadow = true
-    const side = new THREE.Mesh(new THREE.PlaneGeometry(10, 5), this.walls)
-    side.rotation.y = Math.PI / 2
-    side.position.set(-2.4, 2.5, 1)
-    side.receiveShadow = true
-    const floor = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), new THREE.MeshStandardMaterial({ color: '#3a2a1f', roughness: 0.85 }))
+    // Side wall, built around a real opening for the window (z -1.1..0.4, y 1.225..2.275).
+    const sideWall = new THREE.Group()
+    for (const [width, height, z, y] of [[2.9, 5, -2.55, 2.5], [5.6, 5, 3.2, 2.5], [1.5, 1.225, -0.35, 0.6125], [1.5, 2.725, -0.35, 3.6375]]) {
+      const piece = new THREE.Mesh(new THREE.PlaneGeometry(width, height), this.walls)
+      piece.rotation.y = Math.PI / 2
+      piece.position.set(-2.4, y, z)
+      piece.receiveShadow = true
+      sideWall.add(piece)
+    }
+    const floor = new THREE.Mesh(new THREE.PlaneGeometry(7.4, 10), new THREE.MeshStandardMaterial({ color: '#3a2a1f', roughness: 0.85 }))
     floor.rotation.x = -Math.PI / 2
+    floor.position.x = 1.3
     floor.receiveShadow = true
-    this.scene.add(back, side, floor)
+    this.scene.add(back, sideWall, floor, this.city.group)
 
     // Desk.
     const desk = new THREE.Group()
@@ -127,10 +136,8 @@ export class Room {
     tvGlow.position.set(-0.45, 1.3, -0.8)
     this.scene.add(this.hemi, fill, tvGlow)
 
-    // A window onto Panama City at night, on the side wall.
+    // The window frame; Panama City is real geometry outside (see city.ts).
     const pane = new THREE.Group()
-    const view = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1.05), new THREE.MeshBasicMaterial({ map: this.skyline.texture, toneMapped: false }))
-    pane.add(view)
     for (const [w, h, x, y] of [[1.62, 0.07, 0, 0.56], [1.62, 0.07, 0, -0.56], [0.07, 1.18, -0.78, 0], [0.07, 1.18, 0.78, 0], [0.04, 1.05, 0, 0]]) {
       const bar = box(w, h, 0.06, '#d9d1bd', 0.7)
       bar.position.set(x, y, 0.02)
@@ -144,8 +151,6 @@ export class Room {
     const moonlight = new THREE.PointLight('#8ea6ff', 3, 4, 1.6)
     moonlight.position.set(-2.0, 1.75, -0.35)
     this.scene.add(pane, moonlight)
-    drawSkyline(this.skyline.canvas, false)
-    this.skyline.texture.needsUpdate = true
 
     // Wall calendar and (Marea Roja) pennant.
     const calendar = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.56), new THREE.MeshStandardMaterial({ map: this.calendar.texture, roughness: 0.9 }))
@@ -188,8 +193,7 @@ export class Room {
     ;(this.scene.fog as THREE.Fog).color.set(palette.fog)
     ;(this.scene.background as THREE.Color).set(palette.fog)
     this.pennant.visible = red
-    drawSkyline(this.skyline.canvas, red)
-    this.skyline.texture.needsUpdate = true
+    this.city.setRed(red)
   }
 
   setPointer(x: number, y: number) {
@@ -230,7 +234,7 @@ export class Room {
     })
     this.screen.texture.dispose()
     this.calendar.texture.dispose()
-    this.skyline.texture.dispose()
+    this.city.dispose()
     this.renderer.dispose()
   }
 }

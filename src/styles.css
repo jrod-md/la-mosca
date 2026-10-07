@@ -105,9 +105,10 @@ h2 {
   padding: 0.6rem 0.9rem;
   background: oklch(0.55 0.2 27);
   color: oklch(0.97 0.01 27);
-  font-weight: 700;
+  font: 800 1.35rem/1 var(--display);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
-.marea-banner strong { font: 800 1.35rem/1 var(--display); text-transform: uppercase; margin-inline-end: 0.4rem; }
 .stage__story { display: grid; gap: 1.25rem; }
 
 /* The betting slip: a paper ticket */

@@ -1,6 +1,6 @@
-# Drosófila FC
+# La Mosca
 
-Una mosca con cerebro de verdad apuesta plata de mentira en el fútbol panameño.
+Le di B/. 100 a un cerebro de mosca para que apueste en el fútbol panameño.
 
 El cerebro es real: 296 neuronas del cuerpo pedunculado (el centro de aprendizaje de la mosca) con sus conexiones y su morfología, tomadas del dataset **MaleCNS v1.0** de HHMI Janelia. Los partidos son reales: la Liga Panameña de Fútbol y la Selección. La plata no: la mosca arranca con B/. 100 ficticios.
 

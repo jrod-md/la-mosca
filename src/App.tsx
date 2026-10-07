@@ -25,7 +25,7 @@ function Page() {
       : story.selection ? t('flyPick', { pick: `${selectionLabel(t, story.selection, story.homeName, story.awayName)}${option ? ` @${option.odds.toFixed(2)}` : ''}` })
         : t('brainLoading')
     return {
-      header: red ? t('mareaRoja') : story.competition === 'panama' ? 'Panamá' : 'LPF',
+      header: red || story.competition === 'panama' ? t('seleHeader') : 'LPF',
       when: story.kickoff ? kickoff(story.kickoff, language) : '',
       home: story.homeName || t('brand'),
       away: story.awayName || '',
@@ -69,7 +69,7 @@ function Page() {
           <Suspense fallback={<div className="scene" />}>
             <RoomScene broadcast={broadcast} calendar={calendar} red={red} thinking={story.featured.kind === 'thinking'} label={t('sceneLabel')} />
           </Suspense>
-          {red && <p className="marea-banner"><strong>{t('mareaRoja')}</strong> {t('mareaRojaNote')}</p>}
+          {red && <p className="marea-banner">{t('seleToday')}</p>}
         </div>
 
         <div className="stage__story">
