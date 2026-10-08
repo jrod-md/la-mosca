@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FLY_PARAMS, type Bet } from '../brain/fly'
 import { PANAMA_KEY, TASTE_TEAMS, weeklyChange } from '../brain/tastes'
 import { teamName } from '../football/teams'
-import { infancy, liveBets, loadInfancyBets, nextDailyRun, passes, tastes } from './data'
+import { infancy, loadInfancyBets, tastes } from './data'
 import { day, money, odds as formatOdds } from './format'
 import { useLanguage, useT } from './i18n'
 import { selectionLabel } from './Slip'
@@ -39,25 +39,6 @@ function BankrollChart({ points, label, markEach }: { points: ChartPoint[]; labe
         <span><span className="chart__key chart__key--bankrupt" aria-hidden="true" /> {t('chartBankrupt', { start: START })}</span>
       </figcaption>
     </figure>
-  )
-}
-
-function Totals({ bets, bankruptcies }: { bets: Bet[]; bankruptcies: number }) {
-  const t = useT()
-  const settled = bets.filter(bet => bet.status !== 'open')
-  const staked = settled.reduce((sum, bet) => sum + bet.stake, 0)
-  const returned = settled.reduce((sum, bet) => sum + bet.payout, 0)
-  const won = settled.filter(bet => bet.status === 'won').length
-  const decided = settled.filter(bet => bet.status !== 'void').length
-  const net = returned - staked
-  return (
-    <dl className="totals">
-      <div><dt>{t('totalStaked')}</dt><dd>{money(staked)}</dd></div>
-      <div><dt>{t('totalReturned')}</dt><dd>{money(returned)}</dd></div>
-      <div><dt>{t('net')}</dt><dd data-sign={net > 0 ? 'up' : net < 0 ? 'down' : 'flat'}>{net > 0 ? '+' : net < 0 ? '−' : ''}{money(Math.abs(net))}</dd></div>
-      <div><dt>{t('hits')}</dt><dd>{won} / {decided}</dd></div>
-      <div><dt>{t('bankruptcies')}</dt><dd>{bankruptcies}</dd></div>
-    </dl>
   )
 }
 
@@ -103,34 +84,6 @@ function BetTable({ rows }: { rows: Row[] }) {
         </tbody>
       </table>
     </div>
-  )
-}
-
-export function Ledger() {
-  const t = useT()
-  const { language } = useLanguage()
-  const chronological = [...liveBets].sort((a, b) => a.kickoff.localeCompare(b.kickoff))
-  const rows: Row[] = [
-    ...liveBets.map(bet => ({ kind: 'bet' as const, bet, kickoff: bet.kickoff })),
-    ...passes.map(pass => { const [home, away] = names(pass); return { kind: 'pass' as const, kickoff: pass.kickoff, home, away } }),
-  ].sort((a, b) => b.kickoff.localeCompare(a.kickoff))
-  const settled = chronological.filter(bet => bet.status !== 'open')
-  return (
-    <section className="ledger" aria-labelledby="ledger-title">
-      <div className="section-head">
-        <h2 id="ledger-title">{t('recordTitle')}</h2>
-        <p>{t('recordLead')}</p>
-      </div>
-      {rows.length === 0 ? (
-        <p className="ledger__empty">{t('recordEmpty', { date: day(nextDailyRun().toISOString(), language) })}</p>
-      ) : (
-        <>
-          <Totals bets={liveBets} bankruptcies={liveBets.filter(bet => bet.bankrupt).length} />
-          {settled.length > 0 && <BankrollChart label={t('chartLive')} markEach points={settled.map(bet => ({ value: bet.bankrollAfter, status: bet.status, bankrupt: bet.bankrupt }))} />}
-          <BetTable rows={rows} />
-        </>
-      )}
-    </section>
   )
 }
 

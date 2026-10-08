@@ -4,8 +4,11 @@ name: Daily fly
 # The git history of data/ is the public, timestamped proof that each bet predates its match.
 # Commits are made by "mosca-bot", the GitHub Actions identity of this job.
 on:
+  # GitHub may delay or drop scheduled runs, especially exactly on the hour. Off-the-hour times
+  # plus a later backup run; the job is idempotent (it never decides or settles anything twice).
   schedule:
-    - cron: '0 12 * * *' # 07:00 in Panama
+    - cron: '7 12 * * *' # 07:07 in Panama
+    - cron: '37 14 * * *' # 09:37 in Panama, backup
   workflow_dispatch:
 
 permissions:

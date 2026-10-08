@@ -5,7 +5,8 @@ import { moodAt, visitorHour } from './site/mood'
 import { day, matchTime, money, percent } from './site/format'
 import { LanguageProvider, useLanguage, useT } from './site/i18n'
 import BrainPanel from './site/BrainPanel'
-import { Infancy, Ledger, Tastes } from './site/Record'
+import Notebook from './site/Notebook'
+import { Infancy, Tastes } from './site/Record'
 import Slip, { selectionLabel } from './site/Slip'
 import { SELECTION_INDEX, useStory } from './site/story'
 import { useBrain } from './site/useBrain'
@@ -93,7 +94,7 @@ function Page() {
 
       <div className="sections">
         <BrainPanel brain={brain} story={story} />
-        <Ledger />
+        <Notebook />
         <Tastes />
         <Infancy />
         <section className="how" aria-labelledby="how-title">
