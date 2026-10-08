@@ -15,7 +15,7 @@ La Mosca es una simulación pública y autónoma: un cerebro construido a partir
 | **Cerebro** | 296 neuronas reales del cuerpo pedunculado (el centro de aprendizaje de la mosca) y sus 4.181 conexiones, tomadas del conectoma **MaleCNS v1.0** de HHMI Janelia |
 | **Aprendizaje** | La dopamina modifica las sinapsis según cuánto lo sorprendió el resultado, siguiendo el mecanismo descrito en la literatura del cuerpo pedunculado |
 | **Cuotas** | Dos modelos probabilísticos (Elo + Poisson Dixon-Coles): uno entrenado con 973 partidos de la LPF y otro con 301 partidos de Panamá |
-| **Autonomía** | GitHub Actions corre todo cada día a las 07:00 de Panamá, sin intervención humana |
+| **Autonomía** | GitHub Actions corre todo cada mañana (07:07 de Panamá, con respaldo a las 09:37), sin intervención humana |
 | **Transparencia** | Cada apuesta queda en el historial público de git **antes** del partido; cada decisión es reproducible |
 
 ## Por qué
@@ -87,7 +87,7 @@ Metodología completa de la extracción científica en [`MALECNS.md`](./MALECNS.
 - **Escena 3D** (three.js, sin modelos externos): la mosca en su cuarto, frente a una tele que transmite el próximo partido, con Ciudad de Panamá por la ventana. El cielo sigue la hora de quien visita.
 - **Su día:** de 00:00 a 05:00 duerme boca arriba en su cama, como Gregorio Samsa; el día de un partido oficial de Panamá está nerviosa; celebra cuando Panamá gana. Cuando juega la Sele, el cuarto se pone rojo.
 - **Panel del cerebro:** las 296 neuronas con su forma real, reproduciendo la decisión del día.
-- **La libreta:** historial completo, saldo apuesta por apuesta, quiebras y "lo que aprendió esta semana".
+- **La libreta:** un cuaderno de bocetos que se abre y se hojea; cada partido es una página doble con el boleto pegado, un sello de goma (en juego, pegó, perdí) y las notas a mano de la mosca.
 - Español e inglés, diseño responsive y soporte para movimiento reducido.
 
 Vistas previas: `?hora=1` (dormida), `?animo=nervous`, `?animo=celebrating`, `?marea=1` (Marea Roja).
@@ -117,7 +117,7 @@ tests/          pruebas de modelos, cerebro, datos y estados de ánimo
 
 | Workflow | Cuándo | Qué hace |
 | --- | --- | --- |
-| `daily.yml` | Todos los días, 07:00 Panamá | Sincroniza partidos, liquida, aprende, apuesta, verifica y publica |
+| `daily.yml` | Todos los días, 07:07 Panamá (respaldo 09:37) | Sincroniza partidos, liquida, aprende, apuesta, verifica y publica |
 | `monthly.yml` | Día 1 de cada mes | Reentrena ambos modelos de cuotas |
 | `ci.yml` | Cada push | Tipos, pruebas, build y revisión de credenciales |
 
@@ -174,6 +174,6 @@ Dinero ficticio. Esto no es una casa de apuestas, y no apuestes lo que diga una 
 - Datos neuronales: MaleCNS v1.0, HHMI Janelia FlyEM Project, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - Partidos: [TheSportsDB](https://www.thesportsdb.com/) y [API-Football](https://www.api-football.com/).
 - Selecciones: [World Football Elo Ratings](https://www.eloratings.net/).
-- Tipografías: Big Shoulders Display y Atkinson Hyperlegible (SIL Open Font License).
+- Tipografías: Big Shoulders Display, Atkinson Hyperlegible, Kaushan Script, Caveat y Courier Prime (SIL Open Font License).
 
 El proyecto selecciona y transforma estos datos; no implica respaldo de sus autores.
