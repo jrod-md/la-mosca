@@ -1,4 +1,188 @@
 {
- "bets": [],
+ "bets": [
+  {
+   "id": "bet:af:1583783",
+   "matchId": "af:1583783",
+   "phase": "live",
+   "placedAt": "2026-10-08T17:56:50.066Z",
+   "kickoff": "2026-10-10T01:30:00.000Z",
+   "home": "san-francisco",
+   "away": "universitario",
+   "homeName": "San Francisco FC",
+   "awayName": "Universitario",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 1.7,
+     "drive": 0.341,
+     "probability": 0.3349937271733882
+    },
+    {
+     "selection": "draw",
+     "odds": 3.58,
+     "drive": 0.266,
+     "probability": 0.20818282311288325
+    },
+    {
+     "selection": "away",
+     "odds": 5.2,
+     "drive": 0.39,
+     "probability": 0.4568234497137286
+    }
+   ],
+   "selection": "home",
+   "odds": 1.7,
+   "stake": 1.22,
+   "boldness": 0.51,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "31720",
+    "52972",
+    "58570",
+    "62645",
+    "62840",
+    "65977",
+    "68010",
+    "69037",
+    "74683",
+    "74812",
+    "79092",
+    "82798",
+    "89461",
+    "153165",
+    "178810",
+    "547293"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 18.78,
+   "result": null,
+   "bankrupt": false
+  },
+  {
+   "id": "bet:af:1583784",
+   "matchId": "af:1583784",
+   "phase": "live",
+   "placedAt": "2026-10-08T17:56:50.066Z",
+   "kickoff": "2026-10-10T23:15:00.000Z",
+   "home": "independiente",
+   "away": "veraguas",
+   "homeName": "Independiente",
+   "awayName": "Veraguas United",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.48,
+     "drive": 0.575,
+     "probability": 0.4033442248619357
+    },
+    {
+     "selection": "draw",
+     "odds": 3.14,
+     "drive": 0.266,
+     "probability": 0.056844320347982834
+    },
+    {
+     "selection": "away",
+     "odds": 2.95,
+     "drive": 0.621,
+     "probability": 0.5398114547900814
+    }
+   ],
+   "selection": "home",
+   "odds": 2.48,
+   "stake": 1.22,
+   "boldness": 0.51,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "44557",
+    "48779",
+    "53833",
+    "61936",
+    "63823",
+    "64141",
+    "65483",
+    "68010",
+    "72359",
+    "72913",
+    "73442",
+    "75122",
+    "82798",
+    "89461",
+    "135092",
+    "551434"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 17.56,
+   "result": null,
+   "bankrupt": false
+  },
+  {
+   "id": "bet:af:1583785",
+   "matchId": "af:1583785",
+   "phase": "live",
+   "placedAt": "2026-10-08T17:56:50.066Z",
+   "kickoff": "2026-10-11T01:30:00.000Z",
+   "home": "plaza-amador",
+   "away": "arabe-unido",
+   "homeName": "Plaza Amador",
+   "awayName": "Árabe Unido",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 1.61,
+     "drive": 0.352,
+     "probability": 0.2661225989142398
+    },
+    {
+     "selection": "draw",
+     "odds": 3.74,
+     "drive": 0.266,
+     "probability": 0.15390700831395762
+    },
+    {
+     "selection": "away",
+     "odds": 5.84,
+     "drive": 0.475,
+     "probability": 0.5799703927718026
+    }
+   ],
+   "selection": "draw",
+   "odds": 3.74,
+   "stake": 1.07,
+   "boldness": 0.51,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "40376",
+    "41787",
+    "53863",
+    "70193",
+    "80978",
+    "82025",
+    "85017",
+    "85752",
+    "87660",
+    "91497",
+    "96065",
+    "102357",
+    "118636",
+    "135247",
+    "165180",
+    "214044"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 16.49,
+   "result": null,
+   "bankrupt": false
+  }
+ ],
  "passes": []
 }

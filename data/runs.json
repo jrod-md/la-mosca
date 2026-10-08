@@ -65,6 +65,28 @@
     "elo:2026-10-05:EC-PA"
    ],
    "unsettled": []
+  },
+  {
+   "at": "2026-10-08T17:56:43.054Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-10-05",
+    "to": "2026-10-15"
+   },
+   "fetched": 12,
+   "added": 0,
+   "updated": 0,
+   "newlyFinished": [],
+   "unsettled": []
+  },
+  {
+   "at": "2026-10-08T17:56:50.066Z",
+   "job": "fly-daily",
+   "ok": true,
+   "settled": 0,
+   "placed": 3,
+   "passed": 0
   }
  ]
 }
