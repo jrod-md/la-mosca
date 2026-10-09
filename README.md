@@ -15,7 +15,7 @@ La Mosca es una simulación pública y autónoma: un cerebro construido a partir
 | **Cerebro** | 296 neuronas reales del cuerpo pedunculado (el centro de aprendizaje de la mosca) y sus 4.181 conexiones, tomadas del conectoma **MaleCNS v1.0** de HHMI Janelia |
 | **Aprendizaje** | La dopamina modifica las sinapsis según cuánto lo sorprendió el resultado, siguiendo el mecanismo descrito en la literatura del cuerpo pedunculado |
 | **Cuotas** | Dos modelos probabilísticos (Elo + Poisson Dixon-Coles): uno entrenado con 973 partidos de la LPF y otro con 301 partidos de Panamá |
-| **Autonomía** | GitHub Actions corre todo cada mañana (07:07 de Panamá, con respaldo a las 09:37), sin intervención humana |
+| **Autonomía** | GitHub Actions corre todo cada mañana (07:07 de Panamá, con cinco respaldos hasta las 12:43), sin intervención humana |
 | **Transparencia** | Cada apuesta queda en el historial público de git **antes** del partido; cada decisión es reproducible |
 
 ## Por qué
@@ -117,7 +117,7 @@ tests/          pruebas de modelos, cerebro, datos y estados de ánimo
 
 | Workflow | Cuándo | Qué hace |
 | --- | --- | --- |
-| `daily.yml` | Todos los días, 07:07 Panamá (respaldo 09:37) | Sincroniza partidos, liquida, aprende, apuesta, verifica y publica |
+| `daily.yml` | Todos los días, 07:07 Panamá (respaldos hasta las 12:43) | Sincroniza partidos, liquida, aprende, apuesta, verifica y publica |
 | `monthly.yml` | Día 1 de cada mes | Reentrena ambos modelos de cuotas |
 | `ci.yml` | Cada push | Tipos, pruebas, build y revisión de credenciales |
 
