@@ -182,6 +182,128 @@
    "bankrollAfter": 16.49,
    "result": null,
    "bankrupt": false
+  },
+  {
+   "id": "bet:af:1583786",
+   "matchId": "af:1583786",
+   "phase": "live",
+   "placedAt": "2026-10-09T18:18:02.032Z",
+   "kickoff": "2026-10-11T21:00:00.000Z",
+   "home": "union-cocle",
+   "away": "herrera",
+   "homeName": "Unión Coclé",
+   "awayName": "Herrera FC",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 1.77,
+     "drive": 0.203,
+     "probability": 0.11267369467972838
+    },
+    {
+     "selection": "draw",
+     "odds": 3.49,
+     "drive": 0.266,
+     "probability": 0.1676187926847819
+    },
+    {
+     "selection": "away",
+     "odds": 4.83,
+     "drive": 0.496,
+     "probability": 0.7197075126354898
+    }
+   ],
+   "selection": "away",
+   "odds": 4.83,
+   "stake": 1.38,
+   "boldness": 0.51,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "22995",
+    "44557",
+    "52613",
+    "53144",
+    "53833",
+    "60098",
+    "63823",
+    "65483",
+    "72865",
+    "72913",
+    "73442",
+    "76005",
+    "85054",
+    "92563",
+    "118532",
+    "551434"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 15.11,
+   "result": null,
+   "bankrupt": false
+  },
+  {
+   "id": "bet:af:1583788",
+   "matchId": "af:1583788",
+   "phase": "live",
+   "placedAt": "2026-10-09T18:18:02.032Z",
+   "kickoff": "2026-10-11T23:15:00.000Z",
+   "home": "umecit",
+   "away": "alianza",
+   "homeName": "UMECIT",
+   "awayName": "Alianza FC",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.49,
+     "drive": 0.333,
+     "probability": 0.2581417160157662
+    },
+    {
+     "selection": "draw",
+     "odds": 3.14,
+     "drive": 0.266,
+     "probability": 0.1691967455101596
+    },
+    {
+     "selection": "away",
+     "odds": 2.94,
+     "drive": 0.458,
+     "probability": 0.5726615384740742
+    }
+   ],
+   "selection": "away",
+   "odds": 2.94,
+   "stake": 1.13,
+   "boldness": 0.51,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "44557",
+    "47984",
+    "52613",
+    "53833",
+    "64141",
+    "65483",
+    "65977",
+    "67344",
+    "73442",
+    "90805",
+    "90935",
+    "92563",
+    "115501",
+    "153165",
+    "178810",
+    "186833"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 13.98,
+   "result": null,
+   "bankrupt": false
   }
  ],
  "passes": []

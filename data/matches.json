@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-08T17:56:43.054Z",
+ "updatedAt": "2026-10-09T18:17:56.245Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10555,7 +10555,7 @@
    "league": "Panama Liga Panamena de Futbol",
    "season": "2026",
    "round": "12",
-   "kickoff": "2026-10-13T01:30:00.000Z",
+   "kickoff": "2026-10-13T01:00:00.000Z",
    "home": {
     "name": "Sporting San Miguelito",
     "sourceId": "tsdb:139739",

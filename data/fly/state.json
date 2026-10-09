@@ -1,10 +1,10 @@
 {
- "updatedAt": "2026-10-08T17:56:50.066Z",
+ "updatedAt": "2026-10-09T18:18:02.032Z",
  "phase": "live",
  "lastInfancyMatch": "af:1583782",
  "state": {
   "circuitSha": "b39942b5a598a988ffddda0a74bbbc9f1c7fae73f9688658c1183f87ca3f6783",
-  "bankroll": 16.49,
+  "bankroll": 13.98,
   "bankruptcies": 0,
   "boldness": 0.511,
   "winStreak": 1,
@@ -1320,6 +1320,6 @@
    2.996891234088218
   ],
   "settled": 832,
-  "driveBaseline": 0.491085
+  "driveBaseline": 0.490524
  }
 }
