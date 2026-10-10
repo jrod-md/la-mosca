@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-09T21:52:27.284Z",
+ "updatedAt": "2026-10-10T17:17:33.554Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10436,8 +10436,8 @@
     "sourceId": "tsdb:139736",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/nb1eut1768358103.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Agustín Sánchez"
   },
@@ -10462,8 +10462,8 @@
     "sourceId": "tsdb:145086",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/zwx9x51649354013.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Agustín Sánchez"
   },
@@ -10572,6 +10572,86 @@
    "venue": "Estadio Los Andes"
   },
   {
+   "id": "af:1583789",
+   "sources": {
+    "apiFootball": 1583789,
+    "theSportsDb": "2548231"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "13",
+   "kickoff": "2026-10-17T01:30:00.000Z",
+   "home": {
+    "name": "Deportivo Árabe Unido",
+    "sourceId": "tsdb:139738",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "tsdb:147060",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1583790",
+   "sources": {
+    "apiFootball": 1583790,
+    "theSportsDb": "2548232"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "13",
+   "kickoff": "2026-10-17T23:15:00.000Z",
+   "home": {
+    "name": "CD Universitario",
+    "sourceId": "tsdb:139736",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nb1eut1768358103.png"
+   },
+   "away": {
+    "name": "Independiente de La Chorrera",
+    "sourceId": "tsdb:139108",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/dra6xs1768358312.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Estadio Universidad Latina"
+  },
+  {
+   "id": "elo:2026-11-12:CW-PA",
+   "sources": {
+    "apiFootball": null,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Liga de Naciones Concacaf",
+   "season": "2026",
+   "round": null,
+   "kickoff": "2026-11-12T12:00:00.000Z",
+   "kickoffTimeKnown": false,
+   "home": {
+    "name": "Curazao",
+    "sourceId": "nt:CW",
+    "badge": null
+   },
+   "away": {
+    "name": "Panamá",
+    "sourceId": "nt:PA",
+    "badge": null
+   },
+   "status": "scheduled",
+   "rawStatus": "eloratings:fixture",
+   "score": null,
+   "venue": "Curazao",
+   "venueCountry": "CW"
+  },
+  {
    "id": "elo:2026-11-13:CW-PA",
    "sources": {
     "apiFootball": null,
@@ -10598,6 +10678,34 @@
    "score": null,
    "venue": "Curazao",
    "venueCountry": "CW"
+  },
+  {
+   "id": "elo:2026-11-15:PA-CW",
+   "sources": {
+    "apiFootball": null,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Liga de Naciones Concacaf",
+   "season": "2026",
+   "round": null,
+   "kickoff": "2026-11-15T12:00:00.000Z",
+   "kickoffTimeKnown": false,
+   "home": {
+    "name": "Panamá",
+    "sourceId": "nt:PA",
+    "badge": null
+   },
+   "away": {
+    "name": "Curazao",
+    "sourceId": "nt:CW",
+    "badge": null
+   },
+   "status": "scheduled",
+   "rawStatus": "eloratings:fixture",
+   "score": null,
+   "venue": "Panamá",
+   "venueCountry": "PA"
   },
   {
    "id": "elo:2026-11-16:PA-CW",

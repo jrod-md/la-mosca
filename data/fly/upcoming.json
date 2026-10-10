@@ -1,156 +1,6 @@
 {
- "generatedAt": "2026-10-09T21:52:34.116Z",
+ "generatedAt": "2026-10-10T17:17:39.379Z",
  "matches": [
-  {
-   "id": "af:1583783",
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "round": "12",
-   "kickoff": "2026-10-10T01:30:00.000Z",
-   "kickoffTimeKnown": true,
-   "venue": "Estadio Agustín Sánchez",
-   "home": {
-    "key": "san-francisco",
-    "name": "San Francisco FC",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/16pi2m1582143972.png"
-   },
-   "away": {
-    "key": "universitario",
-    "name": "Universitario",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nb1eut1768358103.png"
-   },
-   "odds": {
-    "result": {
-     "home": 1.7,
-     "draw": 3.58,
-     "away": 5.2
-    },
-    "total25": {
-     "over": 2.09,
-     "under": 1.72
-    },
-    "btts": {
-     "yes": 2.02,
-     "no": 1.77
-    },
-    "correctScore": [
-     {
-      "score": "1-0",
-      "odds": 6.77
-     },
-     {
-      "score": "1-1",
-      "odds": 6.99
-     },
-     {
-      "score": "2-0",
-      "odds": 7.7
-     },
-     {
-      "score": "2-1",
-      "odds": 9.19
-     },
-     {
-      "score": "0-0",
-      "odds": 9.36
-     },
-     {
-      "score": "3-0",
-      "odds": 14.08
-     },
-     {
-      "score": "0-1",
-      "odds": 14.23
-     },
-     {
-      "score": "3-1",
-      "odds": 16.8
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.555,
-    "draw": 0.264,
-    "away": 0.181,
-    "over25": 0.451,
-    "btts": 0.467
-   }
-  },
-  {
-   "id": "af:1583784",
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "round": "12",
-   "kickoff": "2026-10-10T23:15:00.000Z",
-   "kickoffTimeKnown": true,
-   "venue": "Estadio Agustín Sánchez",
-   "home": {
-    "key": "independiente",
-    "name": "Independiente",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/dra6xs1768358312.png"
-   },
-   "away": {
-    "key": "veraguas",
-    "name": "Veraguas United",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/zwx9x51649354013.png"
-   },
-   "odds": {
-    "result": {
-     "home": 2.48,
-     "draw": 3.14,
-     "away": 2.95
-    },
-    "total25": {
-     "over": 2.26,
-     "under": 1.62
-    },
-    "btts": {
-     "yes": 1.94,
-     "no": 1.84
-    },
-    "correctScore": [
-     {
-      "score": "1-1",
-      "odds": 6.14
-     },
-     {
-      "score": "1-0",
-      "odds": 8.07
-     },
-     {
-      "score": "0-0",
-      "odds": 8.21
-     },
-     {
-      "score": "0-1",
-      "odds": 9.08
-     },
-     {
-      "score": "2-1",
-      "odds": 10.71
-     },
-     {
-      "score": "1-2",
-      "odds": 11.91
-     },
-     {
-      "score": "2-0",
-      "odds": 11.91
-     },
-     {
-      "score": "0-2",
-      "odds": 14.73
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.38,
-    "draw": 0.3,
-    "away": 0.319,
-    "over25": 0.417,
-    "btts": 0.487
-   }
-  },
   {
    "id": "af:1583785",
    "competition": "lpf",
@@ -452,6 +302,156 @@
    }
   },
   {
+   "id": "af:1583789",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "13",
+   "kickoff": "2026-10-17T01:30:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "COS Sports Plaza",
+   "home": {
+    "key": "arabe-unido",
+    "name": "Árabe Unido",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
+   },
+   "away": {
+    "key": "umecit",
+    "name": "UMECIT",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.07,
+     "draw": 3.25,
+     "away": 3.7
+    },
+    "total25": {
+     "over": 2.22,
+     "under": 1.64
+    },
+    "btts": {
+     "yes": 1.96,
+     "no": 1.82
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.34
+     },
+     {
+      "score": "1-0",
+      "odds": 7.3
+     },
+     {
+      "score": "0-0",
+      "odds": 8.49
+     },
+     {
+      "score": "2-0",
+      "odds": 9.63
+     },
+     {
+      "score": "2-1",
+      "odds": 9.79
+     },
+     {
+      "score": "0-1",
+      "odds": 10.76
+     },
+     {
+      "score": "1-2",
+      "odds": 13.92
+     },
+     {
+      "score": "0-2",
+      "odds": 19.46
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.455,
+    "draw": 0.291,
+    "away": 0.255,
+    "over25": 0.425,
+    "btts": 0.481
+   }
+  },
+  {
+   "id": "elo:2026-11-12:CW-PA",
+   "competition": "panama",
+   "league": "Liga de Naciones Concacaf",
+   "round": null,
+   "kickoff": "2026-11-12T12:00:00.000Z",
+   "kickoffTimeKnown": false,
+   "venue": "Curazao",
+   "home": {
+    "key": "nt:CW",
+    "name": "Curazao",
+    "badge": null
+   },
+   "away": {
+    "key": "nt:PA",
+    "name": "Panamá",
+    "badge": null
+   },
+   "odds": {
+    "result": {
+     "home": 3.29,
+     "draw": 3.18,
+     "away": 2.26
+    },
+    "total25": {
+     "over": 2.46,
+     "under": 1.53
+    },
+    "btts": {
+     "yes": 2.1,
+     "no": 1.71
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.34
+     },
+     {
+      "score": "0-1",
+      "odds": 6.72
+     },
+     {
+      "score": "0-0",
+      "odds": 7.66
+     },
+     {
+      "score": "1-0",
+      "odds": 8.6
+     },
+     {
+      "score": "0-2",
+      "odds": 10.41
+     },
+     {
+      "score": "1-2",
+      "odds": 10.61
+     },
+     {
+      "score": "2-1",
+      "odds": 13.44
+     },
+     {
+      "score": "2-0",
+      "odds": 16.69
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.286,
+    "draw": 0.297,
+    "away": 0.417,
+    "over25": 0.383,
+    "btts": 0.449
+   }
+  },
+  {
    "id": "elo:2026-11-13:CW-PA",
    "competition": "panama",
    "league": "Liga de Naciones Concacaf",
@@ -524,6 +524,81 @@
     "away": 0.417,
     "over25": 0.383,
     "btts": 0.449
+   }
+  },
+  {
+   "id": "elo:2026-11-15:PA-CW",
+   "competition": "panama",
+   "league": "Liga de Naciones Concacaf",
+   "round": null,
+   "kickoff": "2026-11-15T12:00:00.000Z",
+   "kickoffTimeKnown": false,
+   "venue": "Panamá",
+   "home": {
+    "key": "nt:PA",
+    "name": "Panamá",
+    "badge": null
+   },
+   "away": {
+    "key": "nt:CW",
+    "name": "Curazao",
+    "badge": null
+   },
+   "odds": {
+    "result": {
+     "home": 1.47,
+     "draw": 4.12,
+     "away": 7.3
+    },
+    "total25": {
+     "over": 2.09,
+     "under": 1.72
+    },
+    "btts": {
+     "yes": 2.28,
+     "no": 1.61
+    },
+    "correctScore": [
+     {
+      "score": "1-0",
+      "odds": 5.91
+     },
+     {
+      "score": "2-0",
+      "odds": 6.37
+     },
+     {
+      "score": "1-1",
+      "odds": 8.22
+     },
+     {
+      "score": "2-1",
+      "odds": 9.45
+     },
+     {
+      "score": "0-0",
+      "odds": 9.92
+     },
+     {
+      "score": "3-0",
+      "odds": 10.57
+     },
+     {
+      "score": "3-1",
+      "odds": 15.68
+     },
+     {
+      "score": "0-1",
+      "odds": 16.58
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.642,
+    "draw": 0.229,
+    "away": 0.129,
+    "over25": 0.451,
+    "btts": 0.414
    }
   },
   {

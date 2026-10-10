@@ -55,9 +55,9 @@
     "178810",
     "547293"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 18.78,
+   "status": "void",
+   "payout": 1.22,
+   "bankrollAfter": 15.2,
    "result": null,
    "bankrupt": false
   },
@@ -116,9 +116,9 @@
     "135092",
     "551434"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 17.56,
+   "status": "void",
+   "payout": 1.22,
+   "bankrollAfter": 16.42,
    "result": null,
    "bankrupt": false
   },
@@ -302,6 +302,67 @@
    "status": "open",
    "payout": 0,
    "bankrollAfter": 13.98,
+   "result": null,
+   "bankrupt": false
+  },
+  {
+   "id": "bet:af:1583787",
+   "matchId": "af:1583787",
+   "phase": "live",
+   "placedAt": "2026-10-10T17:17:39.379Z",
+   "kickoff": "2026-10-13T01:00:00.000Z",
+   "home": "sporting-sm",
+   "away": "tauro",
+   "homeName": "Sporting San Miguelito",
+   "awayName": "Tauro FC",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.4,
+     "drive": 0.549,
+     "probability": 0.8112131445396102
+    },
+    {
+     "selection": "draw",
+     "odds": 3.15,
+     "drive": 0.266,
+     "probability": 0.13498045360728295
+    },
+    {
+     "selection": "away",
+     "odds": 3.06,
+     "drive": 0.121,
+     "probability": 0.0538064018531068
+    }
+   ],
+   "selection": "home",
+   "odds": 2.4,
+   "stake": 1.47,
+   "boldness": 0.51,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "44557",
+    "52613",
+    "53833",
+    "61936",
+    "63823",
+    "65483",
+    "68010",
+    "70193",
+    "71691",
+    "72913",
+    "73442",
+    "82798",
+    "85054",
+    "89461",
+    "90935",
+    "118532"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 14.95,
    "result": null,
    "bankrupt": false
   }
