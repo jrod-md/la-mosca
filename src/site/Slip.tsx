@@ -37,6 +37,7 @@ export default function Slip({ story, brain }: { story: Story; brain: Brain | nu
       {story.pending && <p className="slip__pick slip__pick--pending" aria-live="polite">{t('brainLoading')}</p>}
       {story.selection && (
         <>
+          <p className="slip__pick-label">{t(bet ? (bet.status === 'open' ? 'slipPickOpen' : 'slipPickDone') : 'slipPickThinking')}</p>
           <p className="slip__pick">{selectionLabel(t, story.selection, story.homeName, story.awayName)}</p>
           <dl className="slip__figures">
             <div><dt>{t('odds')}</dt><dd>{formatOdds(bet?.odds ?? chosen?.odds ?? 0)}</dd></div>

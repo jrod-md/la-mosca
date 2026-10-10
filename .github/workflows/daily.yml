@@ -32,23 +32,38 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      # Backup slots do nothing once the fly has had its day (Panama date); manual runs always go.
+      - name: Already ran today?
+        id: today
+        if: github.event_name == 'schedule'
+        run: |
+          node -e "
+            const day = iso => new Date(Date.parse(iso) - 5 * 3600e3).toISOString().slice(0, 10)
+            const { runs } = JSON.parse(require('fs').readFileSync('data/runs.json', 'utf8'))
+            const done = runs.some(run => run.job === 'fly-daily' && run.ok && day(run.at) === day(new Date().toISOString()))
+            console.log('done=' + done)
+          " >> "$GITHUB_OUTPUT"
       - run: npm ci
+        if: steps.today.outputs.done != 'true'
       - name: Sync matches
         id: sync
+        if: steps.today.outputs.done != 'true'
         run: npm run sync:matches
       - name: Fly's day
         id: fly
+        if: steps.today.outputs.done != 'true'
         run: npm run fly:daily
       # The site is rebuilt from data/ on every push; never publish data that breaks it.
       - name: Verify site with new data
         id: verify
+        if: steps.today.outputs.done != 'true'
         run: |
           npm test
           npm run build
       # Always record the run, including failures (data/runs.json logs them), unless the
       # new data would break the site.
       - name: Commit data
-        if: always() && steps.verify.outcome != 'failure'
+        if: always() && steps.verify.outcome != 'failure' && steps.today.outputs.done != 'true'
         run: |
           git config user.name 'mosca-bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

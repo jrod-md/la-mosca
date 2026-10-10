@@ -1,6 +1,6 @@
 import { lazy, Suspense, useMemo } from 'react'
 import { FLY_PARAMS } from './brain/fly'
-import { flyState, mareaRoja, recentNational, REPO_URL, stateUpdatedAt, upcoming } from './site/data'
+import { flyState, liveBets, mareaRoja, recentNational, REPO_URL, stateUpdatedAt, upcoming } from './site/data'
 import { moodAt, visitorHour } from './site/mood'
 import { day, matchTime, money, percent } from './site/format'
 import { LanguageProvider, useLanguage, useT } from './site/i18n'
@@ -57,7 +57,9 @@ function Page() {
   }, [story.kickoff, language])
 
   const { winStreak, lossStreak } = flyState
-  const streak = winStreak === 1 ? t('oneWin') : winStreak > 1 ? t('winsInRow', { n: winStreak })
+  // The streak shown is the live one; the brain's own counters also carry its infancy.
+  const liveDecided = liveBets.some(bet => bet.status === 'won' || bet.status === 'lost')
+  const streak = !liveDecided ? t('noStreak') : winStreak === 1 ? t('oneWin') : winStreak > 1 ? t('winsInRow', { n: winStreak })
     : lossStreak === 1 ? t('oneLoss') : lossStreak > 1 ? t('lossesInRow', { n: lossStreak }) : t('noStreak')
 
   return (

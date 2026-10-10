@@ -160,15 +160,18 @@ function Accounts() {
   const { language } = useLanguage()
   const settled = [...liveBets].filter(bet => bet.status !== 'open').sort((a, b) => a.kickoff.localeCompare(b.kickoff))
   const open = [...liveBets].filter(bet => bet.status === 'open').sort((a, b) => a.kickoff.localeCompare(b.kickoff))
-  const staked = settled.reduce((sum, bet) => sum + bet.stake, 0)
-  const returned = settled.reduce((sum, bet) => sum + bet.payout, 0)
+  // Voided bets (postponed matches) were refunded: they are listed apart, not as played.
+  const played = settled.filter(bet => bet.status !== 'void')
+  const voided = settled.filter(bet => bet.status === 'void')
+  const staked = played.reduce((sum, bet) => sum + bet.stake, 0)
+  const returned = played.reduce((sum, bet) => sum + bet.payout, 0)
   const net = returned - staked
-  const won = settled.filter(bet => bet.status === 'won').length
-  const decided = settled.filter(bet => bet.status !== 'void').length
+  const won = played.filter(bet => bet.status === 'won').length
+  const decided = played.length
   const inPlay = open.reduce((sum, bet) => sum + bet.stake, 0)
   // Cash in hand excludes money riding on open bets; that shows as "in play" until it settles.
   const cash = flyState.bankroll
-  const series = [START, ...settled.map(bet => bet.bankrollAfter)]
+  const series = [START, ...played.map(bet => bet.bankrollAfter)]
   const max = Math.max(START * 1.5, ...series)
   const points = series.map((value, i) => `${(i / Math.max(1, series.length - 1)) * 200},${60 - (value / max) * 56}`).join(' ')
   const count = (n: number) => t(n === 1 ? 'nbBetsOne' : 'nbBetsMany', { n })
@@ -179,7 +182,8 @@ function Accounts() {
         <div><dt>{t('nbBalance')}</dt><dd>{money(cash)}</dd></div>
         <div><dt>{t('nbInPlay')}</dt><dd>{money(inPlay)} <small>({count(open.length)})</small></dd></div>
       </dl>
-      {settled.length > 0 ? (
+      {voided.length > 0 && <dl className="nb__accounts"><div><dt>{t('nbVoided')}</dt><dd>{voided.length} <small>({money(voided.reduce((sum, bet) => sum + bet.payout, 0))})</small></dd></div></dl>}
+      {played.length > 0 ? (
         <>
           <h4 className="nb__subheading">{t('nbPlayed')}</h4>
           <dl className="nb__accounts">
@@ -290,7 +294,7 @@ function Note({ entry }: { entry: Entry }) {
         <span className="nb__result-label">{t('nbResult')}:</span>
         {bet.status === 'open'
           ? <span className="nb__result-later">{t('nbResultLater', { date: settleDay(bet.kickoff, bet.matchId, language) })}</span>
-          : <span className="nb__score">{score}</span>}
+          : bet.status === 'void' ? <span className="nb__result-later">{t('nbPostponed')}</span> : <span className="nb__score">{score}</span>}
       </div>
       {bet.status === 'won' && <p className="nb__hand nb__hand--won">{t('nbPaid', { paid: money(bet.payout) })}</p>}
       {bet.status === 'lost' && <p className="nb__hand nb__hand--lost">{t('nbLost', { stake: money(bet.stake) })}</p>}
@@ -332,8 +336,14 @@ export default function Notebook() {
     const entries: Entry[] = [
       ...liveBets.map(bet => { const [home, away] = names(bet); return { kind: 'bet' as const, bet, number: numbered.indexOf(bet) + 1, home, away } }),
       ...passes.map(pass => { const [home, away] = names(pass); return { kind: 'pass' as const, pass, home, away } }),
-    ].sort((a, b) => kickoffOf(b).localeCompare(kickoffOf(a)))
-    return [{ kind: 'cover' }, { kind: 'inside' }, { kind: 'accounts' }, ...entries.flatMap(entry => [{ kind: 'ticket' as const, entry }, { kind: 'note' as const, entry }])]
+    ]
+    // Reading order: what is still to be played, soonest first; then what already happened, latest first.
+    const now = new Date().toISOString()
+    const isPending = (entry: Entry) => toneOf(entry) === 'open' || (entry.kind === 'pass' && kickoffOf(entry) > now)
+    const pending = entries.filter(isPending).sort((a, b) => kickoffOf(a).localeCompare(kickoffOf(b)))
+    const past = entries.filter(entry => !isPending(entry)).sort((a, b) => kickoffOf(b).localeCompare(kickoffOf(a)))
+    const ordered = [...pending, ...past]
+    return [{ kind: 'cover' }, { kind: 'inside' }, { kind: 'accounts' }, ...ordered.flatMap(entry => [{ kind: 'ticket' as const, entry }, { kind: 'note' as const, entry }])]
   }, [])
   // On wide screens an empty slot sits left of the cover, so every spread is (even, odd).
   const seq: (Page | null)[] = useMemo(() => wide ? [null, ...pages] : pages, [wide, pages])
