@@ -44,7 +44,8 @@ test('International prices are a distribution that favours the stronger side', (
 test('Panama matches become date-only ledger entries with stable ids', async () => {
   const files: Record<string, string> = { 'Panama.tsv': RESULTS, 'fixtures.tsv': FIXTURES }
   const client = createEloratingsClient(async url => files[url.split('/').pop()!] ?? '')
-  const matches = await client.panamaMatches({ NZ: 'New Zealand', DO: 'Dominican Republic', CW: 'Curacao' }, '2026-09-01')
+  const { matches, fixturesListed } = await client.panamaMatches({ NZ: 'New Zealand', DO: 'Dominican Republic', CW: 'Curacao' }, '2026-09-01')
+  assert.ok(fixturesListed >= 1)
   assert.deepEqual(matches.map(match => match.id), ['elo:2026-10-01:NZ-PA', 'elo:2026-11-13:CW-PA'])
   const [played, scheduled] = matches
   assert.equal(played.status, 'finished')

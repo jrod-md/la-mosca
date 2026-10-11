@@ -5,7 +5,7 @@
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import { createEloratingsClient } from '../src/football/eloratings'
 import { createTheSportsDbClient } from '../src/football/theSportsDb'
-import { mergeMatches, utcDay } from '../src/football/ledger'
+import { mergeMatches, retireStaleFixtures, utcDay } from '../src/football/ledger'
 import { appendRun, type RunEntry, type RunLog } from '../src/football/runLog'
 import type { JsonFetch, Match, MatchLedger } from '../src/football/types'
 
@@ -15,6 +15,7 @@ const RATINGS = 'data/international/ratings.json'
 const DAYS_BACK = 3
 const DAYS_AHEAD = 7
 const CHECKPOINT_DAYS = 30
+const MIN_FIXTURES_LISTED = 20
 const pause = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
 const readJson = <T>(file: string, fallback: T): T => existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : fallback
@@ -62,11 +63,21 @@ const sync = async (now: Date, from: string, to: string, backfill: boolean): Pro
   const [names, ratings] = await Promise.all([elo.names(), elo.ratings()])
   if (Object.keys(ratings).length < 150) throw new Error('eloratings World.tsv looks incomplete')
   writeJson(RATINGS, { fetchedAt: now.toISOString(), source: 'World Football Elo Ratings (eloratings.net)', ratings })
-  const panama = await elo.panamaMatches(names, utcDay(now, -45))
+  const { matches: panama, fixturesListed } = await elo.panamaMatches(names, utcDay(now, -45))
   pending.push(...panama)
   fetched += panama.length
   for (const match of pending) if (match.status === 'unknown') unsettled.set(match.id, match)
   flush()
+  // Rescheduled national fixtures: drop the old date. Skipped if the fixtures file looks truncated.
+  if (fixturesListed >= MIN_FIXTURES_LISTED) {
+    const stale = retireStaleFixtures(matches, new Set(panama.map(match => match.id)), now)
+    if (stale.retired.length) {
+      matches = stale.matches
+      updated += stale.retired.length
+      writeJson(OUTPUT, { updatedAt: now.toISOString(), matches } satisfies MatchLedger)
+      for (const id of stale.retired) console.log(`  no longer listed, voided: ${id}`)
+    }
+  } else console.log(`  fixtures file lists only ${fixturesListed} matches; stale-fixture check skipped`)
 
   const newlyFinished = matches.filter(match => match.status === 'finished' && !wasFinished.has(match.id))
   console.log(`Synced ${fetched} matches (${added} new, ${updated} updated). Ledger: ${matches.length} matches in ${OUTPUT}.`)

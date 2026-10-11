@@ -67,10 +67,13 @@ export interface Bet {
   bankrollAfter: number
   result: string | null
   bankrupt: boolean
+  // Set while the match is postponed and the fly is still waiting for a new date.
+  postponed?: boolean
 }
 
 // A recorded decision not to bet; kept public so the fly cannot reconsider later.
-export interface Pass { matchId: string; decidedAt: string; kickoff: string; home: string; away: string; homeName?: string; awayName?: string; options: OptionView[] }
+// reason 'broke': it wanted to bet but had less than the minimum stake in hand.
+export interface Pass { matchId: string; decidedAt: string; kickoff: string; home: string; away: string; homeName?: string; awayName?: string; options: OptionView[]; reason?: 'broke' }
 
 export interface BetBook { bets: Bet[]; passes?: Pass[] }
 
@@ -150,12 +153,23 @@ export class Fly {
     }
   }
 
+  // Broke means no cash for a minimum stake and nothing still riding: money in open bets may come back.
+  private goBankrupt(othersOpen: number): boolean {
+    if (this.state.bankroll >= FLY_PARAMS.minStake || othersOpen > 0) return false
+    this.state.bankruptcies++
+    this.state.bankroll = FLY_PARAMS.startingBankroll
+    return true
+  }
+
   // Settles a bet against a final result and applies dopamine learning. Void matches refund.
-  settle(bet: Bet, match: Match): Bet {
+  // othersOpen: how many other bets are still open (they hold money that is not lost yet).
+  settle(bet: Bet, match: Match, othersOpen = 0): Bet {
     if (bet.status !== 'open') return bet
+    const { postponed: _waiting, ...open } = bet
     if (match.status === 'void') {
       this.state.bankroll = round2(this.state.bankroll + bet.stake)
-      return { ...bet, status: 'void', payout: bet.stake, bankrollAfter: this.state.bankroll }
+      const bankrupt = this.goBankrupt(othersOpen)
+      return { ...open, status: 'void', payout: bet.stake, bankrollAfter: this.state.bankroll, bankrupt }
     }
     if (match.status !== 'finished' || !match.score) throw new Error(`Match ${match.id} is not settled`)
     const { home, away } = match.score
@@ -165,13 +179,8 @@ export class Fly {
     this.state.bankroll = round2(this.state.bankroll + payout)
     this.learn(bet.activeKcs, won, bet.odds)
     this.updateMood(won, randomFor(`mood:${match.id}`))
-    let bankrupt = false
-    if (this.state.bankroll < FLY_PARAMS.minStake) {
-      bankrupt = true
-      this.state.bankruptcies++
-      this.state.bankroll = FLY_PARAMS.startingBankroll
-    }
-    return { ...bet, status: won ? 'won' : 'lost', payout, result: `${home}-${away}`, bankrollAfter: this.state.bankroll, bankrupt }
+    const bankrupt = this.goBankrupt(othersOpen)
+    return { ...open, status: won ? 'won' : 'lost', payout, result: `${home}-${away}`, bankrollAfter: this.state.bankroll, bankrupt }
   }
 
   // Dopamine scales with surprise (reward prediction error against the price's implied chance):

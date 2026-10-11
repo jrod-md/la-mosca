@@ -89,10 +89,15 @@ export const createEloratingsClient = (fetchText: (url: string) => Promise<strin
     // Panama's recent results and scheduled fixtures as ledger matches.
     panamaMatches: async (names: Record<string, string>, since: string) => {
       const [history, fixtures] = await Promise.all([get('Panama.tsv'), get('fixtures.tsv')])
-      return [
-        ...parseResults(history).filter(result => result.date >= since).map(result => toMatch(result, names)),
-        ...parseFixtures(fixtures).filter(involvesPanama).map(fixture => toMatch(fixture, names)),
-      ]
+      const listed = parseFixtures(fixtures)
+      return {
+        matches: [
+          ...parseResults(history).filter(result => result.date >= since).map(result => toMatch(result, names)),
+          ...listed.filter(involvesPanama).map(fixture => toMatch(fixture, names)),
+        ],
+        // Every fixture in the file (all teams): a near-empty file means a bad download, not a clear calendar.
+        fixturesListed: listed.length,
+      }
     },
   }
 }

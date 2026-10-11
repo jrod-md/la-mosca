@@ -2,8 +2,9 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { createTheSportsDbClient, normalizeTsdbEvent, type TsdbEvent } from '../src/football/theSportsDb'
 import { createApiFootballClient, normalizeApiFootballFixture, type ApiFootballFixture } from '../src/football/apiFootball'
-import { mergeMatches, utcDay } from '../src/football/ledger'
-import type { JsonFetch } from '../src/football/types'
+import { mergeMatches, retireStaleFixtures, utcDay } from '../src/football/ledger'
+import { slotHasWork } from '../src/football/runLog'
+import type { JsonFetch, Match } from '../src/football/types'
 
 // Synthetic fixtures shaped like real responses; teams and scores are not real results.
 const tsdb = (overrides: Partial<TsdbEvent> = {}): TsdbEvent => ({
@@ -90,4 +91,35 @@ test('API-Football client surfaces plan errors without leaking the key', async (
   const client = createApiFootballClient(fetch, 'fixture-key')
   await assert.rejects(client.lpfSeason(2026), (error: Error) => error.message.includes('Free plans') && !error.message.includes('fixture-key'))
   assert.equal(client.requests, 1)
+})
+
+const national = (date: string, status: Match['status'] = 'scheduled'): Match => ({
+  id: `elo:${date}:PA-CW`, sources: { apiFootball: null, theSportsDb: null }, competition: 'panama', league: 'Fixture', season: date.slice(0, 4), round: null,
+  kickoff: `${date}T12:00:00.000Z`, kickoffTimeKnown: false, home: { name: 'A', sourceId: 'nt:PA', badge: null }, away: { name: 'B', sourceId: 'nt:CW', badge: null },
+  status, rawStatus: null, score: null, venue: null, venueCountry: 'PA',
+})
+
+test('National fixtures the source no longer lists are voided, with a grace period after their date', () => {
+  const now = new Date('2026-10-10T17:00:00Z')
+  const ledger = [national('2026-11-15'), national('2026-11-16'), national('2026-10-09'), national('2026-09-20'), national('2026-09-01', 'finished')]
+  const { matches, retired } = retireStaleFixtures(ledger, new Set(['elo:2026-11-15:PA-CW']), now)
+  // Moved fixture (future, unlisted) and a long-past one without a result go; a listed one, a
+  // just-played one still waiting for its result, and finished matches stay.
+  assert.deepEqual(retired, ['elo:2026-11-16:PA-CW', 'elo:2026-09-20:PA-CW'])
+  assert.deepEqual(matches.map(match => match.status), ['scheduled', 'void', 'scheduled', 'void', 'finished'])
+  assert.equal(matches[1].rawStatus, 'eloratings:removed')
+})
+
+test('A backup slot only works when the fly has not had its day or a result is still owed', () => {
+  const ran = { runs: [{ at: '2026-10-11T11:30:00.000Z', job: 'fly-daily' as const, ok: true }] }
+  const noon = new Date('2026-10-11T17:00:00Z')
+  const open = (kickoff: string, postponed = false) => ({ status: 'open', kickoff, postponed })
+  assert.equal(slotHasWork({ runs: [] }, [], noon), true)
+  assert.equal(slotHasWork({ runs: [{ ...ran.runs[0], ok: false }] }, [], noon), true)
+  assert.equal(slotHasWork(ran, [open('2026-10-12T01:30:00.000Z')], noon), false)
+  // Last night's match has no result yet: keep trying. A postponed bet is not owed a result.
+  assert.equal(slotHasWork(ran, [open('2026-10-11T01:30:00.000Z')], noon), true)
+  assert.equal(slotHasWork(ran, [open('2026-10-11T01:30:00.000Z', true)], noon), false)
+  // The Panama day starts at 05:00 UTC: a run at 03:00 UTC belongs to the previous day.
+  assert.equal(slotHasWork({ runs: [{ ...ran.runs[0], at: '2026-10-11T03:00:00.000Z' }] }, [], noon), true)
 })

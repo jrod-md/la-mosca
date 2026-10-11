@@ -5,6 +5,7 @@ import { buildCircuit, perceive, KC_SPARSITY } from '../src/brain/circuit'
 import { Fly, FLY_PARAMS, fixtureOf } from '../src/brain/fly'
 import { glomeruli, optionOdor, priceBucket } from '../src/brain/odor'
 import { randomFor } from '../src/brain/random'
+import { settleOpenBets } from '../src/brain/settlement'
 import { recordSnapshot, weeklyChange, type TasteLog } from '../src/brain/tastes'
 import type { Match } from '../src/football/types'
 import type { MatchOdds } from '../src/odds/odds'
@@ -99,4 +100,47 @@ test('Taste log keeps one snapshot per day and reports the week’s biggest move
   assert.equal(change.warmed?.team, 'b')
   assert.equal(change.cooled?.team, 'a')
   assert.equal(weeklyChange(recordSnapshot(log, '2026-10-15', { a: 0.45, b: 0.62 }))?.warmed, null)
+})
+
+test('Postponed matches wait before voiding, follow a new date, and removed fixtures void at once', () => {
+  const place = (fly: Fly, id: string) => {
+    const decision = fly.decide(fixtureOf(match(null, id)), odds)
+    return fly.place(match(null, id), { ...decision, choice: decision.options[0] }, 'live', '2026-10-08T12:00:00.000Z')!
+  }
+  const fly = Fly.newborn(circuit)
+  const bets = [place(fly, 'af:1'), place(fly, 'af:2'), place(fly, 'elo:x')]
+  const postponed = { ...match(null, 'af:1'), status: 'void' as const, rawStatus: 'PST' }
+  const ledger = new Map<string, Match>([['af:1', postponed], ['af:2', match(null, 'af:2')], ['elo:x', { ...match(null, 'elo:x'), status: 'void', rawStatus: 'eloratings:removed' }]])
+  // Day after kickoff: the postponed bet waits (flagged), the removed fixture refunds immediately.
+  const day1 = settleOpenBets(fly, bets, id => ledger.get(id), new Date('2026-10-11T12:00:00Z'))
+  assert.deepEqual(day1.bets.map(bet => bet.status), ['open', 'open', 'void'])
+  assert.equal(day1.bets[0].postponed, true)
+  assert.deepEqual(day1.settled.map(bet => bet.id), ['bet:elo:x'])
+  // Rescheduled with the same id: the bet follows the new kickoff and loses the flag.
+  ledger.set('af:1', { ...match(null, 'af:1'), kickoff: '2026-10-20T01:30:00.000Z' })
+  const moved = settleOpenBets(fly, day1.bets, id => ledger.get(id), new Date('2026-10-12T12:00:00Z'))
+  assert.equal(moved.bets[0].kickoff, '2026-10-20T01:30:00.000Z')
+  assert.equal(moved.bets[0].postponed, undefined)
+  // Never rescheduled: after the grace period it is voided and refunded.
+  ledger.set('af:1', postponed)
+  const late = settleOpenBets(fly, day1.bets, id => ledger.get(id), new Date('2026-10-14T12:00:00Z'))
+  assert.equal(late.bets[0].status, 'void')
+  assert.equal(late.bets[0].postponed, undefined)
+})
+
+test('Bankruptcy needs an empty hand and nothing still riding', () => {
+  const fly = Fly.newborn(circuit)
+  const decision = fly.decide(fixtureOf(match(null)), odds)
+  const first = fly.place(match(null, 'af:1'), { ...decision, choice: decision.options[0] }, 'live', '2026-10-08T12:00:00.000Z')!
+  const second = fly.place(match(null, 'af:2'), { ...decision, choice: decision.options[0] }, 'live', '2026-10-08T12:00:00.000Z')!
+  fly.state.bankroll = 0.4
+  // Loses with another bet still open: not bankrupt yet.
+  const lost = fly.settle(first, match([0, 2], 'af:1'), 1)
+  assert.equal(lost.bankrupt, false)
+  assert.equal(fly.state.bankroll, 0.4)
+  // The last open bet also loses: now it is broke and starts again.
+  const last = fly.settle(second, match([0, 2], 'af:2'), 0)
+  assert.equal(last.bankrupt, true)
+  assert.equal(fly.state.bankroll, FLY_PARAMS.startingBankroll)
+  assert.equal(fly.state.bankruptcies, 1)
 })

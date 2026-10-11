@@ -7,6 +7,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import { buildCircuit } from '../src/brain/circuit'
 import { Fly, fixtureOf, type BetBook, type FlyState } from '../src/brain/fly'
+import { settleOpenBets } from '../src/brain/settlement'
 import { recordSnapshot, snapshot, type TasteLog } from '../src/brain/tastes'
 import { mergeMatches } from '../src/football/ledger'
 import { appendRun, type RunLog } from '../src/football/runLog'
@@ -69,16 +70,10 @@ const run = (now: Date) => {
   const byId = new Map(ledger.map(match => [match.id, match]))
 
   // 1. Settle, oldest kickoff first, so learning happens in real order.
-  let settled = 0
-  const open = book.bets.filter(bet => bet.status === 'open').sort((a, b) => a.kickoff.localeCompare(b.kickoff))
-  for (const bet of open) {
-    const match = byId.get(bet.matchId)
-    if (!match || (match.status !== 'finished' && match.status !== 'void')) continue
-    const result = fly.settle(bet, match)
-    book.bets[book.bets.indexOf(bet)] = result
-    settled++
-    console.log(`settled ${result.homeName ?? result.home} vs ${result.awayName ?? result.away} ${result.result ?? 'void'}: ${result.selection} @${result.odds} -> ${result.status}${result.bankrupt ? ' (BANKRUPT, recapitalized)' : ''}`)
-  }
+  const outcome = settleOpenBets(fly, book.bets, id => byId.get(id), now)
+  book.bets = outcome.bets
+  const settled = outcome.settled.length
+  for (const result of outcome.settled) console.log(`settled ${result.homeName ?? result.home} vs ${result.awayName ?? result.away} ${result.result ?? 'void'}: ${result.selection} @${result.odds} -> ${result.status}${result.bankrupt ? ' (BANKRUPT, recapitalized)' : ''}`)
 
   // 2. Price with everything settled so far, then decide on upcoming league and national fixtures.
   const elo = ratingsAt(all, params, now)
@@ -103,7 +98,7 @@ const run = (now: Date) => {
       console.log(`bet ${bet.homeName} vs ${bet.awayName}: ${bet.selection} @${bet.odds}, B/.${bet.stake}${bet.dared ? ' (dared)' : ''}${bet.tilted ? ' (tilted)' : ''}`)
     } else {
       const homeName = displayName(match.home), awayName = displayName(match.away)
-      passes.push({ matchId: match.id, decidedAt: now.toISOString(), kickoff: match.kickoff, home: teamKey(match.home), away: teamKey(match.away), homeName, awayName, options: decision.options })
+      passes.push({ matchId: match.id, decidedAt: now.toISOString(), kickoff: match.kickoff, home: teamKey(match.home), away: teamKey(match.away), homeName, awayName, options: decision.options, ...(decision.choice ? { reason: 'broke' as const } : {}) })
       console.log(`passed on ${homeName} vs ${awayName}`)
     }
   }

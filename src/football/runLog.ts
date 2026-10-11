@@ -20,3 +20,16 @@ export interface RunLog {
 }
 
 export const appendRun = (log: RunLog, entry: RunEntry): RunLog => ({ runs: [...log.runs, entry] })
+
+// Panama has no daylight saving: local date is UTC-5.
+const panamaDay = (iso: string) => new Date(Date.parse(iso) - 5 * 3_600_000).toISOString().slice(0, 10)
+const RESULT_DELAY_HOURS = 3
+
+// Whether a scheduled slot still has work: the fly has not had its day yet, or a bet on a match
+// that should be over is still waiting for its result (the source can publish results late).
+export const slotHasWork = (log: RunLog, bets: readonly { status: string; kickoff: string; postponed?: boolean }[], now: Date): boolean => {
+  const today = panamaDay(now.toISOString())
+  const ranToday = log.runs.some(run => run.job === 'fly-daily' && run.ok && panamaDay(run.at) === today)
+  const owed = bets.some(bet => bet.status === 'open' && !bet.postponed && Date.parse(bet.kickoff) + RESULT_DELAY_HOURS * 3_600_000 < now.getTime())
+  return !ranToday || owed
+}

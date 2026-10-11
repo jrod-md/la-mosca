@@ -28,5 +28,23 @@ export const mergeMatches = (existing: readonly Match[], incoming: readonly Matc
   return { matches: [...merged.values()].sort(byKickoff), added, updated }
 }
 
+// National fixtures carry their date in the id, so a rescheduled one arrives as a new match and the
+// old entry would stay "scheduled" forever. Scheduled eloratings fixtures the source no longer lists
+// are voided: at once when still in the future, after a week when the date passed without a result.
+export const RESULT_GRACE_DAYS = 7
+export const retireStaleFixtures = (matches: readonly Match[], listed: ReadonlySet<string>, now: Date) => {
+  const today = now.toISOString().slice(0, 10)
+  const expired = new Date(now.getTime() - RESULT_GRACE_DAYS * 86_400_000).toISOString().slice(0, 10)
+  const retired: string[] = []
+  const next = matches.map(match => {
+    if (!match.id.startsWith('elo:') || match.status !== 'scheduled' || listed.has(match.id)) return match
+    const date = match.kickoff.slice(0, 10)
+    if (date <= today && date > expired) return match
+    retired.push(match.id)
+    return { ...match, status: 'void' as const, rawStatus: 'eloratings:removed' }
+  })
+  return { matches: next, retired }
+}
+
 export const utcDay = (date: Date, offsetDays: number): string =>
   new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate() + offsetDays)).toISOString().slice(0, 10)
