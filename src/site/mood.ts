@@ -1,11 +1,12 @@
 import type { FlyMood } from '../scene/fly3d'
 import type { RecentNationalMatch, UpcomingMatch } from '../odds/upcoming'
+import { siteNow } from './phase'
 
 // Visitor's local hour; ?hora=8 previews a given hour.
 export const visitorHour = () => {
   const params = new URLSearchParams(window.location.search)
   const forced = Number(params.get('hora'))
-  return params.has('hora') && Number.isInteger(forced) && forced >= 0 && forced < 24 ? forced : new Date().getHours()
+  return params.has('hora') && Number.isInteger(forced) && forced >= 0 && forced < 24 ? forced : siteNow().getHours()
 }
 
 // The fly's mood follows the visitor's clock and the national team's official calendar.

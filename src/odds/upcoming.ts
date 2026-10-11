@@ -55,7 +55,10 @@ const round3 = (value: number) => Math.round(value * 1000) / 1000
 export const priceUpcoming = (matches: readonly Match[], book: EloBook, params: OddsModelParams, now: Date, international: InternationalPricer = () => null, days = 7): UpcomingMatch[] => {
   const from = now.getTime()
   const horizon = (match: Match) => from + (match.competition === 'panama' ? 45 : days) * 86_400_000
-  return matches.filter(match => match.status === 'scheduled' && Date.parse(match.kickoff) >= from && Date.parse(match.kickoff) <= horizon(match))
+  // Date-only fixtures (national team) stay listed through the end of their day in Panama (05:00 UTC
+  // the next day), so the site still knows Panama plays today after the morning run.
+  const listedUntil = (match: Match) => match.kickoffTimeKnown === false ? Date.parse(`${match.kickoff.slice(0, 10)}T00:00:00Z`) + 29 * 3_600_000 : Date.parse(match.kickoff)
+  return matches.filter(match => match.status === 'scheduled' && listedUntil(match) >= from && Date.parse(match.kickoff) <= horizon(match))
     .sort((a, b) => a.kickoff.localeCompare(b.kickoff))
     .map(match => {
       const markets = match.competition === 'lpf' ? predict(book.prepare(match), params) : international(match)

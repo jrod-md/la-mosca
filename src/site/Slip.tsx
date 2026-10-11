@@ -3,6 +3,7 @@ import type { Selection } from '../brain/odor'
 import { BETS_HISTORY_URL } from './data'
 import { kickoff, matchTime, money, odds as formatOdds, percent } from './format'
 import { useLanguage, useT, type MessageKey } from './i18n'
+import type { MatchPhase } from './phase'
 import type { Story } from './story'
 import type { Brain } from './useBrain'
 
@@ -11,7 +12,10 @@ const STATUS_KEY = { open: 'open', won: 'won', lost: 'lost', void: 'void' } as c
 export const selectionLabel = (t: ReturnType<typeof useT>, selection: Selection, home: string, away: string) =>
   selection === 'draw' ? t('draw') : t(selection, { team: selection === 'home' ? home : away })
 
-export default function Slip({ story, brain }: { story: Story; brain: Brain | null }) {
+type Phase = MatchPhase | 'postponed' | null
+const PHASE_KEYS = { before: 'open', today: 'phaseToday', playing: 'phasePlaying', after: 'phaseAfter', postponed: 'phasePostponed' } as const
+
+export default function Slip({ story, brain, phase = null }: { story: Story; brain: Brain | null; phase?: Phase }) {
   const t = useT()
   const { language } = useLanguage()
   const [specific, setSpecific] = useState(false)
@@ -47,7 +51,7 @@ export default function Slip({ story, brain }: { story: Story; brain: Brain | nu
           </dl>
           {bet && (
             <p className="slip__tags">
-              <span className="tag" data-status={bet.status}>{t(STATUS_KEY[bet.status])}{bet.result ? ` · ${bet.result}` : ''}</span>
+              <span className="tag" data-status={bet.status} data-phase={phase ?? undefined}>{t(bet.status === 'open' && phase ? PHASE_KEYS[phase] : STATUS_KEY[bet.status])}{bet.result ? ` · ${bet.result}` : ''}</span>
               {bet.dared && <span className="tag">{t('dared')}</span>}
               {bet.tilted && <span className="tag">{t('tilted')}</span>}
             </p>

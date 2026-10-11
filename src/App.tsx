@@ -2,7 +2,8 @@ import { lazy, Suspense, useMemo } from 'react'
 import { FLY_PARAMS } from './brain/fly'
 import { flyState, liveBets, mareaRoja, recentNational, REPO_URL, stateUpdatedAt, upcoming } from './site/data'
 import { moodAt, visitorHour } from './site/mood'
-import { day, matchTime, money, percent } from './site/format'
+import { day, matchTime, money, percent, weekday } from './site/format'
+import { matchPhase, siteNow } from './site/phase'
 import { LanguageProvider, useLanguage, useT } from './site/i18n'
 import BrainPanel from './site/BrainPanel'
 import Notebook from './site/Notebook'
@@ -13,6 +14,7 @@ import { useBrain } from './site/useBrain'
 
 const RoomScene = lazy(() => import('./scene/RoomScene'))
 
+const PHASE_KEYS = { before: 'open', today: 'phaseToday', playing: 'phasePlaying', after: 'phaseAfterShort', postponed: 'phasePostponed' } as const
 const MOOD_KEYS = { idle: 'moodIdle', thinking: 'moodThinking', sleeping: 'moodSleeping', nervous: 'moodNervous', celebrating: 'moodCelebrating' } as const
 
 
@@ -21,8 +23,11 @@ function Page() {
   const { language, setLanguage } = useLanguage()
   const brain = useBrain()
   const story = useStory(brain)
-  const red = useMemo(() => mareaRoja(), [])
-  const mood = useMemo(() => moodAt(new Date(), visitorHour(), upcoming, recentNational, story.featured.kind === 'thinking'), [story.featured.kind])
+  const marea = useMemo(() => mareaRoja(), [])
+  const red = marea !== null
+  // Kick-off state on the visitor's clock: the page itself is only rebuilt once a day.
+  const phase = story.bet?.status === 'open' && story.kickoff ? (story.bet.postponed ? 'postponed' as const : matchPhase(story.kickoff, story.bet.matchId, siteNow())) : null
+  const mood = useMemo(() => moodAt(siteNow(), visitorHour(), upcoming, recentNational, story.featured.kind === 'thinking'), [story.featured.kind])
 
   const broadcast = useMemo(() => {
     if (mood === 'sleeping') return { header: t('offAir'), when: '', home: t('moodSleeping'), away: '', odds: null, pick: null, footer: t('decidesAtSeven'), red }
@@ -33,8 +38,8 @@ function Page() {
       : story.selection ? t('flyPick', { pick: `${selectionLabel(t, story.selection, story.homeName, story.awayName)}${option ? ` @${option.odds.toFixed(2)}` : ''}` })
         : t('brainLoading')
     return {
-      header: red || story.competition === 'panama' ? t('seleHeader') : 'LPF',
-      when: story.kickoff && story.fixture ? matchTime(story.kickoff, story.fixture.id, language) : '',
+      header: story.competition === 'panama' ? t('seleHeader') : 'LPF',
+      when: phase && phase !== 'before' ? t(PHASE_KEYS[phase]) : story.kickoff && story.fixture ? matchTime(story.kickoff, story.fixture.id, language) : '',
       home: story.homeName || t('brand'),
       away: story.awayName || '',
       odds,
@@ -42,7 +47,7 @@ function Page() {
       footer,
       red,
     }
-  }, [story, language, red, t, mood])
+  }, [story, language, red, t, mood, phase])
 
   const calendar = useMemo(() => {
     const date = new Date(story.kickoff ?? Date.now())
@@ -79,11 +84,11 @@ function Page() {
           <Suspense fallback={<div className="scene" />}>
             <RoomScene broadcast={broadcast} calendar={calendar} red={red} mood={mood} label={t('sceneLabel')} />
           </Suspense>
-          {red && <p className="marea-banner">{t('seleToday')}</p>}
+          {marea && <p className="marea-banner">{marea.days === 0 ? t('seleToday') : marea.days === 1 ? t('seleTomorrow') : t('seleSoon', { day: weekday(marea.date, language) })}</p>}
         </div>
 
         <div className="stage__story">
-          <Slip story={story} brain={brain} />
+          <Slip story={story} brain={brain} phase={phase} />
           <dl className="status-line">
             <div><dt>{t('bankroll')}</dt><dd className="status-line__money">{money(flyState.bankroll)}</dd></div>
             <div><dt>{t('boldness')}</dt><dd>{percent(flyState.boldness)}</dd></div>

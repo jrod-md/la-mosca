@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { isOfficial, moodAt, panamaWon } from '../src/site/mood'
+import { matchPhase, seleCountdown } from '../src/site/phase'
 import type { RecentNationalMatch, UpcomingMatch } from '../src/odds/upcoming'
 
 const fixture = (date: string, league: string): UpcomingMatch => ({
@@ -28,4 +29,26 @@ test('Mood priority: asleep, then nervous on official match day, then celebratin
   assert.equal(moodAt(at('2026-11-14'), 10, [], won, false), 'celebrating')
   assert.equal(moodAt(at('2026-11-17'), 10, [], won, true), 'thinking')
   assert.equal(moodAt(at('2026-11-14'), 10, [], [result('2026-11-13', 'Amistoso', 0, 1)], false), 'idle')
+})
+
+test('Match phase follows the visitor clock; national fixtures are "today" for the whole Panama day', () => {
+  const lpf = '2026-10-11T01:30:00.000Z' // Saturday 8:30 p.m. in Panama
+  assert.equal(matchPhase(lpf, 'af:1', new Date('2026-10-10T23:00:00Z')), 'before')
+  assert.equal(matchPhase(lpf, 'af:1', new Date('2026-10-11T02:30:00Z')), 'playing')
+  assert.equal(matchPhase(lpf, 'af:1', new Date('2026-10-11T04:00:00Z')), 'after')
+  const sele = '2026-11-12T12:00:00.000Z'
+  assert.equal(matchPhase(sele, 'elo:x', new Date('2026-11-12T04:00:00Z')), 'before') // still the 11th in Panama
+  assert.equal(matchPhase(sele, 'elo:x', new Date('2026-11-12T13:00:00Z')), 'today')
+  assert.equal(matchPhase(sele, 'elo:x', new Date('2026-11-13T03:00:00Z')), 'today') // 10 p.m. on match day
+  assert.equal(matchPhase(sele, 'elo:x', new Date('2026-11-13T06:00:00Z')), 'after')
+})
+
+test('The Sele countdown counts Panama dates and lasts through match day', () => {
+  const listed = [fixture('2026-11-12', 'Liga de Naciones Concacaf'), fixture('2026-11-15', 'Liga de Naciones Concacaf')]
+  assert.deepEqual(seleCountdown(new Date('2026-11-10T15:00:00Z'), listed), { days: 2, date: '2026-11-12' })
+  assert.equal(seleCountdown(new Date('2026-11-11T15:00:00Z'), listed)?.days, 1)
+  // Match day, well past the 07:00 placeholder kickoff: still today.
+  assert.equal(seleCountdown(new Date('2026-11-12T23:00:00Z'), listed)?.days, 0)
+  assert.equal(seleCountdown(new Date('2026-11-13T15:00:00Z'), listed)?.days, 2)
+  assert.equal(seleCountdown(new Date('2026-11-16T15:00:00Z'), listed), null)
 })

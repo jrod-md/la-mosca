@@ -21,4 +21,8 @@ export const day = (iso: string, language: Language) =>
 export const shortDay = (iso: string, language: Language) =>
   new Intl.DateTimeFormat(locale(language), { timeZone: TIME_ZONE, day: 'numeric', month: 'short' }).format(new Date(iso))
 
+// Weekday name of a plain YYYY-MM-DD date.
+export const weekday = (date: string, language: Language) =>
+  new Intl.DateTimeFormat(locale(language), { timeZone: 'UTC', weekday: 'long' }).format(new Date(`${date}T12:00:00Z`))
+
 export const percent = (value: number) => `${Math.round(value * 100)}%`

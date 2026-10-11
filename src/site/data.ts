@@ -7,6 +7,7 @@ import { summary as infancySummary, curve as infancyCurve, bankruptAt as infancy
 import type { Bet, BetBook, FlyState, Pass } from '../brain/fly'
 import type { TasteLog } from '../brain/tastes'
 import type { RecentNationalMatch, UpcomingMatch } from '../odds/upcoming'
+import { matchPhase, panamaDay, seleCountdown, siteNow } from './phase'
 
 export const REPO_URL = 'https://github.com/jrod-md/la-mosca'
 export const BETS_HISTORY_URL = `${REPO_URL}/commits/main/data/fly/bets.json`
@@ -43,9 +44,12 @@ export type Featured =
 const byKickoff = <T extends { kickoff: string }>(a: T, b: T) => a.kickoff.localeCompare(b.kickoff)
 
 // The one story the page leads with: an open bet first, then what the fly is mulling over next.
-export const featured = (now = new Date()): Featured => {
+export const featured = (now = siteNow()): Featured => {
   const iso = now.toISOString()
-  const open = liveBets.filter(bet => bet.status === 'open').sort(byKickoff)[0]
+  // Lead with a bet whose match is still ahead or being played; one that is only waiting for its
+  // result (or for a new date) leads when nothing else is open.
+  const opens = liveBets.filter(bet => bet.status === 'open').sort(byKickoff)
+  const open = opens.find(bet => !bet.postponed && matchPhase(bet.kickoff, bet.matchId, now) !== 'after') ?? opens[0]
   if (open) return { kind: 'open', bet: open, match: upcoming.find(match => match.id === open.matchId) ?? null }
   const next = upcoming.filter(match => match.kickoff > iso).sort(byKickoff)
   const pass = passes.filter(entry => entry.kickoff > iso).sort(byKickoff)[0]
@@ -56,14 +60,15 @@ export const featured = (now = new Date()): Featured => {
   return last ? { kind: 'settled', bet: last } : { kind: 'empty' }
 }
 
-// Marea Roja: Panama kicks off within two days, or forced with ?marea=1 for previews.
-export const mareaRoja = (now = new Date()): boolean => {
-  if (new URLSearchParams(window.location.search).get('marea') === '1') return true
-  const horizon = now.getTime() + 2 * 86_400_000
-  return upcoming.some(match => match.competition === 'panama' && Date.parse(match.kickoff) >= now.getTime() && Date.parse(match.kickoff) <= horizon)
+// Marea Roja: Panama plays today or within two days (counted in Panama dates). `days` drives the
+// banner: today, tomorrow, or the weekday. ?marea=1 forces it for previews.
+export const mareaRoja = (now = siteNow()): { days: number; date: string } | null => {
+  const next = seleCountdown(now, upcoming)
+  if (next && next.days <= 2) return next
+  return new URLSearchParams(window.location.search).get('marea') === '1' ? { days: 0, date: panamaDay(now) } : null
 }
 
-// First official bet: the daily job runs at 12:00 UTC (07:00 in Panama).
+// Date of the next daily run (used only for "first bet comes out on..."); it runs each morning in Panama.
 export const nextDailyRun = (now = new Date()): Date => {
   const run = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 12))
   if (run <= now) run.setUTCDate(run.getUTCDate() + 1)

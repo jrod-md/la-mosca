@@ -4,6 +4,7 @@ import { teamName } from '../football/teams'
 import { flyState, liveBets, nextDailyRun, passes } from './data'
 import { matchTime, money, odds as formatOdds } from './format'
 import { useLanguage, useT, type Language } from './i18n'
+import { matchPhase, siteNow, type MatchPhase } from './phase'
 
 // The fly's sketchbook. Closed, it shows its cover; open, every spread is one match: the ticket
 // taped on the left with a rubber stamp for the outcome, and the fly's handwritten notes on the
@@ -29,6 +30,9 @@ const names = (entry: { home: string; away: string; homeName?: string; awayName?
 const kickoffOf = (entry: Entry) => entry.kind === 'bet' ? entry.bet.kickoff : entry.pass.kickoff
 const matchIdOf = (entry: Entry) => entry.kind === 'bet' ? entry.bet.matchId : entry.pass.matchId
 const toneOf = (entry: Entry): Tone => entry.kind === 'pass' ? 'pass' : entry.bet.status
+// Where an open bet stands on the visitor's clock (the page is rebuilt only once a day).
+const phaseOf = (bet: Bet): MatchPhase | 'postponed' | null =>
+  bet.status !== 'open' ? null : bet.postponed ? 'postponed' : matchPhase(bet.kickoff, bet.matchId, siteNow())
 const isSele = (entry: Entry) => matchIdOf(entry).startsWith('elo:')
 
 // A stable small number per id, so each taped ticket and stamp keeps its own slight tilt.
@@ -85,9 +89,10 @@ const useStampWord = () => {
   return (tone: Tone) => ({ open: t('nbStampOpen'), won: t('nbStampWon'), lost: t('nbStampLost'), void: t('nbStampVoid'), pass: t('nbStampPass') })[tone]
 }
 
-function Stamp({ tone, id }: { tone: Tone; id: string }) {
+function Stamp({ tone, id, label }: { tone: Tone; id: string; label?: string }) {
   const t = useT()
-  const word = useStampWord()(tone)
+  const stampWord = useStampWord()
+  const word = label ?? stampWord(tone)
   const key = id.replace(/[^a-z0-9]/gi, '')
   // A classic round rubber stamp: brand on the top arc, place on the bottom arc, the word on a band.
   return (
@@ -212,7 +217,10 @@ function Ticket({ entry }: { entry: Entry }) {
   const t = useT()
   const { language } = useLanguage()
   const id = matchIdOf(entry)
-  const tone = toneOf(entry)
+  const phase = entry.kind === 'bet' ? phaseOf(entry.bet) : null
+  // A postponed bet is stamped in grey; one whose match is over waits for its result.
+  const tone: Tone = phase === 'postponed' ? 'void' : toneOf(entry)
+  const stampLabel = phase === 'postponed' ? t('nbStampPostponed') : phase === 'after' ? t('nbStampWaiting') : undefined
   const [d, m, y] = corner(kickoffOf(entry))
   const bet = entry.kind === 'bet' ? entry.bet : null
   const pick = bet ? (bet.selection === 'draw' ? t('draw') : bet.selection === 'home' ? entry.home : entry.away) : null
@@ -245,7 +253,7 @@ function Ticket({ entry }: { entry: Entry }) {
         <span className="nb-ticket__placed">{t('nbPlacedOn', { date: shortDate(new Date(bet ? bet.placedAt : entry.kind === 'pass' ? entry.pass.decidedAt : 0), language) })}</span>
         </div>
       </div>
-      <div className="nb__stamp-spot"><Stamp tone={tone} id={id} /></div>
+      <div className="nb__stamp-spot"><Stamp tone={tone} id={id} label={stampLabel} /></div>
     </>
   )
 }
@@ -282,18 +290,23 @@ function Note({ entry }: { entry: Entry }) {
   const { bet } = entry
   const pick = `${bet.selection === 'draw' ? t('nbTheDraw') : bet.selection === 'home' ? entry.home : entry.away} @${formatOdds(bet.odds)}`
   const score = bet.result?.replace('-', ' - ')
+  const phase = phaseOf(bet)
+  const win = money(bet.stake * bet.odds)
+  const pending = phase === 'postponed' ? t('nbWaitingDate', { stake: money(bet.stake) })
+    : phase === 'after' ? t('nbAlreadyPlayed', { win }) : phase === 'playing' ? t('nbPlaying', { win }) : phase === 'today' ? t('nbToday', { win })
+      : t('nbPending', { when: matchTime(bet.kickoff, bet.matchId, language), win })
   return (
     <>
       {title}
       <p className="nb__hand">
         {t('nbPick', { pick })}{bet.dared && <> (<u>{t('nbDared')}</u>)</>}. {t('nbStake', { stake: money(bet.stake) })}.
-        {bet.status === 'open' && <> {t('nbPending', { when: matchTime(bet.kickoff, bet.matchId, language), win: money(bet.stake * bet.odds) })}</>}
+        {bet.status === 'open' && <> {pending}</>}
       </p>
       <Smells options={bet.options} entry={entry} picked={bet.selection} />
       <div className="nb__result" data-tone={bet.status}>
         <span className="nb__result-label">{t('nbResult')}:</span>
         {bet.status === 'open'
-          ? <span className="nb__result-later">{t('nbResultLater', { date: settleDay(bet.kickoff, bet.matchId, language) })}</span>
+          ? <span className="nb__result-later">{phase === 'postponed' ? t('nbPostponed') : phase === 'after' ? t('nbResultOwed') : t('nbResultLater', { date: settleDay(bet.kickoff, bet.matchId, language) })}</span>
           : bet.status === 'void' ? <span className="nb__result-later">{t('nbPostponed')}</span> : <span className="nb__score">{score}</span>}
       </div>
       {bet.status === 'won' && <p className="nb__hand nb__hand--won">{t('nbPaid', { paid: money(bet.payout) })}</p>}
@@ -338,7 +351,7 @@ export default function Notebook() {
       ...passes.map(pass => { const [home, away] = names(pass); return { kind: 'pass' as const, pass, home, away } }),
     ]
     // Reading order: what is still to be played, soonest first; then what already happened, latest first.
-    const now = new Date().toISOString()
+    const now = siteNow().toISOString()
     const isPending = (entry: Entry) => toneOf(entry) === 'open' || (entry.kind === 'pass' && kickoffOf(entry) > now)
     const pending = entries.filter(isPending).sort((a, b) => kickoffOf(a).localeCompare(kickoffOf(b)))
     const past = entries.filter(entry => !isPending(entry)).sort((a, b) => kickoffOf(b).localeCompare(kickoffOf(a)))
