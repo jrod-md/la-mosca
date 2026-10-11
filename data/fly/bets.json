@@ -181,7 +181,8 @@
    "payout": 0,
    "bankrollAfter": 16.49,
    "result": null,
-   "bankrupt": false
+   "bankrupt": false,
+   "postponed": true
   },
   {
    "id": "bet:af:1583786",
@@ -242,7 +243,8 @@
    "payout": 0,
    "bankrollAfter": 15.11,
    "result": null,
-   "bankrupt": false
+   "bankrupt": false,
+   "postponed": true
   },
   {
    "id": "bet:af:1583788",
@@ -303,7 +305,8 @@
    "payout": 0,
    "bankrollAfter": 13.98,
    "result": null,
-   "bankrupt": false
+   "bankrupt": false,
+   "postponed": true
   },
   {
    "id": "bet:af:1583787",

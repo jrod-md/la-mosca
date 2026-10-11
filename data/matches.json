@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-10T20:41:34.978Z",
+ "updatedAt": "2026-10-11T12:41:44.386Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10488,8 +10488,8 @@
     "sourceId": "tsdb:139738",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "COS Sports Plaza"
   },
@@ -10514,8 +10514,8 @@
     "sourceId": "tsdb:145085",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/qn68sl1644515521.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Virgilio Tejeira"
   },
@@ -10540,8 +10540,8 @@
     "sourceId": "tsdb:139733",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Futuras Promesas"
   },
@@ -10624,6 +10624,84 @@
    "venue": "Estadio Universidad Latina"
   },
   {
+   "id": "af:1583791",
+   "sources": {
+    "apiFootball": 1583791,
+    "theSportsDb": "2548233"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "13",
+   "kickoff": "2026-10-18T01:30:00.000Z",
+   "home": {
+    "name": "Tauro",
+    "sourceId": "tsdb:139107",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
+   },
+   "away": {
+    "name": "Plaza Amador",
+    "sourceId": "tsdb:139737",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/78pior1589297968.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Rommel Fernández Stadium"
+  },
+  {
+   "id": "af:1583792",
+   "sources": {
+    "apiFootball": 1583792,
+    "theSportsDb": "2548234"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "13",
+   "kickoff": "2026-10-18T21:00:00.000Z",
+   "home": {
+    "name": "Herrera",
+    "sourceId": "tsdb:145085",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/qn68sl1644515521.png"
+   },
+   "away": {
+    "name": "San Francisco FC",
+    "sourceId": "tsdb:139109",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/16pi2m1582143972.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Estadio Gustavo Posam"
+  },
+  {
+   "id": "af:1583793",
+   "sources": {
+    "apiFootball": 1583793,
+    "theSportsDb": "2548235"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "13",
+   "kickoff": "2026-10-18T23:15:00.000Z",
+   "home": {
+    "name": "Alianza",
+    "sourceId": "tsdb:139733",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "tsdb:139739",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Rommel Fernández Stadium"
+  },
+  {
    "id": "elo:2026-11-12:CW-PA",
    "sources": {
     "apiFootball": null,
@@ -10673,8 +10751,8 @@
     "sourceId": "nt:PA",
     "badge": null
    },
-   "status": "scheduled",
-   "rawStatus": "eloratings:fixture",
+   "status": "void",
+   "rawStatus": "eloratings:removed",
    "score": null,
    "venue": "Curazao",
    "venueCountry": "CW"
@@ -10729,8 +10807,8 @@
     "sourceId": "nt:CW",
     "badge": null
    },
-   "status": "scheduled",
-   "rawStatus": "eloratings:fixture",
+   "status": "void",
+   "rawStatus": "eloratings:removed",
    "score": null,
    "venue": "Panamá",
    "venueCountry": "PA"
