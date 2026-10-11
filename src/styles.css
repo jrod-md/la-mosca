@@ -86,12 +86,13 @@ h2 {
   grid-template-columns: minmax(0, 1.65fr) minmax(320px, 1fr);
   gap: clamp(20px, 3vw, 44px);
   padding: 0 var(--gutter) clamp(28px, 4vw, 56px);
-  align-items: start;
+  align-items: stretch;
 }
-.stage__scene { position: relative; }
+.stage__scene { position: relative; display: grid; }
 .scene {
-  block-size: min(76vh, 720px);
-  min-block-size: 380px;
+  /* At least this tall; taller when the story column beside it needs more room. */
+  block-size: 100%;
+  min-block-size: max(380px, min(76vh, 720px));
   background: var(--wall);
   overflow: hidden;
 }
@@ -109,7 +110,8 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
-.stage__story { display: grid; gap: 1.25rem; }
+.stage__story { display: flex; flex-direction: column; gap: 1.5rem; }
+.stage__story > .fine { margin: auto 0 0; }
 
 /* The betting slip: a paper ticket */
 .slip {
@@ -141,20 +143,23 @@ h2 {
   text-transform: uppercase;
 }
 .slip__vs { font: 700 0.95rem/1 var(--body); text-transform: lowercase; color: var(--paper-muted); }
-.slip__when { margin: 0.45rem 0 1rem; color: var(--paper-muted); font-size: 0.92rem; }
-.slip__pick-label { margin: 0.9rem 0 -0.5rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.7; }
+.slip__when { margin: 0.5rem 0 0; color: var(--paper-muted); font-size: 0.92rem; }
+.slip__pick-label { margin: 1.25rem 0 0.3rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-muted); }
 .slip__pick {
   margin: 0;
-  font: 800 1.7rem/1.05 var(--display);
+  font: 800 clamp(1.9rem, 1.5rem + 1.2vw, 2.4rem)/1 var(--display);
   text-transform: uppercase;
   color: oklch(0.38 0.11 45);
 }
 .slip__pick--pending { color: var(--paper-muted); }
-.slip__figures { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin: 0.9rem 0 0; }
-.slip__figures dt { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-muted); }
-.slip__figures dd { margin: 0; font: 800 1.9rem/1 var(--display); font-variant-numeric: tabular-nums; }
-.slip__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.9rem 0 0; }
-.tag { padding: 0.15rem 0.5rem; border: 1.5px solid currentColor; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.slip__figures { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; margin: 1.1rem 0 0; border-block: 1px dashed oklch(0.26 0.03 70 / 0.35); }
+.slip__figures div { padding: 0.75rem 0.9rem; }
+.slip__figures div:first-child { padding-inline-start: 0; }
+.slip__figures div + div { border-inline-start: 1px dashed oklch(0.26 0.03 70 / 0.35); }
+.slip__figures dt { margin-block-end: 0.25rem; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-muted); }
+.slip__figures dd { margin: 0; font: 800 clamp(1.6rem, 1.2rem + 1vw, 2.1rem)/1 var(--display); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.slip__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1.1rem 0 0; }
+.tag { padding: 0.3rem 0.6rem; border: 1.5px solid currentColor; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
 .tag[data-status='won']::before { content: '✓ '; }
 .tag[data-status='lost'] { text-decoration: line-through; }
 .slip__note { margin: 0.85rem 0 0; font-size: 0.88rem; color: var(--paper-muted); line-height: 1.5; }
@@ -176,11 +181,13 @@ h2 {
 .exhibition dd { margin: 0; font-weight: 700; }
 .exhibition small { font-weight: 400; color: var(--paper-muted); }
 
-.status-line { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; margin: 0.5rem 0 0; }
-.status-line dt { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); }
-.status-line dd { margin: 0; font: 800 1.6rem/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.status-line { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; border-block-start: 1px solid var(--rule); }
+.status-line div { padding: 0.9rem 0; border-block-end: 1px solid var(--rule); }
+.status-line div:nth-child(even) { padding-inline-start: 1.25rem; border-inline-start: 1px solid var(--rule); }
+.status-line dt { margin-block-end: 0.3rem; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); }
+.status-line dd { margin: 0; font: 800 clamp(1.6rem, 1.2rem + 1vw, 2.1rem)/1.1 var(--display); font-variant-numeric: tabular-nums; }
 .status-line__money { color: var(--amber); }
-.status-line__riding { font: 700 0.85rem/1 var(--body); letter-spacing: 0; color: var(--ink-muted); white-space: nowrap; }
+.status-line__riding { display: block; margin-block-start: 0.3rem; font: 700 0.85rem/1.2 var(--body); letter-spacing: 0; color: var(--ink-muted); }
 
 /* Sections below the stage */
 .sections {
@@ -310,7 +317,10 @@ tr[data-status='pass'] td { color: var(--ink-muted); font-style: italic; }
 .infancy__bets { max-block-size: 28rem; overflow-y: auto; margin-block-start: 0.5rem; border-block: 1px solid var(--rule); }
 .infancy__bets thead th { position: sticky; inset-block-start: 0; background: var(--wall); }
 .sections > .infancy, .sections > .tastes { grid-column: 1 / -1; }
-.tastes__list { max-inline-size: 48rem; }
+/* Two columns, read down then across, so the ranking fills the row instead of half of it. */
+.tastes__list { display: block; columns: 2; column-gap: clamp(20px, 3vw, 44px); }
+.tastes__list li { break-inside: avoid; margin-block-end: 0.55rem; }
+@media (max-width: 960px) { .tastes__list { columns: 1; max-inline-size: 48rem; } }
 
 .tastes__weekly { font: 800 clamp(1.25rem, 1rem + 0.8vw, 1.6rem)/1.15 var(--display); text-transform: uppercase; color: var(--amber); max-width: 34ch; }
 .tastes__list li[data-sele='true'] .tastes__name { color: oklch(0.72 0.17 27); }
