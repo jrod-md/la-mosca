@@ -15,7 +15,7 @@ La Mosca es una simulación pública y autónoma: un cerebro construido a partir
 | **Cerebro** | 296 neuronas reales del cuerpo pedunculado (el centro de aprendizaje de la mosca) y sus 4.181 conexiones, tomadas del conectoma **MaleCNS v1.0** de HHMI Janelia |
 | **Aprendizaje** | La dopamina modifica las sinapsis según cuánto lo sorprendió el resultado, siguiendo el mecanismo descrito en la literatura del cuerpo pedunculado |
 | **Cuotas** | Dos modelos probabilísticos (Elo + Poisson Dixon-Coles): uno entrenado con 973 partidos de la LPF y otro con 301 partidos de Panamá |
-| **Autonomía** | GitHub Actions corre todo cada mañana (07:07 de Panamá, con cinco respaldos hasta las 12:43), sin intervención humana |
+| **Autonomía** | GitHub Actions corre todo cada mañana de Panamá, con varios horarios de respaldo, sin intervención humana |
 | **Transparencia** | Cada apuesta queda en el historial público de git **antes** del partido; cada decisión es reproducible |
 
 ## Por qué
@@ -62,7 +62,7 @@ Los modelos se evalúan en orden cronológico: cada predicción solo usa partido
 | Retorno | −6.1 % (la casa cobra 6 % de margen: se comporta como un apostador real, no como un oráculo) |
 | Quiebras | 3 |
 
-**Calidad de software:** 27 pruebas automatizadas en TypeScript y 9 en Python (extractores científicos, modelos, cerebro, integridad de datos), ejecutadas en cada push. El job diario vuelve a correrlas con los datos nuevos y no publica nada que rompa el sitio.
+**Calidad de software:** 33 pruebas automatizadas en TypeScript y 9 en Python (extractores científicos, modelos, cerebro, integridad de datos), ejecutadas en cada push. El job diario vuelve a correrlas con los datos nuevos y no publica nada que rompa el sitio.
 
 ## Real frente a modelado
 
@@ -74,6 +74,14 @@ Los modelos se evalúan en orden cronológico: cada predicción solo usa partido
 | Partidos, fechas, sedes y resultados | Cuotas, saldo y apuestas |
 
 Metodología completa de la extracción científica en [`MALECNS.md`](./MALECNS.md).
+
+## Reglas de la casa
+
+- **Saldo.** El saldo es el efectivo en mano; lo apostado queda "en juego" hasta que se liquida.
+- **Quiebra.** Solo quiebra si no le alcanza para la apuesta mínima (B/. 1) y no le queda nada en juego. Vuelve a empezar con B/. 20 y la quiebra queda anotada.
+- **Partidos aplazados.** La apuesta espera 72 horas. Si el partido se juega o recibe fecha nueva, sigue viva; si no, se anula y se devuelve lo apostado.
+- **Selección reprogramada.** Si la fuente cambia la fecha de un partido de Panamá, la fecha vieja se anula (con devolución) y la nueva se trata como un partido distinto.
+- **Decisiones definitivas.** Cada partido se decide una sola vez, incluida la decisión de no apostar.
 
 ## Limitaciones
 
@@ -90,7 +98,7 @@ Metodología completa de la extracción científica en [`MALECNS.md`](./MALECNS.
 - **La libreta:** un cuaderno de bocetos que se abre y se hojea; cada partido es una página doble con el boleto pegado, un sello de goma (en juego, pegó, perdí) y las notas a mano de la mosca.
 - Español e inglés, diseño responsive y soporte para movimiento reducido.
 
-Vistas previas: `?hora=1` (dormida), `?animo=nervous`, `?animo=celebrating`, `?marea=1` (Marea Roja).
+Vistas previas: `?hora=1` (dormida), `?animo=nervous`, `?animo=celebrating`, `?marea=1` (Marea Roja), `?ahora=2026-11-12T20:00:00Z` (el sitio en otro momento).
 
 ## Arquitectura
 
@@ -117,9 +125,11 @@ tests/          pruebas de modelos, cerebro, datos y estados de ánimo
 
 | Workflow | Cuándo | Qué hace |
 | --- | --- | --- |
-| `daily.yml` | Todos los días, 07:07 Panamá (respaldos hasta las 12:43) | Sincroniza partidos, liquida, aprende, apuesta, verifica y publica |
+| `daily.yml` | Todos los días, en la mañana de Panamá | Sincroniza partidos, liquida, aprende, apuesta, verifica y publica |
 | `monthly.yml` | Día 1 de cada mes | Reentrena ambos modelos de cuotas |
 | `ci.yml` | Cada push | Tipos, pruebas, build y revisión de credenciales |
+
+GitHub suele arrancar las corridas programadas con horas de atraso, así que `daily.yml` tiene seis horarios desde la madrugada. El primero que arranca hace el trabajo; los demás terminan sin hacer nada, salvo que todavía falte el resultado de un partido ya jugado.
 
 Los commits automáticos los firma **`mosca-bot`**, la identidad de GitHub Actions de estos jobs. Si una corrida falla, el error queda registrado en `data/runs.json`.
 

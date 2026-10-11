@@ -176,7 +176,9 @@ function Accounts() {
   const inPlay = open.reduce((sum, bet) => sum + bet.stake, 0)
   // Cash in hand excludes money riding on open bets; that shows as "in play" until it settles.
   const cash = flyState.bankroll
-  const series = [START, ...played.map(bet => bet.bankrollAfter)]
+  // Everything it has (cash plus money riding): starts at B/. 20, moves only when a bet is won or
+  // lost, and jumps back to B/. 20 after a bankruptcy.
+  const series = played.reduce<number[]>((line, bet) => [...line, bet.bankrupt ? START : line.at(-1)! + bet.payout - bet.stake], [START])
   const max = Math.max(START * 1.5, ...series)
   const points = series.map((value, i) => `${(i / Math.max(1, series.length - 1)) * 200},${60 - (value / max) * 56}`).join(' ')
   const count = (n: number) => t(n === 1 ? 'nbBetsOne' : 'nbBetsMany', { n })
@@ -258,9 +260,11 @@ function Ticket({ entry }: { entry: Entry }) {
   )
 }
 
-function Smells({ options, entry, picked }: { options: OptionView[]; entry: Entry; picked: string | null }) {
+function Smells({ options, entry, picked, dared = false }: { options: OptionView[]; entry: Entry; picked: string | null; dared?: boolean }) {
   const t = useT()
   const top = Math.max(0.0001, ...options.map(option => option.drive))
+  // It picks with some chance, so the longest bar is not always the one it went with.
+  const against = picked !== null && !dared && (options.find(option => option.selection === picked)?.drive ?? top) < top
   const label = (selection: string) => selection === 'draw' ? t('nbDrawShort') : selection === 'home' ? entry.home : entry.away
   return (
     <div className="nb__smells">
@@ -271,6 +275,7 @@ function Smells({ options, entry, picked }: { options: OptionView[]; entry: Entr
           <span className="nb__smell-bar" style={{ inlineSize: `${Math.max(6, (Math.max(0, option.drive) / top) * 100)}%`, rotate: `${wobble(option.selection + matchIdOf(entry), 0.8)}deg` }} />
         </div>
       ))}
+      {against && <span className="nb__smells-aside">{t('nbNotTop')}</span>}
     </div>
   )
 }
@@ -282,7 +287,7 @@ function Note({ entry }: { entry: Entry }) {
   if (entry.kind === 'pass') return (
     <>
       {title}
-      <p className="nb__hand">{t('nbPass')}</p>
+      <p className="nb__hand">{t(entry.pass.reason === 'broke' ? 'nbPassBroke' : 'nbPass')}</p>
       <Smells options={entry.pass.options} entry={entry} picked={null} />
       <FlyDoodle className="nb__corner-fly" />
     </>
@@ -302,7 +307,7 @@ function Note({ entry }: { entry: Entry }) {
         {t('nbPick', { pick })}{bet.dared && <> (<u>{t('nbDared')}</u>)</>}. {t('nbStake', { stake: money(bet.stake) })}.
         {bet.status === 'open' && <> {pending}</>}
       </p>
-      <Smells options={bet.options} entry={entry} picked={bet.selection} />
+      <Smells options={bet.options} entry={entry} picked={bet.selection} dared={bet.dared} />
       <div className="nb__result" data-tone={bet.status}>
         <span className="nb__result-label">{t('nbResult')}:</span>
         {bet.status === 'open'
@@ -353,7 +358,9 @@ export default function Notebook() {
     // Reading order: what is still to be played, soonest first; then what already happened, latest first.
     const now = siteNow().toISOString()
     const isPending = (entry: Entry) => toneOf(entry) === 'open' || (entry.kind === 'pass' && kickoffOf(entry) > now)
-    const pending = entries.filter(isPending).sort((a, b) => kickoffOf(a).localeCompare(kickoffOf(b)))
+    // Bets waiting on a postponed match have no date to look forward to: they go after the dated ones.
+    const waiting = (entry: Entry) => entry.kind === 'bet' && entry.bet.postponed ? 1 : 0
+    const pending = entries.filter(isPending).sort((a, b) => waiting(a) - waiting(b) || kickoffOf(a).localeCompare(kickoffOf(b)))
     const past = entries.filter(entry => !isPending(entry)).sort((a, b) => kickoffOf(b).localeCompare(kickoffOf(a)))
     const ordered = [...pending, ...past]
     return [{ kind: 'cover' }, { kind: 'inside' }, { kind: 'accounts' }, ...ordered.flatMap(entry => [{ kind: 'ticket' as const, entry }, { kind: 'note' as const, entry }])]

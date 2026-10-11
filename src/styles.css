@@ -180,6 +180,7 @@ h2 {
 .status-line dt { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); }
 .status-line dd { margin: 0; font: 800 1.6rem/1.1 var(--display); font-variant-numeric: tabular-nums; }
 .status-line__money { color: var(--amber); }
+.status-line__riding { font: 700 0.85rem/1 var(--body); letter-spacing: 0; color: var(--ink-muted); white-space: nowrap; }
 
 /* Sections below the stage */
 .sections {
@@ -457,6 +458,7 @@ tr[data-status='pass'] td { color: var(--ink-muted); font-style: italic; }
   background: repeating-linear-gradient(-55deg, currentColor 0 1.5px, transparent 1.5px 5px); opacity: 0.55;
 }
 .nb__smell[data-picked='true'] .nb__smell-bar { opacity: 1; }
+.nb__smells-aside { grid-column: 1 / -1; font-size: 0.82em; opacity: 0.75; }
 
 /* The result line: blank until it settles, then circled or struck through. */
 .nb__result { display: flex; flex-wrap: wrap; align-items: center; gap: 0.2em 0.5em; margin-block: 0.3em 0.3em; }

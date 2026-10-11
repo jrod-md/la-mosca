@@ -61,6 +61,8 @@ function Page() {
     }
   }, [story.kickoff, language])
 
+  // Money on open bets is not lost: it is shown next to the cash in hand.
+  const inPlay = liveBets.filter(bet => bet.status === 'open').reduce((sum, bet) => sum + bet.stake, 0)
   const { winStreak, lossStreak } = flyState
   // The streak shown is the live one; the brain's own counters also carry its infancy.
   const liveDecided = liveBets.some(bet => bet.status === 'won' || bet.status === 'lost')
@@ -90,7 +92,7 @@ function Page() {
         <div className="stage__story">
           <Slip story={story} brain={brain} phase={phase} />
           <dl className="status-line">
-            <div><dt>{t('bankroll')}</dt><dd className="status-line__money">{money(flyState.bankroll)}</dd></div>
+            <div><dt>{t('bankroll')}</dt><dd className="status-line__money">{money(flyState.bankroll)}{inPlay > 0 && <small className="status-line__riding"> + {money(inPlay)} {t('inPlaySuffix')}</small>}</dd></div>
             <div><dt>{t('boldness')}</dt><dd>{percent(flyState.boldness)}</dd></div>
             <div><dt>{t('streak')}</dt><dd>{streak}</dd></div>
             <div><dt>{t('moodLabel')}</dt><dd>{t(MOOD_KEYS[mood])}</dd></div>
