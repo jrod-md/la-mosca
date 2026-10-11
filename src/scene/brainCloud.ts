@@ -1,8 +1,14 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+import { LineMaterial } from 'three/addons/lines/LineMaterial.js'
+import { LineSegments2 } from 'three/addons/lines/LineSegments2.js'
+import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js'
 import type { MbCircuit } from '../brain/circuit'
 import { randomFor } from '../brain/random'
 import type { MorphologyAsset } from '../site/useBrain'
+
+// Line width in CSS pixels: thin enough to read single branches, dense enough to glow where they bundle.
+const LINE_WIDTH = 1.1
 
 export type NeuronRole = 'pn' | 'kc' | 'mbon' | 'dan_reward' | 'dan_punishment'
 
@@ -15,10 +21,11 @@ export interface Activity {
   dopamine: 'reward' | 'punishment' | null
 }
 
+// One neuron's slice of the segment buffer.
 interface NeuronCloud { role: NeuronRole; index: number; start: number; count: number }
 
 const COLORS = {
-  idle: new THREE.Color('#55645b'),
+  idle: new THREE.Color('#4d6157'),
   pn: new THREE.Color('#ffc061'),
   kc: new THREE.Color('#f2ecd8'),
   approach: new THREE.Color('#7ff0c8'),
@@ -52,51 +59,64 @@ const schematicPath = (role: NeuronRole, key: string): THREE.Vector3[] => {
 
 const sampleCurve = (points: THREE.Vector3[], count: number) => new THREE.CatmullRomCurve3(points).getSpacedPoints(count - 1)
 
+// Every neuron is drawn as its branches: one line segment from each skeleton point to its parent.
 export class BrainCloud {
   private readonly renderer: THREE.WebGLRenderer
   private readonly scene = new THREE.Scene()
   private readonly camera = new THREE.PerspectiveCamera(40, 1, 0.01, 20)
   private readonly controls: OrbitControls
-  private readonly colors: THREE.BufferAttribute
+  private readonly material: LineMaterial
+  private readonly colors: Float32Array
+  private readonly colorBuffer: THREE.InstancedInterleavedBuffer
   private readonly neurons: NeuronCloud[] = []
   private activity: Activity | null = null
   private readonly color = new THREE.Color()
 
   constructor(canvas: HTMLCanvasElement, circuit: MbCircuit, morphology: MorphologyAsset | null, still: boolean) {
-    this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'low-power' })
+    this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     const byId = new Map(morphology?.neurons.map(neuron => [neuron.id, neuron]) ?? [])
-    const positions: number[] = []
+    // Flat [x1, y1, z1, x2, y2, z2] per segment.
+    const segments: number[] = []
     const roles: [NeuronRole, { id: string }[]][] = [['pn', circuit.pn], ['kc', circuit.kc], ['mbon', circuit.mbon], ['dan_reward', circuit.danReward], ['dan_punishment', circuit.danPunishment]]
     for (const [role, list] of roles) {
       list.forEach((neuron, index) => {
         const shape = byId.get(neuron.id)
-        let points: THREE.Vector3[]
+        const start = segments.length / 6
         if (shape) {
-          // Real morphology, already in one shared normalized transform; scaled up for the view.
-          points = []
-          for (let i = 0; i < shape.p.length; i += 3) points.push(new THREE.Vector3(shape.p[i] * 2, shape.p[i + 1] * 2, shape.p[i + 2] * 2))
+          // Real morphology, already in one shared normalized transform (thousandths); scaled up for the view.
+          const push = (i: number) => segments.push(shape.p[i * 3] / 500, shape.p[i * 3 + 1] / 500, shape.p[i * 3 + 2] / 500)
+          shape.l.forEach((parent, i) => { if (parent >= 0) { push(parent); push(i) } })
         } else {
-          points = sampleCurve(schematicPath(role, neuron.id), role === 'kc' ? 18 : 28)
+          const points = sampleCurve(schematicPath(role, neuron.id), role === 'kc' ? 18 : 28)
+          for (let i = 1; i < points.length; i++) segments.push(points[i - 1].x, points[i - 1].y, points[i - 1].z, points[i].x, points[i].y, points[i].z)
         }
-        this.neurons.push({ role, index, start: positions.length / 3, count: points.length })
-        for (const point of points) positions.push(point.x, point.y, point.z)
+        this.neurons.push({ role, index, start, count: segments.length / 6 - start })
       })
     }
-    const geometry = new THREE.BufferGeometry()
-    geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
-    this.colors = new THREE.Float32BufferAttribute(new Float32Array(positions.length), 3)
-    geometry.setAttribute('color', this.colors)
-    geometry.computeBoundingSphere()
-    const sphere = geometry.boundingSphere!
-    geometry.translate(-sphere.center.x, -sphere.center.y, -sphere.center.z)
-    const material = new THREE.PointsMaterial({ size: sphere.radius * 0.022, vertexColors: true, transparent: true, opacity: 0.95, blending: THREE.AdditiveBlending, depthWrite: false })
-    this.scene.add(new THREE.Points(geometry, material))
-    this.camera.position.set(0, 0.2, sphere.radius * 2.9)
+    // Centre on the bounding sphere so the brain orbits around its own middle.
+    const box = new THREE.Box3()
+    const point = new THREE.Vector3()
+    for (let i = 0; i < segments.length; i += 3) box.expandByPoint(point.set(segments[i], segments[i + 1], segments[i + 2]))
+    const sphere = box.getBoundingSphere(new THREE.Sphere())
+    for (let i = 0; i < segments.length; i += 3) {
+      segments[i] -= sphere.center.x
+      segments[i + 1] -= sphere.center.y
+      segments[i + 2] -= sphere.center.z
+    }
+    const geometry = new LineSegmentsGeometry()
+    geometry.setPositions(segments)
+    this.colors = new Float32Array(segments.length)
+    geometry.setColors(this.colors)
+    this.colorBuffer = (geometry.getAttribute('instanceColorStart') as THREE.InterleavedBufferAttribute).data as THREE.InstancedInterleavedBuffer
+    this.colorBuffer.setUsage(THREE.DynamicDrawUsage)
+    this.material = new LineMaterial({ linewidth: LINE_WIDTH, vertexColors: true, transparent: true, opacity: 0.8, blending: THREE.AdditiveBlending, depthWrite: false, depthTest: false })
+    this.scene.add(new LineSegments2(geometry, this.material))
+    this.camera.position.set(0, 0.2, sphere.radius * 2.3)
     this.controls = new OrbitControls(this.camera, canvas)
     this.controls.enableDamping = true
     this.controls.enablePan = false
-    this.controls.minDistance = sphere.radius * 1.4
+    this.controls.minDistance = sphere.radius * 1.2
     this.controls.maxDistance = sphere.radius * 5
     this.controls.autoRotate = !still
     this.controls.autoRotateSpeed = 0.6
@@ -108,6 +128,9 @@ export class BrainCloud {
 
   resize(width: number, height: number) {
     this.renderer.setSize(width, height, false)
+    this.material.resolution.set(width, height)
+    // Small screens pack the same branches into fewer pixels: thinner lines keep them apart.
+    this.material.linewidth = LINE_WIDTH * Math.min(1, Math.max(0.55, width / 720))
     this.camera.aspect = width / height
     this.camera.updateProjectionMatrix()
   }
@@ -117,38 +140,38 @@ export class BrainCloud {
     const activity = this.activity
     const ramp = (from: number) => activity ? Math.min(1, Math.max(0, (phase - from) / 0.12)) : 0
     const pn = ramp(0.05), kc = ramp(0.3), out = ramp(0.55), dopamine = ramp(0.75)
-    const array = this.colors.array as Float32Array
+    const array = this.colors
     for (const neuron of this.neurons) {
-      let target = COLORS.idle, level = 0.35
+      let target = COLORS.idle, level = 0.3
       if (activity) {
-        if (neuron.role === 'pn' && activity.pn.has(neuron.index)) { target = COLORS.pn; level = 0.35 + pn * 0.65 }
-        else if (neuron.role === 'kc' && activity.kc.has(neuron.index)) { target = COLORS.kc; level = 0.35 + kc * 0.65 }
+        if (neuron.role === 'pn' && activity.pn.has(neuron.index)) { target = COLORS.pn; level = 0.3 + pn * 0.7 }
+        else if (neuron.role === 'kc' && activity.kc.has(neuron.index)) { target = COLORS.kc; level = 0.3 + kc * 0.7 }
         else if (neuron.role === 'mbon') {
           const value = activity.mbon[neuron.index] ?? 0
           target = value >= 0 ? COLORS.approach : COLORS.avoid
-          level = 0.3 + out * Math.min(1, Math.abs(value)) * 0.7
-        } else if (neuron.role === 'dan_reward' && activity.dopamine === 'reward') { target = COLORS.reward; level = 0.3 + dopamine * 0.7 }
-        else if (neuron.role === 'dan_punishment' && activity.dopamine === 'punishment') { target = COLORS.punishment; level = 0.3 + dopamine * 0.7 }
+          level = 0.25 + out * Math.min(1, Math.abs(value)) * 0.75
+        } else if (neuron.role === 'dan_reward' && activity.dopamine === 'reward') { target = COLORS.reward; level = 0.25 + dopamine * 0.75 }
+        else if (neuron.role === 'dan_punishment' && activity.dopamine === 'punishment') { target = COLORS.punishment; level = 0.25 + dopamine * 0.75 }
       }
-      this.color.copy(COLORS.idle).lerp(target, level).multiplyScalar(0.35 + level * 0.9)
-      for (let i = neuron.start; i < neuron.start + neuron.count; i++) {
-        array[i * 3] = this.color.r
-        array[i * 3 + 1] = this.color.g
-        array[i * 3 + 2] = this.color.b
+      // Resting neurons stay faint so the lit pathway reads against them (additive blending).
+      this.color.copy(COLORS.idle).lerp(target, level).multiplyScalar(0.07 + level * level * 0.95)
+      const { r, g, b } = this.color
+      // Six floats per segment: start colour, end colour.
+      for (let i = neuron.start * 6, end = (neuron.start + neuron.count) * 6; i < end; i += 3) {
+        array[i] = r
+        array[i + 1] = g
+        array[i + 2] = b
       }
     }
-    this.colors.needsUpdate = true
+    this.colorBuffer.needsUpdate = true
     this.controls.update()
     this.renderer.render(this.scene, this.camera)
   }
 
   dispose() {
     this.controls.dispose()
-    this.scene.traverse(object => {
-      const points = object as THREE.Points
-      points.geometry?.dispose()
-      ;(points.material as THREE.Material | undefined)?.dispose()
-    })
+    this.scene.traverse(object => (object as LineSegments2).geometry?.dispose())
+    this.material.dispose()
     this.renderer.dispose()
   }
 }

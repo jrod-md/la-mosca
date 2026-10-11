@@ -94,7 +94,7 @@ Metodología completa de la extracción científica en [`MALECNS.md`](./MALECNS.
 
 - **Escena 3D** (three.js, sin modelos externos): la mosca en su cuarto, frente a una tele que transmite el próximo partido, con Ciudad de Panamá por la ventana. El cielo sigue la hora de quien visita.
 - **Su día:** de 00:00 a 05:00 duerme boca arriba en su cama, como Gregorio Samsa; el día de un partido oficial de Panamá está nerviosa; celebra cuando Panamá gana. Cuando juega la Sele, el cuarto se pone rojo.
-- **Panel del cerebro:** las 296 neuronas con su forma real, reproduciendo la decisión del día.
+- **Panel del cerebro:** las 296 neuronas dibujadas con sus ramas reales (los esqueletos oficiales de MaleCNS), reproduciendo la decisión del día, y al lado un cuadro por neurona que muestra cuáles se encendieron.
 - **La libreta:** un cuaderno de bocetos que se abre y se hojea; cada partido es una página doble con el boleto pegado, un sello de goma (en juego, pegó, perdí) y las notas a mano de la mosca.
 - Español e inglés, diseño responsive y soporte para movimiento reducido.
 

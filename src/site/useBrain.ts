@@ -3,9 +3,10 @@ import { buildCircuit, type MbCircuit } from '../brain/circuit'
 import { Fly } from '../brain/fly'
 import { flyState } from './data'
 
-// Compact render points derived from the official MaleCNS skeletons (scripts/compact-skeletons.ts):
-// p is a flat [x, y, z, ...] list in one shared, normalized transform.
-export interface MorphologyNeuron { id: string; role: string; p: number[] }
+// Compact render trees derived from the official MaleCNS skeletons (scripts/compact-skeletons.ts):
+// p is a flat [x, y, z, ...] list in thousandths of one shared, normalized transform; l holds the
+// index of each point's parent within the neuron (-1 for a root), so branches can be drawn as lines.
+export interface MorphologyNeuron { id: string; role: string; p: number[]; l: number[] }
 export interface MorphologyAsset { neurons: MorphologyNeuron[] }
 
 export interface Brain {
