@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-11T12:41:44.386Z",
+ "updatedAt": "2026-10-12T15:14:01.429Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10566,8 +10566,8 @@
     "sourceId": "tsdb:139107",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Los Andes"
   },

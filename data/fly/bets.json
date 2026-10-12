@@ -367,7 +367,8 @@
    "payout": 0,
    "bankrollAfter": 14.95,
    "result": null,
-   "bankrupt": false
+   "bankrupt": false,
+   "postponed": true
   }
  ],
  "passes": []
