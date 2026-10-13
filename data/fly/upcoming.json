@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T15:14:07.816Z",
+ "generatedAt": "2026-10-13T14:04:57.872Z",
  "matches": [
   {
    "id": "af:1583789",
@@ -374,6 +374,81 @@
     "away": 0.232,
     "over25": 0.431,
     "btts": 0.478
+   }
+  },
+  {
+   "id": "af:1583794",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "13",
+   "kickoff": "2026-10-20T01:30:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Áristocles Castillo",
+   "home": {
+    "key": "veraguas",
+    "name": "Veraguas United",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/zwx9x51649354013.png"
+   },
+   "away": {
+    "key": "union-cocle",
+    "name": "Unión Coclé",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/d725k41768357587.png"
+   },
+   "odds": {
+    "result": {
+     "home": 1.67,
+     "draw": 3.62,
+     "away": 5.36
+    },
+    "total25": {
+     "over": 2.08,
+     "under": 1.73
+    },
+    "btts": {
+     "yes": 2.03,
+     "no": 1.76
+    },
+    "correctScore": [
+     {
+      "score": "1-0",
+      "odds": 6.75
+     },
+     {
+      "score": "1-1",
+      "odds": 7.07
+     },
+     {
+      "score": "2-0",
+      "odds": 7.58
+     },
+     {
+      "score": "2-1",
+      "odds": 9.17
+     },
+     {
+      "score": "0-0",
+      "odds": 9.46
+     },
+     {
+      "score": "3-0",
+      "odds": 13.67
+     },
+     {
+      "score": "0-1",
+      "odds": 14.61
+     },
+     {
+      "score": "3-1",
+      "odds": 16.54
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.564,
+    "draw": 0.261,
+    "away": 0.176,
+    "over25": 0.454,
+    "btts": 0.465
    }
   },
   {

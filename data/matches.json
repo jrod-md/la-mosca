@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-12T15:14:01.429Z",
+ "updatedAt": "2026-10-13T14:04:51.612Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10700,6 +10700,32 @@
    "rawStatus": "NS",
    "score": null,
    "venue": "Rommel Fernández Stadium"
+  },
+  {
+   "id": "af:1583794",
+   "sources": {
+    "apiFootball": 1583794,
+    "theSportsDb": "2548236"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "13",
+   "kickoff": "2026-10-20T01:30:00.000Z",
+   "home": {
+    "name": "Veraguas United",
+    "sourceId": "tsdb:145086",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/zwx9x51649354013.png"
+   },
+   "away": {
+    "name": "Unión Coclé",
+    "sourceId": "tsdb:154406",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/d725k41768357587.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Estadio Áristocles Castillo"
   },
   {
    "id": "elo:2026-11-12:CW-PA",
