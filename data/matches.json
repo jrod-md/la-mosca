@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-13T14:04:51.612Z",
+ "updatedAt": "2026-10-14T11:44:35.157Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10416,32 +10416,6 @@
    "venue": "Estadio Los Andes"
   },
   {
-   "id": "af:1583783",
-   "sources": {
-    "apiFootball": 1583783,
-    "theSportsDb": "2548225"
-   },
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "season": "2026",
-   "round": "12",
-   "kickoff": "2026-10-10T01:30:00.000Z",
-   "home": {
-    "name": "San Francisco FC",
-    "sourceId": "tsdb:139109",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/16pi2m1582143972.png"
-   },
-   "away": {
-    "name": "CD Universitario",
-    "sourceId": "tsdb:139736",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nb1eut1768358103.png"
-   },
-   "status": "void",
-   "rawStatus": "PST",
-   "score": null,
-   "venue": "Estadio Agustín Sánchez"
-  },
-  {
    "id": "af:1583784",
    "sources": {
     "apiFootball": 1583784,
@@ -10566,10 +10540,36 @@
     "sourceId": "tsdb:139107",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
    },
-   "status": "void",
-   "rawStatus": "PST",
+   "status": "scheduled",
+   "rawStatus": "NS",
    "score": null,
    "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1583783",
+   "sources": {
+    "apiFootball": 1583783,
+    "theSportsDb": "2548225"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "12",
+   "kickoff": "2026-10-17T01:30:00.000Z",
+   "home": {
+    "name": "San Francisco FC",
+    "sourceId": "tsdb:139109",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/16pi2m1582143972.png"
+   },
+   "away": {
+    "name": "CD Universitario",
+    "sourceId": "tsdb:139736",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nb1eut1768358103.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Estadio Agustín Sánchez"
   },
   {
    "id": "af:1583789",
@@ -10592,8 +10592,8 @@
     "sourceId": "tsdb:147060",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "COS Sports Plaza"
   },
@@ -10618,8 +10618,8 @@
     "sourceId": "tsdb:139108",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/dra6xs1768358312.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Universidad Latina"
   },
@@ -10644,8 +10644,8 @@
     "sourceId": "tsdb:139737",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/78pior1589297968.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Rommel Fernández Stadium"
   },
@@ -10670,8 +10670,8 @@
     "sourceId": "tsdb:139109",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/16pi2m1582143972.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Gustavo Posam"
   },
@@ -10696,8 +10696,8 @@
     "sourceId": "tsdb:139739",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Rommel Fernández Stadium"
   },
@@ -10722,8 +10722,8 @@
     "sourceId": "tsdb:154406",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/d725k41768357587.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Áristocles Castillo"
   },
