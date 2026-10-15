@@ -24,10 +24,17 @@ test('Every bet and pass is well formed and refers to a known match', () => {
   const ledger = read<MatchLedger>('data/matches.json')
   const ids = new Set(ledger.matches.map(match => match.id))
   const decided = new Set<string>()
+  const betIds = new Set<string>()
+  // A match may be bet again only after its earlier bet was voided.
+  const voided = new Set<string>()
   for (const bet of book.bets) {
     assert.ok(ids.has(bet.matchId), `bet for unknown match ${bet.matchId}`)
-    assert.ok(!decided.has(bet.matchId), `two decisions for ${bet.matchId}`)
+    assert.ok(!betIds.has(bet.id), `duplicate bet id ${bet.id}`)
+    betIds.add(bet.id)
+    assert.ok(!decided.has(bet.matchId) || voided.has(bet.matchId), `two decisions for ${bet.matchId}`)
     decided.add(bet.matchId)
+    if (bet.status === 'void') voided.add(bet.matchId)
+    else voided.delete(bet.matchId)
     assert.ok(bet.placedAt < bet.kickoff, `bet ${bet.id} placed after kickoff`)
     assert.ok(bet.stake > 0 && money(bet.stake) && bet.odds > 1 && money(bet.bankrollAfter))
     assert.ok(['open', 'won', 'lost', 'void'].includes(bet.status))
@@ -35,7 +42,7 @@ test('Every bet and pass is well formed and refers to a known match', () => {
     if (bet.status === 'lost') assert.equal(bet.payout, 0)
   }
   for (const pass of book.passes ?? []) {
-    assert.ok(!decided.has(pass.matchId), `pass and bet for ${pass.matchId}`)
+    assert.ok(!decided.has(pass.matchId) || voided.has(pass.matchId), `pass and bet for ${pass.matchId}`)
     decided.add(pass.matchId)
     assert.ok(pass.decidedAt < pass.kickoff)
   }

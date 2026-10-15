@@ -1,12 +1,13 @@
 // Daily life of the fly, run by the cron after sync-matches:
 // 1. settle open bets whose match is final (in kickoff order), learning from each;
 // 2. decide on LPF matches kicking off in the next days, freezing the price at decision time.
-// Every decision, including declining to bet, is recorded once and never revisited.
+// Every decision, including declining to bet, is recorded once and never revisited. The one exception
+// is a bet voided because its match did not happen: if the match gets a new date, the fly decides again.
 // Also publishes data/fly/upcoming.json (next 7 days, priced) for the site.
 // --upcoming-only refreshes that file without settling or betting.
 import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import { buildCircuit } from '../src/brain/circuit'
-import { Fly, fixtureOf, type BetBook, type FlyState } from '../src/brain/fly'
+import { Fly, decidedMatches, fixtureOf, withUniqueId, type BetBook, type FlyState } from '../src/brain/fly'
 import { settleOpenBets } from '../src/brain/settlement'
 import { recordSnapshot, snapshot, type TasteLog } from '../src/brain/tastes'
 import { mergeMatches } from '../src/football/ledger'
@@ -77,7 +78,7 @@ const run = (now: Date) => {
 
   // 2. Price with everything settled so far, then decide on upcoming league and national fixtures.
   const elo = ratingsAt(all, params, now)
-  const decided = new Set([...book.bets.map(bet => bet.matchId), ...passes.map(pass => pass.matchId)])
+  const decided = decidedMatches({ bets: book.bets, passes })
   const latest = now.getTime() + LOOKAHEAD_HOURS * 3_600_000
   const upcoming = all.filter(match => match.status === 'scheduled' && !decided.has(match.id)
     && now.getTime() < decisionDeadline(match) && Date.parse(match.kickoff) <= latest)
@@ -91,7 +92,8 @@ const run = (now: Date) => {
     }
     const odds = priceMarkets(markets)
     const decision = fly.decide(fixtureOf(match), odds)
-    const bet = fly.place(match, decision, 'live', now.toISOString())
+    const placedBet = fly.place(match, decision, 'live', now.toISOString())
+    const bet = placedBet && withUniqueId(book.bets, placedBet)
     if (bet) {
       book.bets.push(bet)
       placed++

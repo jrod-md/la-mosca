@@ -218,7 +218,8 @@ function Accounts() {
 function Ticket({ entry }: { entry: Entry }) {
   const t = useT()
   const { language } = useLanguage()
-  const id = matchIdOf(entry)
+  // Seeds the decorative wobble and barcode; a second bet on a rescheduled match gets its own look.
+  const id = entry.kind === 'bet' ? entry.bet.id.replace(/^bet:/, '') : entry.pass.matchId
   const phase = entry.kind === 'bet' ? phaseOf(entry.bet) : null
   // A postponed bet is stamped in grey; one whose match is over waits for its result.
   const tone: Tone = phase === 'postponed' ? 'void' : toneOf(entry)

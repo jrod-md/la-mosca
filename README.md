@@ -79,9 +79,9 @@ Metodología completa de la extracción científica en [`MALECNS.md`](./MALECNS.
 
 - **Saldo.** El saldo es el efectivo en mano; lo apostado queda "en juego" hasta que se liquida.
 - **Quiebra.** Solo quiebra si no le alcanza para la apuesta mínima (B/. 1) y no le queda nada en juego. Vuelve a empezar con B/. 20 y la quiebra queda anotada.
-- **Partidos aplazados.** La apuesta espera 72 horas. Si el partido se juega o recibe fecha nueva, sigue viva; si no, se anula y se devuelve lo apostado.
+- **Partidos aplazados.** La apuesta espera 72 horas. Si el partido se juega o recibe fecha nueva, sigue viva; si no, se anula y se devuelve lo apostado. Si después el partido recibe fecha nueva, la mosca lo vuelve a decidir con las cuotas de ese momento.
 - **Selección reprogramada.** Si la fuente cambia la fecha de un partido de Panamá, la fecha vieja se anula (con devolución) y la nueva se trata como un partido distinto.
-- **Decisiones definitivas.** Cada partido se decide una sola vez, incluida la decisión de no apostar.
+- **Decisiones definitivas.** Cada partido se decide una sola vez, incluida la decisión de no apostar. La única excepción es una apuesta anulada porque el partido no se jugó en su fecha.
 
 ## Limitaciones
 

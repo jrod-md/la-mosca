@@ -77,6 +77,17 @@ export interface Pass { matchId: string; decidedAt: string; kickoff: string; hom
 
 export interface BetBook { bets: Bet[]; passes?: Pass[] }
 
+// Matches the fly has made up its mind about. A voided bet does not count: its match was not played
+// on that date, so if the match comes back with a new one the fly decides again with fresh prices.
+export const decidedMatches = (book: BetBook) =>
+  new Set([...book.bets.filter(bet => bet.status !== 'void').map(bet => bet.matchId), ...(book.passes ?? []).map(pass => pass.matchId)])
+
+// A new bet on a match whose earlier bet was voided gets its own id: bet:<match>:2, :3, ...
+export const withUniqueId = (bets: readonly Bet[], bet: Bet): Bet => {
+  const earlier = bets.filter(entry => entry.matchId === bet.matchId).length
+  return earlier ? { ...bet, id: `${bet.id}:${earlier + 1}` } : bet
+}
+
 // What the fly needs to know about a fixture: its id (seeds randomness) and canonical team keys.
 export interface Fixture { id: string; home: string; away: string }
 export const fixtureOf = (match: Match): Fixture => ({ id: match.id, home: teamKey(match.home), away: teamKey(match.away) })

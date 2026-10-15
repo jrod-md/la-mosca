@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { readFileSync } from 'node:fs'
 import { buildCircuit, perceive, KC_SPARSITY } from '../src/brain/circuit'
-import { Fly, FLY_PARAMS, fixtureOf } from '../src/brain/fly'
+import { Fly, FLY_PARAMS, decidedMatches, fixtureOf, withUniqueId } from '../src/brain/fly'
 import { glomeruli, optionOdor, priceBucket } from '../src/brain/odor'
 import { randomFor } from '../src/brain/random'
 import { settleOpenBets } from '../src/brain/settlement'
@@ -143,4 +143,26 @@ test('Bankruptcy needs an empty hand and nothing still riding', () => {
   assert.equal(last.bankrupt, true)
   assert.equal(fly.state.bankroll, FLY_PARAMS.startingBankroll)
   assert.equal(fly.state.bankruptcies, 1)
+})
+
+test('A match whose bet was voided can be decided again under a new bet id', () => {
+  const fly = Fly.newborn(circuit)
+  const decision = fly.decide(fixtureOf(match(null, 'af:1')), odds)
+  const first = fly.place(match(null, 'af:1'), { ...decision, choice: decision.options[0] }, 'live', '2026-10-08T12:00:00.000Z')!
+  const other = fly.place(match(null, 'af:2'), { ...decision, choice: decision.options[0] }, 'live', '2026-10-08T12:00:00.000Z')!
+  const pass = { matchId: 'af:3', decidedAt: '2026-10-08T12:00:00.000Z', kickoff: '2026-10-10T01:30:00.000Z', home: 'a', away: 'b', options: decision.options }
+  // Open, settled and passed matches stay decided; a voided one is free again.
+  assert.deepEqual([...decidedMatches({ bets: [first, other], passes: [pass] })].sort(), ['af:1', 'af:2', 'af:3'])
+  const voided = fly.settle(first, { ...match(null, 'af:1'), status: 'void', rawStatus: 'PST' })
+  assert.equal(voided.status, 'void')
+  const book = [voided, other]
+  assert.deepEqual([...decidedMatches({ bets: book, passes: [pass] })].sort(), ['af:2', 'af:3'])
+  // The new bet keeps its match id but not the old bet id.
+  const again = fly.place(match(null, 'af:1'), { ...decision, choice: decision.options[0] }, 'live', '2026-10-15T12:00:00.000Z')!
+  const second = withUniqueId(book, again)
+  assert.equal(second.id, 'bet:af:1:2')
+  assert.equal(second.matchId, 'af:1')
+  assert.equal(withUniqueId([...book, second], again).id, 'bet:af:1:3')
+  assert.equal(withUniqueId(book, fly.place(match(null, 'af:9'), { ...decision, choice: decision.options[0] }, 'live', '2026-10-15T12:00:00.000Z')!).id, 'bet:af:9')
+  assert.deepEqual([...decidedMatches({ bets: [...book, second] })].sort(), ['af:1', 'af:2'])
 })
