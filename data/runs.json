@@ -527,6 +527,12 @@
    "settled": 2,
    "placed": 1,
    "passed": 0
+  },
+  {
+   "at": "2026-10-16T11:15:21.874Z",
+   "job": "sync-matches",
+   "ok": false,
+   "error": "TheSportsDB eventsday.php failed with HTTP 503"
   }
  ]
 }
