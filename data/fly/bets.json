@@ -360,12 +360,11 @@
     "90935",
     "118532"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 14.95,
+   "status": "void",
+   "payout": 1.47,
+   "bankrollAfter": 18.87,
    "result": null,
-   "bankrupt": false,
-   "postponed": true
+   "bankrupt": false
   },
   {
    "id": "bet:af:1583783:2",

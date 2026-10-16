@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-15T11:20:42.609Z",
+ "generatedAt": "2026-10-16T14:49:05.185Z",
  "matches": [
   {
    "id": "af:1583783",
@@ -228,16 +228,6 @@
   }
  ],
  "recentNational": [
-  {
-   "date": "2026-09-25",
-   "home": "IN",
-   "away": "PA",
-   "league": "Amistoso",
-   "score": {
-    "home": 1,
-    "away": 1
-   }
-  },
   {
    "date": "2026-10-01",
    "home": "NZ",
