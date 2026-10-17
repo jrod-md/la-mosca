@@ -597,6 +597,12 @@
    "job": "sync-matches",
    "ok": false,
    "error": "TheSportsDB eventsday.php failed with HTTP 403"
+  },
+  {
+   "at": "2026-10-17T17:30:50.073Z",
+   "job": "sync-matches",
+   "ok": false,
+   "error": "TheSportsDB eventsday.php failed with HTTP 403"
   }
  ]
 }
