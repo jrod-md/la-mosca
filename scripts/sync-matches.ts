@@ -52,8 +52,8 @@ const sync = async (now: Date, from: string, to: string, backfill: boolean): Pro
     const day = await client.lpfDay(utcDay(start, offset))
     pending.push(...day)
     fetched += day.length
-    // Backfill respects the free tier (~30 requests/minute) and checkpoints so a failure keeps finished days.
-    await pause(backfill ? 2100 : 300)
+    // Every run respects the free tier (~30 requests/minute); backfill also checkpoints so a failure keeps finished days.
+    await pause(2100)
     if (backfill && offset % CHECKPOINT_DAYS === CHECKPOINT_DAYS - 1) {
       flush()
       console.log(`  checkpoint ${utcDay(start, offset)}: ${matches.length} matches in ledger`)

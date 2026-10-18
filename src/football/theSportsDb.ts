@@ -1,7 +1,8 @@
 import { matchId, toInteger, type Competition, type JsonFetch, type Match, type MatchStatus } from './types'
 
-// Free public key. The free tier truncates list endpoints to ~5 events, so callers query one day at a time.
-const BASE = 'https://www.thesportsdb.com/api/v1/json/3/'
+// Free public test key ('123'; the old '3' was disabled on 2026-10-17). The free tier truncates list
+// endpoints to ~5 events, so callers query one day at a time.
+const BASE = 'https://www.thesportsdb.com/api/v1/json/123/'
 export const TSDB_LPF_LEAGUE = '4819'
 
 export interface TsdbEvent {
