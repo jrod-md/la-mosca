@@ -421,10 +421,10 @@
     "178810",
     "547293"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 17.4,
-   "result": null,
+   "status": "won",
+   "payout": 1.92,
+   "bankrollAfter": 20.79,
+   "result": "1-0",
    "bankrupt": false
   }
  ],

@@ -603,6 +603,32 @@
    "job": "sync-matches",
    "ok": false,
    "error": "TheSportsDB eventsday.php failed with HTTP 403"
+  },
+  {
+   "at": "2026-10-18T04:32:42.386Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-10-15",
+    "to": "2026-10-25"
+   },
+   "fetched": 17,
+   "added": 5,
+   "updated": 3,
+   "newlyFinished": [
+    "af:1583783",
+    "af:1583784",
+    "af:1583785"
+   ],
+   "unsettled": []
+  },
+  {
+   "at": "2026-10-18T04:33:07.855Z",
+   "job": "fly-daily",
+   "ok": true,
+   "settled": 1,
+   "placed": 0,
+   "passed": 0
   }
  ]
 }
