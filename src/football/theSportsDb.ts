@@ -81,7 +81,7 @@ export const normalizeTsdbEvent = (event: TsdbEvent, competition: Competition): 
 
 // The free key is shared by everyone (and GitHub runners share IPs), so rate limits (429) and brief
 // outages (5xx) are routine: wait and retry before giving up. Other errors fail at once.
-export const TSDB_RETRY_DELAYS_MS = [15_000, 45_000, 90_000]
+export const TSDB_RETRY_DELAYS_MS = [15_000, 45_000, 90_000, 180_000]
 const retryable = (status: number) => status === 429 || status >= 500
 const sleep = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms))
 
