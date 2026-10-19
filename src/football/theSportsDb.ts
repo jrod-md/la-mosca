@@ -79,9 +79,21 @@ export const normalizeTsdbEvent = (event: TsdbEvent, competition: Competition): 
   }
 }
 
-export const createTheSportsDbClient = (fetch: JsonFetch) => {
+// The free key is shared by everyone (and GitHub runners share IPs), so rate limits (429) and brief
+// outages (5xx) are routine: wait and retry before giving up. Other errors fail at once.
+export const TSDB_RETRY_DELAYS_MS = [15_000, 45_000, 90_000]
+const retryable = (status: number) => status === 429 || status >= 500
+const sleep = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms))
+
+export const createTheSportsDbClient = (fetch: JsonFetch, wait: (ms: number) => Promise<void> = sleep) => {
   const get = async (path: string, field: 'events'): Promise<TsdbEvent[]> => {
-    const response = await fetch(`${BASE}${path}`)
+    let response = await fetch(`${BASE}${path}`)
+    for (const delay of TSDB_RETRY_DELAYS_MS) {
+      if (response.ok || !retryable(response.status)) break
+      console.log(`TheSportsDB ${path.split('?')[0]} answered HTTP ${response.status}; retrying in ${delay / 1000}s`)
+      await wait(delay)
+      response = await fetch(`${BASE}${path}`)
+    }
     if (!response.ok) throw new Error(`TheSportsDB ${path.split('?')[0]} failed with HTTP ${response.status}`)
     const body = await response.json() as Record<string, unknown>
     const list = body[field]

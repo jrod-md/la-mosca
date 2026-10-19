@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { createTheSportsDbClient, normalizeTsdbEvent, type TsdbEvent } from '../src/football/theSportsDb'
+import { createTheSportsDbClient, normalizeTsdbEvent, TSDB_RETRY_DELAYS_MS, type TsdbEvent } from '../src/football/theSportsDb'
 import { createApiFootballClient, normalizeApiFootballFixture, type ApiFootballFixture } from '../src/football/apiFootball'
 import { mergeMatches, retireStaleFixtures, utcDay } from '../src/football/ledger'
 import { slotHasWork } from '../src/football/runLog'
@@ -81,6 +81,29 @@ test('TheSportsDB client keeps only LPF events for a day', async () => {
   const client = createTheSportsDbClient(fetch)
   assert.deepEqual((await client.lpfDay('2026-10-10')).map(match => match.id), ['af:7000'])
   assert.ok(urls[0].endsWith('eventsday.php?d=2026-10-10&l=4819'))
+})
+
+test('TheSportsDB client waits out rate limits and outages, but not other errors', async () => {
+  const waits: number[] = []
+  const wait = async (ms: number) => { waits.push(ms) }
+  const replies = (statuses: number[]): JsonFetch => {
+    let call = 0
+    return async () => {
+      const status = statuses[Math.min(call++, statuses.length - 1)]
+      return { ok: status === 200, status, json: async () => ({ events: [tsdb()] }) }
+    }
+  }
+  // Two refusals, then an answer: the day is fetched after two waits.
+  assert.deepEqual((await createTheSportsDbClient(replies([429, 503, 200]), wait).lpfDay('2026-10-10')).map(match => match.id), ['af:7000'])
+  assert.deepEqual(waits, TSDB_RETRY_DELAYS_MS.slice(0, 2))
+  // Still refused after every retry: the last status is reported.
+  waits.length = 0
+  await assert.rejects(createTheSportsDbClient(replies([429]), wait).lpfDay('2026-10-10'), /HTTP 429/)
+  assert.deepEqual(waits, TSDB_RETRY_DELAYS_MS)
+  // A refused key is not retried.
+  waits.length = 0
+  await assert.rejects(createTheSportsDbClient(replies([403, 200]), wait).lpfDay('2026-10-10'), /HTTP 403/)
+  assert.deepEqual(waits, [])
 })
 
 test('API-Football client surfaces plan errors without leaking the key', async () => {

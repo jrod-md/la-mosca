@@ -1,4 +1,4 @@
-// Daily sync: LPF fixtures/results from TheSportsDB (free, no key); Panama's national team
+// Daily sync: LPF fixtures/results from TheSportsDB (free public key); Panama's national team
 // fixtures, results and every team's rating from eloratings.net (written to data/international/).
 // Backfill: --from YYYY-MM-DD --to YYYY-MM-DD walks every day in the range, checkpointing as it goes.
 // data/matches.json only receives fully fetched days; data/runs.json records every run.
