@@ -651,6 +651,12 @@
    "settled": 0,
    "placed": 0,
    "passed": 0
+  },
+  {
+   "at": "2026-10-19T13:00:22.555Z",
+   "job": "sync-matches",
+   "ok": false,
+   "error": "TheSportsDB eventsday.php failed with HTTP 429"
   }
  ]
 }
