@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-18T10:57:14.470Z",
+ "generatedAt": "2026-10-19T13:55:02.509Z",
  "matches": [
   {
    "id": "af:1583795",
@@ -96,17 +96,17 @@
    },
    "odds": {
     "result": {
-     "home": 1.52,
-     "draw": 3.94,
-     "away": 6.65
+     "home": 1.49,
+     "draw": 4.05,
+     "away": 7.08
     },
     "total25": {
-     "over": 1.98,
-     "under": 1.8
+     "over": 1.96,
+     "under": 1.82
     },
     "btts": {
-     "yes": 2.08,
-     "no": 1.72
+     "yes": 2.1,
+     "no": 1.71
     },
     "correctScore": [
      {
@@ -115,40 +115,40 @@
      },
      {
       "score": "2-0",
-      "odds": 6.9
+      "odds": 6.75
      },
      {
       "score": "1-1",
-      "odds": 7.7
+      "odds": 7.91
      },
      {
       "score": "2-1",
-      "odds": 9.13
+      "odds": 9.15
      },
      {
       "score": "0-0",
-      "odds": 10.3
+      "odds": 10.59
      },
      {
       "score": "3-0",
-      "odds": 11.37
+      "odds": 10.85
      },
      {
       "score": "3-1",
-      "odds": 15.05
+      "odds": 14.72
      },
      {
       "score": "0-1",
-      "odds": 17.66
+      "odds": 18.67
      }
     ]
    },
    "probabilities": {
-    "home": 0.619,
-    "draw": 0.239,
-    "away": 0.142,
-    "over25": 0.475,
-    "btts": 0.453
+    "home": 0.634,
+    "draw": 0.233,
+    "away": 0.133,
+    "over25": 0.482,
+    "btts": 0.449
    }
   },
   {
@@ -224,6 +224,156 @@
     "away": 0.348,
     "over25": 0.416,
     "btts": 0.487
+   }
+  },
+  {
+   "id": "af:1583798",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "14",
+   "kickoff": "2026-10-25T21:00:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Virgilio Tejeira",
+   "home": {
+    "key": "union-cocle",
+    "name": "Unión Coclé",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/d725k41768357587.png"
+   },
+   "away": {
+    "key": "universitario",
+    "name": "Universitario",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nb1eut1768358103.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.68,
+     "draw": 3.13,
+     "away": 2.72
+    },
+    "total25": {
+     "over": 2.27,
+     "under": 1.62
+    },
+    "btts": {
+     "yes": 1.94,
+     "no": 1.84
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.12
+     },
+     {
+      "score": "0-0",
+      "odds": 8.19
+     },
+     {
+      "score": "1-0",
+      "odds": 8.5
+     },
+     {
+      "score": "0-1",
+      "odds": 8.56
+     },
+     {
+      "score": "2-1",
+      "odds": 11.22
+     },
+     {
+      "score": "1-2",
+      "odds": 11.3
+     },
+     {
+      "score": "2-0",
+      "odds": 13.11
+     },
+     {
+      "score": "0-2",
+      "odds": 13.29
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.351,
+    "draw": 0.301,
+    "away": 0.347,
+    "over25": 0.416,
+    "btts": 0.487
+   }
+  },
+  {
+   "id": "af:1583796",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "14",
+   "kickoff": "2026-10-25T23:15:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Áristocles Castillo",
+   "home": {
+    "key": "veraguas",
+    "name": "Veraguas United",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/zwx9x51649354013.png"
+   },
+   "away": {
+    "key": "herrera",
+    "name": "Herrera FC",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/qn68sl1644515521.png"
+   },
+   "odds": {
+    "result": {
+     "home": 1.45,
+     "draw": 4.17,
+     "away": 7.54
+    },
+    "total25": {
+     "over": 1.93,
+     "under": 1.85
+    },
+    "btts": {
+     "yes": 2.12,
+     "no": 1.7
+    },
+    "correctScore": [
+     {
+      "score": "2-0",
+      "odds": 6.61
+     },
+     {
+      "score": "1-0",
+      "odds": 6.7
+     },
+     {
+      "score": "1-1",
+      "odds": 8.13
+     },
+     {
+      "score": "2-1",
+      "odds": 9.19
+     },
+     {
+      "score": "3-0",
+      "odds": 10.38
+     },
+     {
+      "score": "0-0",
+      "odds": 10.89
+     },
+     {
+      "score": "3-1",
+      "odds": 14.42
+     },
+     {
+      "score": "0-1",
+      "odds": 19.76
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.648,
+    "draw": 0.226,
+    "away": 0.125,
+    "over25": 0.489,
+    "btts": 0.445
    }
   },
   {

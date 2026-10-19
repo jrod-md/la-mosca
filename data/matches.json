@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-18T10:56:49.035Z",
+ "updatedAt": "2026-10-19T13:52:06.149Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10416,58 +10416,6 @@
    "venue": "Estadio Los Andes"
   },
   {
-   "id": "af:1583786",
-   "sources": {
-    "apiFootball": 1583786,
-    "theSportsDb": "2548228"
-   },
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "season": "2026",
-   "round": "12",
-   "kickoff": "2026-10-11T21:00:00.000Z",
-   "home": {
-    "name": "Unión Coclé",
-    "sourceId": "tsdb:154406",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/d725k41768357587.png"
-   },
-   "away": {
-    "name": "Herrera",
-    "sourceId": "tsdb:145085",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/qn68sl1644515521.png"
-   },
-   "status": "void",
-   "rawStatus": "PST",
-   "score": null,
-   "venue": "Estadio Virgilio Tejeira"
-  },
-  {
-   "id": "af:1583788",
-   "sources": {
-    "apiFootball": 1583788,
-    "theSportsDb": "2548229"
-   },
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "season": "2026",
-   "round": "12",
-   "kickoff": "2026-10-11T23:15:00.000Z",
-   "home": {
-    "name": "UMECIT",
-    "sourceId": "tsdb:147060",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
-   },
-   "away": {
-    "name": "Alianza",
-    "sourceId": "tsdb:139733",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
-   },
-   "status": "void",
-   "rawStatus": "PST",
-   "score": null,
-   "venue": "Estadio Futuras Promesas"
-  },
-  {
    "id": "af:1583787",
    "sources": {
     "apiFootball": 1583787,
@@ -10659,6 +10607,35 @@
    "venue": "Rommel Fernández Stadium"
   },
   {
+   "id": "af:1583786",
+   "sources": {
+    "apiFootball": 1583786,
+    "theSportsDb": "2548228"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "12",
+   "kickoff": "2026-10-18T21:00:00.000Z",
+   "home": {
+    "name": "Unión Coclé",
+    "sourceId": "tsdb:154406",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/d725k41768357587.png"
+   },
+   "away": {
+    "name": "Herrera",
+    "sourceId": "tsdb:145085",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/qn68sl1644515521.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 3
+   },
+   "venue": "Estadio Virgilio Tejeira"
+  },
+  {
    "id": "af:1583792",
    "sources": {
     "apiFootball": 1583792,
@@ -10683,6 +10660,35 @@
    "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Gustavo Posam"
+  },
+  {
+   "id": "af:1583788",
+   "sources": {
+    "apiFootball": 1583788,
+    "theSportsDb": "2548229"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "12",
+   "kickoff": "2026-10-18T23:15:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "tsdb:147060",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "away": {
+    "name": "Alianza",
+    "sourceId": "tsdb:139733",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
+   },
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Futuras Promesas"
   },
   {
    "id": "af:1583793",
