@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-19T13:55:02.509Z",
+ "generatedAt": "2026-10-20T11:28:05.627Z",
  "matches": [
   {
    "id": "af:1583795",
@@ -21,59 +21,59 @@
    },
    "odds": {
     "result": {
-     "home": 2,
-     "draw": 3.29,
-     "away": 3.92
+     "home": 2.09,
+     "draw": 3.24,
+     "away": 3.66
     },
     "total25": {
-     "over": 2.2,
-     "under": 1.65
+     "over": 2.22,
+     "under": 1.64
     },
     "btts": {
-     "yes": 1.97,
-     "no": 1.81
+     "yes": 1.96,
+     "no": 1.82
     },
     "correctScore": [
      {
       "score": "1-1",
-      "odds": 6.42
+      "odds": 6.33
      },
      {
       "score": "1-0",
-      "odds": 7.17
+      "odds": 7.33
      },
      {
       "score": "0-0",
-      "odds": 8.6
+      "odds": 8.47
      },
      {
       "score": "2-0",
-      "odds": 9.21
+      "odds": 9.72
      },
      {
       "score": "2-1",
-      "odds": 9.64
+      "odds": 9.82
      },
      {
       "score": "0-1",
-      "odds": 11.25
+      "odds": 10.67
      },
      {
       "score": "1-2",
-      "odds": 14.5
+      "odds": 13.81
      },
      {
-      "score": "3-0",
-      "odds": 19.21
+      "score": "0-2",
+      "odds": 19.2
      }
     ]
    },
    "probabilities": {
-    "home": 0.473,
-    "draw": 0.287,
-    "away": 0.241,
-    "over25": 0.429,
-    "btts": 0.479
+    "home": 0.451,
+    "draw": 0.291,
+    "away": 0.257,
+    "over25": 0.425,
+    "btts": 0.482
    }
   },
   {
@@ -374,6 +374,81 @@
     "away": 0.125,
     "over25": 0.489,
     "btts": 0.445
+   }
+  },
+  {
+   "id": "af:1583800",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "14",
+   "kickoff": "2026-10-27T01:30:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Los Andes",
+   "home": {
+    "key": "sporting-sm",
+    "name": "Sporting San Miguelito",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
+   },
+   "away": {
+    "key": "umecit",
+    "name": "UMECIT",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.87,
+     "draw": 3.14,
+     "away": 2.54
+    },
+    "total25": {
+     "over": 2.27,
+     "under": 1.62
+    },
+    "btts": {
+     "yes": 1.94,
+     "no": 1.84
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.13
+     },
+     {
+      "score": "0-0",
+      "odds": 8.2
+     },
+     {
+      "score": "0-1",
+      "odds": 8.2
+     },
+     {
+      "score": "1-0",
+      "odds": 8.9
+     },
+     {
+      "score": "1-2",
+      "odds": 10.86
+     },
+     {
+      "score": "2-1",
+      "odds": 11.7
+     },
+     {
+      "score": "0-2",
+      "odds": 12.27
+     },
+     {
+      "score": "2-0",
+      "odds": 14.24
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.328,
+    "draw": 0.301,
+    "away": 0.371,
+    "over25": 0.416,
+    "btts": 0.487
    }
   },
   {
