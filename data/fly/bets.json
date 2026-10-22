@@ -487,7 +487,98 @@
    "bankrollAfter": 19.48,
    "result": null,
    "bankrupt": false
+  },
+  {
+   "id": "bet:af:1583797",
+   "matchId": "af:1583797",
+   "phase": "live",
+   "placedAt": "2026-10-22T11:43:17.563Z",
+   "kickoff": "2026-10-25T00:30:00.000Z",
+   "home": "independiente",
+   "away": "san-francisco",
+   "homeName": "Independiente",
+   "awayName": "San Francisco FC",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.69,
+     "drive": 0.576,
+     "probability": 0.6678430366121261
+    },
+    {
+     "selection": "draw",
+     "odds": 3.13,
+     "drive": 0.266,
+     "probability": 0.10121931394491122
+    },
+    {
+     "selection": "away",
+     "odds": 2.71,
+     "drive": 0.402,
+     "probability": 0.23093764944296283
+    }
+   ],
+   "selection": "home",
+   "odds": 2.69,
+   "stake": 1.62,
+   "boldness": 0.55,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "44557",
+    "48779",
+    "53833",
+    "61936",
+    "63823",
+    "64141",
+    "65483",
+    "68010",
+    "72359",
+    "72913",
+    "73442",
+    "75122",
+    "82798",
+    "89461",
+    "135092",
+    "551434"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 17.86,
+   "result": null,
+   "bankrupt": false
   }
  ],
- "passes": []
+ "passes": [
+  {
+   "matchId": "af:1583799",
+   "decidedAt": "2026-10-22T11:43:17.563Z",
+   "kickoff": "2026-10-24T23:15:00.000Z",
+   "home": "plaza-amador",
+   "away": "alianza",
+   "homeName": "Plaza Amador",
+   "awayName": "Alianza FC",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 1.49,
+     "drive": 0.366,
+     "probability": 0.45863693799805666
+    },
+    {
+     "selection": "draw",
+     "odds": 4.05,
+     "drive": 0.266,
+     "probability": 0.24899654482825126
+    },
+    {
+     "selection": "away",
+     "odds": 7.08,
+     "drive": 0.292,
+     "probability": 0.292366517173692
+    }
+   ]
+  }
+ ]
 }
