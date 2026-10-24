@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T11:31:15.032Z",
+ "updatedAt": "2026-10-24T10:50:33.882Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10610,9 +10610,12 @@
     "sourceId": "tsdb:147060",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
    "venue": "COS Sports Plaza"
   },
   {
@@ -10900,6 +10903,84 @@
    "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Los Andes"
+  },
+  {
+   "id": "af:1583801",
+   "sources": {
+    "apiFootball": 1583801,
+    "theSportsDb": "2548243"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "15",
+   "kickoff": "2026-10-31T01:00:00.000Z",
+   "home": {
+    "name": "Alianza",
+    "sourceId": "tsdb:139733",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
+   },
+   "away": {
+    "name": "Deportivo Árabe Unido",
+    "sourceId": "tsdb:139738",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Rommel Fernández Stadium"
+  },
+  {
+   "id": "af:1583802",
+   "sources": {
+    "apiFootball": 1583802,
+    "theSportsDb": "2548244"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "15",
+   "kickoff": "2026-10-31T01:00:00.000Z",
+   "home": {
+    "name": "Plaza Amador",
+    "sourceId": "tsdb:139737",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/78pior1589297968.png"
+   },
+   "away": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "tsdb:139739",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "COS Sports Plaza"
+  },
+  {
+   "id": "af:1583803",
+   "sources": {
+    "apiFootball": 1583803,
+    "theSportsDb": "2548245"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "15",
+   "kickoff": "2026-10-31T01:00:00.000Z",
+   "home": {
+    "name": "UMECIT",
+    "sourceId": "tsdb:147060",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "away": {
+    "name": "Tauro",
+    "sourceId": "tsdb:139107",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Estadio Futuras Promesas"
   },
   {
    "id": "elo:2026-11-12:CW-PA",

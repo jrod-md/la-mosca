@@ -1,81 +1,6 @@
 {
- "generatedAt": "2026-10-23T11:34:11.235Z",
+ "generatedAt": "2026-10-24T10:53:29.337Z",
  "matches": [
-  {
-   "id": "af:1583789",
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "round": "13",
-   "kickoff": "2026-10-24T01:30:00.000Z",
-   "kickoffTimeKnown": true,
-   "venue": "COS Sports Plaza",
-   "home": {
-    "key": "arabe-unido",
-    "name": "Árabe Unido",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
-   },
-   "away": {
-    "key": "umecit",
-    "name": "UMECIT",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
-   },
-   "odds": {
-    "result": {
-     "home": 2.22,
-     "draw": 3.19,
-     "away": 3.38
-    },
-    "total25": {
-     "over": 2.24,
-     "under": 1.63
-    },
-    "btts": {
-     "yes": 1.95,
-     "no": 1.83
-    },
-    "correctScore": [
-     {
-      "score": "1-1",
-      "odds": 6.23
-     },
-     {
-      "score": "1-0",
-      "odds": 7.56
-     },
-     {
-      "score": "0-0",
-      "odds": 8.34
-     },
-     {
-      "score": "0-1",
-      "odds": 10.01
-     },
-     {
-      "score": "2-1",
-      "odds": 10.1
-     },
-     {
-      "score": "2-0",
-      "odds": 10.43
-     },
-     {
-      "score": "1-2",
-      "odds": 13.03
-     },
-     {
-      "score": "0-2",
-      "odds": 17.35
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.425,
-    "draw": 0.296,
-    "away": 0.279,
-    "over25": 0.421,
-    "btts": 0.484
-   }
-  },
   {
    "id": "af:1583790",
    "competition": "lpf",
@@ -749,6 +674,231 @@
     "away": 0.179,
     "over25": 0.452,
     "btts": 0.466
+   }
+  },
+  {
+   "id": "af:1583801",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "15",
+   "kickoff": "2026-10-31T01:00:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Rommel Fernández Stadium",
+   "home": {
+    "key": "alianza",
+    "name": "Alianza FC",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
+   },
+   "away": {
+    "key": "arabe-unido",
+    "name": "Árabe Unido",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.42,
+     "draw": 3.15,
+     "away": 3.04
+    },
+    "total25": {
+     "over": 2.26,
+     "under": 1.62
+    },
+    "btts": {
+     "yes": 1.94,
+     "no": 1.84
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.15
+     },
+     {
+      "score": "1-0",
+      "odds": 7.95
+     },
+     {
+      "score": "0-0",
+      "odds": 8.23
+     },
+     {
+      "score": "0-1",
+      "odds": 9.26
+     },
+     {
+      "score": "2-1",
+      "odds": 10.57
+     },
+     {
+      "score": "2-0",
+      "odds": 11.57
+     },
+     {
+      "score": "1-2",
+      "odds": 12.12
+     },
+     {
+      "score": "0-2",
+      "odds": 15.23
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.39,
+    "draw": 0.3,
+    "away": 0.311,
+    "over25": 0.417,
+    "btts": 0.486
+   }
+  },
+  {
+   "id": "af:1583802",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "15",
+   "kickoff": "2026-10-31T01:00:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "COS Sports Plaza",
+   "home": {
+    "key": "plaza-amador",
+    "name": "Plaza Amador",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/78pior1589297968.png"
+   },
+   "away": {
+    "key": "sporting-sm",
+    "name": "Sporting San Miguelito",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
+   },
+   "odds": {
+    "result": {
+     "home": 1.33,
+     "draw": 4.82,
+     "away": 10.2
+    },
+    "total25": {
+     "over": 1.8,
+     "under": 1.99
+    },
+    "btts": {
+     "yes": 2.22,
+     "no": 1.64
+    },
+    "correctScore": [
+     {
+      "score": "2-0",
+      "odds": 6.15
+     },
+     {
+      "score": "1-0",
+      "odds": 6.91
+     },
+     {
+      "score": "3-0",
+      "odds": 8.65
+     },
+     {
+      "score": "1-1",
+      "odds": 9.42
+     },
+     {
+      "score": "2-1",
+      "odds": 9.53
+     },
+     {
+      "score": "0-0",
+      "odds": 12.61
+     },
+     {
+      "score": "3-1",
+      "odds": 13.41
+     },
+     {
+      "score": "4-0",
+      "odds": 16.22
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.712,
+    "draw": 0.196,
+    "away": 0.093,
+    "over25": 0.525,
+    "btts": 0.426
+   }
+  },
+  {
+   "id": "af:1583803",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "15",
+   "kickoff": "2026-10-31T01:00:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Futuras Promesas",
+   "home": {
+    "key": "umecit",
+    "name": "UMECIT",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "away": {
+    "key": "tauro",
+    "name": "Tauro FC",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.17,
+     "draw": 3.21,
+     "away": 3.47
+    },
+    "total25": {
+     "over": 2.23,
+     "under": 1.63
+    },
+    "btts": {
+     "yes": 1.95,
+     "no": 1.83
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.26
+     },
+     {
+      "score": "1-0",
+      "odds": 7.47
+     },
+     {
+      "score": "0-0",
+      "odds": 8.38
+     },
+     {
+      "score": "2-1",
+      "odds": 10
+     },
+     {
+      "score": "2-0",
+      "odds": 10.17
+     },
+     {
+      "score": "0-1",
+      "odds": 10.23
+     },
+     {
+      "score": "1-2",
+      "odds": 13.29
+     },
+     {
+      "score": "0-2",
+      "odds": 17.97
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.434,
+    "draw": 0.294,
+    "away": 0.272,
+    "over25": 0.422,
+    "btts": 0.483
    }
   },
   {
