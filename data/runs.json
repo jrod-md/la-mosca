@@ -796,6 +796,31 @@
    "settled": 1,
    "placed": 1,
    "passed": 0
+  },
+  {
+   "at": "2026-10-25T11:16:58.903Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-10-22",
+    "to": "2026-11-01"
+   },
+   "fetched": 19,
+   "added": 3,
+   "updated": 2,
+   "newlyFinished": [
+    "af:1583790",
+    "af:1583791"
+   ],
+   "unsettled": []
+  },
+  {
+   "at": "2026-10-25T11:17:24.809Z",
+   "job": "fly-daily",
+   "ok": true,
+   "settled": 2,
+   "placed": 0,
+   "passed": 0
   }
  ]
 }

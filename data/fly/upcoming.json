@@ -1,306 +1,6 @@
 {
- "generatedAt": "2026-10-24T10:53:29.337Z",
+ "generatedAt": "2026-10-25T11:17:24.809Z",
  "matches": [
-  {
-   "id": "af:1583790",
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "round": "13",
-   "kickoff": "2026-10-24T23:15:00.000Z",
-   "kickoffTimeKnown": true,
-   "venue": "Estadio Universidad Latina",
-   "home": {
-    "key": "universitario",
-    "name": "Universitario",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nb1eut1768358103.png"
-   },
-   "away": {
-    "key": "independiente",
-    "name": "Independiente",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/dra6xs1768358312.png"
-   },
-   "odds": {
-    "result": {
-     "home": 3.09,
-     "draw": 3.15,
-     "away": 2.39
-    },
-    "total25": {
-     "over": 2.26,
-     "under": 1.62
-    },
-    "btts": {
-     "yes": 1.94,
-     "no": 1.84
-    },
-    "correctScore": [
-     {
-      "score": "1-1",
-      "odds": 6.16
-     },
-     {
-      "score": "0-1",
-      "odds": 7.89
-     },
-     {
-      "score": "0-0",
-      "odds": 8.24
-     },
-     {
-      "score": "1-0",
-      "odds": 9.37
-     },
-     {
-      "score": "1-2",
-      "odds": 10.49
-     },
-     {
-      "score": "0-2",
-      "odds": 11.37
-     },
-     {
-      "score": "2-1",
-      "odds": 12.26
-     },
-     {
-      "score": "2-0",
-      "odds": 15.54
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.306,
-    "draw": 0.299,
-    "away": 0.395,
-    "over25": 0.418,
-    "btts": 0.486
-   }
-  },
-  {
-   "id": "af:1583799",
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "round": "14",
-   "kickoff": "2026-10-24T23:15:00.000Z",
-   "kickoffTimeKnown": true,
-   "venue": "COS Sports Plaza",
-   "home": {
-    "key": "plaza-amador",
-    "name": "Plaza Amador",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/78pior1589297968.png"
-   },
-   "away": {
-    "key": "alianza",
-    "name": "Alianza FC",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
-   },
-   "odds": {
-    "result": {
-     "home": 1.49,
-     "draw": 4.05,
-     "away": 7.08
-    },
-    "total25": {
-     "over": 1.96,
-     "under": 1.82
-    },
-    "btts": {
-     "yes": 2.1,
-     "no": 1.71
-    },
-    "correctScore": [
-     {
-      "score": "1-0",
-      "odds": 6.68
-     },
-     {
-      "score": "2-0",
-      "odds": 6.75
-     },
-     {
-      "score": "1-1",
-      "odds": 7.91
-     },
-     {
-      "score": "2-1",
-      "odds": 9.15
-     },
-     {
-      "score": "0-0",
-      "odds": 10.59
-     },
-     {
-      "score": "3-0",
-      "odds": 10.85
-     },
-     {
-      "score": "3-1",
-      "odds": 14.72
-     },
-     {
-      "score": "0-1",
-      "odds": 18.67
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.634,
-    "draw": 0.233,
-    "away": 0.133,
-    "over25": 0.482,
-    "btts": 0.449
-   }
-  },
-  {
-   "id": "af:1583797",
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "round": "14",
-   "kickoff": "2026-10-25T00:30:00.000Z",
-   "kickoffTimeKnown": true,
-   "venue": "Estadio Agustín Sánchez",
-   "home": {
-    "key": "independiente",
-    "name": "Independiente",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/dra6xs1768358312.png"
-   },
-   "away": {
-    "key": "san-francisco",
-    "name": "San Francisco FC",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/16pi2m1582143972.png"
-   },
-   "odds": {
-    "result": {
-     "home": 2.69,
-     "draw": 3.13,
-     "away": 2.71
-    },
-    "total25": {
-     "over": 2.27,
-     "under": 1.62
-    },
-    "btts": {
-     "yes": 1.94,
-     "no": 1.84
-    },
-    "correctScore": [
-     {
-      "score": "1-1",
-      "odds": 6.12
-     },
-     {
-      "score": "0-0",
-      "odds": 8.19
-     },
-     {
-      "score": "1-0",
-      "odds": 8.5
-     },
-     {
-      "score": "0-1",
-      "odds": 8.56
-     },
-     {
-      "score": "2-1",
-      "odds": 11.22
-     },
-     {
-      "score": "1-2",
-      "odds": 11.29
-     },
-     {
-      "score": "2-0",
-      "odds": 13.12
-     },
-     {
-      "score": "0-2",
-      "odds": 13.28
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.351,
-    "draw": 0.301,
-    "away": 0.348,
-    "over25": 0.416,
-    "btts": 0.487
-   }
-  },
-  {
-   "id": "af:1583791",
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "round": "13",
-   "kickoff": "2026-10-25T02:30:00.000Z",
-   "kickoffTimeKnown": true,
-   "venue": "Rommel Fernández Stadium",
-   "home": {
-    "key": "tauro",
-    "name": "Tauro FC",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
-   },
-   "away": {
-    "key": "plaza-amador",
-    "name": "Plaza Amador",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/78pior1589297968.png"
-   },
-   "odds": {
-    "result": {
-     "home": 4.88,
-     "draw": 3.5,
-     "away": 1.75
-    },
-    "total25": {
-     "over": 2.12,
-     "under": 1.7
-    },
-    "btts": {
-     "yes": 2.01,
-     "no": 1.78
-    },
-    "correctScore": [
-     {
-      "score": "0-1",
-      "odds": 6.83
-     },
-     {
-      "score": "1-1",
-      "odds": 6.84
-     },
-     {
-      "score": "0-2",
-      "odds": 7.97
-     },
-     {
-      "score": "0-0",
-      "odds": 9.16
-     },
-     {
-      "score": "1-2",
-      "odds": 9.25
-     },
-     {
-      "score": "1-0",
-      "odds": 13.49
-     },
-     {
-      "score": "0-3",
-      "odds": 14.99
-     },
-     {
-      "score": "2-1",
-      "odds": 17.14
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.193,
-    "draw": 0.269,
-    "away": 0.538,
-    "over25": 0.445,
-    "btts": 0.47
-   }
-  },
   {
    "id": "af:1583792",
    "competition": "lpf",
@@ -396,9 +96,9 @@
    },
    "odds": {
     "result": {
-     "home": 2.68,
+     "home": 2.6,
      "draw": 3.13,
-     "away": 2.72
+     "away": 2.8
     },
     "total25": {
      "over": 2.27,
@@ -419,34 +119,34 @@
      },
      {
       "score": "1-0",
-      "odds": 8.5
+      "odds": 8.33
      },
      {
       "score": "0-1",
-      "odds": 8.56
+      "odds": 8.75
      },
      {
       "score": "2-1",
-      "odds": 11.22
+      "odds": 11.01
      },
      {
       "score": "1-2",
-      "odds": 11.3
+      "odds": 11.52
      },
      {
       "score": "2-0",
-      "odds": 13.11
+      "odds": 12.63
      },
      {
       "score": "0-2",
-      "odds": 13.29
+      "odds": 13.81
      }
     ]
    },
    "probabilities": {
-    "home": 0.351,
+    "home": 0.362,
     "draw": 0.301,
-    "away": 0.347,
+    "away": 0.337,
     "over25": 0.416,
     "btts": 0.487
    }
@@ -771,59 +471,59 @@
    },
    "odds": {
     "result": {
-     "home": 1.33,
-     "draw": 4.82,
-     "away": 10.2
+     "home": 1.31,
+     "draw": 4.92,
+     "away": 10.59
     },
     "total25": {
-     "over": 1.8,
-     "under": 1.99
+     "over": 1.78,
+     "under": 2.01
     },
     "btts": {
-     "yes": 2.22,
+     "yes": 2.23,
      "no": 1.64
     },
     "correctScore": [
      {
       "score": "2-0",
-      "odds": 6.15
+      "odds": 6.11
      },
      {
       "score": "1-0",
-      "odds": 6.91
+      "odds": 6.95
      },
      {
       "score": "3-0",
-      "odds": 8.65
-     },
-     {
-      "score": "1-1",
-      "odds": 9.42
+      "odds": 8.48
      },
      {
       "score": "2-1",
-      "odds": 9.53
+      "odds": 9.6
+     },
+     {
+      "score": "1-1",
+      "odds": 9.61
      },
      {
       "score": "0-0",
-      "odds": 12.61
+      "odds": 12.86
      },
      {
       "score": "3-1",
-      "odds": 13.41
+      "odds": 13.32
      },
      {
       "score": "4-0",
-      "odds": 16.22
+      "odds": 15.69
      }
     ]
    },
    "probabilities": {
-    "home": 0.712,
-    "draw": 0.196,
-    "away": 0.093,
-    "over25": 0.525,
-    "btts": 0.426
+    "home": 0.719,
+    "draw": 0.192,
+    "away": 0.089,
+    "over25": 0.53,
+    "btts": 0.423
    }
   },
   {
@@ -846,58 +546,58 @@
    },
    "odds": {
     "result": {
-     "home": 2.17,
-     "draw": 3.21,
-     "away": 3.47
+     "home": 2.13,
+     "draw": 3.22,
+     "away": 3.56
     },
     "total25": {
      "over": 2.23,
-     "under": 1.63
+     "under": 1.64
     },
     "btts": {
      "yes": 1.95,
-     "no": 1.83
+     "no": 1.82
     },
     "correctScore": [
      {
       "score": "1-1",
-      "odds": 6.26
+      "odds": 6.29
      },
      {
       "score": "1-0",
-      "odds": 7.47
+      "odds": 7.4
      },
      {
       "score": "0-0",
-      "odds": 8.38
+      "odds": 8.42
      },
      {
       "score": "2-1",
-      "odds": 10
+      "odds": 9.91
      },
      {
       "score": "2-0",
-      "odds": 10.17
+      "odds": 9.95
      },
      {
       "score": "0-1",
-      "odds": 10.23
+      "odds": 10.43
      },
      {
       "score": "1-2",
-      "odds": 13.29
+      "odds": 13.53
      },
      {
       "score": "0-2",
-      "odds": 17.97
+      "odds": 18.54
      }
     ]
    },
    "probabilities": {
-    "home": 0.434,
-    "draw": 0.294,
-    "away": 0.272,
-    "over25": 0.422,
+    "home": 0.442,
+    "draw": 0.293,
+    "away": 0.265,
+    "over25": 0.423,
     "btts": 0.483
    }
   },

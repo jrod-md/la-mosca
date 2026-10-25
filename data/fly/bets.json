@@ -666,10 +666,10 @@
     "135092",
     "551434"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 14.99,
-   "result": null,
+   "status": "won",
+   "payout": 3.35,
+   "bankrollAfter": 13.34,
+   "result": "0-1",
    "bankrupt": false
   },
   {
@@ -727,10 +727,10 @@
     "534428",
     "547293"
    ],
-   "status": "open",
+   "status": "lost",
    "payout": 0,
-   "bankrollAfter": 13.99,
-   "result": null,
+   "bankrollAfter": 13.34,
+   "result": "0-1",
    "bankrupt": false
   },
   {
