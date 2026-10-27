@@ -1,81 +1,6 @@
 {
- "generatedAt": "2026-10-26T20:07:24.309Z",
+ "generatedAt": "2026-10-27T12:04:58.968Z",
  "matches": [
-  {
-   "id": "af:1583794",
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "round": "13",
-   "kickoff": "2026-10-27T01:00:00.000Z",
-   "kickoffTimeKnown": true,
-   "venue": "Estadio Áristocles Castillo",
-   "home": {
-    "key": "veraguas",
-    "name": "Veraguas United",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/zwx9x51649354013.png"
-   },
-   "away": {
-    "key": "union-cocle",
-    "name": "Unión Coclé",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/d725k41768357587.png"
-   },
-   "odds": {
-    "result": {
-     "home": 1.69,
-     "draw": 3.6,
-     "away": 5.26
-    },
-    "total25": {
-     "over": 2.09,
-     "under": 1.72
-    },
-    "btts": {
-     "yes": 2.02,
-     "no": 1.77
-    },
-    "correctScore": [
-     {
-      "score": "1-0",
-      "odds": 6.76
-     },
-     {
-      "score": "1-1",
-      "odds": 7.02
-     },
-     {
-      "score": "2-0",
-      "odds": 7.65
-     },
-     {
-      "score": "2-1",
-      "odds": 9.18
-     },
-     {
-      "score": "0-0",
-      "odds": 9.4
-     },
-     {
-      "score": "3-0",
-      "odds": 13.91
-     },
-     {
-      "score": "0-1",
-      "odds": 14.38
-     },
-     {
-      "score": "3-1",
-      "odds": 16.7
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.558,
-    "draw": 0.262,
-    "away": 0.179,
-    "over25": 0.452,
-    "btts": 0.466
-   }
-  },
   {
    "id": "af:1583801",
    "competition": "lpf",
@@ -321,59 +246,59 @@
    },
    "odds": {
     "result": {
-     "home": 3.03,
-     "draw": 3.15,
-     "away": 2.42
+     "home": 3.2,
+     "draw": 3.17,
+     "away": 2.32
     },
     "total25": {
-     "over": 2.26,
+     "over": 2.25,
      "under": 1.62
     },
     "btts": {
      "yes": 1.94,
-     "no": 1.84
+     "no": 1.83
     },
     "correctScore": [
      {
       "score": "1-1",
-      "odds": 6.15
+      "odds": 6.19
      },
      {
       "score": "0-1",
-      "odds": 7.96
+      "odds": 7.75
      },
      {
       "score": "0-0",
-      "odds": 8.23
+      "odds": 8.28
      },
      {
       "score": "1-0",
-      "odds": 9.25
+      "odds": 9.62
      },
      {
       "score": "1-2",
-      "odds": 10.57
+      "odds": 10.32
      },
      {
       "score": "0-2",
-      "odds": 11.58
+      "odds": 10.97
      },
      {
       "score": "2-1",
-      "odds": 12.12
+      "odds": 12.56
      },
      {
       "score": "2-0",
-      "odds": 15.21
+      "odds": 16.24
      }
     ]
    },
    "probabilities": {
-    "home": 0.311,
-    "draw": 0.3,
-    "away": 0.389,
-    "over25": 0.417,
-    "btts": 0.486
+    "home": 0.295,
+    "draw": 0.298,
+    "away": 0.407,
+    "over25": 0.419,
+    "btts": 0.485
    }
   },
   {
@@ -471,59 +396,59 @@
    },
    "odds": {
     "result": {
-     "home": 1.46,
-     "draw": 4.13,
-     "away": 7.42
+     "home": 1.42,
+     "draw": 4.29,
+     "away": 8.03
     },
     "total25": {
-     "over": 1.94,
-     "under": 1.84
+     "over": 1.9,
+     "under": 1.87
     },
     "btts": {
-     "yes": 2.12,
-     "no": 1.7
+     "yes": 2.14,
+     "no": 1.69
     },
     "correctScore": [
      {
       "score": "2-0",
-      "odds": 6.65
+      "odds": 6.49
      },
      {
       "score": "1-0",
-      "odds": 6.69
+      "odds": 6.72
      },
      {
       "score": "1-1",
-      "odds": 8.07
+      "odds": 8.37
      },
      {
       "score": "2-1",
-      "odds": 9.18
+      "odds": 9.24
      },
      {
       "score": "3-0",
-      "odds": 10.5
+      "odds": 9.95
      },
      {
       "score": "0-0",
-      "odds": 10.81
+      "odds": 11.2
      },
      {
       "score": "3-1",
-      "odds": 14.5
+      "odds": 14.16
      },
      {
-      "score": "0-1",
-      "odds": 19.47
+      "score": "4-0",
+      "odds": 20.35
      }
     ]
    },
    "probabilities": {
-    "home": 0.645,
-    "draw": 0.228,
-    "away": 0.127,
-    "over25": 0.487,
-    "btts": 0.446
+    "home": 0.662,
+    "draw": 0.22,
+    "away": 0.118,
+    "over25": 0.496,
+    "btts": 0.441
    }
   },
   {

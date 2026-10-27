@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T20:06:58.788Z",
+ "updatedAt": "2026-10-27T12:02:03.439Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10885,9 +10885,12 @@
     "sourceId": "tsdb:154406",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/d725k41768357587.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 0
+   },
    "venue": "Estadio Áristocles Castillo"
   },
   {

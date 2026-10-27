@@ -482,12 +482,11 @@
     "165180",
     "214044"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 19.48,
+   "status": "void",
+   "payout": 1.31,
+   "bankrollAfter": 18.8,
    "result": null,
-   "bankrupt": false,
-   "postponed": true
+   "bankrupt": false
   },
   {
    "id": "bet:af:1583797",
@@ -971,10 +970,10 @@
     "89530",
     "97410"
    ],
-   "status": "open",
+   "status": "lost",
    "payout": 0,
-   "bankrollAfter": 9.99,
-   "result": null,
+   "bankrollAfter": 18.8,
+   "result": "3-0",
    "bankrupt": false
   }
  ],
