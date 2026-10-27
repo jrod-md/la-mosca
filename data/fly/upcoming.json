@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T15:52:09.098Z",
+ "generatedAt": "2026-10-27T17:54:19.576Z",
  "matches": [
   {
    "id": "af:1583801",
@@ -224,6 +224,81 @@
     "away": 0.265,
     "over25": 0.423,
     "btts": 0.483
+   }
+  },
+  {
+   "id": "af:1583800",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "14",
+   "kickoff": "2026-11-01T21:00:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Los Andes",
+   "home": {
+    "key": "sporting-sm",
+    "name": "Sporting San Miguelito",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
+   },
+   "away": {
+    "key": "umecit",
+    "name": "UMECIT",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.69,
+     "draw": 3.13,
+     "away": 2.71
+    },
+    "total25": {
+     "over": 2.27,
+     "under": 1.62
+    },
+    "btts": {
+     "yes": 1.94,
+     "no": 1.84
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.12
+     },
+     {
+      "score": "0-0",
+      "odds": 8.19
+     },
+     {
+      "score": "1-0",
+      "odds": 8.51
+     },
+     {
+      "score": "0-1",
+      "odds": 8.55
+     },
+     {
+      "score": "2-1",
+      "odds": 11.23
+     },
+     {
+      "score": "1-2",
+      "odds": 11.28
+     },
+     {
+      "score": "2-0",
+      "odds": 13.13
+     },
+     {
+      "score": "0-2",
+      "odds": 13.26
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.351,
+    "draw": 0.301,
+    "away": 0.348,
+    "over25": 0.416,
+    "btts": 0.487
    }
   },
   {

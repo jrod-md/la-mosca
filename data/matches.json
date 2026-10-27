@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T15:51:43.842Z",
+ "updatedAt": "2026-10-27T17:53:54.014Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10894,32 +10894,6 @@
    "venue": "Estadio Áristocles Castillo"
   },
   {
-   "id": "af:1583800",
-   "sources": {
-    "apiFootball": 1583800,
-    "theSportsDb": "2548242"
-   },
-   "competition": "lpf",
-   "league": "Panama Liga Panamena de Futbol",
-   "season": "2026",
-   "round": "14",
-   "kickoff": "2026-10-27T01:30:00.000Z",
-   "home": {
-    "name": "Sporting San Miguelito",
-    "sourceId": "tsdb:139739",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
-   },
-   "away": {
-    "name": "UMECIT",
-    "sourceId": "tsdb:147060",
-    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
-   },
-   "status": "void",
-   "rawStatus": "PST",
-   "score": null,
-   "venue": "Estadio Los Andes"
-  },
-  {
    "id": "af:1583801",
    "sources": {
     "apiFootball": 1583801,
@@ -10996,6 +10970,32 @@
    "rawStatus": "NS",
    "score": null,
    "venue": "Estadio Futuras Promesas"
+  },
+  {
+   "id": "af:1583800",
+   "sources": {
+    "apiFootball": 1583800,
+    "theSportsDb": "2548242"
+   },
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "season": "2026",
+   "round": "14",
+   "kickoff": "2026-11-01T21:00:00.000Z",
+   "home": {
+    "name": "Sporting San Miguelito",
+    "sourceId": "tsdb:139739",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
+   },
+   "away": {
+    "name": "UMECIT",
+    "sourceId": "tsdb:147060",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "status": "scheduled",
+   "rawStatus": "NS",
+   "score": null,
+   "venue": "Estadio Los Andes"
   },
   {
    "id": "af:1583804",
