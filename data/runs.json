@@ -1498,6 +1498,12 @@
    "job": "sync-matches",
    "ok": false,
    "error": "eloratings World.tsv looks incomplete"
+  },
+  {
+   "at": "2026-10-31T13:44:01.840Z",
+   "job": "sync-matches",
+   "ok": false,
+   "error": "eloratings World.tsv looks incomplete"
   }
  ]
 }
