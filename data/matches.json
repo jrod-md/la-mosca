@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T12:44:16.694Z",
+ "updatedAt": "2026-10-31T14:46:02.490Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10862,9 +10862,12 @@
     "sourceId": "tsdb:139107",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 3
+   },
    "venue": "COS Sports Plaza"
   },
   {
@@ -11186,6 +11189,34 @@
    "score": null,
    "venue": "Panamá",
    "venueCountry": "PA"
+  },
+  {
+   "id": "elo:2026-12-09:PE-PA",
+   "sources": {
+    "apiFootball": null,
+    "theSportsDb": null
+   },
+   "competition": "panama",
+   "league": "Amistoso",
+   "season": "2026",
+   "round": null,
+   "kickoff": "2026-12-09T12:00:00.000Z",
+   "kickoffTimeKnown": false,
+   "home": {
+    "name": "Perú",
+    "sourceId": "nt:PE",
+    "badge": null
+   },
+   "away": {
+    "name": "Panamá",
+    "sourceId": "nt:PA",
+    "badge": null
+   },
+   "status": "scheduled",
+   "rawStatus": "eloratings:fixture",
+   "score": null,
+   "venue": "Perú",
+   "venueCountry": "PE"
   }
  ]
 }

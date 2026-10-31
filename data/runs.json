@@ -1504,6 +1504,30 @@
    "job": "sync-matches",
    "ok": false,
    "error": "eloratings World.tsv looks incomplete"
+  },
+  {
+   "at": "2026-10-31T14:46:02.490Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-10-28",
+    "to": "2026-11-07"
+   },
+   "fetched": 12,
+   "added": 1,
+   "updated": 1,
+   "newlyFinished": [
+    "af:1583795"
+   ],
+   "unsettled": []
+  },
+  {
+   "at": "2026-10-31T14:48:57.797Z",
+   "job": "fly-daily",
+   "ok": true,
+   "settled": 1,
+   "placed": 0,
+   "passed": 0
   }
  ]
 }

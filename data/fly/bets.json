@@ -1031,10 +1031,10 @@
     "165180",
     "214044"
    ],
-   "status": "open",
+   "status": "lost",
    "payout": 0,
-   "bankrollAfter": 17.67,
-   "result": null,
+   "bankrollAfter": 15.54,
+   "result": "1-3",
    "bankrupt": false
   },
   {
