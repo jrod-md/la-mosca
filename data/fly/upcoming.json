@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-01T13:13:25.078Z",
+ "generatedAt": "2026-11-01T16:32:36.719Z",
  "matches": [
   {
    "id": "af:1583800",
@@ -21,59 +21,59 @@
    },
    "odds": {
     "result": {
-     "home": 2.69,
-     "draw": 3.13,
-     "away": 2.71
+     "home": 2.7,
+     "draw": 3.15,
+     "away": 2.69
     },
     "total25": {
-     "over": 2.27,
+     "over": 2.26,
      "under": 1.62
     },
     "btts": {
-     "yes": 1.94,
+     "yes": 1.93,
      "no": 1.84
     },
     "correctScore": [
      {
       "score": "1-1",
-      "odds": 6.12
+      "odds": 6.14
      },
      {
       "score": "0-0",
-      "odds": 8.19
-     },
-     {
-      "score": "1-0",
-      "odds": 8.51
+      "odds": 8.28
      },
      {
       "score": "0-1",
-      "odds": 8.55
+      "odds": 8.52
      },
      {
-      "score": "2-1",
-      "odds": 11.23
+      "score": "1-0",
+      "odds": 8.54
      },
      {
       "score": "1-2",
-      "odds": 11.28
+      "odds": 11.22
      },
      {
-      "score": "2-0",
-      "odds": 13.13
+      "score": "2-1",
+      "odds": 11.24
      },
      {
       "score": "0-2",
-      "odds": 13.26
+      "odds": 13.19
+     },
+     {
+      "score": "2-0",
+      "odds": 13.24
      }
     ]
    },
    "probabilities": {
-    "home": 0.351,
-    "draw": 0.301,
-    "away": 0.348,
-    "over25": 0.416,
-    "btts": 0.487
+    "home": 0.35,
+    "draw": 0.3,
+    "away": 0.351,
+    "over25": 0.418,
+    "btts": 0.488
    }
   },
   {
@@ -96,16 +96,16 @@
    },
    "odds": {
     "result": {
-     "home": 5.68,
-     "draw": 3.7,
-     "away": 1.63
+     "home": 5.95,
+     "draw": 3.79,
+     "away": 1.59
     },
     "total25": {
-     "over": 2.06,
-     "under": 1.74
+     "over": 2.02,
+     "under": 1.77
     },
     "btts": {
-     "yes": 2.04,
+     "yes": 2.05,
      "no": 1.75
     },
     "correctScore": [
@@ -114,41 +114,41 @@
       "odds": 6.71
      },
      {
-      "score": "1-1",
-      "odds": 7.22
+      "score": "0-2",
+      "odds": 7.23
      },
      {
-      "score": "0-2",
-      "odds": 7.38
+      "score": "1-1",
+      "odds": 7.4
      },
      {
       "score": "1-2",
-      "odds": 9.14
+      "odds": 9.11
      },
      {
       "score": "0-0",
-      "odds": 9.66
+      "odds": 9.97
      },
      {
       "score": "0-3",
-      "odds": 12.98
-     },
-     {
-      "score": "1-0",
-      "odds": 15.34
+      "odds": 12.42
      },
      {
       "score": "1-3",
-      "odds": 16.09
+      "odds": 15.66
+     },
+     {
+      "score": "1-0",
+      "odds": 15.99
      }
     ]
    },
    "probabilities": {
-    "home": 0.166,
-    "draw": 0.255,
-    "away": 0.579,
-    "over25": 0.459,
-    "btts": 0.462
+    "home": 0.159,
+    "draw": 0.249,
+    "away": 0.593,
+    "over25": 0.466,
+    "btts": 0.46
    }
   },
   {
@@ -172,33 +172,33 @@
    "odds": {
     "result": {
      "home": 2.68,
-     "draw": 3.13,
-     "away": 2.72
+     "draw": 3.15,
+     "away": 2.71
     },
     "total25": {
-     "over": 2.27,
+     "over": 2.26,
      "under": 1.62
     },
     "btts": {
-     "yes": 1.94,
+     "yes": 1.93,
      "no": 1.84
     },
     "correctScore": [
      {
       "score": "1-1",
-      "odds": 6.12
+      "odds": 6.14
      },
      {
       "score": "0-0",
-      "odds": 8.19
+      "odds": 8.28
      },
      {
       "score": "1-0",
-      "odds": 8.48
+      "odds": 8.5
      },
      {
       "score": "0-1",
-      "odds": 8.58
+      "odds": 8.55
      },
      {
       "score": "2-1",
@@ -206,24 +206,24 @@
      },
      {
       "score": "1-2",
-      "odds": 11.32
+      "odds": 11.26
      },
      {
       "score": "2-0",
-      "odds": 13.06
+      "odds": 13.14
      },
      {
       "score": "0-2",
-      "odds": 13.34
+      "odds": 13.29
      }
     ]
    },
    "probabilities": {
     "home": 0.352,
-    "draw": 0.301,
-    "away": 0.346,
-    "over25": 0.416,
-    "btts": 0.487
+    "draw": 0.3,
+    "away": 0.349,
+    "over25": 0.418,
+    "btts": 0.488
    }
   },
   {
@@ -246,59 +246,59 @@
    },
    "odds": {
     "result": {
-     "home": 2.64,
-     "draw": 3.13,
-     "away": 2.76
+     "home": 2.65,
+     "draw": 3.15,
+     "away": 2.74
     },
     "total25": {
-     "over": 2.27,
+     "over": 2.26,
      "under": 1.62
     },
     "btts": {
-     "yes": 1.94,
+     "yes": 1.93,
      "no": 1.84
     },
     "correctScore": [
      {
       "score": "1-1",
-      "odds": 6.12
+      "odds": 6.15
      },
      {
       "score": "0-0",
-      "odds": 8.19
+      "odds": 8.28
      },
      {
       "score": "1-0",
-      "odds": 8.4
+      "odds": 8.43
      },
      {
       "score": "0-1",
-      "odds": 8.66
+      "odds": 8.63
      },
      {
       "score": "2-1",
-      "odds": 11.1
+      "odds": 11.11
      },
      {
       "score": "1-2",
-      "odds": 11.42
+      "odds": 11.35
      },
      {
       "score": "2-0",
-      "odds": 12.84
+      "odds": 12.94
      },
      {
       "score": "0-2",
-      "odds": 13.57
+      "odds": 13.5
      }
     ]
    },
    "probabilities": {
-    "home": 0.357,
-    "draw": 0.301,
-    "away": 0.341,
-    "over25": 0.416,
-    "btts": 0.487
+    "home": 0.356,
+    "draw": 0.3,
+    "away": 0.344,
+    "over25": 0.418,
+    "btts": 0.488
    }
   },
   {
@@ -321,59 +321,59 @@
    },
    "odds": {
     "result": {
-     "home": 2.15,
-     "draw": 3.22,
-     "away": 3.53
+     "home": 2.14,
+     "draw": 3.23,
+     "away": 3.52
     },
     "total25": {
-     "over": 2.23,
-     "under": 1.63
+     "over": 2.22,
+     "under": 1.64
     },
     "btts": {
      "yes": 1.95,
-     "no": 1.82
+     "no": 1.83
     },
     "correctScore": [
      {
       "score": "1-1",
-      "odds": 6.28
+      "odds": 6.31
      },
      {
       "score": "1-0",
-      "odds": 7.43
+      "odds": 7.44
      },
      {
       "score": "0-0",
-      "odds": 8.41
+      "odds": 8.5
      },
      {
       "score": "2-1",
-      "odds": 9.94
+      "odds": 9.93
      },
      {
       "score": "2-0",
-      "odds": 10.03
+      "odds": 10.05
      },
      {
       "score": "0-1",
-      "odds": 10.36
+      "odds": 10.34
      },
      {
       "score": "1-2",
-      "odds": 13.44
+      "odds": 13.4
      },
      {
       "score": "0-2",
-      "odds": 18.32
+      "odds": 18.33
      }
     ]
    },
    "probabilities": {
-    "home": 0.439,
-    "draw": 0.293,
-    "away": 0.267,
-    "over25": 0.423,
-    "btts": 0.483
+    "home": 0.44,
+    "draw": 0.292,
+    "away": 0.268,
+    "over25": 0.425,
+    "btts": 0.484
    }
   },
   {
@@ -396,13 +396,13 @@
    },
    "odds": {
     "result": {
-     "home": 4.85,
-     "draw": 3.5,
-     "away": 1.76
+     "home": 5.05,
+     "draw": 3.57,
+     "away": 1.72
     },
     "total25": {
-     "over": 2.12,
-     "under": 1.7
+     "over": 2.09,
+     "under": 1.72
     },
     "btts": {
      "yes": 2.01,
@@ -410,45 +410,45 @@
     },
     "correctScore": [
      {
-      "score": "1-1",
-      "odds": 6.83
+      "score": "0-1",
+      "odds": 6.8
      },
      {
-      "score": "0-1",
-      "odds": 6.83
+      "score": "1-1",
+      "odds": 6.96
      },
      {
       "score": "0-2",
-      "odds": 8
-     },
-     {
-      "score": "0-0",
-      "odds": 9.14
+      "odds": 7.83
      },
      {
       "score": "1-2",
-      "odds": 9.26
+      "odds": 9.2
+     },
+     {
+      "score": "0-0",
+      "odds": 9.38
      },
      {
       "score": "1-0",
-      "odds": 13.41
+      "odds": 13.87
      },
      {
       "score": "0-3",
-      "odds": 15.09
+      "odds": 14.44
      },
      {
-      "score": "2-1",
-      "odds": 17.05
+      "score": "1-3",
+      "odds": 16.97
      }
     ]
    },
    "probabilities": {
-    "home": 0.195,
-    "draw": 0.27,
-    "away": 0.536,
-    "over25": 0.445,
-    "btts": 0.47
+    "home": 0.187,
+    "draw": 0.265,
+    "away": 0.548,
+    "over25": 0.45,
+    "btts": 0.469
    }
   },
   {
