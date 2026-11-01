@@ -909,10 +909,10 @@
     "178810",
     "547293"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 10.99,
-   "result": null,
+   "status": "won",
+   "payout": 1.45,
+   "bankrollAfter": 16.99,
+   "result": "4-2",
    "bankrupt": false
   },
   {
