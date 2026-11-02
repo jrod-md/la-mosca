@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01T13:12:59.499Z",
+ "updatedAt": "2026-11-02T15:39:15.416Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -10978,9 +10978,12 @@
     "sourceId": "tsdb:147060",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
    "venue": "Estadio Los Andes"
   },
   {
@@ -11082,9 +11085,12 @@
     "sourceId": "tsdb:139109",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/16pi2m1582143972.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
    "venue": "Estadio Agustín Sánchez"
   },
   {
