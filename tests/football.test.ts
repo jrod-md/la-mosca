@@ -3,7 +3,8 @@ import { test } from 'node:test'
 import { createTheSportsDbClient, normalizeTsdbEvent, TSDB_RETRY_DELAYS_MS, type TsdbEvent } from '../src/football/theSportsDb'
 import { createApiFootballClient, normalizeApiFootballFixture, type ApiFootballFixture } from '../src/football/apiFootball'
 import { mergeMatches, overdueLpfMatches, OVERDUE_LOOKUP_DAYS, retireStaleFixtures, utcDay } from '../src/football/ledger'
-import { slotHasWork } from '../src/football/runLog'
+import { slotHasWork, type RunEntry, type RunLog } from '../src/football/runLog'
+import { runsAreNews, sameIgnoringTimestamps } from '../src/football/dataChange'
 import type { JsonFetch, Match } from '../src/football/types'
 
 // Synthetic fixtures shaped like real responses; teams and scores are not real results.
@@ -180,4 +181,27 @@ test('Overdue LPF matches are the past, unfinished ones the day fetch missed', (
   assert.equal(OVERDUE_LOOKUP_DAYS, 10)
   assert.equal(unknown.status, 'unknown')
   assert.deepEqual(result.map(match => match.id), [unknown.id, overdue.id])
+})
+
+test('Timestamps alone are not a data change', () => {
+  assert.equal(sameIgnoringTimestamps({ updatedAt: 'a', matches: [1] }, { updatedAt: 'b', matches: [1] }), true)
+  assert.equal(sameIgnoringTimestamps({ updatedAt: 'a', matches: [1] }, { updatedAt: 'b', matches: [2] }), false)
+  // Only top-level timestamps are ignored: a nested one is a real change.
+  assert.equal(sameIgnoringTimestamps({ state: { updatedAt: 'a' } }, { state: { updatedAt: 'b' } }), false)
+  assert.equal(sameIgnoringTimestamps([1], [1]), true)
+})
+
+test('Routine successful runs are not news, failures and the first fly day are', () => {
+  const fly = (at: string, ok = true): RunEntry => ({ at, job: 'fly-daily', ok, settled: 0, placed: 0, passed: 0 })
+  const sync = (at: string): RunEntry => ({ at, job: 'sync-matches', ok: true, settled: 0, placed: 0, passed: 0 })
+  const before: RunLog = { runs: [fly('2026-11-02T15:42:11.174Z'), sync('2026-11-02T15:42:11.174Z')] }
+  // A second successful fly run on the same Panama day is routine.
+  assert.equal(runsAreNews(before, { runs: [...before.runs, sync('2026-11-02T17:15:58.189Z'), fly('2026-11-02T17:15:58.189Z')] }), false)
+  assert.equal(runsAreNews(before, { runs: [...before.runs, { ...fly('2026-11-02T17:15:58.189Z'), ok: false, error: 'x' }] }), true)
+  assert.equal(runsAreNews(before, { runs: [...before.runs, fly('2026-11-03T12:00:00.000Z')] }), true)
+  // The Panama day starts at 05:00 UTC: 03:00 UTC is still the previous day.
+  const early: RunLog = { runs: [fly('2026-11-02T03:00:00.000Z')] }
+  assert.equal(runsAreNews(early, { runs: [...early.runs, fly('2026-11-02T12:00:00.000Z')] }), true)
+  assert.equal(runsAreNews(before, { runs: before.runs.slice(1) }), true)
+  assert.equal(runsAreNews(before, { runs: [...before.runs] }), false)
 })
