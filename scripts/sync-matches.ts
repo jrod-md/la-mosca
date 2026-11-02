@@ -5,7 +5,7 @@
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import { createEloratingsClient } from '../src/football/eloratings'
 import { createTheSportsDbClient } from '../src/football/theSportsDb'
-import { mergeMatches, retireStaleFixtures, utcDay } from '../src/football/ledger'
+import { mergeMatches, overdueLpfMatches, retireStaleFixtures, utcDay } from '../src/football/ledger'
 import { appendRun, type RunEntry, type RunLog } from '../src/football/runLog'
 import type { JsonFetch, Match, MatchLedger } from '../src/football/types'
 
@@ -16,6 +16,7 @@ const DAYS_BACK = 3
 const DAYS_AHEAD = 7
 const CHECKPOINT_DAYS = 30
 const MIN_FIXTURES_LISTED = 20
+const MAX_LOOKUPS = 12
 const pause = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
 const readJson = <T>(file: string, fallback: T): T => existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : fallback
@@ -59,6 +60,20 @@ const sync = async (now: Date, from: string, to: string, backfill: boolean): Pro
       console.log(`  checkpoint ${utcDay(start, offset)}: ${matches.length} matches in ledger`)
     }
   }
+  const seen = new Set(pending.map(match => match.id))
+  // matches here is the ledger before this run's days are merged (except backfill checkpoints, which is fine)
+  const overdue = overdueLpfMatches(matches, seen, now).slice(0, MAX_LOOKUPS)
+  let lookedUp = 0
+  for (const match of overdue) {
+    try {
+      const found = await client.lpfEvent(match.sources.theSportsDb as string)
+      if (found) { pending.push(found); fetched++; lookedUp++; console.log(`  looked up ${label(match)}: ${found.rawStatus ?? found.status}`) }
+      else console.log(`  looked up ${label(match)}: not found`)
+    } catch (error) {
+      console.log(`  lookup failed for ${label(match)}: ${error instanceof Error ? error.message : 'unknown error'}`)
+    }
+    await pause(2100)
+  }
   const elo = createEloratingsClient(fetchText)
   const [names, ratings] = await Promise.all([elo.names(), elo.ratings()])
   if (Object.keys(ratings).length < 150) throw new Error('eloratings World.tsv looks incomplete')
@@ -81,6 +96,7 @@ const sync = async (now: Date, from: string, to: string, backfill: boolean): Pro
 
   const newlyFinished = matches.filter(match => match.status === 'finished' && !wasFinished.has(match.id))
   console.log(`Synced ${fetched} matches (${added} new, ${updated} updated). Ledger: ${matches.length} matches in ${OUTPUT}.`)
+  if (overdue.length) console.log(`  overdue lookups: ${lookedUp} of ${overdue.length}`)
   if (!backfill) for (const match of newlyFinished) console.log(`  final: ${label(match)} ${match.score?.home}-${match.score?.away}`)
   for (const match of unsettled.values()) console.log(`  unsettled status '${match.rawStatus}': ${label(match)}`)
   return { at: now.toISOString(), job: backfill ? 'backfill-matches' : 'sync-matches', ok: true, window: { from, to }, fetched, added, updated,

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { createTheSportsDbClient, normalizeTsdbEvent, TSDB_RETRY_DELAYS_MS, type TsdbEvent } from '../src/football/theSportsDb'
 import { createApiFootballClient, normalizeApiFootballFixture, type ApiFootballFixture } from '../src/football/apiFootball'
-import { mergeMatches, retireStaleFixtures, utcDay } from '../src/football/ledger'
+import { mergeMatches, overdueLpfMatches, OVERDUE_LOOKUP_DAYS, retireStaleFixtures, utcDay } from '../src/football/ledger'
 import { slotHasWork } from '../src/football/runLog'
 import type { JsonFetch, Match } from '../src/football/types'
 
@@ -145,4 +145,39 @@ test('A backup slot only works when the fly has not had its day or a result is s
   assert.equal(slotHasWork(ran, [open('2026-10-11T01:30:00.000Z', true)], noon), false)
   // The Panama day starts at 05:00 UTC: a run at 03:00 UTC belongs to the previous day.
   assert.equal(slotHasWork({ runs: [{ ...ran.runs[0], at: '2026-10-11T03:00:00.000Z' }] }, [], noon), true)
+})
+
+test('TheSportsDB client looks up one LPF event by id', async () => {
+  const urls: string[] = []
+  const fetch: JsonFetch = async url => {
+    urls.push(url)
+    return { ok: true, status: 200, json: async () => ({ events: [tsdb({ strStatus: 'PST' })] }) }
+  }
+  const found = await createTheSportsDbClient(fetch).lpfEvent('900')
+  assert.equal(found?.id, 'af:7000')
+  assert.equal(found?.status, 'void')
+  assert.ok(urls[0].endsWith('lookupevent.php?id=900'))
+  // A non-LPF event and an empty answer are both unknown.
+  const other: JsonFetch = async () => ({ ok: true, status: 200, json: async () => ({ events: [tsdb({ idLeague: '9999' })] }) })
+  assert.equal(await createTheSportsDbClient(other).lpfEvent('900'), null)
+  const empty: JsonFetch = async () => ({ ok: true, status: 200, json: async () => ({ events: null }) })
+  assert.equal(await createTheSportsDbClient(empty).lpfEvent('900'), null)
+})
+
+test('Overdue LPF matches are the past, unfinished ones the day fetch missed', () => {
+  const now = new Date('2026-11-02T12:00:00Z')
+  const match = (overrides: Partial<TsdbEvent>, competition: 'lpf' | 'panama' = 'lpf') => normalizeTsdbEvent(tsdb(overrides), competition)
+  const overdue = match({ idEvent: '910', idAPIfootball: '7100', strTimestamp: '2026-11-01T21:00:00' })
+  const seen = match({ idEvent: '911', idAPIfootball: '7101', strTimestamp: '2026-11-01T21:00:00' })
+  const finished = match({ idEvent: '912', idAPIfootball: '7102', strTimestamp: '2026-11-01T21:00:00', strStatus: 'FT', intHomeScore: '2', intAwayScore: '1' })
+  const future = match({ idEvent: '913', idAPIfootball: '7103', strTimestamp: '2026-11-03T01:00:00' })
+  const ancient = match({ idEvent: '914', idAPIfootball: '7104', strTimestamp: '2026-10-20T01:00:00' })
+  const panama = match({ idEvent: '915', idAPIfootball: '7105', strTimestamp: '2026-11-01T21:00:00' }, 'panama')
+  const voided = match({ idEvent: '916', idAPIfootball: '7106', strTimestamp: '2026-11-01T21:00:00', strStatus: 'PST' })
+  const unknown = match({ idEvent: '917', idAPIfootball: '7107', strTimestamp: '2026-11-01T01:00:00', strStatus: 'FT', intHomeScore: '3' })
+  const ledger = [overdue, seen, finished, future, ancient, panama, voided, unknown]
+  const result = overdueLpfMatches(ledger, new Set([seen.id]), now)
+  assert.equal(OVERDUE_LOOKUP_DAYS, 10)
+  assert.equal(unknown.status, 'unknown')
+  assert.deepEqual(result.map(match => match.id), [unknown.id, overdue.id])
 })
