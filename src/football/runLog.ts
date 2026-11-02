@@ -22,7 +22,7 @@ export interface RunLog {
 export const appendRun = (log: RunLog, entry: RunEntry): RunLog => ({ runs: [...log.runs, entry] })
 
 // Panama has no daylight saving: local date is UTC-5.
-const panamaDay = (iso: string) => new Date(Date.parse(iso) - 5 * 3_600_000).toISOString().slice(0, 10)
+export const panamaDay = (iso: string) => new Date(Date.parse(iso) - 5 * 3_600_000).toISOString().slice(0, 10)
 const RESULT_DELAY_HOURS = 3
 
 // Whether a scheduled slot still has work: the fly has not had its day yet, or a bet on a match

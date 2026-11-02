@@ -65,6 +65,12 @@ jobs:
             echo 'No data changes.'
             exit 0
           fi
+          # A backup run that only refreshed timestamps is not worth a commit.
+          if [ "$(node scripts/run-ts.mjs scripts/data-news.ts)" = 'news=false' ]; then
+            echo 'Only timestamps changed; nothing to commit.'
+            git reset -q
+            exit 0
+          fi
           git commit -m "data: daily fly run $(date -u +%Y-%m-%d)"
           git pull --rebase origin main
           git push origin HEAD:main

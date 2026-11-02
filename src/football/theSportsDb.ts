@@ -103,5 +103,10 @@ export const createTheSportsDbClient = (fetch: JsonFetch, wait: (ms: number) => 
     // date: 'YYYY-MM-DD' in UTC, matching TheSportsDB's dateEvent.
     lpfDay: async (date: string) => (await get(`eventsday.php?d=${date}&l=${TSDB_LPF_LEAGUE}`, 'events'))
       .filter(event => event.idLeague === TSDB_LPF_LEAGUE).map(event => normalizeTsdbEvent(event, 'lpf')),
+    // One event by its TheSportsDB id; null when unknown or not an LPF event.
+    lpfEvent: async (id: string): Promise<Match | null> => {
+      const events = (await get(`lookupevent.php?id=${id}`, 'events')).filter(event => event.idLeague === TSDB_LPF_LEAGUE)
+      return events.length ? normalizeTsdbEvent(events[0], 'lpf') : null
+    },
   }
 }

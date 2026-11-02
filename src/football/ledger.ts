@@ -48,3 +48,15 @@ export const retireStaleFixtures = (matches: readonly Match[], listed: ReadonlyS
 
 export const utcDay = (date: Date, offsetDays: number): string =>
   new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate() + offsetDays)).toISOString().slice(0, 10)
+
+export const OVERDUE_LOOKUP_DAYS = 10
+// LPF matches whose kickoff has passed but are still not final, and that the day fetch did not
+// return: the free day endpoint drops some postponed events, so these are looked up one by one.
+export const overdueLpfMatches = (matches: readonly Match[], seen: ReadonlySet<string>, now: Date): Match[] =>
+  matches.filter(match => match.competition === 'lpf'
+    && (match.status === 'scheduled' || match.status === 'unknown')
+    && typeof match.sources.theSportsDb === 'string' && match.sources.theSportsDb.length > 0
+    && Date.parse(match.kickoff) < now.getTime()
+    && Date.parse(match.kickoff) >= now.getTime() - OVERDUE_LOOKUP_DAYS * 86_400_000
+    && !seen.has(match.id))
+    .sort(byKickoff)
