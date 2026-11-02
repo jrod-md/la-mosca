@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-02T18:50:50.734Z",
+ "updatedAt": "2026-11-02T20:20:07.382Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -11033,8 +11033,8 @@
     "sourceId": "tsdb:139108",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/dra6xs1768358312.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
+   "status": "void",
+   "rawStatus": "PST",
    "score": null,
    "venue": "Estadio Gustavo Posam"
   },
