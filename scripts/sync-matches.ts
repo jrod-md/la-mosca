@@ -61,7 +61,7 @@ const sync = async (now: Date, from: string, to: string, backfill: boolean): Pro
     }
   }
   const seen = new Set(pending.map(match => match.id))
-  // matches here is the ledger before this run's days are merged (except backfill checkpoints, which is fine)
+  // The free day endpoint drops some postponed events: look up past, unfinished ones it did not return.
   const overdue = overdueLpfMatches(matches, seen, now).slice(0, MAX_LOOKUPS)
   let lookedUp = 0
   for (const match of overdue) {
