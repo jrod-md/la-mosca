@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-04T14:23:35.211Z",
+ "updatedAt": "2026-11-05T14:32:56.691Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -11036,8 +11036,8 @@
     "sourceId": "tsdb:139738",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
    },
-   "status": "void",
-   "rawStatus": "PST",
+   "status": "scheduled",
+   "rawStatus": "NS",
    "score": null,
    "venue": "Rommel Fernández Stadium"
   },
@@ -11062,8 +11062,8 @@
     "sourceId": "tsdb:139739",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
    },
-   "status": "void",
-   "rawStatus": "PST",
+   "status": "scheduled",
+   "rawStatus": "NS",
    "score": null,
    "venue": "COS Sports Plaza"
   },
@@ -11088,8 +11088,8 @@
     "sourceId": "tsdb:139107",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
    },
-   "status": "void",
-   "rawStatus": "PST",
+   "status": "scheduled",
+   "rawStatus": "NS",
    "score": null,
    "venue": "Estadio Futuras Promesas"
   },

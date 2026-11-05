@@ -1153,12 +1153,133 @@
     "94050",
     "551434"
    ],
+   "status": "void",
+   "payout": 1.07,
+   "bankrollAfter": 22.42,
+   "result": null,
+   "bankrupt": false
+  },
+  {
+   "id": "bet:af:1583801",
+   "matchId": "af:1583801",
+   "phase": "live",
+   "placedAt": "2026-11-05T14:33:23.876Z",
+   "kickoff": "2026-11-07T01:30:00.000Z",
+   "home": "alianza",
+   "away": "arabe-unido",
+   "homeName": "Alianza FC",
+   "awayName": "Árabe Unido",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.53,
+     "drive": 0.464,
+     "probability": 0.2945063238904458
+    },
+    {
+     "selection": "draw",
+     "odds": 3.15,
+     "drive": 0.257,
+     "probability": 0.08057001058289695
+    },
+    {
+     "selection": "away",
+     "odds": 2.88,
+     "drive": 0.584,
+     "probability": 0.6249236655266572
+    }
+   ],
+   "selection": "away",
+   "odds": 2.88,
+   "stake": 1.77,
+   "boldness": 0.52,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "44557",
+    "52613",
+    "53833",
+    "61936",
+    "63823",
+    "65483",
+    "68010",
+    "70193",
+    "71691",
+    "73442",
+    "74683",
+    "76005",
+    "89461",
+    "89530",
+    "90935",
+    "95581"
+   ],
    "status": "open",
    "payout": 0,
-   "bankrollAfter": 15.54,
+   "bankrollAfter": 20.65,
    "result": null,
-   "bankrupt": false,
-   "postponed": true
+   "bankrupt": false
+  },
+  {
+   "id": "bet:af:1583802",
+   "matchId": "af:1583802",
+   "phase": "live",
+   "placedAt": "2026-11-05T14:33:23.876Z",
+   "kickoff": "2026-11-07T01:30:00.000Z",
+   "home": "plaza-amador",
+   "away": "sporting-sm",
+   "homeName": "Plaza Amador",
+   "awayName": "Sporting San Miguelito",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 1.31,
+     "drive": 0.365,
+     "probability": 0.24447350960308775
+    },
+    {
+     "selection": "draw",
+     "odds": 4.99,
+     "drive": 0.166,
+     "probability": 0.07047999611944498
+    },
+    {
+     "selection": "away",
+     "odds": 10.7,
+     "drive": 0.529,
+     "probability": 0.6850464942774672
+    }
+   ],
+   "selection": "away",
+   "odds": 10.7,
+   "stake": 1.7,
+   "boldness": 0.52,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "22995",
+    "44557",
+    "52613",
+    "53833",
+    "61936",
+    "63823",
+    "65483",
+    "68010",
+    "70193",
+    "71691",
+    "72865",
+    "73442",
+    "76005",
+    "82798",
+    "90935",
+    "118532"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 18.95,
+   "result": null,
+   "bankrupt": false
   }
  ],
  "passes": [
@@ -1217,6 +1338,35 @@
      "odds": 2.72,
      "drive": 0.364,
      "probability": 0.522088336183975
+    }
+   ]
+  },
+  {
+   "matchId": "af:1583803",
+   "decidedAt": "2026-11-05T14:33:23.876Z",
+   "kickoff": "2026-11-07T01:30:00.000Z",
+   "home": "umecit",
+   "away": "tauro",
+   "homeName": "UMECIT",
+   "awayName": "Tauro FC",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.26,
+     "drive": 0.326,
+     "probability": 0.52281240832135
+    },
+    {
+     "selection": "draw",
+     "odds": 3.2,
+     "drive": 0.257,
+     "probability": 0.3380761782984801
+    },
+    {
+     "selection": "away",
+     "odds": 3.28,
+     "drive": 0.115,
+     "probability": 0.1391114133801699
     }
    ]
   }
