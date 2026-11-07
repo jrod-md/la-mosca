@@ -1214,10 +1214,10 @@
     "90935",
     "95581"
    ],
-   "status": "open",
+   "status": "lost",
    "payout": 0,
-   "bankrollAfter": 20.65,
-   "result": null,
+   "bankrollAfter": 18.95,
+   "result": "1-1",
    "bankrupt": false
   },
   {
@@ -1275,10 +1275,10 @@
     "90935",
     "118532"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 18.95,
-   "result": null,
+   "status": "won",
+   "payout": 18.19,
+   "bankrollAfter": 37.14,
+   "result": "1-2",
    "bankrupt": false
   }
  ],
