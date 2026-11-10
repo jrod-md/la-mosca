@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-09T16:07:29.369Z",
+ "generatedAt": "2026-11-10T14:47:08.281Z",
  "matches": [
   {
    "id": "elo:2026-11-12:CW-PA",
@@ -74,6 +74,81 @@
     "away": 0.417,
     "over25": 0.383,
     "btts": 0.449
+   }
+  },
+  {
+   "id": "af:1583809",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "16",
+   "kickoff": "2026-11-14T01:30:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Futuras Promesas",
+   "home": {
+    "key": "umecit",
+    "name": "UMECIT",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/nhwml41674118697.png"
+   },
+   "away": {
+    "key": "plaza-amador",
+    "name": "Plaza Amador",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/78pior1589297968.png"
+   },
+   "odds": {
+    "result": {
+     "home": 4.69,
+     "draw": 3.48,
+     "away": 1.79
+    },
+    "total25": {
+     "over": 2.12,
+     "under": 1.7
+    },
+    "btts": {
+     "yes": 2,
+     "no": 1.79
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.79
+     },
+     {
+      "score": "0-1",
+      "odds": 6.88
+     },
+     {
+      "score": "0-2",
+      "odds": 8.16
+     },
+     {
+      "score": "0-0",
+      "odds": 9.15
+     },
+     {
+      "score": "1-2",
+      "odds": 9.28
+     },
+     {
+      "score": "1-0",
+      "odds": 13.04
+     },
+     {
+      "score": "0-3",
+      "odds": 15.57
+     },
+     {
+      "score": "2-1",
+      "odds": 16.61
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.201,
+    "draw": 0.271,
+    "away": 0.528,
+    "over25": 0.444,
+    "btts": 0.473
    }
   },
   {
