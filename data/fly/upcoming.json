@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-10T14:47:08.281Z",
+ "generatedAt": "2026-11-11T14:11:05.164Z",
  "matches": [
   {
    "id": "elo:2026-11-12:CW-PA",
@@ -74,6 +74,156 @@
     "away": 0.417,
     "over25": 0.383,
     "btts": 0.449
+   }
+  },
+  {
+   "id": "af:1583807",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "16",
+   "kickoff": "2026-11-14T01:30:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Los Andes",
+   "home": {
+    "key": "sporting-sm",
+    "name": "Sporting San Miguelito",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/3y4hof1768358419.png"
+   },
+   "away": {
+    "key": "arabe-unido",
+    "name": "Árabe Unido",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.48,
+     "draw": 3.16,
+     "away": 2.94
+    },
+    "total25": {
+     "over": 2.25,
+     "under": 1.62
+    },
+    "btts": {
+     "yes": 1.93,
+     "no": 1.84
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.16
+     },
+     {
+      "score": "1-0",
+      "odds": 8.09
+     },
+     {
+      "score": "0-0",
+      "odds": 8.31
+     },
+     {
+      "score": "0-1",
+      "odds": 9.05
+     },
+     {
+      "score": "2-1",
+      "odds": 10.71
+     },
+     {
+      "score": "1-2",
+      "odds": 11.85
+     },
+     {
+      "score": "2-0",
+      "odds": 11.97
+     },
+     {
+      "score": "0-2",
+      "odds": 14.67
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.38,
+    "draw": 0.299,
+    "away": 0.321,
+    "over25": 0.419,
+    "btts": 0.488
+   }
+  },
+  {
+   "id": "af:1583808",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": "16",
+   "kickoff": "2026-11-14T01:30:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Rommel Fernández Stadium",
+   "home": {
+    "key": "tauro",
+    "name": "Tauro FC",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
+   },
+   "away": {
+    "key": "alianza",
+    "name": "Alianza FC",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.15,
+     "draw": 3.23,
+     "away": 3.51
+    },
+    "total25": {
+     "over": 2.22,
+     "under": 1.64
+    },
+    "btts": {
+     "yes": 1.95,
+     "no": 1.83
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.31
+     },
+     {
+      "score": "1-0",
+      "odds": 7.44
+     },
+     {
+      "score": "0-0",
+      "odds": 8.5
+     },
+     {
+      "score": "2-1",
+      "odds": 9.93
+     },
+     {
+      "score": "2-0",
+      "odds": 10.07
+     },
+     {
+      "score": "0-1",
+      "odds": 10.32
+     },
+     {
+      "score": "1-2",
+      "odds": 13.38
+     },
+     {
+      "score": "0-2",
+      "odds": 18.28
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.439,
+    "draw": 0.292,
+    "away": 0.269,
+    "over25": 0.425,
+    "btts": 0.484
    }
   },
   {

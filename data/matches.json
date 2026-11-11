@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T14:46:43.022Z",
+ "updatedAt": "2026-11-11T14:08:09.676Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -11179,8 +11179,8 @@
     "sourceId": "tsdb:139738",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
    },
-   "status": "void",
-   "rawStatus": "PST",
+   "status": "scheduled",
+   "rawStatus": "NS",
    "score": null,
    "venue": "Estadio Los Andes"
   },
@@ -11205,8 +11205,8 @@
     "sourceId": "tsdb:139733",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
    },
-   "status": "void",
-   "rawStatus": "PST",
+   "status": "scheduled",
+   "rawStatus": "NS",
    "score": null,
    "venue": "Rommel Fernández Stadium"
   },
