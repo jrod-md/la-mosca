@@ -1,81 +1,6 @@
 {
- "generatedAt": "2026-11-12T19:50:49.038Z",
+ "generatedAt": "2026-11-13T14:29:13.047Z",
  "matches": [
-  {
-   "id": "elo:2026-11-12:CW-PA",
-   "competition": "panama",
-   "league": "Liga de Naciones Concacaf",
-   "round": null,
-   "kickoff": "2026-11-12T12:00:00.000Z",
-   "kickoffTimeKnown": false,
-   "venue": "Curazao",
-   "home": {
-    "key": "nt:CW",
-    "name": "Curazao",
-    "badge": null
-   },
-   "away": {
-    "key": "nt:PA",
-    "name": "Panamá",
-    "badge": null
-   },
-   "odds": {
-    "result": {
-     "home": 3.29,
-     "draw": 3.18,
-     "away": 2.26
-    },
-    "total25": {
-     "over": 2.46,
-     "under": 1.53
-    },
-    "btts": {
-     "yes": 2.1,
-     "no": 1.71
-    },
-    "correctScore": [
-     {
-      "score": "1-1",
-      "odds": 6.34
-     },
-     {
-      "score": "0-1",
-      "odds": 6.72
-     },
-     {
-      "score": "0-0",
-      "odds": 7.66
-     },
-     {
-      "score": "1-0",
-      "odds": 8.6
-     },
-     {
-      "score": "0-2",
-      "odds": 10.41
-     },
-     {
-      "score": "1-2",
-      "odds": 10.61
-     },
-     {
-      "score": "2-1",
-      "odds": 13.44
-     },
-     {
-      "score": "2-0",
-      "odds": 16.69
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.286,
-    "draw": 0.297,
-    "away": 0.417,
-    "over25": 0.383,
-    "btts": 0.449
-   }
-  },
   {
    "id": "af:1583807",
    "competition": "lpf",
@@ -321,59 +246,59 @@
    },
    "odds": {
     "result": {
-     "home": 1.47,
-     "draw": 4.12,
-     "away": 7.3
+     "home": 1.49,
+     "draw": 4.05,
+     "away": 7.03
     },
     "total25": {
-     "over": 2.09,
-     "under": 1.72
+     "over": 2.11,
+     "under": 1.71
     },
     "btts": {
-     "yes": 2.28,
-     "no": 1.61
+     "yes": 2.27,
+     "no": 1.62
     },
     "correctScore": [
      {
       "score": "1-0",
-      "odds": 5.91
+      "odds": 5.9
      },
      {
       "score": "2-0",
-      "odds": 6.37
+      "odds": 6.45
      },
      {
       "score": "1-1",
-      "odds": 8.22
+      "odds": 8.08
      },
      {
       "score": "2-1",
-      "odds": 9.45
+      "odds": 9.43
      },
      {
       "score": "0-0",
-      "odds": 9.92
+      "odds": 9.76
      },
      {
       "score": "3-0",
-      "odds": 10.57
+      "odds": 10.87
      },
      {
       "score": "3-1",
-      "odds": 15.68
+      "odds": 15.89
      },
      {
       "score": "0-1",
-      "odds": 16.58
+      "odds": 16.04
      }
     ]
    },
    "probabilities": {
-    "home": 0.642,
-    "draw": 0.229,
-    "away": 0.129,
-    "over25": 0.451,
-    "btts": 0.414
+    "home": 0.633,
+    "draw": 0.233,
+    "away": 0.134,
+    "over25": 0.447,
+    "btts": 0.416
    }
   },
   {
@@ -396,9 +321,9 @@
    },
    "odds": {
     "result": {
-     "home": 1.93,
-     "draw": 3.34,
-     "away": 4.13
+     "home": 1.91,
+     "draw": 3.35,
+     "away": 4.19
     },
     "total25": {
      "over": 2.38,
@@ -411,46 +336,57 @@
     "correctScore": [
      {
       "score": "1-0",
-      "odds": 6.22
+      "odds": 6.2
      },
      {
       "score": "1-1",
-      "odds": 6.65
+      "odds": 6.68
      },
      {
       "score": "0-0",
-      "odds": 8.04
+      "odds": 8.07
      },
      {
       "score": "2-0",
-      "odds": 8.58
+      "odds": 8.49
      },
      {
       "score": "2-1",
-      "odds": 9.87
+      "odds": 9.84
      },
      {
       "score": "0-1",
-      "odds": 10.23
+      "odds": 10.35
      },
      {
       "score": "1-2",
-      "odds": 15.89
+      "odds": 16.08
      },
      {
       "score": "3-0",
-      "odds": 18.39
+      "odds": 18.06
      }
     ]
    },
    "probabilities": {
-    "home": 0.489,
-    "draw": 0.283,
-    "away": 0.229,
-    "over25": 0.396,
-    "btts": 0.443
+    "home": 0.493,
+    "draw": 0.282,
+    "away": 0.225,
+    "over25": 0.397,
+    "btts": 0.442
    }
   }
  ],
- "recentNational": []
+ "recentNational": [
+  {
+   "date": "2026-11-12",
+   "home": "CW",
+   "away": "PA",
+   "league": "Liga de Naciones Concacaf",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
+  }
+ ]
 }

@@ -1336,10 +1336,10 @@
     "94050",
     "126446"
    ],
-   "status": "open",
+   "status": "lost",
    "payout": 0,
-   "bankrollAfter": 34.84,
-   "result": null,
+   "bankrollAfter": 25.64,
+   "result": "0-0",
    "bankrupt": false
   },
   {

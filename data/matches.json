@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T19:49:23.455Z",
+ "updatedAt": "2026-11-13T14:28:47.694Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -11124,9 +11124,12 @@
     "sourceId": "nt:PA",
     "badge": null
    },
-   "status": "scheduled",
-   "rawStatus": "eloratings:fixture",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "eloratings:result",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
    "venue": "Curazao",
    "venueCountry": "CW"
   },

@@ -1913,6 +1913,30 @@
    "settled": 0,
    "placed": 0,
    "passed": 0
+  },
+  {
+   "at": "2026-11-13T14:28:47.694Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-11-10",
+    "to": "2026-11-20"
+   },
+   "fetched": 8,
+   "added": 0,
+   "updated": 1,
+   "newlyFinished": [
+    "elo:2026-11-12:CW-PA"
+   ],
+   "unsettled": []
+  },
+  {
+   "at": "2026-11-13T14:29:13.047Z",
+   "job": "fly-daily",
+   "ok": true,
+   "settled": 1,
+   "placed": 0,
+   "passed": 0
   }
  ]
 }
