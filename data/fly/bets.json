@@ -1397,10 +1397,10 @@
     "90935",
     "95581"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 32.33,
-   "result": null,
+   "status": "won",
+   "payout": 7.38,
+   "bankrollAfter": 33.02,
+   "result": "0-1",
    "bankrupt": false
   },
   {
@@ -1458,10 +1458,10 @@
     "178810",
     "186833"
    ],
-   "status": "open",
+   "status": "lost",
    "payout": 0,
-   "bankrollAfter": 29.41,
-   "result": null,
+   "bankrollAfter": 33.02,
+   "result": "3-2",
    "bankrupt": false
   },
   {
@@ -1519,10 +1519,10 @@
     "178810",
     "547293"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 27.33,
-   "result": null,
+   "status": "won",
+   "payout": 3.72,
+   "bankrollAfter": 36.74,
+   "result": "2-4",
    "bankrupt": false
   },
   {

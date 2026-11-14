@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T14:28:47.694Z",
+ "updatedAt": "2026-11-14T13:24:42.978Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -11182,9 +11182,12 @@
     "sourceId": "tsdb:139738",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
    "venue": "Estadio Los Andes"
   },
   {
@@ -11208,9 +11211,12 @@
     "sourceId": "tsdb:139733",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/4qhii21589297781.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 3,
+    "away": 2
+   },
    "venue": "Rommel Fernández Stadium"
   },
   {
@@ -11234,9 +11240,12 @@
     "sourceId": "tsdb:139737",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/78pior1589297968.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 2,
+    "away": 4
+   },
    "venue": "Estadio Futuras Promesas"
   },
   {
