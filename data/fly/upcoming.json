@@ -1,81 +1,6 @@
 {
- "generatedAt": "2026-11-15T14:54:06.287Z",
+ "generatedAt": "2026-11-16T15:38:18.276Z",
  "matches": [
-  {
-   "id": "elo:2026-11-15:PA-CW",
-   "competition": "panama",
-   "league": "Liga de Naciones Concacaf",
-   "round": null,
-   "kickoff": "2026-11-15T12:00:00.000Z",
-   "kickoffTimeKnown": false,
-   "venue": "Panamá",
-   "home": {
-    "key": "nt:PA",
-    "name": "Panamá",
-    "badge": null
-   },
-   "away": {
-    "key": "nt:CW",
-    "name": "Curazao",
-    "badge": null
-   },
-   "odds": {
-    "result": {
-     "home": 1.49,
-     "draw": 4.05,
-     "away": 7.03
-    },
-    "total25": {
-     "over": 2.11,
-     "under": 1.71
-    },
-    "btts": {
-     "yes": 2.27,
-     "no": 1.62
-    },
-    "correctScore": [
-     {
-      "score": "1-0",
-      "odds": 5.9
-     },
-     {
-      "score": "2-0",
-      "odds": 6.45
-     },
-     {
-      "score": "1-1",
-      "odds": 8.08
-     },
-     {
-      "score": "2-1",
-      "odds": 9.43
-     },
-     {
-      "score": "0-0",
-      "odds": 9.76
-     },
-     {
-      "score": "3-0",
-      "odds": 10.87
-     },
-     {
-      "score": "3-1",
-      "odds": 15.89
-     },
-     {
-      "score": "0-1",
-      "odds": 16.04
-     }
-    ]
-   },
-   "probabilities": {
-    "home": 0.633,
-    "draw": 0.233,
-    "away": 0.134,
-    "over25": 0.447,
-    "btts": 0.416
-   }
-  },
   {
    "id": "elo:2026-12-09:PE-PA",
    "competition": "panama",
@@ -96,59 +21,59 @@
    },
    "odds": {
     "result": {
-     "home": 1.88,
-     "draw": 3.38,
-     "away": 4.32
+     "home": 1.93,
+     "draw": 3.34,
+     "away": 4.14
     },
     "total25": {
-     "over": 2.36,
-     "under": 1.57
+     "over": 2.38,
+     "under": 1.56
     },
     "btts": {
-     "yes": 2.14,
+     "yes": 2.13,
      "no": 1.69
     },
     "correctScore": [
      {
       "score": "1-0",
-      "odds": 6.15
+      "odds": 6.21
      },
      {
       "score": "1-1",
-      "odds": 6.74
+      "odds": 6.66
      },
      {
       "score": "0-0",
-      "odds": 8.14
+      "odds": 8.04
      },
      {
       "score": "2-0",
-      "odds": 8.31
+      "odds": 8.56
      },
      {
       "score": "2-1",
-      "odds": 9.77
+      "odds": 9.86
      },
      {
       "score": "0-1",
-      "odds": 10.61
+      "odds": 10.26
      },
      {
       "score": "1-2",
-      "odds": 16.46
+      "odds": 15.94
      },
      {
       "score": "3-0",
-      "odds": 17.41
+      "odds": 18.31
      }
     ]
    },
    "probabilities": {
-    "home": 0.502,
-    "draw": 0.279,
-    "away": 0.218,
-    "over25": 0.399,
-    "btts": 0.441
+    "home": 0.49,
+    "draw": 0.283,
+    "away": 0.228,
+    "over25": 0.396,
+    "btts": 0.442
    }
   }
  ],
@@ -160,6 +85,16 @@
    "league": "Liga de Naciones Concacaf",
    "score": {
     "home": 0,
+    "away": 0
+   }
+  },
+  {
+   "date": "2026-11-15",
+   "home": "PA",
+   "away": "CW",
+   "league": "Liga de Naciones Concacaf",
+   "score": {
+    "home": 2,
     "away": 0
    }
   }

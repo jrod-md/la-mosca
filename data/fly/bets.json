@@ -1580,10 +1580,10 @@
     "126446",
     "539367"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 25.64,
-   "result": null,
+   "status": "won",
+   "payout": 2.48,
+   "bankrollAfter": 39.22,
+   "result": "2-0",
    "bankrupt": false
   }
  ],

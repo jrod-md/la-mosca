@@ -1991,6 +1991,30 @@
    "settled": 0,
    "placed": 0,
    "passed": 0
+  },
+  {
+   "at": "2026-11-16T15:35:21.910Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-11-13",
+    "to": "2026-11-23"
+   },
+   "fetched": 7,
+   "added": 0,
+   "updated": 1,
+   "newlyFinished": [
+    "elo:2026-11-15:PA-CW"
+   ],
+   "unsettled": []
+  },
+  {
+   "at": "2026-11-16T15:38:18.276Z",
+   "job": "fly-daily",
+   "ok": true,
+   "settled": 1,
+   "placed": 0,
+   "passed": 0
   }
  ]
 }

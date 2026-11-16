@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T14:51:10.121Z",
+ "updatedAt": "2026-11-16T15:35:21.910Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -11270,9 +11270,12 @@
     "sourceId": "nt:CW",
     "badge": null
    },
-   "status": "scheduled",
-   "rawStatus": "eloratings:fixture",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "eloratings:result",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
    "venue": "Panamá",
    "venueCountry": "PA"
   },
