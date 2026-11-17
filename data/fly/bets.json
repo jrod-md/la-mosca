@@ -1585,6 +1585,128 @@
    "bankrollAfter": 39.22,
    "result": "2-0",
    "bankrupt": false
+  },
+  {
+   "id": "bet:af:1650228",
+   "matchId": "af:1650228",
+   "phase": "live",
+   "placedAt": "2026-11-17T15:56:58.402Z",
+   "kickoff": "2026-11-18T01:30:00.000Z",
+   "home": "arabe-unido",
+   "away": "veraguas",
+   "homeName": "Árabe Unido",
+   "awayName": "Veraguas United",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.17,
+     "drive": 0.483,
+     "probability": 0.3304920158567024
+    },
+    {
+     "selection": "draw",
+     "odds": 3.22,
+     "drive": 0.258,
+     "probability": 0.08833933539030119
+    },
+    {
+     "selection": "away",
+     "odds": 3.47,
+     "drive": 0.579,
+     "probability": 0.5811686487529963
+    }
+   ],
+   "selection": "away",
+   "odds": 3.47,
+   "stake": 3.13,
+   "boldness": 0.58,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "44557",
+    "52613",
+    "53833",
+    "60314",
+    "64141",
+    "65483",
+    "71691",
+    "73442",
+    "76005",
+    "89530",
+    "90935",
+    "99819",
+    "102748",
+    "130875",
+    "178810",
+    "547293"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 36.09,
+   "result": null,
+   "bankrupt": false
+  },
+  {
+   "id": "bet:af:1650229",
+   "matchId": "af:1650229",
+   "phase": "live",
+   "placedAt": "2026-11-17T15:56:58.402Z",
+   "kickoff": "2026-11-19T01:30:00.000Z",
+   "home": "independiente",
+   "away": "tauro",
+   "homeName": "Independiente",
+   "awayName": "Tauro FC",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.32,
+     "drive": 0.588,
+     "probability": 0.8289667296377676
+    },
+    {
+     "selection": "draw",
+     "odds": 3.18,
+     "drive": 0.258,
+     "probability": 0.11921104958618679
+    },
+    {
+     "selection": "away",
+     "odds": 3.18,
+     "drive": 0.117,
+     "probability": 0.05182222077604553
+    }
+   ],
+   "selection": "away",
+   "odds": 3.18,
+   "stake": 2.35,
+   "boldness": 0.58,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "22995",
+    "31720",
+    "48021",
+    "53382",
+    "60443",
+    "70193",
+    "71189",
+    "73442",
+    "76005",
+    "76493",
+    "85054",
+    "92294",
+    "94050",
+    "135247",
+    "148337",
+    "534428"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 33.74,
+   "result": null,
+   "bankrupt": false
   }
  ],
  "passes": [

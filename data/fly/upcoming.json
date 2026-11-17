@@ -1,6 +1,156 @@
 {
- "generatedAt": "2026-11-16T15:38:18.276Z",
+ "generatedAt": "2026-11-17T15:56:58.402Z",
  "matches": [
+  {
+   "id": "af:1650228",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": null,
+   "kickoff": "2026-11-18T01:30:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "COS Sports Plaza",
+   "home": {
+    "key": "arabe-unido",
+    "name": "Árabe Unido",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
+   },
+   "away": {
+    "key": "veraguas",
+    "name": "Veraguas United",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/zwx9x51649354013.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.17,
+     "draw": 3.22,
+     "away": 3.47
+    },
+    "total25": {
+     "over": 2.22,
+     "under": 1.64
+    },
+    "btts": {
+     "yes": 1.95,
+     "no": 1.83
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.29
+     },
+     {
+      "score": "1-0",
+      "odds": 7.48
+     },
+     {
+      "score": "0-0",
+      "odds": 8.48
+     },
+     {
+      "score": "2-1",
+      "odds": 9.97
+     },
+     {
+      "score": "2-0",
+      "odds": 10.17
+     },
+     {
+      "score": "0-1",
+      "odds": 10.23
+     },
+     {
+      "score": "1-2",
+      "odds": 13.28
+     },
+     {
+      "score": "0-2",
+      "odds": 18.02
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.436,
+    "draw": 0.293,
+    "away": 0.272,
+    "over25": 0.424,
+    "btts": 0.484
+   }
+  },
+  {
+   "id": "af:1650229",
+   "competition": "lpf",
+   "league": "Panama Liga Panamena de Futbol",
+   "round": null,
+   "kickoff": "2026-11-19T01:30:00.000Z",
+   "kickoffTimeKnown": true,
+   "venue": "Estadio Agustín Sánchez",
+   "home": {
+    "key": "independiente",
+    "name": "Independiente",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/dra6xs1768358312.png"
+   },
+   "away": {
+    "key": "tauro",
+    "name": "Tauro FC",
+    "badge": "https://r2.thesportsdb.com/images/media/team/badge/paw2ia1768358478.png"
+   },
+   "odds": {
+    "result": {
+     "home": 2.32,
+     "draw": 3.18,
+     "away": 3.18
+    },
+    "total25": {
+     "over": 2.24,
+     "under": 1.63
+    },
+    "btts": {
+     "yes": 1.94,
+     "no": 1.84
+    },
+    "correctScore": [
+     {
+      "score": "1-1",
+      "odds": 6.21
+     },
+     {
+      "score": "1-0",
+      "odds": 7.77
+     },
+     {
+      "score": "0-0",
+      "odds": 8.37
+     },
+     {
+      "score": "0-1",
+      "odds": 9.58
+     },
+     {
+      "score": "2-1",
+      "odds": 10.32
+     },
+     {
+      "score": "2-0",
+      "odds": 11.04
+     },
+     {
+      "score": "1-2",
+      "odds": 12.49
+     },
+     {
+      "score": "0-2",
+      "odds": 16.16
+     }
+    ]
+   },
+   "probabilities": {
+    "home": 0.406,
+    "draw": 0.297,
+    "away": 0.297,
+    "over25": 0.421,
+    "btts": 0.487
+   }
+  },
   {
    "id": "elo:2026-12-09:PE-PA",
    "competition": "panama",
