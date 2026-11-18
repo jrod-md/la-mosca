@@ -2037,6 +2037,12 @@
    "settled": 0,
    "placed": 2,
    "passed": 0
+  },
+  {
+   "at": "2026-11-18T15:32:25.948Z",
+   "job": "sync-matches",
+   "ok": false,
+   "error": "eloratings World.tsv looks incomplete"
   }
  ]
 }
