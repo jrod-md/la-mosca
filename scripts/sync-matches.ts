@@ -1,9 +1,10 @@
 // Daily sync: LPF fixtures/results from TheSportsDB (free public key); Panama's national team
 // fixtures, results and every team's rating from eloratings.net (written to data/international/).
+// A partial eloratings ratings download is retried, then the saved ratings are kept.
 // Backfill: --from YYYY-MM-DD --to YYYY-MM-DD walks every day in the range, checkpointing as it goes.
 // data/matches.json only receives fully fetched days; data/runs.json records every run.
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
-import { createEloratingsClient } from '../src/football/eloratings'
+import { createEloratingsClient, loadCompleteRatings, MIN_RATED_TEAMS } from '../src/football/eloratings'
 import { createTheSportsDbClient } from '../src/football/theSportsDb'
 import { mergeMatches, overdueLpfMatches, retireStaleFixtures, utcDay } from '../src/football/ledger'
 import { appendRun, type RunEntry, type RunLog } from '../src/football/runLog'
@@ -74,17 +75,33 @@ const sync = async (now: Date, from: string, to: string, backfill: boolean): Pro
     }
     await pause(2100)
   }
+  const warnings: string[] = []
   const elo = createEloratingsClient(fetchText)
-  const [names, ratings] = await Promise.all([elo.names(), elo.ratings()])
-  if (Object.keys(ratings).length < 150) throw new Error('eloratings World.tsv looks incomplete')
-  writeJson(RATINGS, { fetchedAt: now.toISOString(), source: 'World Football Elo Ratings (eloratings.net)', ratings })
-  const { matches: panama, fixturesListed } = await elo.panamaMatches(names, utcDay(now, -45))
+  const fresh = await loadCompleteRatings(elo.ratings, pause)
+  if (fresh.ratings) writeJson(RATINGS, { fetchedAt: now.toISOString(), source: 'World Football Elo Ratings (eloratings.net)', ratings: fresh.ratings })
+  else {
+    // Keep yesterday's ratings rather than stopping the whole day over a partial download.
+    const saved = readJson<{ ratings?: Record<string, number> }>(RATINGS, {})
+    if (Object.keys(saved.ratings ?? {}).length < MIN_RATED_TEAMS) throw new Error(`eloratings ratings unavailable (${fresh.problem}) and no saved ratings to fall back on`)
+    warnings.push(`eloratings ratings unavailable after ${fresh.attempts} attempts (${fresh.problem}); kept the saved ratings`)
+  }
+  if (fresh.attempts > 1 && fresh.ratings) console.log(`  eloratings ratings complete on attempt ${fresh.attempts}`)
+  let panama: Match[] = [], fixturesListed = 0, panamaFetched = false
+  try {
+    const names = await elo.names()
+    const listed = await elo.panamaMatches(names, utcDay(now, -45))
+    panama = listed.matches
+    fixturesListed = listed.fixturesListed
+    panamaFetched = true
+  } catch (error) {
+    warnings.push(`eloratings Panama matches skipped: ${error instanceof Error ? error.message : 'unknown error'}`)
+  }
   pending.push(...panama)
   fetched += panama.length
   for (const match of pending) if (match.status === 'unknown') unsettled.set(match.id, match)
   flush()
   // Rescheduled national fixtures: drop the old date. Skipped if the fixtures file looks truncated.
-  if (fixturesListed >= MIN_FIXTURES_LISTED) {
+  if (panamaFetched && fixturesListed >= MIN_FIXTURES_LISTED) {
     const stale = retireStaleFixtures(matches, new Set(panama.map(match => match.id)), now)
     if (stale.retired.length) {
       matches = stale.matches
@@ -92,15 +109,16 @@ const sync = async (now: Date, from: string, to: string, backfill: boolean): Pro
       writeJson(OUTPUT, { updatedAt: now.toISOString(), matches } satisfies MatchLedger)
       for (const id of stale.retired) console.log(`  no longer listed, voided: ${id}`)
     }
-  } else console.log(`  fixtures file lists only ${fixturesListed} matches; stale-fixture check skipped`)
+  } else if (panamaFetched) console.log(`  fixtures file lists only ${fixturesListed} matches; stale-fixture check skipped`)
 
   const newlyFinished = matches.filter(match => match.status === 'finished' && !wasFinished.has(match.id))
   console.log(`Synced ${fetched} matches (${added} new, ${updated} updated). Ledger: ${matches.length} matches in ${OUTPUT}.`)
   if (overdue.length) console.log(`  overdue lookups: ${lookedUp} of ${overdue.length}`)
   if (!backfill) for (const match of newlyFinished) console.log(`  final: ${label(match)} ${match.score?.home}-${match.score?.away}`)
   for (const match of unsettled.values()) console.log(`  unsettled status '${match.rawStatus}': ${label(match)}`)
+  for (const warning of warnings) console.log(`  warning: ${warning}`)
   return { at: now.toISOString(), job: backfill ? 'backfill-matches' : 'sync-matches', ok: true, window: { from, to }, fetched, added, updated,
-    newlyFinished: backfill ? [] : newlyFinished.map(match => match.id), unsettled: [...unsettled.keys()] }
+    newlyFinished: backfill ? [] : newlyFinished.map(match => match.id), unsettled: [...unsettled.keys()], ...(warnings.length ? { warnings } : {}) }
 }
 
 const main = async () => {

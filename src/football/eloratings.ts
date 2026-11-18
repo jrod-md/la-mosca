@@ -34,6 +34,30 @@ export const parseRatings = (tsv: string): Record<string, number> =>
 export const parseNames = (tsv: string): Record<string, string> =>
   Object.fromEntries(rows(tsv).filter(row => row.length >= 2).map(row => [row[0], row[1]]))
 
+export const MIN_RATED_TEAMS = 150
+export const RATINGS_RETRY_DELAYS_MS = [60_000, 60_000]
+// eloratings rewrites its files after match days, and a download mid-rewrite comes back short:
+// retry, and report the last problem when no attempt gives a complete table.
+export const loadCompleteRatings = async (
+  load: () => Promise<Record<string, number>>,
+  wait: (ms: number) => Promise<void>,
+  delays: readonly number[] = RATINGS_RETRY_DELAYS_MS,
+): Promise<{ ratings: Record<string, number> | null; attempts: number; problem?: string }> => {
+  let problem: string | undefined
+  for (let attempt = 0; attempt <= delays.length; attempt++) {
+    if (attempt > 0) await wait(delays[attempt - 1])
+    try {
+      const ratings = await load()
+      const teams = Object.keys(ratings).length
+      if (teams >= MIN_RATED_TEAMS) return { ratings, attempts: attempt + 1 }
+      problem = `World.tsv had only ${teams} teams`
+    } catch (error) {
+      problem = error instanceof Error ? error.message : 'unknown error'
+    }
+  }
+  return { ratings: null, attempts: delays.length + 1, problem }
+}
+
 // <Team>.tsv: y m d home away hg ag tournament venue change homeAfter awayAfter ...
 // `change` is the home side's rating change, so pre-match ratings are after minus/plus change.
 export const parseResults = (tsv: string): EloResult[] => rows(tsv).filter(row => row.length >= 12).map(row => {
