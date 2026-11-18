@@ -13,6 +13,7 @@ export interface RunEntry {
   placed?: number
   passed?: number
   error?: string
+  warnings?: string[]
 }
 
 export interface RunLog {

@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { createTheSportsDbClient, normalizeTsdbEvent, TSDB_RETRY_DELAYS_MS, type TsdbEvent } from '../src/football/theSportsDb'
 import { createApiFootballClient, normalizeApiFootballFixture, type ApiFootballFixture } from '../src/football/apiFootball'
+import { loadCompleteRatings, MIN_RATED_TEAMS } from '../src/football/eloratings'
 import { mergeMatches, overdueLpfMatches, OVERDUE_LOOKUP_DAYS, retireStaleFixtures, utcDay } from '../src/football/ledger'
 import { slotHasWork, type RunEntry, type RunLog } from '../src/football/runLog'
 import { runsAreNews, sameIgnoringTimestamps } from '../src/football/dataChange'
@@ -204,4 +205,34 @@ test('Routine successful runs are not news, failures and the first fly day are',
   assert.equal(runsAreNews(early, { runs: [...early.runs, fly('2026-11-02T12:00:00.000Z')] }), true)
   assert.equal(runsAreNews(before, { runs: before.runs.slice(1) }), true)
   assert.equal(runsAreNews(before, { runs: [...before.runs] }), false)
+})
+
+test('eloratings ratings retry through partial downloads, then give up', async () => {
+  const full = Object.fromEntries(Array.from({ length: MIN_RATED_TEAMS }, (_value, index) => [`T${index}`, 1500]))
+  const waits: number[] = []
+  const wait = async (ms: number) => { waits.push(ms) }
+  let call = 0
+  const partialThenFull = async (): Promise<Record<string, number>> => call++ === 0 ? { A: 1 } : full
+  const fresh = await loadCompleteRatings(partialThenFull, wait, [5, 5])
+  assert.deepEqual(fresh.ratings, full)
+  assert.equal(fresh.attempts, 2)
+  assert.deepEqual(waits, [5])
+  waits.length = 0
+  let attempts = 0
+  const throwsThenPartial = async (): Promise<Record<string, number>> => { if (attempts++ === 0) throw new Error('HTTP 503'); return { A: 1 } }
+  const failed = await loadCompleteRatings(throwsThenPartial, wait, [5, 5])
+  assert.equal(failed.ratings, null)
+  assert.equal(failed.attempts, 3)
+  assert.equal(failed.problem, 'World.tsv had only 1 teams')
+  assert.deepEqual(waits, [5, 5])
+})
+
+test('A sync run that carries a warning is news', () => {
+  const before: RunLog = { runs: [] }
+  const warned: RunEntry = { at: '2026-11-18T16:33:07.324Z', job: 'sync-matches', ok: true, warnings: ['x'] }
+  const quiet: RunEntry = { at: '2026-11-18T16:33:07.324Z', job: 'sync-matches', ok: true, warnings: [] }
+  const plain: RunEntry = { at: '2026-11-18T16:33:07.324Z', job: 'sync-matches', ok: true }
+  assert.equal(runsAreNews(before, { runs: [warned] }), true)
+  assert.equal(runsAreNews(before, { runs: [quiet] }), false)
+  assert.equal(runsAreNews(before, { runs: [plain] }), false)
 })
