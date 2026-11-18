@@ -836,6 +836,26 @@
     "veraguas": 0.6024,
     "nt:PA": 0.2546
    }
+  },
+  {
+   "date": "2026-11-18",
+   "affinity": {
+    "alianza": 0.5101,
+    "arabe-unido": 0.5396,
+    "atletico-chiriqui": 0.4654,
+    "potros-del-este": 0.2241,
+    "herrera": 0.4406,
+    "independiente": 0.6268,
+    "plaza-amador": 0.4317,
+    "san-francisco": 0.3501,
+    "sporting-sm": 0.4947,
+    "tauro": 0.0506,
+    "umecit": 0.3391,
+    "union-cocle": 0.1598,
+    "universitario": 0.3341,
+    "veraguas": 0.5995,
+    "nt:PA": 0.2541
+   }
   }
  ]
 }
