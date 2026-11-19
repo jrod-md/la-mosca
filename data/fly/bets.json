@@ -1702,10 +1702,10 @@
     "148337",
     "534428"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 33.74,
-   "result": null,
+   "status": "won",
+   "payout": 7.47,
+   "bankrollAfter": 41.21,
+   "result": "1-4",
    "bankrupt": false
   }
  ],
