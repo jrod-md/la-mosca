@@ -2113,6 +2113,28 @@
    "settled": 0,
    "placed": 0,
    "passed": 0
+  },
+  {
+   "at": "2026-11-21T14:33:51.352Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-11-18",
+    "to": "2026-11-28"
+   },
+   "fetched": 10,
+   "added": 4,
+   "updated": 0,
+   "newlyFinished": [],
+   "unsettled": []
+  },
+  {
+   "at": "2026-11-21T14:34:17.430Z",
+   "job": "fly-daily",
+   "ok": true,
+   "settled": 0,
+   "placed": 2,
+   "passed": 0
   }
  ]
 }
