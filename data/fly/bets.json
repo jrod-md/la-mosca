@@ -1763,10 +1763,10 @@
     "90935",
     "95581"
    ],
-   "status": "open",
-   "payout": 0,
-   "bankrollAfter": 37.39,
-   "result": null,
+   "status": "won",
+   "payout": 8.67,
+   "bankrollAfter": 43.63,
+   "result": "1-0",
    "bankrupt": false
   },
   {

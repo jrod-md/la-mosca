@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T14:33:51.352Z",
+ "updatedAt": "2026-11-22T14:28:33.576Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -11386,9 +11386,12 @@
     "sourceId": "tsdb:139109",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/16pi2m1582143972.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "FT",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
    "venue": "COS Sports Plaza"
   },
   {
