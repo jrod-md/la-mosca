@@ -1824,10 +1824,10 @@
     "135247",
     "148337"
    ],
-   "status": "open",
+   "status": "lost",
    "payout": 0,
-   "bankrollAfter": 34.96,
-   "result": null,
+   "bankrollAfter": 43.63,
+   "result": "1-3",
    "bankrupt": false
   }
  ],
