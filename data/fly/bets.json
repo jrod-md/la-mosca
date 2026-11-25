@@ -1829,6 +1829,67 @@
    "bankrollAfter": 43.63,
    "result": "1-3",
    "bankrupt": false
+  },
+  {
+   "id": "bet:af:1651111",
+   "matchId": "af:1651111",
+   "phase": "live",
+   "placedAt": "2026-11-25T17:06:19.755Z",
+   "kickoff": "2026-11-28T01:30:00.000Z",
+   "home": "san-francisco",
+   "away": "arabe-unido",
+   "homeName": "San Francisco FC",
+   "awayName": "Árabe Unido",
+   "market": "1x2",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 2.54,
+     "drive": 0.449,
+     "probability": 0.2738978099670547
+    },
+    {
+     "selection": "draw",
+     "odds": 3.15,
+     "drive": 0.258,
+     "probability": 0.08924258448900622
+    },
+    {
+     "selection": "away",
+     "odds": 2.87,
+     "drive": 0.592,
+     "probability": 0.6368596055439391
+    }
+   ],
+   "selection": "home",
+   "odds": 2.54,
+   "stake": 2.83,
+   "boldness": 0.58,
+   "dared": false,
+   "tilted": false,
+   "activeKcs": [
+    "52613",
+    "52972",
+    "53645",
+    "58570",
+    "62645",
+    "62840",
+    "69037",
+    "74812",
+    "79092",
+    "82798",
+    "85054",
+    "89461",
+    "90935",
+    "153165",
+    "178810",
+    "547293"
+   ],
+   "status": "open",
+   "payout": 0,
+   "bankrollAfter": 40.8,
+   "result": null,
+   "bankrupt": false
   }
  ],
  "passes": [
