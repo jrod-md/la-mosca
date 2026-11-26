@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T17:06:19.755Z",
+ "updatedAt": "2026-11-26T16:49:18.531Z",
  "phase": "live",
  "lastInfancyMatch": "af:1583782",
  "state": {
@@ -1320,6 +1320,6 @@
    2.997090076954286
   ],
   "settled": 854,
-  "driveBaseline": 0.49902
+  "driveBaseline": 0.496413
  }
 }

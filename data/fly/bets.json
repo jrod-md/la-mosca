@@ -1979,6 +1979,35 @@
      "probability": 0.1391114133801699
     }
    ]
+  },
+  {
+   "matchId": "af:1651112",
+   "decidedAt": "2026-11-26T16:49:18.531Z",
+   "kickoff": "2026-11-29T01:30:00.000Z",
+   "home": "plaza-amador",
+   "away": "tauro",
+   "homeName": "Plaza Amador",
+   "awayName": "Tauro FC",
+   "options": [
+    {
+     "selection": "home",
+     "odds": 1.43,
+     "drive": 0.369,
+     "probability": 0.6185040166333682
+    },
+    {
+     "selection": "draw",
+     "odds": 4.27,
+     "drive": 0.258,
+     "probability": 0.3228112323931868
+    },
+    {
+     "selection": "away",
+     "odds": 7.83,
+     "drive": -0.031,
+     "probability": 0.05868475097344505
+    }
+   ]
   }
  ]
 }
