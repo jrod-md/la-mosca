@@ -2249,6 +2249,31 @@
    "settled": 0,
    "placed": 0,
    "passed": 1
+  },
+  {
+   "at": "2026-11-27T16:32:08.132Z",
+   "job": "sync-matches",
+   "ok": true,
+   "window": {
+    "from": "2026-11-24",
+    "to": "2026-12-04"
+   },
+   "fetched": 2,
+   "added": 0,
+   "updated": 0,
+   "newlyFinished": [],
+   "unsettled": [],
+   "warnings": [
+    "eloratings ratings unavailable after 3 attempts (World.tsv had only 0 teams); kept the saved ratings"
+   ]
+  },
+  {
+   "at": "2026-11-27T16:37:04.824Z",
+   "job": "fly-daily",
+   "ok": true,
+   "settled": 0,
+   "placed": 0,
+   "passed": 0
   }
  ]
 }
