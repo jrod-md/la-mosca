@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T16:32:08.132Z",
+ "updatedAt": "2026-11-28T15:25:28.382Z",
  "matches": [
   {
    "id": "af:1332244",
@@ -11444,9 +11444,12 @@
     "sourceId": "tsdb:139738",
     "badge": "https://r2.thesportsdb.com/images/media/team/badge/lkhkf11589297941.png"
    },
-   "status": "scheduled",
-   "rawStatus": "NS",
-   "score": null,
+   "status": "finished",
+   "rawStatus": "PEN",
+   "score": {
+    "home": 1,
+    "away": 0
+   },
    "venue": "Estadio Agustín Sánchez"
   },
   {
